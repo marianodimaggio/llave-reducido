@@ -40,7 +40,6 @@ jobs:
             git push
           fi
 
-      - name: Avisar si la validacion fallo
+         - name: Avisar si la validacion fallo
         if: steps.correr.outcome == 'failure'
-        run: |
-          echo "::warning::El scraper no pudo actualizar. data.json quedo como
+        run: cat estado.json || echo "sin estado.json"
