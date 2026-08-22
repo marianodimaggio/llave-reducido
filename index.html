@@ -43,19 +43,27 @@ h1 em{font-style:normal;color:var(--rojo)}
 .fuente b{color:var(--txt);font-weight:600}
 .fuente .verif{color:var(--oro);font-weight:500}
 
-.marcador{background:var(--sup);border:1px solid var(--borde);
-  border-radius:var(--radio);overflow:hidden;margin-bottom:14px}
+.resultado{margin-top:34px;background:var(--sup);border:1px solid var(--borde);
+  border-radius:var(--radio);overflow:hidden}
+.resultado h2{font-family:'Bebas Neue',var(--sans);font-weight:400;font-size:25px;
+  letter-spacing:.015em;padding:14px 16px 12px;border-bottom:1px solid var(--borde)}
 .premios{display:grid;grid-template-columns:1fr 1fr}
-.premio{padding:14px;border-right:1px solid var(--borde)}
+.premio{padding:16px;border-right:1px solid var(--borde)}
 .premio:last-child{border-right:0}
 .premio .lbl{font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
-  color:var(--txt3);margin-bottom:6px}
-.premio .val{font-family:'Bebas Neue',var(--sans);font-size:26px;line-height:1.1;
+  color:var(--oro);margin-bottom:8px}
+.premio .val{font-family:'Bebas Neue',var(--sans);font-size:32px;line-height:1.05;
   color:var(--borde2);letter-spacing:.01em}
 .premio .val.ok{color:var(--txt)}
 .premio .val.colon{color:var(--oro)}
+.premio .via{font-size:11.5px;color:var(--txt3);margin-top:7px;line-height:1.45}
+.veredicto{padding:13px 16px;border-top:1px solid var(--borde);background:var(--sup2);
+  font-size:13.5px;color:var(--txt3);line-height:1.55}
+.veredicto b{color:var(--oro);font-weight:600}
+.veredicto.vacio{color:var(--txt3)}
 .barra{display:flex;align-items:center;justify-content:space-between;gap:12px;
-  padding:11px 14px;border-top:1px solid var(--borde);background:var(--sup2)}
+  padding:11px 14px;margin-bottom:14px;background:var(--sup2);
+  border:1px solid var(--borde);border-radius:var(--radio)}
 .barra .prog{font-size:13px;color:var(--txt3);min-width:0}
 .barra .prog b{color:var(--oro);font-weight:600}
 button.reset{font:inherit;font-size:13px;font-weight:600;background:transparent;
@@ -163,21 +171,9 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
 
 <div class="fuente" id="fuente"><i class="pip"></i><span>Cargando la tabla…</span></div>
 
-<div class="marcador">
-  <div class="premios">
-    <div class="premio">
-      <div class="lbl">Primer ascenso</div>
-      <div class="val" id="asc1">Sin definir</div>
-    </div>
-    <div class="premio">
-      <div class="lbl">Segundo ascenso</div>
-      <div class="val" id="asc2">Sin definir</div>
-    </div>
-  </div>
-  <div class="barra">
-    <span class="prog" id="progreso">Llaves resueltas: <b>0</b> de 15</span>
-    <button class="reset" id="reset" type="button">Reiniciar</button>
-  </div>
+<div class="barra">
+  <span class="prog" id="progreso">Llaves resueltas: <b>0</b> de 15</span>
+  <button class="reset" id="reset" type="button">Reiniciar</button>
 </div>
 
 <details class="info">
@@ -186,6 +182,23 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
 </details>
 
 <div class="bracket" id="bracket"></div>
+
+<section class="resultado" id="resultado">
+  <h2>Los dos ascensos</h2>
+  <div class="premios">
+    <div class="premio">
+      <div class="lbl">Primer ascenso</div>
+      <div class="val" id="asc1">Sin definir</div>
+      <div class="via">Gana la final entre los punteros de zona</div>
+    </div>
+    <div class="premio">
+      <div class="lbl">Segundo ascenso</div>
+      <div class="val" id="asc2">Sin definir</div>
+      <div class="via">Gana la final del Reducido</div>
+    </div>
+  </div>
+  <div class="veredicto" id="veredicto"></div>
+</section>
 
 <div class="total">
   <div class="n">7</div>
@@ -404,11 +417,24 @@ function render(){
 
   const hechas = (S.finalAsc?1:0) + FASE1.filter(l=>S.f1[l.id]).length
     + [0,1,2,3].filter(i=>S.cuartos[i]).length + [0,1].filter(i=>S.semis[i]).length + (S.finalRed?1:0);
-  document.getElementById('progreso').innerHTML = S.finalRed
-    ? ((S.finalAsc==='colon' || S.finalRed==='colon')
-        ? 'Escenario completo: <b>Colón asciende</b>.'
-        : 'Escenario completo: Colón <b>se queda</b>.')
+  document.getElementById('progreso').innerHTML = hechas === 15
+    ? 'Escenario completo: <b>15</b> de 15'
     : 'Llaves resueltas: <b>'+hechas+'</b> de 15';
+
+  const ver = document.getElementById('veredicto');
+  if(S.finalRed){
+    ver.className = 'veredicto';
+    ver.innerHTML = (S.finalAsc==='colon' || S.finalRed==='colon')
+      ? 'En este escenario <b>Colón asciende</b>.'
+      : 'En este escenario Colón <b>se queda en la categoría</b>.';
+  } else if(hechas === 0){
+    ver.className = 'veredicto vacio';
+    ver.innerHTML = 'Elegí los ganadores de arriba y los dos ascensos se van completando acá.';
+  } else {
+    ver.className = 'veredicto vacio';
+    const faltan = 15 - hechas;
+    ver.innerHTML = 'Faltan <b>'+faltan+'</b> '+(faltan===1?'llave':'llaves')+' para cerrar el escenario.';
+  }
 }
 
 // ================= interacción =================
