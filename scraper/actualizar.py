@@ -181,6 +181,17 @@ def extraer(cruda):
     if len(grupos) != 2:
         raise RuntimeError(f"esperaba 2 zonas, ESPN devolvio {len(grupos)}")
 
+    # Inventario de lo que ESPN manda para el primer equipo.
+    # Sin esto es imposible saber si estamos leyendo la columna correcta.
+    try:
+        muestra = grupos[0]["standings"]["entries"][0]
+        print("  campos que manda ESPN para", (muestra.get("team") or {}).get("displayName", "?"))
+        for s in muestra.get("stats", []):
+            print(f"    {s.get('name'):<22} {str(s.get('abbreviation')):<6} = {s.get('value')}")
+        print("  temporada:", cruda.get("season") or cruda.get("seasonDisplay") or "no informada")
+    except Exception:
+        print("  (no se pudo listar los campos)")
+
     salida, desconocidos = {}, []
     for g in grupos:
         entradas = (g.get("standings") or {}).get("entries") or []
@@ -243,6 +254,23 @@ def validar(zonas, previo):
                 p.append(f"{t['nombre']}: PJ fuera de rango ({t['pj']})")
             if t["pts"] > t["pj"] * 3:
                 p.append(f"{t['nombre']}: {t['pts']} pts con {t['pj']} PJ, imposible")
+
+    # --- controles de verosimilitud ---
+    # Que un numero sea posible no significa que sea creible. Estos controles
+    # existen porque una corrida devolvio a Acassuso puntero con 13 puntos.
+    for z, equipos in zonas.items():
+        pjs = [t["pj"] for t in equipos if t["pj"] is not None]
+        ptss = [t["pts"] for t in equipos if t["pts"] is not None]
+        if not pjs or not ptss:
+            continue
+        if max(pjs) - min(pjs) > 4:
+            p.append(f"zona {z}: los PJ van de {min(pjs)} a {max(pjs)}, "
+                     f"demasiada diferencia para una misma fecha")
+        # un puntero promedia bastante mas de un punto por partido
+        if max(pjs) >= 10 and max(ptss) < 1.2 * max(pjs):
+            p.append(f"zona {z}: el puntero tiene {max(ptss)} pts en {max(pjs)} PJ. "
+                     f"Muy poco para un lider: probablemente no estemos leyendo la "
+                     f"columna de puntos, o sea otra temporada")
 
     # los puntos de un equipo nunca bajan: si bajaron, el parseo esta mal.
     # Se compara crudo contra crudo: una correccion manual no debe disparar la alarma.
@@ -367,7 +395,8 @@ def main():
               open(ESTADO, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print("OK ·", ahora, f"· {verificados} valores verificados a mano")
     for z in ("A", "B"):
-        print(f"  Zona {z}: " + " | ".join(f"{t['pos']}.{t['nombre']} {t['pts']}" for t in zonas[z][:4]))
+        print(f"  Zona {z}: " + " | ".join(
+            f"{t['pos']}.{t['nombre']} {t['pts']}pts/{t['pj']}PJ" for t in zonas[z][:4]))
     return 0
 
 if __name__ == "__main__":
