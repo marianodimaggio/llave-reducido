@@ -114,11 +114,28 @@ ALIAS = {
     "patronato": "patronato", "club atletico patronato": "patronato",
     "guemes": "guemes", "club atletico guemes": "guemes",
     "agropecuario": "agropecuario", "agropecuario argentino": "agropecuario",
+    # formas que devuelve ESPN con la ciudad entre parentesis
+    "colon santa fe": "colon",
+    "estudiantes buenos aires": "estudiantesc",
+    "mitre santiago del estero": "mitre",
+    "gimnasia y esgrima jujuy": "gimnasiaj",
+    "racing cordoba": "racingcba",
+    "san martin san juan": "sanmartinsj",
+    "san martin tucuman": "sanmartint",
+    "central norte salta": "centralnorte",
+    "gimnasia y tiro salta": "gyt",
+    "defensores belgrano": "defbelgrano",
+    "guemes santiago del estero": "guemes",
+    "patronato parana": "patronato",
 }
 
 def pelar(s):
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
-    s = s.lower().replace(".", " ").replace("-", " ")
+    s = s.lower()
+    # ESPN escribe "Colon (Santa Fe)", "San Martin (Tucuman)".
+    # Sacamos parentesis y puntuacion para que un solo alias cubra las dos formas.
+    for c in "().,-–—'\"":
+        s = s.replace(c, " ")
     return " ".join(s.split())
 
 def a_id(nombre):
@@ -177,6 +194,7 @@ def extraer(cruda):
             equipos.append({
                 "id": cid,
                 "nombre": CLUBES[cid][0],
+                "espn": nombre,
                 "pj":  stat(e, "gamesPlayed", "GP"),
                 "pts": stat(e, "points", "P"),
                 "gf":  stat(e, "pointsFor", "GF"),
@@ -190,6 +208,17 @@ def extraer(cruda):
 
     if desconocidos:
         raise RuntimeError("nombres sin mapear (agregalos a ALIAS): " + ", ".join(sorted(set(desconocidos))))
+
+    # dos equipos distintos no pueden apuntar al mismo club:
+    # seria un alias mal escrito, y se perderia un equipo sin que nadie lo note
+    vistos = {}
+    for z, equipos in salida.items():
+        for t in equipos:
+            if t["id"] in vistos:
+                raise RuntimeError(
+                    f"dos equipos de ESPN apuntan al mismo club '{t['id']}': "
+                    f"'{vistos[t['id']]}' y '{t['espn']}'. Hay un alias mal puesto.")
+            vistos[t["id"]] = t["espn"]
     return salida
 
 # ---------------------------------------------------------------- controles
