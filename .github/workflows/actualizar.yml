@@ -2,9 +2,8 @@ name: Actualizar tabla
 
 on:
   schedule:
-    # cada 3 horas. Los partidos son de viernes a lunes, no hace falta mas.
     - cron: "0 */3 * * *"
-  workflow_dispatch:        # boton para correrlo a mano desde la pestaña Actions
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -21,25 +20,23 @@ jobs:
 
       - name: Bajar y validar la tabla
         id: correr
-        continue-on-error: true      # que falle el scraper no debe romper el repo
+        continue-on-error: true
         run: python scraper/actualizar.py
 
       - name: Publicar cambios
         run: |
-          git config user.name  "bot-llave"
+          git config user.name "bot-llave"
           git config user.email "bot@users.noreply.github.com"
-          # si el scraper fallo, data.json puede no existir todavia:
-          # agregamos solo lo que este, para que el estado igual llegue al repo
           for f in data.json estado.json; do
             [ -f "$f" ] && git add "$f"
           done
           if git diff --staged --quiet; then
             echo "sin cambios"
           else
-            git commit -m "tabla: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git commit -m "tabla actualizada"
             git push
           fi
 
-         - name: Avisar si la validacion fallo
+      - name: Mostrar el motivo si fallo
         if: steps.correr.outcome == 'failure'
         run: cat estado.json || echo "sin estado.json"
