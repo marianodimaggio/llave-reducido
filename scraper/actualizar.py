@@ -6,9 +6,25 @@ la normaliza y la escribe en data.json.
 Regla de oro: si algo no cierra, NO se pisa data.json.
 Es preferible mostrar datos viejos con la fecha a la vista que datos nuevos y mal.
 """
-import json, os, sys, unicodedata, urllib.request, datetime
+import json, os, sys, time, unicodedata, urllib.request, urllib.error, datetime
 
-URL = "https://site.api.espn.com/apis/v2/sports/soccer/arg.2/standings"
+URLS = [
+    "https://site.api.espn.com/apis/v2/sports/soccer/arg.2/standings",
+    "https://site.api.espn.com/apis/v2/sports/soccer/arg.2/standings?season=2026",
+    "https://site.web.api.espn.com/apis/v2/sports/soccer/arg.2/standings?region=ar&lang=es&season=2026",
+]
+
+# ESPN rechaza los pedidos que no parecen venir de un navegador.
+CABECERAS = {
+    "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                   "AppleWebKit/537.36 (KHTML, like Gecko) "
+                   "Chrome/126.0.0.0 Safari/537.36"),
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "es-AR,es;q=0.9,en;q=0.8",
+    "Referer": "https://www.espn.com.ar/futbol/posiciones/_/liga/arg.2",
+    "Origin": "https://www.espn.com.ar",
+    "Connection": "keep-alive",
+}
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(RAIZ, "data.json")
 ESTADO = os.path.join(RAIZ, "estado.json")
@@ -110,11 +126,27 @@ def a_id(nombre):
 
 # ---------------------------------------------------------------- bajada
 def bajar():
-    req = urllib.request.Request(URL, headers={"User-Agent": "llave-pn/1.0"})
-    with urllib.request.urlopen(req, timeout=25) as r:
-        if r.status != 200:
-            raise RuntimeError(f"HTTP {r.status}")
-        return json.loads(r.read().decode())
+    """Prueba las direcciones en orden. Si todas fallan, cuenta que paso con cada una."""
+    fallos = []
+    for url in URLS:
+        for intento in (1, 2):
+            try:
+                req = urllib.request.Request(url, headers=CABECERAS)
+                with urllib.request.urlopen(req, timeout=25) as r:
+                    if r.status != 200:
+                        raise RuntimeError(f"HTTP {r.status}")
+                    datos = json.loads(r.read().decode())
+                print(f"  respondio: {url}")
+                return datos
+            except urllib.error.HTTPError as ex:
+                fallos.append(f"{url} → HTTP {ex.code} {ex.reason}")
+                break                      # un 403 o 404 no mejora reintentando
+            except Exception as ex:
+                if intento == 2:
+                    fallos.append(f"{url} → {type(ex).__name__}: {ex}")
+                else:
+                    time.sleep(3)          # timeout o corte: vale un segundo intento
+    raise RuntimeError("ninguna direccion respondio. Detalle:\n    " + "\n    ".join(fallos))
 
 def stat(entrada, *nombres):
     """ESPN nombra las estadisticas distinto segun la liga: probamos varios."""
