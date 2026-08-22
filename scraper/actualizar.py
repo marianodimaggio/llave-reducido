@@ -31,6 +31,11 @@ ESTADO = os.path.join(RAIZ, "estado.json")
 CORRECCIONES = os.path.join(RAIZ, "correcciones.json")
 CAMPOS = ("pj", "pts", "gf", "gc")
 
+# Sube cada vez que cambia la forma de leer los datos.
+# Si data.json quedo escrito por una version anterior, no se lo compara:
+# los numeros viejos pueden venir de un parseo equivocado.
+VERSION = 2
+
 # ---------------------------------------------------------------- clubes
 # clave = id interno · valor = (nombre a mostrar, zona)
 CLUBES = {
@@ -165,14 +170,18 @@ def bajar():
                     time.sleep(3)          # timeout o corte: vale un segundo intento
     raise RuntimeError("ninguna direccion respondio. Detalle:\n    " + "\n    ".join(fallos))
 
-def stat(entrada, *nombres):
-    """ESPN nombra las estadisticas distinto segun la liga: probamos varios."""
+def stat(entrada, nombre):
+    """Lee una estadistica SOLO por su nombre interno.
+
+    Nada de abreviaturas: ESPN las devuelve en español y son ambiguas.
+    'losses' viene abreviado como 'P' (perdidos) y 'points' como 'PTS',
+    asi que buscar por 'P' devolvia los partidos perdidos como si fueran puntos.
+    """
     for s in entrada.get("stats", []):
-        for n in nombres:
-            if s.get("name") == n or s.get("abbreviation") == n:
-                v = s.get("value")
-                if v is not None:
-                    return int(v)
+        if s.get("name") == nombre:
+            v = s.get("value")
+            if v is not None:
+                return int(round(float(v)))
     return None
 
 def extraer(cruda):
@@ -206,10 +215,11 @@ def extraer(cruda):
                 "id": cid,
                 "nombre": CLUBES[cid][0],
                 "espn": nombre,
-                "pj":  stat(e, "gamesPlayed", "GP"),
-                "pts": stat(e, "points", "P"),
-                "gf":  stat(e, "pointsFor", "GF"),
-                "gc":  stat(e, "pointsAgainst", "GA"),
+                "pj":  stat(e, "gamesPlayed"),
+                "pts": stat(e, "points"),
+                "gf":  stat(e, "pointsFor"),
+                "gc":  stat(e, "pointsAgainst"),
+                "rank_espn": stat(e, "rank"),
             })
         # la zona la decide nuestra tabla, no el orden en que vengan los grupos
         zonas = {CLUBES[t["id"]][1] for t in equipos if t["id"] in CLUBES}
@@ -274,7 +284,7 @@ def validar(zonas, previo):
 
     # los puntos de un equipo nunca bajan: si bajaron, el parseo esta mal.
     # Se compara crudo contra crudo: una correccion manual no debe disparar la alarma.
-    if previo:
+    if previo and previo.get("version") == VERSION:
         antes = previo.get("crudo") or {}
         for z, equipos in zonas.items():
             for t in equipos:
@@ -384,10 +394,25 @@ def main():
             t["pos"] = i
             t["dif"] = t["gf"] - t["gc"]
 
+    # nuestro orden se calcula con los criterios de AFA; ESPN informa el suyo.
+    # Si difieren mucho, algo esta mal en alguno de los dos y conviene mirarlo.
+    discrepancias = []
+    for z in zonas:
+        for t in zonas[z]:
+            r = t.get("rank_espn")
+            if r and abs(r - t["pos"]) > 2:
+                discrepancias.append(f"{t['nombre']}: nosotros {t['pos']}°, ESPN {r}°")
+    if discrepancias:
+        print("  AVISO, el orden no coincide con el de ESPN:")
+        for d in discrepancias:
+            print("    ·", d)
+    else:
+        print("  orden coincide con el de ESPN ✓")
+
     verificados = sum(len(t.get("verificado", []))
                       for z in zonas.values() for t in z)
 
-    json.dump({"actualizado": ahora, "fuente": "ESPN arg.2",
+    json.dump({"actualizado": ahora, "fuente": "ESPN arg.2", "version": VERSION,
                "verificados": verificados, "zonas": zonas, "crudo": crudo},
               open(DATA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump({"estado": "ok", "intento": ahora, "ultimo_ok": ahora,
