@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A0A0B">
+<meta name="color-scheme" content="dark">
+<title>Llave del Reducido · Primera Nacional 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0A0B; --sup:#18181B; --sup2:#1F1F23;
+  --borde:#2E2E33; --borde2:#3F3F46;
+  --txt:#FAFAFA; --txt2:#C4C4CC; --txt3:#9A9AA3;
+  --rojo:#E11D3C; --rojo-op:#3A0E17;
+  --oro:#FFC533; --oro-op:#2A2113;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --radio:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--txt);font-family:var(--sans);
+  font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;
+  padding:0 0 calc(40px + env(safe-area-inset-bottom))}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+
+header{padding:28px 0 20px}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--oro);margin-bottom:10px}
+h1{font-family:'Bebas Neue',var(--sans);font-weight:400;
+  font-size:clamp(38px,11vw,66px);line-height:.92;letter-spacing:.01em}
+h1 em{font-style:normal;color:var(--rojo)}
+.lead{margin-top:12px;font-size:15px;color:var(--txt2);max-width:62ch}
+
+.fuente{display:flex;align-items:center;gap:9px;flex-wrap:wrap;
+  background:var(--sup);border:1px solid var(--borde);border-radius:var(--radio);
+  padding:12px 14px;margin-bottom:12px;font-size:13px;color:var(--txt2)}
+.fuente .pip{width:8px;height:8px;border-radius:50%;flex:none;background:var(--borde2)}
+.fuente.ok .pip{background:var(--oro)}
+.fuente.viejo .pip{background:var(--rojo)}
+.fuente b{color:var(--txt);font-weight:600}
+.fuente .verif{color:var(--oro);font-weight:500}
+
+.marcador{background:var(--sup);border:1px solid var(--borde);
+  border-radius:var(--radio);overflow:hidden;margin-bottom:14px}
+.premios{display:grid;grid-template-columns:1fr 1fr}
+.premio{padding:14px;border-right:1px solid var(--borde)}
+.premio:last-child{border-right:0}
+.premio .lbl{font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--txt3);margin-bottom:6px}
+.premio .val{font-family:'Bebas Neue',var(--sans);font-size:26px;line-height:1.1;
+  color:var(--borde2);letter-spacing:.01em}
+.premio .val.ok{color:var(--txt)}
+.premio .val.colon{color:var(--oro)}
+.barra{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:11px 14px;border-top:1px solid var(--borde);background:var(--sup2)}
+.barra .prog{font-size:13px;color:var(--txt3);min-width:0}
+.barra .prog b{color:var(--oro);font-weight:600}
+button.reset{font:inherit;font-size:13px;font-weight:600;background:transparent;
+  color:var(--txt2);border:1px solid var(--borde2);border-radius:9px;
+  padding:9px 14px;min-height:40px;cursor:pointer;white-space:nowrap;flex:none}
+button.reset:active{background:var(--sup)}
+
+details.info{background:var(--oro-op);border:1px solid #4A3C1C;
+  border-radius:var(--radio);margin-bottom:22px}
+details.info summary{list-style:none;cursor:pointer;padding:13px 14px;
+  font-size:13.5px;font-weight:600;color:var(--oro);
+  display:flex;align-items:center;justify-content:space-between;gap:10px}
+details.info summary::-webkit-details-marker{display:none}
+details.info summary::after{content:"+";font-size:18px;line-height:1}
+details.info[open] summary::after{content:"\2212"}
+details.info p{padding:0 14px 14px;font-size:14px;color:#E2D4AE;line-height:1.65}
+
+.bracket{display:flex;flex-direction:column;gap:26px}
+.ronda{min-width:0}
+.ronda-cab{margin-bottom:12px}
+.ronda-cab h2{font-family:'Bebas Neue',var(--sans);font-weight:400;font-size:27px;
+  line-height:1.05;letter-spacing:.015em;margin-bottom:9px}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:9px}
+.chip{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  padding:5px 9px;border-radius:7px}
+.chip.unico{background:var(--rojo-op);color:#FF8FA3;border:1px solid #5E1725}
+.chip.doble{background:var(--oro-op);color:var(--oro);border:1px solid #4A3C1C}
+.chip.sede{background:var(--sup);color:var(--txt2);border:1px solid var(--borde)}
+.regla{font-size:13.5px;color:var(--txt3);line-height:1.6}
+.regla b{color:var(--txt2);font-weight:600}
+
+.llaves{display:flex;flex-direction:column;gap:10px}
+.m{background:var(--sup);border:1px solid var(--borde);
+  border-radius:var(--radio);overflow:hidden}
+.m.colon{border-color:#6B5722;background:#191509}
+.m.premio-final{border-color:#6E2130}
+.m .tag{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--txt3);padding:9px 14px 8px;border-bottom:1px solid var(--borde)}
+.m.premio-final .tag{color:#FF8FA3}
+
+.eq{display:flex;align-items:center;gap:11px;width:100%;font:inherit;text-align:left;
+  background:transparent;color:inherit;border:0;border-top:1px solid var(--sup2);
+  padding:13px 14px;min-height:50px;cursor:pointer}
+.eq:first-of-type{border-top:0}
+.eq:active{background:var(--sup2)}
+.eq .pos{font-size:12px;font-weight:600;color:var(--txt3);min-width:46px;flex:none;
+  font-variant-numeric:tabular-nums}
+.eq .nombre{font-size:16.5px;font-weight:600;letter-spacing:-.01em;flex:1;min-width:0;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.eq.colon .nombre{color:var(--oro)}
+.eq .vent{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--oro);border:1px solid #4A3C1C;border-radius:6px;padding:3px 6px;flex:none}
+.eq .mark{font-size:15px;flex:none;line-height:1}
+.eq.gana{background:#161206;box-shadow:inset 3px 0 0 var(--oro)}
+.eq.gana .nombre{color:var(--oro)}
+.eq.pierde{opacity:.4}
+.eq.pierde .nombre{text-decoration:line-through;text-decoration-color:var(--rojo)}
+.chequeo{color:var(--oro);font-size:15px;margin-left:4px;vertical-align:top;line-height:1}
+
+.m .pie{padding:11px 14px;border-top:1px solid var(--borde);font-size:13px;
+  color:var(--txt3);line-height:1.55}
+.m .pie b{color:var(--oro);font-weight:600}
+.espera{background:var(--sup);border:1px dashed var(--borde2);border-radius:var(--radio);
+  padding:16px 14px;font-size:13.5px;color:var(--txt3);line-height:1.6}
+.espera .t{display:block;font-size:11px;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--borde2);margin-bottom:7px}
+
+.total{margin-top:30px;padding-top:22px;border-top:1px solid var(--borde);
+  display:flex;gap:16px;align-items:flex-start}
+.total .n{font-family:'Bebas Neue',var(--sans);font-size:62px;line-height:.85;
+  color:var(--oro);flex:none;margin-top:-4px}
+.total p{font-size:14px;color:var(--txt2);line-height:1.7}
+.total p b{color:var(--txt);font-weight:600}
+footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
+  font-size:12.5px;color:var(--txt3);line-height:1.75}
+
+@media(min-width:1180px){
+  .wrap{padding:0 24px}
+  header{padding:44px 0 26px}
+  .bracket{display:grid;grid-template-columns:.95fr 1.15fr 1fr 1fr 1fr;gap:0 20px;align-items:start}
+  .ronda{border-right:1px solid var(--borde);padding-right:20px}
+  .ronda:last-child{border-right:0;padding-right:0}
+  .ronda-cab{min-height:192px}
+  .eq .nombre{font-size:15px}
+  .m .tag{font-size:10.5px}
+  /* con 5 columnas el chip le roba ancho al nombre.
+     La cabecera de cada ronda ya dice quien tiene la ventaja, asi que aca sobra. */
+  .eq .vent{display:none}
+  .eq .pos{min-width:40px;font-size:11.5px}
+  .eq{gap:9px;padding:12px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">Primera Nacional 2026</div>
+  <h1>Simulá los<br>dos <em>ascensos</em></h1>
+  <p class="lead">Tocá el equipo que gana cada llave. El cuadro se rearma solo con las reglas de AFA.</p>
+</header>
+
+<div class="fuente" id="fuente"><i class="pip"></i><span>Cargando la tabla…</span></div>
+
+<div class="marcador">
+  <div class="premios">
+    <div class="premio">
+      <div class="lbl">Primer ascenso</div>
+      <div class="val" id="asc1">Sin definir</div>
+    </div>
+    <div class="premio">
+      <div class="lbl">Segundo ascenso</div>
+      <div class="val" id="asc2">Sin definir</div>
+    </div>
+  </div>
+  <div class="barra">
+    <span class="prog" id="progreso">Llaves resueltas: <b>0</b> de 15</span>
+    <button class="reset" id="reset" type="button">Reiniciar</button>
+  </div>
+</div>
+
+<details class="info">
+  <summary>¿Por qué los cruces de cuartos no están todavía?</summary>
+  <p>Porque el reglamento reordena a los clasificados después de cada ronda. Terminada la primera fase, los siete ganadores más el perdedor de la final se ordenan en una tabla general —primero pesa la posición en la zona, después puntos, diferencia de gol y goles a favor— y recién ahí se cruzan 1-8, 2-7, 3-6 y 4-5. En semis se vuelven a reordenar. Al perdedor de la final se lo cuenta siempre como 1°.</p>
+</details>
+
+<div class="bracket" id="bracket"></div>
+
+<div class="total">
+  <div class="n">7</div>
+  <p>partidos juega un equipo que arranca en la primera fase hasta el ascenso. <b>Uno solo es a partido único</b>: los otros seis salen de tres series de ida y vuelta. El que pierde la final por el primer ascenso llega con seis, porque saltea la primera fase.</p>
+</div>
+
+<footer>
+  Formato según el Reglamento de Primera Nacional 2026, Boletín Especial N° 6823 de AFA. Tabla vía ESPN. El <span style="color:var(--oro)">*</span> junto a un equipo marca un dato corregido a mano contra otra fuente.<br>
+  Las instancias decisorias van del 31 de octubre al 12 de diciembre de 2026.
+</footer>
+
+</div>
+
+<script>
+// ================= datos =================
+// Todo llega de data.json. No hay nada quemado en este archivo.
+let T = {}, FASE1 = [], PUNTEROS = {};
+
+function armarDesdeTabla(zonas){
+  T = {};
+  for(const z of ['A','B']){
+    zonas[z].forEach(function(t){
+      T[t.id] = {id:t.id, n:t.nombre, z:z, pos:t.pos, pts:t.pts, dif:t.dif, gf:t.gf,
+                 verificado:t.verificado||null, notas:t.notas||null};
+    });
+  }
+  PUNTEROS = {A: zonas.A.find(t => t.pos===1).id, B: zonas.B.find(t => t.pos===1).id};
+
+  const mejor = function(x,y){
+    const a=T[x], b=T[y];
+    if(a.pos!==b.pos) return a.pos<b.pos ? x : y;
+    if(a.pts!==b.pts) return a.pts>b.pts ? x : y;
+    if(a.dif!==b.dif) return a.dif>b.dif ? x : y;
+    return a.gf>=b.gf ? x : y;
+  };
+  const en = (z,p) => zonas[z].find(t => t.pos===p).id;
+
+  const crudos = [];
+  [[2,8],[3,7],[4,6]].forEach(function(par){
+    crudos.push([en('A',par[0]), en('B',par[1])]);
+    crudos.push([en('B',par[0]), en('A',par[1])]);
+  });
+  crudos.push([en('A',5), en('B',5)]);
+
+  FASE1 = crudos.map(function(par){
+    const local = mejor(par[0],par[1]);
+    const visita = (local===par[0] ? par[1] : par[0]);
+    return {a:local, b:visita, rot:T[local].pos+'° vs '+T[visita].pos+'°'};
+  }).sort((p,q) => T[p.a].pos - T[q.a].pos || T[q.a].pts - T[p.a].pts);
+  FASE1.forEach((l,i) => l.id = 'L'+(i+1));
+}
+
+// ================= estado =================
+let S = {};
+function limpiar(){
+  S = {finalAsc:null, f1:{}, cuartos:{}, semis:{}, finalRed:null};
+  FASE1.forEach(l => S.f1[l.id] = null);
+  render();
+}
+
+function ordenar(ids){
+  return ids.slice().sort(function(x,y){
+    const a=T[x], b=T[y];
+    if(a.pos!==b.pos) return a.pos-b.pos;
+    if(a.pts!==b.pts) return b.pts-a.pts;
+    if(a.dif!==b.dif) return b.dif-a.dif;
+    return b.gf-a.gf;
+  });
+}
+
+const f1Completa = () => FASE1.length>0 && FASE1.every(l => S.f1[l.id]);
+const perdedorFinal = () => !S.finalAsc ? null : (S.finalAsc===PUNTEROS.A ? PUNTEROS.B : PUNTEROS.A);
+
+function sembrados8(){
+  if(!S.finalAsc || !f1Completa()) return null;
+  return ordenar([perdedorFinal()].concat(FASE1.map(l => S.f1[l.id])));
+}
+const cuartosListos = () => !!sembrados8() && [0,1,2,3].every(i => S.cuartos[i]);
+function sembrados4(){
+  if(!cuartosListos()) return null;
+  return ordenar([0,1,2,3].map(i => S.cuartos[i]));
+}
+const semisListas = () => !!sembrados4() && [0,1].every(i => S.semis[i]);
+const cruces = (s,pares) => pares.map(p => ({top:s[p[0]], bot:s[p[1]], rot:(p[0]+1)+'° vs '+(p[1]+1)+'°'}));
+
+// ================= pintado =================
+function fila(id, o){
+  o = o || {};
+  const t = T[id];
+  const cls = ['eq'];
+  if(id==='colon') cls.push('colon');
+  if(o.estado) cls.push(o.estado);
+  const vent = (o.ventaja && o.estado!=='pierde') ? '<span class="vent">Ventaja</span>' : '';
+  const mark = o.estado==='gana' ? '<span class="mark">✓</span>'
+             : o.estado==='pierde' ? '<span class="mark">·</span>' : '';
+  const chk = t.verificado ? '<span class="chequeo" title="'+(t.notas||[]).join(' · ')+'">*</span>' : '';
+  return '<button type="button" class="'+cls.join(' ')+'" data-act="'+o.act+'">'
+       + '<span class="pos">'+o.pos+'</span>'
+       + '<span class="nombre">'+t.n+chk+'</span>'+vent+mark+'</button>';
+}
+
+const espera = (titulo,texto) => '<div class="espera"><span class="t">'+titulo+'</span>'+texto+'</div>';
+const cab = (h2,chips,regla) => '<div class="ronda-cab"><h2>'+h2+'</h2>'
+  + '<div class="chips">'+chips+'</div><p class="regla">'+regla+'</p></div>';
+
+function render(){
+  const s8 = sembrados8(), s4 = sembrados4();
+  const g = S.finalAsc, p = perdedorFinal();
+
+  const c0 = '<div class="m"><div class="tag">Los dos punteros de zona</div>'
+    + fila(PUNTEROS.A, {pos:'1° ZA', act:'fa:'+PUNTEROS.A, estado: g ? (g===PUNTEROS.A?'gana':'pierde') : null})
+    + fila(PUNTEROS.B, {pos:'1° ZB', act:'fa:'+PUNTEROS.B, estado: g ? (g===PUNTEROS.B?'gana':'pierde') : null})
+    + '<div class="pie">' + (g
+        ? '<b>'+T[g].n+'</b> asciende. '+T[p].n+' entra en cuartos como 1°.'
+        : 'El que gana asciende. <b>El que pierde entra en cuartos</b> y saltea la primera fase.')
+    + '</div></div>';
+
+  const c1 = FASE1.length ? FASE1.map(function(l,i){
+    const w = S.f1[l.id];
+    const conColon = (l.a==='colon' || l.b==='colon');
+    return '<div class="m '+(conColon?'colon':'')+'">'
+      + '<div class="tag">Llave '+(i+1)+' · '+l.rot+'</div>'
+      + fila(l.a, {pos:T[l.a].pos+'° Z'+T[l.a].z, act:'f1:'+l.id+':'+l.a, ventaja:true,
+                   estado: w ? (w===l.a?'gana':'pierde') : null})
+      + fila(l.b, {pos:T[l.b].pos+'° Z'+T[l.b].z, act:'f1:'+l.id+':'+l.b,
+                   estado: w ? (w===l.b?'gana':'pierde') : null})
+      + '</div>';
+  }).join('') : espera('Sin datos','No se pudo armar la primera fase.');
+
+  let c2;
+  if(!s8){
+    const faltan = [];
+    if(!S.finalAsc) faltan.push('la final por el primer ascenso');
+    const pend = FASE1.filter(l => !S.f1[l.id]).length;
+    if(pend) faltan.push(pend+' '+(pend===1?'llave':'llaves')+' de la primera fase');
+    c2 = espera('Todavía no','Los cruces salen cuando resuelvas '+faltan.join(' y ')+'.');
+  } else {
+    c2 = cruces(s8,[[0,7],[1,6],[2,5],[3,4]]).map(function(cr,i){
+      const w = S.cuartos[i];
+      const conColon = (cr.top==='colon'||cr.bot==='colon');
+      return '<div class="m '+(conColon?'colon':'')+'"><div class="tag">'+cr.rot+'</div>'
+        + fila(cr.top, {pos:(s8.indexOf(cr.top)+1)+'°', act:'cu:'+i+':'+cr.top, ventaja:true,
+                        estado: w ? (w===cr.top?'gana':'pierde') : null})
+        + fila(cr.bot, {pos:(s8.indexOf(cr.bot)+1)+'°', act:'cu:'+i+':'+cr.bot,
+                        estado: w ? (w===cr.bot?'gana':'pierde') : null})
+        + '</div>';
+    }).join('');
+  }
+
+  let c3;
+  if(!s4){
+    c3 = espera('Todavía no','Con los cuatro ganadores de cuartos se arma una tabla nueva y salen los cruces 1-4 y 2-3.');
+  } else {
+    c3 = cruces(s4,[[0,3],[1,2]]).map(function(cr,i){
+      const w = S.semis[i];
+      const conColon = (cr.top==='colon'||cr.bot==='colon');
+      return '<div class="m '+(conColon?'colon':'')+'"><div class="tag">'+cr.rot+'</div>'
+        + fila(cr.top, {pos:(s4.indexOf(cr.top)+1)+'°', act:'se:'+i+':'+cr.top, ventaja:true,
+                        estado: w ? (w===cr.top?'gana':'pierde') : null})
+        + fila(cr.bot, {pos:(s4.indexOf(cr.bot)+1)+'°', act:'se:'+i+':'+cr.bot,
+                        estado: w ? (w===cr.bot?'gana':'pierde') : null})
+        + '</div>';
+    }).join('');
+  }
+
+  let c4;
+  if(!semisListas()){
+    c4 = espera('Todavía no','La juegan los dos ganadores de las semifinales.');
+  } else {
+    const fin = ordenar([S.semis[0], S.semis[1]]);
+    const w = S.finalRed;
+    const conColon = fin.indexOf('colon') >= 0;
+    c4 = '<div class="m premio-final '+(conColon?'colon':'')+'">'
+      + '<div class="tag">Segundo ascenso a la LPF</div>'
+      + fila(fin[0], {pos:'Local vuelta', act:'fr:'+fin[0], estado: w ? (w===fin[0]?'gana':'pierde') : null})
+      + fila(fin[1], {pos:'Visitante', act:'fr:'+fin[1], estado: w ? (w===fin[1]?'gana':'pierde') : null})
+      + '<div class="pie">' + (w ? '<b>'+T[w].n+'</b> asciende.'
+          : 'Sin ventaja deportiva: si la serie queda igualada, penales.') + '</div></div>';
+  }
+
+  document.getElementById('bracket').innerHTML =
+      '<section class="ronda">'
+    + cab('Final por el<br>primer ascenso',
+          '<span class="chip unico">1 partido</span><span class="chip sede">Cancha neutral</span>',
+          "Empate a los 90' → alargue de 30' y, si sigue igualado, <b>penales</b>.")
+    + '<div class="llaves">'+c0+'</div></section>'
+    + '<section class="ronda">'
+    + cab('Primera fase',
+          '<span class="chip unico">1 partido</span><span class="chip sede">Local: el mejor ubicado</span>',
+          "Empate a los 90' → <b>pasa el mejor ubicado</b>. No hay alargue ni penales.")
+    + '<div class="llaves">'+c1+'</div></section>'
+    + '<section class="ronda">'
+    + cab('Cuartos',
+          '<span class="chip doble">2 partidos</span><span class="chip sede">Vuelta: el mejor ubicado</span>',
+          'Serie igualada en puntos y diferencia de gol → <b>pasa el mejor ubicado</b>. No hay penales.')
+    + '<div class="llaves">'+c2+'</div></section>'
+    + '<section class="ronda">'
+    + cab('Semifinales',
+          '<span class="chip doble">2 partidos</span><span class="chip sede">Vuelta: el mejor ubicado</span>',
+          'Los cuatro se reordenan: 1° con 4° y 2° con 3°. Serie igualada → <b>pasa el mejor ubicado</b>.')
+    + '<div class="llaves">'+c3+'</div></section>'
+    + '<section class="ronda">'
+    + cab('Final del Reducido',
+          '<span class="chip doble">2 partidos</span><span class="chip sede">Acá sí hay penales</span>',
+          'La ventaja deportiva <b>no corre</b>: si la serie termina igualada, se define desde el punto.')
+    + '<div class="llaves">'+c4+'</div></section>';
+
+  const a1 = document.getElementById('asc1'), a2 = document.getElementById('asc2');
+  a1.textContent = S.finalAsc ? T[S.finalAsc].n : 'Sin definir';
+  a1.className = 'val' + (S.finalAsc ? (S.finalAsc==='colon' ? ' ok colon' : ' ok') : '');
+  a2.textContent = S.finalRed ? T[S.finalRed].n : 'Sin definir';
+  a2.className = 'val' + (S.finalRed ? (S.finalRed==='colon' ? ' ok colon' : ' ok') : '');
+
+  const hechas = (S.finalAsc?1:0) + FASE1.filter(l=>S.f1[l.id]).length
+    + [0,1,2,3].filter(i=>S.cuartos[i]).length + [0,1].filter(i=>S.semis[i]).length + (S.finalRed?1:0);
+  document.getElementById('progreso').innerHTML = S.finalRed
+    ? ((S.finalAsc==='colon' || S.finalRed==='colon')
+        ? 'Escenario completo: <b>Colón asciende</b>.'
+        : 'Escenario completo: Colón <b>se queda</b>.')
+    : 'Llaves resueltas: <b>'+hechas+'</b> de 15';
+}
+
+// ================= interacción =================
+document.getElementById('bracket').addEventListener('click', function(e){
+  const el = e.target.closest('[data-act]');
+  if(!el) return;
+  const partes = el.dataset.act.split(':');
+  const tipo = partes[0], x = partes[1], y = partes[2];
+  if(tipo==='fa'){      S.finalAsc = x;  S.cuartos={}; S.semis={}; S.finalRed=null; }
+  else if(tipo==='f1'){ S.f1[x] = y;     S.cuartos={}; S.semis={}; S.finalRed=null; }
+  else if(tipo==='cu'){ S.cuartos[+x]=y; S.semis={};   S.finalRed=null; }
+  else if(tipo==='se'){ S.semis[+x]=y;   S.finalRed=null; }
+  else if(tipo==='fr'){ S.finalRed = x; }
+  render();
+});
+document.getElementById('reset').addEventListener('click', function(){
+  limpiar();
+  window.scrollTo({top:0, behavior:'smooth'});
+});
+
+// ================= arranque =================
+function pintarFuente(html, clase){
+  const f = document.getElementById('fuente');
+  f.className = 'fuente ' + (clase||'');
+  f.innerHTML = '<i class="pip"></i><span>' + html + '</span>';
+}
+const fechaCorta = iso => new Date(iso)
+  .toLocaleString('es-AR', {day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit'});
+
+async function arrancar(){
+  try{
+    const r = await fetch('data.json?t=' + Date.now());
+    if(!r.ok) throw new Error('sin data.json');
+    const d = await r.json();
+    armarDesdeTabla(d.zonas);
+    const horas = (Date.now() - new Date(d.actualizado)) / 36e5;
+    const v = d.verificados
+      ? ' · <span class="verif">'+d.verificados+' '
+        +(d.verificados===1?'valor corregido a mano':'valores corregidos a mano')+'</span>'
+      : '';
+    pintarFuente(horas > 30
+      ? 'Tabla del <b>'+fechaCorta(d.actualizado)+'</b>. Hace más de un día que no se actualiza.'
+      : 'Tabla al <b>'+fechaCorta(d.actualizado)+'</b> · '+d.fuente+v,
+      horas > 30 ? 'viejo' : 'ok');
+    limpiar();
+  }catch(e){
+    pintarFuente('No se pudo cargar la tabla. Revisá que data.json esté publicado.', 'viejo');
+  }
+}
+arrancar();
+</script>
+</body>
+</html>
