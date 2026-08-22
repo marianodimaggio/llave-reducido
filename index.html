@@ -52,8 +52,11 @@ h1 em{font-style:normal;color:var(--rojo)}
 .premio:last-child{border-right:0}
 .premio .lbl{font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
   color:var(--oro);margin-bottom:8px}
+.campeon{display:flex;align-items:center;gap:11px;min-height:46px}
+.escudo-gde{width:46px;height:46px;flex:none;object-fit:contain}
 .premio .val{font-family:'Bebas Neue',var(--sans);font-size:32px;line-height:1.05;
-  color:var(--borde2);letter-spacing:.01em}
+  color:var(--borde2);letter-spacing:.01em;min-width:0;
+  overflow-wrap:break-word;hyphens:auto}
 .premio .val.ok{color:var(--txt)}
 .premio .val.colon{color:var(--oro)}
 .premio .via{font-size:11.5px;color:var(--txt3);margin-top:7px;line-height:1.45}
@@ -142,6 +145,10 @@ details.info p{padding:0 14px 14px;font-size:14px;color:#E2D4AE;line-height:1.65
 footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
   font-size:12.5px;color:var(--txt3);line-height:1.75}
 
+@media(max-width:400px){
+  .campeon{flex-direction:column;align-items:flex-start;gap:7px}
+  .premio .val{font-size:28px}
+}
 @media(min-width:1180px){
   .wrap{padding:0 24px}
   header{padding:44px 0 26px}
@@ -188,12 +195,18 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
   <div class="premios">
     <div class="premio">
       <div class="lbl">Primer ascenso</div>
-      <div class="val" id="asc1">Sin definir</div>
+      <div class="campeon">
+        <img class="escudo-gde" id="esc1" alt="" hidden>
+        <span class="val" id="asc1">Sin definir</span>
+      </div>
       <div class="via">Gana la final entre los punteros de zona</div>
     </div>
     <div class="premio">
       <div class="lbl">Segundo ascenso</div>
-      <div class="val" id="asc2">Sin definir</div>
+      <div class="campeon">
+        <img class="escudo-gde" id="esc2" alt="" hidden>
+        <span class="val" id="asc2">Sin definir</span>
+      </div>
       <div class="via">Gana la final del Reducido</div>
     </div>
   </div>
@@ -307,6 +320,21 @@ const espera = (titulo,texto) => '<div class="espera"><span class="t">'+titulo+'
 const cab = (h2,chips,regla) => '<div class="ronda-cab"><h2>'+h2+'</h2>'
   + '<div class="chips">'+chips+'</div><p class="regla">'+regla+'</p></div>';
 
+function pintarCampeon(idTexto, idEscudo, equipo){
+  const txt = document.getElementById(idTexto);
+  const img = document.getElementById(idEscudo);
+  txt.textContent = equipo ? T[equipo].n : 'Sin definir';
+  txt.className = 'val' + (equipo ? (equipo==='colon' ? ' ok colon' : ' ok') : '');
+  if(equipo){
+    img.src = 'logos/' + equipo + '.png';
+    img.hidden = false;
+    img.onerror = () => { img.hidden = true; };
+  } else {
+    img.hidden = true;
+    img.removeAttribute('src');
+  }
+}
+
 function render(){
   const s8 = sembrados8(), s4 = sembrados4();
   const g = S.finalAsc, p = perdedorFinal();
@@ -409,11 +437,8 @@ function render(){
           'La ventaja deportiva <b>no corre</b>: si la serie termina igualada, se define desde el punto.')
     + '<div class="llaves">'+c4+'</div></section>';
 
-  const a1 = document.getElementById('asc1'), a2 = document.getElementById('asc2');
-  a1.textContent = S.finalAsc ? T[S.finalAsc].n : 'Sin definir';
-  a1.className = 'val' + (S.finalAsc ? (S.finalAsc==='colon' ? ' ok colon' : ' ok') : '');
-  a2.textContent = S.finalRed ? T[S.finalRed].n : 'Sin definir';
-  a2.className = 'val' + (S.finalRed ? (S.finalRed==='colon' ? ' ok colon' : ' ok') : '');
+  pintarCampeon('asc1', 'esc1', S.finalAsc);
+  pintarCampeon('asc2', 'esc2', S.finalRed);
 
   const hechas = (S.finalAsc?1:0) + FASE1.filter(l=>S.f1[l.id]).length
     + [0,1,2,3].filter(i=>S.cuartos[i]).length + [0,1].filter(i=>S.semis[i]).length + (S.finalRed?1:0);
