@@ -1,6 +1,6 @@
 {
   "estado": "error",
-  "detalle": "HTTP Error 403: Forbidden",
-  "intento": "2026-08-22T20:14:41+00:00",
+  "detalle": "nombres sin mapear (agregalos a ALIAS): Colón (Santa Fe), Estudiantes (Buenos Aires), Gimnasia y Esgrima (Jujuy), Mitre (Santiago del Estero), Racing (Córdoba), San Martín (San Juan), San Martín (Tucumán)",
+  "intento": "2026-08-22T20:21:47+00:00",
   "ultimo_ok": null
 }
