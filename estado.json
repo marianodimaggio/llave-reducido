@@ -1,10 +1,6 @@
 {
-  "estado": "error",
-  "detalle": [
-    "zona A: el puntero tiene 13 pts en 26 PJ. Muy poco para un lider: probablemente no estemos leyendo la columna de puntos, o sea otra temporada",
-    "zona B: el puntero tiene 14 pts en 25 PJ. Muy poco para un lider: probablemente no estemos leyendo la columna de puntos, o sea otra temporada",
-    "Agropecuario: los puntos de ESPN bajaron de 11 a 10"
-  ],
-  "intento": "2026-08-22T20:29:40+00:00",
-  "ultimo_ok": "2026-08-22T20:25:24+00:00"
+  "estado": "ok",
+  "intento": "2026-08-22T20:34:21+00:00",
+  "ultimo_ok": "2026-08-22T20:34:21+00:00",
+  "correcciones_aplicadas": []
 }

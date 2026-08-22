@@ -1,194 +1,44 @@
 {
- "actualizado": "2026-08-22T20:25:24+00:00",
+ "actualizado": "2026-08-22T20:34:21+00:00",
  "fuente": "ESPN arg.2",
+ "version": 2,
  "verificados": 0,
  "zonas": {
   "A": [
    {
-    "id": "acassuso",
-    "nombre": "Acassuso",
-    "espn": "Acassuso",
+    "id": "ferro",
+    "nombre": "Ferro",
+    "espn": "Ferro Carril Oeste",
     "pj": 25,
-    "pts": 13,
-    "gf": 18,
-    "gc": 30,
+    "pts": 49,
+    "gf": 31,
+    "gc": 23,
+    "rank_espn": 1,
     "pos": 1,
-    "dif": -12
-   },
-   {
-    "id": "chacoforever",
-    "nombre": "Chaco For Ever",
-    "espn": "Chaco For Ever",
-    "pj": 24,
-    "pts": 12,
-    "gf": 21,
-    "gc": 29,
-    "pos": 2,
-    "dif": -8
-   },
-   {
-    "id": "santelmo",
-    "nombre": "San Telmo",
-    "espn": "San Telmo",
-    "pj": 25,
-    "pts": 11,
-    "gf": 20,
-    "gc": 29,
-    "pos": 3,
-    "dif": -9
-   },
-   {
-    "id": "racingcba",
-    "nombre": "Racing (Cba)",
-    "espn": "Racing (Córdoba)",
-    "pj": 25,
-    "pts": 10,
-    "gf": 23,
-    "gc": 28,
-    "pos": 4,
-    "dif": -5
-   },
-   {
-    "id": "centralnorte",
-    "nombre": "Central Norte",
-    "espn": "Central Norte",
-    "pj": 24,
-    "pts": 10,
-    "gf": 15,
-    "gc": 24,
-    "pos": 5,
-    "dif": -9
-   },
-   {
-    "id": "mitre",
-    "nombre": "Mitre (SdE)",
-    "espn": "Mitre (Santiago del Estero)",
-    "pj": 26,
-    "pts": 9,
-    "gf": 25,
-    "gc": 33,
-    "pos": 6,
-    "dif": -8
-   },
-   {
-    "id": "estudiantesc",
-    "nombre": "Estudiantes (C)",
-    "espn": "Estudiantes (Buenos Aires)",
-    "pj": 25,
-    "pts": 8,
-    "gf": 22,
-    "gc": 20,
-    "pos": 7,
-    "dif": 2
-   },
-   {
-    "id": "defbelgrano",
-    "nombre": "Def. de Belgrano",
-    "espn": "Defensores de Belgrano",
-    "pj": 24,
-    "pts": 8,
-    "gf": 16,
-    "gc": 21,
-    "pos": 8,
-    "dif": -5
-   },
-   {
-    "id": "allboys",
-    "nombre": "All Boys",
-    "espn": "All Boys",
-    "pj": 25,
-    "pts": 8,
-    "gf": 15,
-    "gc": 23,
-    "pos": 9,
-    "dif": -8
-   },
-   {
-    "id": "godoy",
-    "nombre": "Godoy Cruz",
-    "espn": "Godoy Cruz Antonio Tomba",
-    "pj": 25,
-    "pts": 7,
-    "gf": 29,
-    "gc": 22,
-    "pos": 10,
-    "dif": 7
-   },
-   {
-    "id": "losandes",
-    "nombre": "Los Andes",
-    "espn": "Los Andes",
-    "pj": 24,
-    "pts": 7,
-    "gf": 20,
-    "gc": 14,
-    "pos": 11,
-    "dif": 6
-   },
-   {
-    "id": "almirante",
-    "nombre": "Almirante Brown",
-    "espn": "Almirante Brown",
-    "pj": 25,
-    "pts": 7,
-    "gf": 20,
-    "gc": 16,
-    "pos": 12,
-    "dif": 4
-   },
-   {
-    "id": "bolivar",
-    "nombre": "Cdad. de Bolívar",
-    "espn": "Ciudad de Bolívar",
-    "pj": 25,
-    "pts": 7,
-    "gf": 21,
-    "gc": 22,
-    "pos": 13,
-    "dif": -1
-   },
-   {
-    "id": "sanmiguel",
-    "nombre": "San Miguel",
-    "espn": "San Miguel",
-    "pj": 24,
-    "pts": 7,
-    "gf": 19,
-    "gc": 23,
-    "pos": 14,
-    "dif": -4
+    "dif": 8
    },
    {
     "id": "moron",
     "nombre": "Dep. Morón",
     "espn": "Deportivo Morón",
     "pj": 25,
-    "pts": 6,
+    "pts": 45,
     "gf": 41,
     "gc": 24,
-    "pos": 15,
+    "rank_espn": 2,
+    "pos": 2,
     "dif": 17
-   },
-   {
-    "id": "ferro",
-    "nombre": "Ferro",
-    "espn": "Ferro Carril Oeste",
-    "pj": 25,
-    "pts": 6,
-    "gf": 31,
-    "gc": 23,
-    "pos": 16,
-    "dif": 8
    },
    {
     "id": "colon",
     "nombre": "Colón",
     "espn": "Colón (Santa Fe)",
     "pj": 25,
-    "pts": 5,
+    "pts": 42,
     "gf": 32,
     "gc": 19,
-    "pos": 17,
+    "rank_espn": 3,
+    "pos": 3,
     "dif": 13
    },
    {
@@ -196,89 +46,217 @@
     "nombre": "Dep. Madryn",
     "espn": "Deportivo Madryn",
     "pj": 25,
-    "pts": 5,
+    "pts": 40,
     "gf": 36,
     "gc": 24,
-    "pos": 18,
+    "rank_espn": 4,
+    "pos": 4,
     "dif": 12
+   },
+   {
+    "id": "godoy",
+    "nombre": "Godoy Cruz",
+    "espn": "Godoy Cruz Antonio Tomba",
+    "pj": 25,
+    "pts": 40,
+    "gf": 29,
+    "gc": 22,
+    "rank_espn": 5,
+    "pos": 5,
+    "dif": 7
+   },
+   {
+    "id": "almirante",
+    "nombre": "Almirante Brown",
+    "espn": "Almirante Brown",
+    "pj": 25,
+    "pts": 38,
+    "gf": 20,
+    "gc": 16,
+    "rank_espn": 6,
+    "pos": 6,
+    "dif": 4
+   },
+   {
+    "id": "estudiantesc",
+    "nombre": "Estudiantes (C)",
+    "espn": "Estudiantes (Buenos Aires)",
+    "pj": 25,
+    "pts": 35,
+    "gf": 22,
+    "gc": 20,
+    "rank_espn": 7,
+    "pos": 7,
+    "dif": 2
+   },
+   {
+    "id": "bolivar",
+    "nombre": "Cdad. de Bolívar",
+    "espn": "Ciudad de Bolívar",
+    "pj": 25,
+    "pts": 34,
+    "gf": 21,
+    "gc": 22,
+    "rank_espn": 8,
+    "pos": 8,
+    "dif": -1
+   },
+   {
+    "id": "losandes",
+    "nombre": "Los Andes",
+    "espn": "Los Andes",
+    "pj": 24,
+    "pts": 33,
+    "gf": 20,
+    "gc": 14,
+    "rank_espn": 9,
+    "pos": 9,
+    "dif": 6
+   },
+   {
+    "id": "racingcba",
+    "nombre": "Racing (Cba)",
+    "espn": "Racing (Córdoba)",
+    "pj": 25,
+    "pts": 31,
+    "gf": 23,
+    "gc": 28,
+    "rank_espn": 10,
+    "pos": 10,
+    "dif": -5
+   },
+   {
+    "id": "sanmiguel",
+    "nombre": "San Miguel",
+    "espn": "San Miguel",
+    "pj": 24,
+    "pts": 29,
+    "gf": 19,
+    "gc": 23,
+    "rank_espn": 11,
+    "pos": 11,
+    "dif": -4
+   },
+   {
+    "id": "mitre",
+    "nombre": "Mitre (SdE)",
+    "espn": "Mitre (Santiago del Estero)",
+    "pj": 26,
+    "pts": 29,
+    "gf": 25,
+    "gc": 33,
+    "rank_espn": 12,
+    "pos": 12,
+    "dif": -8
+   },
+   {
+    "id": "allboys",
+    "nombre": "All Boys",
+    "espn": "All Boys",
+    "pj": 25,
+    "pts": 27,
+    "gf": 15,
+    "gc": 23,
+    "rank_espn": 13,
+    "pos": 13,
+    "dif": -8
+   },
+   {
+    "id": "defbelgrano",
+    "nombre": "Def. de Belgrano",
+    "espn": "Defensores de Belgrano",
+    "pj": 24,
+    "pts": 26,
+    "gf": 16,
+    "gc": 21,
+    "rank_espn": 14,
+    "pos": 14,
+    "dif": -5
+   },
+   {
+    "id": "santelmo",
+    "nombre": "San Telmo",
+    "espn": "San Telmo",
+    "pj": 25,
+    "pts": 24,
+    "gf": 20,
+    "gc": 29,
+    "rank_espn": 15,
+    "pos": 15,
+    "dif": -9
+   },
+   {
+    "id": "centralnorte",
+    "nombre": "Central Norte",
+    "espn": "Central Norte",
+    "pj": 24,
+    "pts": 24,
+    "gf": 15,
+    "gc": 24,
+    "rank_espn": 16,
+    "pos": 16,
+    "dif": -9
+   },
+   {
+    "id": "chacoforever",
+    "nombre": "Chaco For Ever",
+    "espn": "Chaco For Ever",
+    "pj": 24,
+    "pts": 22,
+    "gf": 21,
+    "gc": 29,
+    "rank_espn": 17,
+    "pos": 17,
+    "dif": -8
+   },
+   {
+    "id": "acassuso",
+    "nombre": "Acassuso",
+    "espn": "Acassuso",
+    "pj": 25,
+    "pts": 22,
+    "gf": 18,
+    "gc": 30,
+    "rank_espn": 18,
+    "pos": 18,
+    "dif": -12
    }
   ],
   "B": [
    {
-    "id": "guemes",
-    "nombre": "Güemes",
-    "espn": "Güemes",
+    "id": "tristan",
+    "nombre": "Tristán Suárez",
+    "espn": "Tristán Suárez",
     "pj": 25,
-    "pts": 14,
-    "gf": 21,
-    "gc": 43,
+    "pts": 48,
+    "gf": 28,
+    "gc": 13,
+    "rank_espn": 1,
     "pos": 1,
-    "dif": -22
+    "dif": 15
    },
    {
-    "id": "chacarita",
-    "nombre": "Chacarita",
-    "espn": "Chacarita Juniors",
+    "id": "gimnasiaj",
+    "nombre": "Gimnasia (J)",
+    "espn": "Gimnasia y Esgrima (Jujuy)",
     "pj": 25,
-    "pts": 12,
-    "gf": 18,
-    "gc": 26,
-    "pos": 2,
-    "dif": -8
-   },
-   {
-    "id": "agropecuario",
-    "nombre": "Agropecuario",
-    "espn": "Agropecuario",
-    "pj": 26,
-    "pts": 11,
-    "gf": 22,
-    "gc": 30,
-    "pos": 3,
-    "dif": -8
-   },
-   {
-    "id": "almagro",
-    "nombre": "Almagro",
-    "espn": "Almagro",
-    "pj": 25,
-    "pts": 11,
-    "gf": 21,
+    "pts": 44,
+    "gf": 36,
     "gc": 29,
-    "pos": 4,
-    "dif": -8
+    "rank_espn": 2,
+    "pos": 2,
+    "dif": 7
    },
    {
-    "id": "maipu",
-    "nombre": "Dep. Maipú",
-    "espn": "Deportivo Maipú",
+    "id": "temperley",
+    "nombre": "Temperley",
+    "espn": "Temperley",
     "pj": 25,
-    "pts": 10,
-    "gf": 33,
-    "gc": 27,
-    "pos": 5,
-    "dif": 6
-   },
-   {
-    "id": "colegiales",
-    "nombre": "Colegiales",
-    "espn": "Colegiales",
-    "pj": 24,
-    "pts": 10,
-    "gf": 23,
-    "gc": 25,
-    "pos": 6,
-    "dif": -2
-   },
-   {
-    "id": "quilmes",
-    "nombre": "Quilmes",
-    "espn": "Quilmes",
-    "pj": 25,
-    "pts": 9,
+    "pts": 40,
     "gf": 27,
     "gc": 21,
-    "pos": 7,
+    "rank_espn": 3,
+    "pos": 3,
     "dif": 6
    },
    {
@@ -286,338 +264,397 @@
     "nombre": "Atlanta",
     "espn": "Atlanta",
     "pj": 24,
-    "pts": 9,
+    "pts": 39,
     "gf": 30,
     "gc": 25,
-    "pos": 8,
+    "rank_espn": 4,
+    "pos": 4,
     "dif": 5
-   },
-   {
-    "id": "nuevachicago",
-    "nombre": "Nueva Chicago",
-    "espn": "Nueva Chicago",
-    "pj": 24,
-    "pts": 9,
-    "gf": 20,
-    "gc": 23,
-    "pos": 9,
-    "dif": -3
-   },
-   {
-    "id": "sanmartinsj",
-    "nombre": "San Martín (SJ)",
-    "espn": "San Martín (San Juan)",
-    "pj": 23,
-    "pts": 8,
-    "gf": 23,
-    "gc": 23,
-    "pos": 10,
-    "dif": 0
-   },
-   {
-    "id": "rafaela",
-    "nombre": "At. Rafaela",
-    "espn": "Atletico Rafaela",
-    "pj": 25,
-    "pts": 8,
-    "gf": 18,
-    "gc": 19,
-    "pos": 11,
-    "dif": -1
-   },
-   {
-    "id": "patronato",
-    "nombre": "Patronato",
-    "espn": "Patronato",
-    "pj": 24,
-    "pts": 8,
-    "gf": 18,
-    "gc": 26,
-    "pos": 12,
-    "dif": -8
-   },
-   {
-    "id": "gimnasiaj",
-    "nombre": "Gimnasia (J)",
-    "espn": "Gimnasia y Esgrima (Jujuy)",
-    "pj": 25,
-    "pts": 7,
-    "gf": 36,
-    "gc": 29,
-    "pos": 13,
-    "dif": 7
-   },
-   {
-    "id": "gyt",
-    "nombre": "Gimnasia y Tiro",
-    "espn": "Gimnasia y Tiro (Salta)",
-    "pj": 25,
-    "pts": 7,
-    "gf": 26,
-    "gc": 22,
-    "pos": 14,
-    "dif": 4
-   },
-   {
-    "id": "sanmartint",
-    "nombre": "San Martín (T)",
-    "espn": "San Martín (Tucumán)",
-    "pj": 25,
-    "pts": 7,
-    "gf": 24,
-    "gc": 22,
-    "pos": 15,
-    "dif": 2
    },
    {
     "id": "midland",
     "nombre": "Midland",
     "espn": "Midland",
     "pj": 24,
-    "pts": 6,
+    "pts": 38,
     "gf": 26,
     "gc": 17,
-    "pos": 16,
+    "rank_espn": 5,
+    "pos": 5,
     "dif": 9
    },
    {
-    "id": "temperley",
-    "nombre": "Temperley",
-    "espn": "Temperley",
+    "id": "gyt",
+    "nombre": "Gimnasia y Tiro",
+    "espn": "Gimnasia y Tiro (Salta)",
     "pj": 25,
-    "pts": 5,
-    "gf": 27,
-    "gc": 21,
-    "pos": 17,
+    "pts": 38,
+    "gf": 26,
+    "gc": 22,
+    "rank_espn": 6,
+    "pos": 6,
+    "dif": 4
+   },
+   {
+    "id": "maipu",
+    "nombre": "Dep. Maipú",
+    "espn": "Deportivo Maipú",
+    "pj": 25,
+    "pts": 35,
+    "gf": 33,
+    "gc": 27,
+    "rank_espn": 7,
+    "pos": 7,
     "dif": 6
    },
    {
-    "id": "tristan",
-    "nombre": "Tristán Suárez",
-    "espn": "Tristán Suárez",
+    "id": "rafaela",
+    "nombre": "At. Rafaela",
+    "espn": "Atletico Rafaela",
     "pj": 25,
-    "pts": 3,
-    "gf": 28,
-    "gc": 13,
+    "pts": 35,
+    "gf": 18,
+    "gc": 19,
+    "rank_espn": 8,
+    "pos": 8,
+    "dif": -1
+   },
+   {
+    "id": "quilmes",
+    "nombre": "Quilmes",
+    "espn": "Quilmes",
+    "pj": 25,
+    "pts": 32,
+    "gf": 27,
+    "gc": 21,
+    "rank_espn": 9,
+    "pos": 9,
+    "dif": 6
+   },
+   {
+    "id": "sanmartint",
+    "nombre": "San Martín (T)",
+    "espn": "San Martín (Tucumán)",
+    "pj": 25,
+    "pts": 32,
+    "gf": 24,
+    "gc": 22,
+    "rank_espn": 10,
+    "pos": 10,
+    "dif": 2
+   },
+   {
+    "id": "colegiales",
+    "nombre": "Colegiales",
+    "espn": "Colegiales",
+    "pj": 24,
+    "pts": 30,
+    "gf": 23,
+    "gc": 25,
+    "rank_espn": 11,
+    "pos": 11,
+    "dif": -2
+   },
+   {
+    "id": "almagro",
+    "nombre": "Almagro",
+    "espn": "Almagro",
+    "pj": 25,
+    "pts": 30,
+    "gf": 21,
+    "gc": 29,
+    "rank_espn": 12,
+    "pos": 12,
+    "dif": -8
+   },
+   {
+    "id": "sanmartinsj",
+    "nombre": "San Martín (SJ)",
+    "espn": "San Martín (San Juan)",
+    "pj": 23,
+    "pts": 29,
+    "gf": 23,
+    "gc": 23,
+    "rank_espn": 13,
+    "pos": 13,
+    "dif": 0
+   },
+   {
+    "id": "nuevachicago",
+    "nombre": "Nueva Chicago",
+    "espn": "Nueva Chicago",
+    "pj": 24,
+    "pts": 29,
+    "gf": 20,
+    "gc": 23,
+    "rank_espn": 14,
+    "pos": 14,
+    "dif": -3
+   },
+   {
+    "id": "agropecuario",
+    "nombre": "Agropecuario",
+    "espn": "Agropecuario",
+    "pj": 26,
+    "pts": 29,
+    "gf": 22,
+    "gc": 30,
+    "rank_espn": 15,
+    "pos": 15,
+    "dif": -8
+   },
+   {
+    "id": "chacarita",
+    "nombre": "Chacarita",
+    "espn": "Chacarita Juniors",
+    "pj": 25,
+    "pts": 27,
+    "gf": 18,
+    "gc": 26,
+    "rank_espn": 16,
+    "pos": 16,
+    "dif": -8
+   },
+   {
+    "id": "patronato",
+    "nombre": "Patronato",
+    "espn": "Patronato",
+    "pj": 24,
+    "pts": 24,
+    "gf": 18,
+    "gc": 26,
+    "rank_espn": 17,
+    "pos": 17,
+    "dif": -8
+   },
+   {
+    "id": "guemes",
+    "nombre": "Güemes",
+    "espn": "Güemes",
+    "pj": 25,
+    "pts": 21,
+    "gf": 21,
+    "gc": 43,
+    "rank_espn": 18,
     "pos": 18,
-    "dif": 15
+    "dif": -22
    }
   ]
  },
  "crudo": {
   "colon": {
    "pj": 25,
-   "pts": 5,
+   "pts": 42,
    "gf": 32,
    "gc": 19
   },
   "losandes": {
    "pj": 24,
-   "pts": 7,
+   "pts": 33,
    "gf": 20,
    "gc": 14
   },
   "godoy": {
    "pj": 25,
-   "pts": 7,
+   "pts": 40,
    "gf": 29,
    "gc": 22
   },
   "almirante": {
    "pj": 25,
-   "pts": 7,
+   "pts": 38,
    "gf": 20,
    "gc": 16
   },
   "ferro": {
    "pj": 25,
-   "pts": 6,
+   "pts": 49,
    "gf": 31,
    "gc": 23
   },
   "allboys": {
    "pj": 25,
-   "pts": 8,
+   "pts": 27,
    "gf": 15,
    "gc": 23
   },
   "sanmiguel": {
    "pj": 24,
-   "pts": 7,
+   "pts": 29,
    "gf": 19,
    "gc": 23
   },
   "acassuso": {
    "pj": 25,
-   "pts": 13,
+   "pts": 22,
    "gf": 18,
    "gc": 30
   },
   "defbelgrano": {
    "pj": 24,
-   "pts": 8,
+   "pts": 26,
    "gf": 16,
    "gc": 21
   },
   "moron": {
    "pj": 25,
-   "pts": 6,
+   "pts": 45,
    "gf": 41,
    "gc": 24
   },
   "santelmo": {
    "pj": 25,
-   "pts": 11,
+   "pts": 24,
    "gf": 20,
    "gc": 29
   },
   "chacoforever": {
    "pj": 24,
-   "pts": 12,
+   "pts": 22,
    "gf": 21,
    "gc": 29
   },
   "mitre": {
    "pj": 26,
-   "pts": 9,
+   "pts": 29,
    "gf": 25,
    "gc": 33
   },
   "centralnorte": {
    "pj": 24,
-   "pts": 10,
+   "pts": 24,
    "gf": 15,
    "gc": 24
   },
   "estudiantesc": {
    "pj": 25,
-   "pts": 8,
+   "pts": 35,
    "gf": 22,
    "gc": 20
   },
   "madryn": {
    "pj": 25,
-   "pts": 5,
+   "pts": 40,
    "gf": 36,
    "gc": 24
   },
   "racingcba": {
    "pj": 25,
-   "pts": 10,
+   "pts": 31,
    "gf": 23,
    "gc": 28
   },
   "bolivar": {
    "pj": 25,
-   "pts": 7,
+   "pts": 34,
    "gf": 21,
    "gc": 22
   },
   "almagro": {
    "pj": 25,
-   "pts": 11,
+   "pts": 30,
    "gf": 21,
    "gc": 29
   },
   "chacarita": {
    "pj": 25,
-   "pts": 12,
+   "pts": 27,
    "gf": 18,
    "gc": 26
   },
   "nuevachicago": {
    "pj": 24,
-   "pts": 9,
+   "pts": 29,
    "gf": 20,
    "gc": 23
   },
   "quilmes": {
    "pj": 25,
-   "pts": 9,
+   "pts": 32,
    "gf": 27,
    "gc": 21
   },
   "gimnasiaj": {
    "pj": 25,
-   "pts": 7,
+   "pts": 44,
    "gf": 36,
    "gc": 29
   },
   "sanmartinsj": {
    "pj": 23,
-   "pts": 8,
+   "pts": 29,
    "gf": 23,
    "gc": 23
   },
   "rafaela": {
    "pj": 25,
-   "pts": 8,
+   "pts": 35,
    "gf": 18,
    "gc": 19
   },
   "midland": {
    "pj": 24,
-   "pts": 6,
+   "pts": 38,
    "gf": 26,
    "gc": 17
   },
   "atlanta": {
    "pj": 24,
-   "pts": 9,
+   "pts": 39,
    "gf": 30,
    "gc": 25
   },
   "colegiales": {
    "pj": 24,
-   "pts": 10,
+   "pts": 30,
    "gf": 23,
    "gc": 25
   },
   "temperley": {
    "pj": 25,
-   "pts": 5,
+   "pts": 40,
    "gf": 27,
    "gc": 21
   },
   "tristan": {
    "pj": 25,
-   "pts": 3,
+   "pts": 48,
    "gf": 28,
    "gc": 13
   },
   "patronato": {
    "pj": 24,
-   "pts": 8,
+   "pts": 24,
    "gf": 18,
    "gc": 26
   },
   "gyt": {
    "pj": 25,
-   "pts": 7,
+   "pts": 38,
    "gf": 26,
    "gc": 22
   },
   "maipu": {
    "pj": 25,
-   "pts": 10,
+   "pts": 35,
    "gf": 33,
    "gc": 27
   },
   "agropecuario": {
    "pj": 26,
-   "pts": 11,
+   "pts": 29,
    "gf": 22,
    "gc": 30
   },
   "sanmartint": {
    "pj": 25,
-   "pts": 7,
+   "pts": 32,
    "gf": 24,
    "gc": 22
   },
   "guemes": {
    "pj": 25,
-   "pts": 14,
+   "pts": 21,
    "gf": 21,
    "gc": 43
   }
