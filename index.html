@@ -151,6 +151,8 @@ details.info p{padding:0 14px 14px;font-size:14px;color:#E2D4AE;line-height:1.65
   font-variant-numeric:tabular-nums}
 .eq .nombre{font-size:16.5px;font-weight:600;letter-spacing:-.01em;flex:1;min-width:0;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.eq .origen{display:block;font-size:11px;font-weight:400;color:var(--txt3);
+  letter-spacing:0;margin-top:2px}
 .eq.colon .nombre{color:var(--oro)}
 .eq .vent{font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
   color:var(--oro);border:1px solid #4A3C1C;border-radius:6px;padding:3px 5px;flex:none}
@@ -359,13 +361,14 @@ function fila(id, o){
   const vent = (o.ventaja && o.estado!=='pierde') ? '<span class="vent">Ventaja</span>' : '';
   const pick = '<span class="pick"></span>';
   const chk = t.verificado ? '<span class="chequeo" title="'+(t.notas||[]).join(' · ')+'">*</span>' : '';
+  const orig = o.origen ? '<span class="origen">'+o.origen+'</span>' : '';
   // si el archivo no esta, la imagen se oculta sola y la fila no se rompe
   const escudo = '<img class="escudo" src="logos/'+id+'.png" alt="" loading="lazy" '
                + 'onerror="this.style.visibility=\'hidden\'">';
   return '<button type="button" class="'+cls.join(' ')+'" data-act="'+o.act+'"'
        + ' aria-pressed="'+(o.estado==='gana')+'">'
        + escudo + '<span class="pos">'+o.pos+'</span>'
-       + '<span class="nombre">'+t.n+chk+'</span>'+vent+pick+'</button>';
+       + '<span class="nombre">'+t.n+chk+orig+'</span>'+vent+pick+'</button>';
 }
 
 const espera = (titulo,texto) => '<div class="espera"><span class="t">'+titulo+'</span>'+texto+'</div>';
@@ -436,10 +439,12 @@ function render(){
     c2 = cruces(s8,[[0,7],[1,6],[2,5],[3,4]]).map(function(cr,i){
       const w = S.cuartos[i];
       const conColon = (cr.top==='colon'||cr.bot==='colon');
-      return '<div class="m '+(conColon?'colon':'')+marca('cu:'+i)+'"><div class="tag">'+cr.rot+tocar('cu:'+i)+'</div>'
+      return '<div class="m '+(conColon?'colon':'')+marca('cu:'+i)+'"><div class="tag">'+cr.rot+' de la tabla general'+tocar('cu:'+i)+'</div>'
         + fila(cr.top, {pos:(s8.indexOf(cr.top)+1)+'°', act:'cu:'+i+':'+cr.top, ventaja:true,
+                        origen:T[cr.top].pos+'° de la Zona '+T[cr.top].z,
                         estado: w ? (w===cr.top?'gana':'pierde') : null})
         + fila(cr.bot, {pos:(s8.indexOf(cr.bot)+1)+'°', act:'cu:'+i+':'+cr.bot,
+                        origen:T[cr.bot].pos+'° de la Zona '+T[cr.bot].z,
                         estado: w ? (w===cr.bot?'gana':'pierde') : null})
         + '</div>';
     }).join('');
@@ -452,10 +457,12 @@ function render(){
     c3 = cruces(s4,[[0,3],[1,2]]).map(function(cr,i){
       const w = S.semis[i];
       const conColon = (cr.top==='colon'||cr.bot==='colon');
-      return '<div class="m '+(conColon?'colon':'')+marca('se:'+i)+'"><div class="tag">'+cr.rot+tocar('se:'+i)+'</div>'
+      return '<div class="m '+(conColon?'colon':'')+marca('se:'+i)+'"><div class="tag">'+cr.rot+' de la tabla general'+tocar('se:'+i)+'</div>'
         + fila(cr.top, {pos:(s4.indexOf(cr.top)+1)+'°', act:'se:'+i+':'+cr.top, ventaja:true,
+                        origen:T[cr.top].pos+'° de la Zona '+T[cr.top].z,
                         estado: w ? (w===cr.top?'gana':'pierde') : null})
         + fila(cr.bot, {pos:(s4.indexOf(cr.bot)+1)+'°', act:'se:'+i+':'+cr.bot,
+                        origen:T[cr.bot].pos+'° de la Zona '+T[cr.bot].z,
                         estado: w ? (w===cr.bot?'gana':'pierde') : null})
         + '</div>';
     }).join('');
