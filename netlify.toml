@@ -1,0 +1,5 @@
+# El sitio es HTML plano: no hay nada que compilar.
+[build]
+  publish = "."
+  functions = "netlify/functions"
+  command = ""
