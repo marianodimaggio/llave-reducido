@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-23T06:50:02+00:00",
+ "actualizado": "2026-08-23T09:32:42+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -81,13 +81,13 @@
     "id": "estudiantesc",
     "nombre": "Estudiantes (C)",
     "espn": "Estudiantes (Buenos Aires)",
-    "pj": 25,
+    "pj": 26,
     "pts": 35,
-    "gf": 22,
-    "gc": 20,
+    "gf": 23,
+    "gc": 22,
     "rank_espn": 7,
     "pos": 7,
-    "dif": 2
+    "dif": 1
    },
    {
     "id": "bolivar",
@@ -150,6 +150,18 @@
     "dif": -8
    },
    {
+    "id": "centralnorte",
+    "nombre": "Central Norte",
+    "espn": "Central Norte",
+    "pj": 25,
+    "pts": 27,
+    "gf": 17,
+    "gc": 25,
+    "rank_espn": 13,
+    "pos": 13,
+    "dif": -8
+   },
+   {
     "id": "allboys",
     "nombre": "All Boys",
     "espn": "All Boys",
@@ -157,8 +169,8 @@
     "pts": 27,
     "gf": 15,
     "gc": 23,
-    "rank_espn": 13,
-    "pos": 13,
+    "rank_espn": 14,
+    "pos": 14,
     "dif": -8
    },
    {
@@ -169,8 +181,8 @@
     "pts": 26,
     "gf": 16,
     "gc": 23,
-    "rank_espn": 14,
-    "pos": 14,
+    "rank_espn": 15,
+    "pos": 15,
     "dif": -7
    },
    {
@@ -181,8 +193,8 @@
     "pts": 25,
     "gf": 22,
     "gc": 29,
-    "rank_espn": 15,
-    "pos": 15,
+    "rank_espn": 16,
+    "pos": 16,
     "dif": -7
    },
    {
@@ -193,18 +205,6 @@
     "pts": 24,
     "gf": 20,
     "gc": 29,
-    "rank_espn": 16,
-    "pos": 16,
-    "dif": -9
-   },
-   {
-    "id": "centralnorte",
-    "nombre": "Central Norte",
-    "espn": "Central Norte",
-    "pj": 24,
-    "pts": 24,
-    "gf": 15,
-    "gc": 24,
     "rank_espn": 17,
     "pos": 17,
     "dif": -9
@@ -521,16 +521,16 @@
    "gc": 33
   },
   "centralnorte": {
-   "pj": 24,
-   "pts": 24,
-   "gf": 15,
-   "gc": 24
+   "pj": 25,
+   "pts": 27,
+   "gf": 17,
+   "gc": 25
   },
   "estudiantesc": {
-   "pj": 25,
+   "pj": 26,
    "pts": 35,
-   "gf": 22,
-   "gc": 20
+   "gf": 23,
+   "gc": 22
   },
   "madryn": {
    "pj": 25,
