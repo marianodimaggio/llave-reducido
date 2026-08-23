@@ -1,14 +1,22 @@
 {
-  "name": "Llave del Reducido · Primera Nacional 2026",
-  "short_name": "La Llave",
-  "description": "Simulá los dos ascensos de la Primera Nacional.",
+  "name": "Simulá los dos ascensos · Primera Nacional 2026",
+  "short_name": "Dos ascensos",
+  "description": "Simulá la final por el primer ascenso y todo el Reducido de la Primera Nacional.",
   "lang": "es-AR",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#0A0A0B",
   "theme_color": "#0A0A0B",
   "icons": [
-    { "src": "icono-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icono-512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "icono-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icono-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }
