@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-22T21:27:09+00:00",
+ "actualizado": "2026-08-23T01:44:29+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -105,13 +105,13 @@
     "id": "losandes",
     "nombre": "Los Andes",
     "espn": "Los Andes",
-    "pj": 24,
+    "pj": 25,
     "pts": 33,
     "gf": 20,
-    "gc": 14,
+    "gc": 15,
     "rank_espn": 9,
     "pos": 9,
-    "dif": 6
+    "dif": 5
    },
    {
     "id": "racingcba",
@@ -174,6 +174,18 @@
     "dif": -7
    },
    {
+    "id": "chacoforever",
+    "nombre": "Chaco For Ever",
+    "espn": "Chaco For Ever",
+    "pj": 25,
+    "pts": 25,
+    "gf": 22,
+    "gc": 29,
+    "rank_espn": 15,
+    "pos": 15,
+    "dif": -7
+   },
+   {
     "id": "santelmo",
     "nombre": "San Telmo",
     "espn": "San Telmo",
@@ -181,8 +193,8 @@
     "pts": 24,
     "gf": 20,
     "gc": 29,
-    "rank_espn": 15,
-    "pos": 15,
+    "rank_espn": 16,
+    "pos": 16,
     "dif": -9
    },
    {
@@ -193,21 +205,9 @@
     "pts": 24,
     "gf": 15,
     "gc": 24,
-    "rank_espn": 16,
-    "pos": 16,
-    "dif": -9
-   },
-   {
-    "id": "chacoforever",
-    "nombre": "Chaco For Ever",
-    "espn": "Chaco For Ever",
-    "pj": 24,
-    "pts": 22,
-    "gf": 21,
-    "gc": 29,
     "rank_espn": 17,
     "pos": 17,
-    "dif": -8
+    "dif": -9
    },
    {
     "id": "acassuso",
@@ -449,10 +449,10 @@
    "gc": 20
   },
   "losandes": {
-   "pj": 24,
+   "pj": 25,
    "pts": 33,
    "gf": 20,
-   "gc": 14
+   "gc": 15
   },
   "godoy": {
    "pj": 25,
@@ -509,9 +509,9 @@
    "gc": 29
   },
   "chacoforever": {
-   "pj": 24,
-   "pts": 22,
-   "gf": 21,
+   "pj": 25,
+   "pts": 25,
+   "gf": 22,
    "gc": 29
   },
   "mitre": {
