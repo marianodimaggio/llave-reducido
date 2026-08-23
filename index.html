@@ -109,7 +109,9 @@ details.info summary{list-style:none;cursor:pointer;padding:13px 14px;
 details.info summary::-webkit-details-marker{display:none}
 details.info summary::after{content:"+";font-size:18px;line-height:1}
 details.info[open] summary::after{content:"\2212"}
-details.info p{padding:0 14px 14px;font-size:14px;color:#E2D4AE;line-height:1.65}
+details.info p{padding:0 14px 12px;font-size:14px;color:#E2D4AE;line-height:1.65}
+details.info p:last-child{padding-bottom:14px}
+details.info p b{color:var(--oro);font-weight:700}
 
 .bracket{display:flex;flex-direction:column;gap:26px}
 .ronda{min-width:0}
@@ -239,7 +241,8 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
 
 <details class="info">
   <summary>¿Por qué los cruces de cuartos no están todavía?</summary>
-  <p>Porque el reglamento reordena a los clasificados después de cada ronda. Terminada la primera fase, los siete ganadores más el perdedor de la final se ordenan en una tabla general —primero pesa la posición en la zona, después puntos, diferencia de gol y goles a favor— y recién ahí se cruzan 1-8, 2-7, 3-6 y 4-5. En semis se vuelven a reordenar. Al perdedor de la final se lo cuenta siempre como 1°.</p>
+  <p>Porque el reglamento vuelve a ordenar a los que siguen vivos después de cada ronda. Terminada la primera fase, los siete ganadores más el perdedor de la final se ordenan del 1° al 8° y recién ahí se cruzan 1-8, 2-7, 3-6 y 4-5. En semis se repite con los cuatro que quedan. Al perdedor de la final se lo cuenta siempre como 1°.</p>
+  <p><b>No es una tabla de los 36 sumando puntos.</b> Lo primero que pesa es la posición que cada uno tuvo en su zona: un 3° va siempre delante de un 4°, aunque el 4° tenga más puntos. Los puntos, la diferencia de gol y los goles a favor solo desempatan entre equipos que terminaron en la misma posición, como los dos terceros o los dos quintos.</p>
 </details>
 
 <div class="bracket" id="bracket"></div>
@@ -439,7 +442,7 @@ function render(){
     c2 = cruces(s8,[[0,7],[1,6],[2,5],[3,4]]).map(function(cr,i){
       const w = S.cuartos[i];
       const conColon = (cr.top==='colon'||cr.bot==='colon');
-      return '<div class="m '+(conColon?'colon':'')+marca('cu:'+i)+'"><div class="tag">'+cr.rot+' de la tabla general'+tocar('cu:'+i)+'</div>'
+      return '<div class="m '+(conColon?'colon':'')+marca('cu:'+i)+'"><div class="tag">'+cr.rot+' de los 8 clasificados'+tocar('cu:'+i)+'</div>'
         + fila(cr.top, {pos:(s8.indexOf(cr.top)+1)+'°', act:'cu:'+i+':'+cr.top, ventaja:true,
                         origen:T[cr.top].pos+'° de la Zona '+T[cr.top].z,
                         estado: w ? (w===cr.top?'gana':'pierde') : null})
@@ -457,7 +460,7 @@ function render(){
     c3 = cruces(s4,[[0,3],[1,2]]).map(function(cr,i){
       const w = S.semis[i];
       const conColon = (cr.top==='colon'||cr.bot==='colon');
-      return '<div class="m '+(conColon?'colon':'')+marca('se:'+i)+'"><div class="tag">'+cr.rot+' de la tabla general'+tocar('se:'+i)+'</div>'
+      return '<div class="m '+(conColon?'colon':'')+marca('se:'+i)+'"><div class="tag">'+cr.rot+' de los 4 que quedan'+tocar('se:'+i)+'</div>'
         + fila(cr.top, {pos:(s4.indexOf(cr.top)+1)+'°', act:'se:'+i+':'+cr.top, ventaja:true,
                         origen:T[cr.top].pos+'° de la Zona '+T[cr.top].z,
                         estado: w ? (w===cr.top?'gana':'pierde') : null})
@@ -496,17 +499,17 @@ function render(){
     + '<div class="llaves">'+c1+'</div></section>'
     + '<section class="ronda">'
     + cab('Cuartos',
-          '<span class="chip doble">2 partidos</span><span class="chip sede">Vuelta: el mejor de la tabla general</span>',
-          'Serie igualada en puntos y diferencia de gol → <b>pasa el mejor ubicado en la tabla general</b>. No hay penales.')
+          '<span class="chip doble">2 partidos</span><span class="chip sede">Vuelta: el mejor de los 8</span>',
+          'Serie igualada en puntos y diferencia de gol → <b>pasa el mejor ubicado de los 8</b>. No hay penales.')
     + '<div class="llaves">'+c2+'</div></section>'
     + '<section class="ronda">'
     + cab('Semifinales',
-          '<span class="chip doble">2 partidos</span><span class="chip sede">Vuelta: el mejor de la tabla general</span>',
-          'Los cuatro se reordenan en una tabla general nueva: 1° con 4° y 2° con 3°. Serie igualada → <b>pasa el mejor de esa tabla</b>.')
+          '<span class="chip doble">2 partidos</span><span class="chip sede">Vuelta: el mejor de los 4</span>',
+          'Los cuatro se vuelven a ordenar con el mismo criterio: 1° con 4° y 2° con 3°. Serie igualada → <b>pasa el mejor ubicado de los 4</b>.')
     + '<div class="llaves">'+c3+'</div></section>'
     + '<section class="ronda">'
     + cab('Final del Reducido',
-          '<span class="chip doble">2 partidos</span><span class="chip sede">Vuelta: el mejor de la tabla general</span>',
+          '<span class="chip doble">2 partidos</span><span class="chip sede">Vuelta: el mejor ubicado</span>',
           'Acá la ventaja deportiva <b>no corre</b>: si la serie termina igualada en puntos y diferencia de gol, <b>se define por penales</b>.')
     + '<div class="llaves">'+c4+'</div></section>';
 
