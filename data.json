@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-23T21:27:06+00:00",
+ "actualizado": "2026-08-23T23:10:04+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -248,6 +248,18 @@
     "dif": 7
    },
    {
+    "id": "temperley",
+    "nombre": "Temperley",
+    "espn": "Temperley",
+    "pj": 26,
+    "pts": 43,
+    "gf": 29,
+    "gc": 22,
+    "rank_espn": 3,
+    "pos": 3,
+    "dif": 7
+   },
+   {
     "id": "atlanta",
     "nombre": "Atlanta",
     "espn": "Atlanta",
@@ -255,18 +267,6 @@
     "pts": 42,
     "gf": 31,
     "gc": 25,
-    "rank_espn": 3,
-    "pos": 3,
-    "dif": 6
-   },
-   {
-    "id": "temperley",
-    "nombre": "Temperley",
-    "espn": "Temperley",
-    "pj": 25,
-    "pts": 40,
-    "gf": 27,
-    "gc": 21,
     "rank_espn": 4,
     "pos": 4,
     "dif": 6
@@ -275,13 +275,13 @@
     "id": "midland",
     "nombre": "Midland",
     "espn": "Midland",
-    "pj": 24,
+    "pj": 25,
     "pts": 38,
-    "gf": 26,
-    "gc": 17,
+    "gf": 27,
+    "gc": 19,
     "rank_espn": 5,
     "pos": 5,
-    "dif": 9
+    "dif": 8
    },
    {
     "id": "maipu",
@@ -593,10 +593,10 @@
    "gc": 19
   },
   "midland": {
-   "pj": 24,
+   "pj": 25,
    "pts": 38,
-   "gf": 26,
-   "gc": 17
+   "gf": 27,
+   "gc": 19
   },
   "atlanta": {
    "pj": 25,
@@ -611,10 +611,10 @@
    "gc": 25
   },
   "temperley": {
-   "pj": 25,
-   "pts": 40,
-   "gf": 27,
-   "gc": 21
+   "pj": 26,
+   "pts": 43,
+   "gf": 29,
+   "gc": 22
   },
   "tristan": {
    "pj": 25,
