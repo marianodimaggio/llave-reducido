@@ -95,6 +95,9 @@ h1 em{font-style:normal;color:var(--rojo)}
 .veredicto{padding:13px 16px;border-top:1px solid var(--borde);background:var(--sup2);
   font-size:13.5px;color:var(--txt3);line-height:1.55}
 .veredicto b{color:var(--oro);font-weight:600}
+.contador{padding:10px 16px;border-top:1px solid var(--borde);
+  font-size:12px;color:var(--txt3);letter-spacing:.02em}
+.contador b{color:var(--txt2);font-weight:600;font-variant-numeric:tabular-nums}
 .veredicto.vacio{color:var(--txt3)}
 .barra{display:flex;align-items:center;justify-content:space-between;gap:12px;
   padding:11px 14px;margin-bottom:14px;background:var(--sup2);
@@ -274,6 +277,7 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
     </div>
   </div>
   <div class="veredicto" id="veredicto"></div>
+  <div class="contador" id="contador" hidden></div>
 </section>
 
 <div class="total">
@@ -330,6 +334,7 @@ function armarDesdeTabla(zonas){
 // ================= estado =================
 let S = {};
 function limpiar(){
+  yaConto = false;
   S = {finalAsc:null, f1:{}, cuartos:{}, semis:{}, finalRed:null};
   FASE1.forEach(l => S.f1[l.id] = null);
   render();
@@ -556,11 +561,50 @@ document.getElementById('bracket').addEventListener('click', function(e){
   else if(tipo==='se'){ S.semis[+x]=y;   S.finalRed=null; }
   else if(tipo==='fr'){ S.finalRed = x; }
   render();
+  if(S.finalRed) sumarContador();
 });
 document.getElementById('reset').addEventListener('click', function(){
   limpiar();
   window.scrollTo({top:0, behavior:'smooth'});
 });
+
+// ================= contador de cuadros completados =================
+let yaConto = false;
+
+function pintarContador(total){
+  const el = document.getElementById('contador');
+  if(total === null || total === undefined){ el.hidden = true; return; }
+  const n = total.toLocaleString('es-AR');
+  el.hidden = false;
+  el.innerHTML = total === 1
+    ? '<b>1</b> cuadro simulado hasta los dos ascensos'
+    : '<b>'+n+'</b> cuadros simulados hasta los dos ascensos';
+}
+
+async function leerContador(){
+  try{
+    const r = await fetch('/api/contador');
+    if(!r.ok) throw 0;
+    const d = await r.json();
+    pintarContador(d.total);
+  }catch(e){
+    // si la funcion no esta disponible, la linea simplemente no aparece
+    pintarContador(null);
+  }
+}
+
+async function sumarContador(){
+  if(yaConto) return;
+  yaConto = true;
+  try{
+    const r = await fetch('/api/contador', {method:'POST'});
+    if(!r.ok) throw 0;
+    const d = await r.json();
+    pintarContador(d.total);
+  }catch(e){
+    yaConto = false;   // si fallo, que pueda reintentar en la proxima
+  }
+}
 
 // ================= arranque =================
 function pintarFuente(html, clase){
@@ -590,6 +634,7 @@ async function arrancar(){
   }catch(e){
     pintarFuente('No se pudo cargar la tabla. Revisá que data.json esté publicado.', 'viejo');
   }
+  leerContador();
 }
 arrancar();
 </script>
