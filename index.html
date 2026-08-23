@@ -60,6 +60,11 @@ h1{font-family:'Bebas Neue',var(--sans);font-weight:400;
 h1 em{font-style:normal;color:var(--rojo)}
 .lead{margin-top:12px;font-size:15px;color:var(--txt2);max-width:62ch}
 .lead b{color:var(--txt);font-weight:700}
+.leyenda{margin-top:12px;font-size:13.5px;color:var(--txt3);line-height:1.75;max-width:62ch}
+.leyenda b{color:var(--txt2);font-weight:600}
+.leyenda .vent{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--oro);border:1px solid #4A3C1C;border-radius:6px;
+  padding:2px 5px;margin-right:3px;vertical-align:1px}
 
 .fuente{display:flex;align-items:center;gap:9px;flex-wrap:wrap;
   background:var(--sup);border:1px solid var(--borde);border-radius:var(--radio);
@@ -230,6 +235,7 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
   <div class="kicker">Primera Nacional 2026</div>
   <h1>Simulá los<br>dos <em>ascensos</em></h1>
   <p class="lead"><b>Tocá al equipo que gana</b> en cada llave y el cuadro se rearma solo, aplicando el reglamento de AFA.</p>
+  <p class="leyenda"><span class="vent">Ventaja</span> quiere decir que a ese equipo <b>le alcanza el empate</b>: si la llave termina igualada, pasa él.</p>
 </header>
 
 <div class="fuente" id="fuente"><i class="pip"></i><span>Cargando la tabla…</span></div>
