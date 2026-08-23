@@ -194,25 +194,27 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
   .campeon{flex-direction:column;align-items:flex-start;gap:7px}
   .premio .val{font-size:28px}
 }
-@media(min-width:1400px){
-  .wrap{padding:0 24px;max-width:1400px}
+@media(min-width:1560px){
+  .wrap{padding:0 24px;max-width:1560px}
   header{padding:44px 0 26px}
   .bracket{display:grid;grid-template-columns:.95fr 1.15fr 1fr 1fr 1fr;gap:0 20px;align-items:start}
   .ronda{border-right:1px solid var(--borde);padding-right:20px}
   .ronda:last-child{border-right:0;padding-right:0}
   .ronda-cab{min-height:192px}
-  .eq .nombre{font-size:14.5px}
+  .eq .nombre{font-size:14px;letter-spacing:-.015em}
   .m .tag{font-size:10.5px}
   /* con 5 columnas el chip le roba ancho al nombre.
      La cabecera de cada ronda ya dice quien tiene la ventaja, asi que aca sobra. */
   .eq .vent{display:none}
-  .eq .pos{min-width:34px;font-size:11.5px}
+  .eq .pos{min-width:32px;font-size:11px}
   .eq .escudo{width:22px;height:22px}
-  /* en escritorio el cursor y el hover ya avisan que se puede clickear,
-     y con 5 columnas ese espacio lo necesita el nombre */
+  /* En escritorio el cursor y el hover ya avisan que se puede clickear,
+     asi que el circulo vacio no hace falta y ese ancho lo necesita el nombre.
+     El circulo lleno si aparece: marca cual quedo elegido sin depender del color. */
   .eq .pick{display:none}
-  .eq.gana{box-shadow:inset 3px 0 0 var(--oro)}
-  .eq{gap:8px;padding:11px 10px}
+  .eq.gana .pick{display:block;width:17px;height:17px;border-width:2px}
+  .eq.gana .pick::after{font-size:11px}
+  .eq{gap:7px;padding:11px 9px}
   .eq{gap:9px;padding:12px}
 }
 </style>
