@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-23T18:36:31+00:00",
+ "actualizado": "2026-08-23T21:27:06+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -93,10 +93,10 @@
     "id": "bolivar",
     "nombre": "Cdad. de Bolívar",
     "espn": "Ciudad de Bolívar",
-    "pj": 25,
-    "pts": 34,
-    "gf": 21,
-    "gc": 22,
+    "pj": 26,
+    "pts": 35,
+    "gf": 22,
+    "gc": 23,
     "rank_espn": 8,
     "pos": 8,
     "dif": -1
@@ -117,10 +117,10 @@
     "id": "racingcba",
     "nombre": "Racing (Cba)",
     "espn": "Racing (Córdoba)",
-    "pj": 25,
-    "pts": 31,
-    "gf": 23,
-    "gc": 28,
+    "pj": 26,
+    "pts": 32,
+    "gf": 24,
+    "gc": 29,
     "rank_espn": 10,
     "pos": 10,
     "dif": -5
@@ -284,6 +284,18 @@
     "dif": 9
    },
    {
+    "id": "maipu",
+    "nombre": "Dep. Maipú",
+    "espn": "Deportivo Maipú",
+    "pj": 26,
+    "pts": 38,
+    "gf": 34,
+    "gc": 27,
+    "rank_espn": 6,
+    "pos": 6,
+    "dif": 7
+   },
+   {
     "id": "gyt",
     "nombre": "Gimnasia y Tiro",
     "espn": "Gimnasia y Tiro (Salta)",
@@ -291,21 +303,21 @@
     "pts": 38,
     "gf": 27,
     "gc": 25,
-    "rank_espn": 6,
-    "pos": 6,
+    "rank_espn": 7,
+    "pos": 7,
     "dif": 2
    },
    {
-    "id": "maipu",
-    "nombre": "Dep. Maipú",
-    "espn": "Deportivo Maipú",
-    "pj": 25,
+    "id": "sanmartint",
+    "nombre": "San Martín (T)",
+    "espn": "San Martín (Tucumán)",
+    "pj": 26,
     "pts": 35,
-    "gf": 33,
-    "gc": 27,
-    "rank_espn": 7,
-    "pos": 7,
-    "dif": 6
+    "gf": 26,
+    "gc": 23,
+    "rank_espn": 8,
+    "pos": 8,
+    "dif": 3
    },
    {
     "id": "rafaela",
@@ -315,21 +327,21 @@
     "pts": 35,
     "gf": 18,
     "gc": 19,
-    "rank_espn": 8,
-    "pos": 8,
+    "rank_espn": 9,
+    "pos": 9,
     "dif": -1
    },
    {
     "id": "quilmes",
     "nombre": "Quilmes",
     "espn": "Quilmes",
-    "pj": 25,
+    "pj": 26,
     "pts": 32,
     "gf": 27,
-    "gc": 21,
-    "rank_espn": 9,
-    "pos": 9,
-    "dif": 6
+    "gc": 22,
+    "rank_espn": 10,
+    "pos": 10,
+    "dif": 5
    },
    {
     "id": "sanmartinsj",
@@ -339,18 +351,6 @@
     "pts": 32,
     "gf": 26,
     "gc": 24,
-    "rank_espn": 10,
-    "pos": 10,
-    "dif": 2
-   },
-   {
-    "id": "sanmartint",
-    "nombre": "San Martín (T)",
-    "espn": "San Martín (Tucumán)",
-    "pj": 25,
-    "pts": 32,
-    "gf": 24,
-    "gc": 22,
     "rank_espn": 11,
     "pos": 11,
     "dif": 2
@@ -407,13 +407,13 @@
     "id": "chacarita",
     "nombre": "Chacarita",
     "espn": "Chacarita Juniors",
-    "pj": 25,
+    "pj": 26,
     "pts": 27,
-    "gf": 18,
-    "gc": 26,
+    "gf": 19,
+    "gc": 28,
     "rank_espn": 16,
     "pos": 16,
-    "dif": -8
+    "dif": -9
    },
    {
     "id": "patronato",
@@ -539,16 +539,16 @@
    "gc": 24
   },
   "racingcba": {
-   "pj": 25,
-   "pts": 31,
-   "gf": 23,
-   "gc": 28
+   "pj": 26,
+   "pts": 32,
+   "gf": 24,
+   "gc": 29
   },
   "bolivar": {
-   "pj": 25,
-   "pts": 34,
-   "gf": 21,
-   "gc": 22
+   "pj": 26,
+   "pts": 35,
+   "gf": 22,
+   "gc": 23
   },
   "almagro": {
    "pj": 26,
@@ -557,10 +557,10 @@
    "gc": 29
   },
   "chacarita": {
-   "pj": 25,
+   "pj": 26,
    "pts": 27,
-   "gf": 18,
-   "gc": 26
+   "gf": 19,
+   "gc": 28
   },
   "nuevachicago": {
    "pj": 25,
@@ -569,10 +569,10 @@
    "gc": 24
   },
   "quilmes": {
-   "pj": 25,
+   "pj": 26,
    "pts": 32,
    "gf": 27,
-   "gc": 21
+   "gc": 22
   },
   "gimnasiaj": {
    "pj": 26,
@@ -635,9 +635,9 @@
    "gc": 25
   },
   "maipu": {
-   "pj": 25,
-   "pts": 35,
-   "gf": 33,
+   "pj": 26,
+   "pts": 38,
+   "gf": 34,
    "gc": 27
   },
   "agropecuario": {
@@ -647,10 +647,10 @@
    "gc": 30
   },
   "sanmartint": {
-   "pj": 25,
-   "pts": 32,
-   "gf": 24,
-   "gc": 22
+   "pj": 26,
+   "pts": 35,
+   "gf": 26,
+   "gc": 23
   },
   "guemes": {
    "pj": 25,
