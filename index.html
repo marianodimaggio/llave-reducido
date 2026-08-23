@@ -615,11 +615,27 @@ function pintarFuente(html, clase){
 const fechaCorta = iso => new Date(iso)
   .toLocaleString('es-AR', {day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit'});
 
+// La tabla vive en GitHub, no en el sitio. Asi se actualiza cada 20 minutos
+// sin republicar Netlify: menos demora y sin gastar creditos.
+// Si GitHub no responde, se usa la copia que quedo publicada con el sitio,
+// que puede estar vieja pero deja la app funcionando.
+const FUENTE = 'https://raw.githubusercontent.com/marianodimaggio/llave-reducido/main/data.json';
+
+async function bajarTabla(){
+  try{
+    const r = await fetch(FUENTE + '?t=' + Date.now(), {cache:'no-store'});
+    if(!r.ok) throw 0;
+    return await r.json();
+  }catch(e){
+    const r = await fetch('data.json?t=' + Date.now(), {cache:'no-store'});
+    if(!r.ok) throw new Error('sin data.json');
+    return await r.json();
+  }
+}
+
 async function arrancar(){
   try{
-    const r = await fetch('data.json?t=' + Date.now());
-    if(!r.ok) throw new Error('sin data.json');
-    const d = await r.json();
+    const d = await bajarTabla();
     armarDesdeTabla(d.zonas);
     const horas = (Date.now() - new Date(d.actualizado)) / 36e5;
     const v = d.verificados

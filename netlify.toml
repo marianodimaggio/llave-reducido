@@ -3,3 +3,12 @@
   publish = "."
   functions = "netlify/functions"
   command = ""
+
+  # El bot actualiza la tabla cada 20 minutos. Sin esto, cada actualizacion
+  # dispararia un despliegue y consumiria creditos hasta pausar el sitio.
+  # La pagina lee la tabla directo de GitHub, asi que republicar no hace falta.
+  #
+  # git diff --quiet sale con 0 cuando NO hay diferencias, y para Netlify
+  # salir con 0 significa "saltea el despliegue". Entonces: si lo unico que
+  # cambio son los archivos de datos, no se despliega.
+  ignore = "git diff --quiet HEAD^ HEAD -- . ':(exclude)data.json' ':(exclude)estado.json'"
