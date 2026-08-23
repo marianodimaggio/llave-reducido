@@ -1,12 +1,6 @@
 {
-  "estado": "error",
-  "detalle": [
-    "Racing (Cba): los puntos de ESPN bajaron de 32 a 31",
-    "Cdad. de Bolívar: los puntos de ESPN bajaron de 35 a 34",
-    "Temperley: los puntos de ESPN bajaron de 43 a 40",
-    "Dep. Maipú: los puntos de ESPN bajaron de 38 a 35",
-    "San Martín (T): los puntos de ESPN bajaron de 35 a 32"
-  ],
-  "intento": "2026-08-23T23:39:55+00:00",
-  "ultimo_ok": "2026-08-23T23:10:04+00:00"
+  "estado": "ok",
+  "intento": "2026-08-23T23:57:56+00:00",
+  "ultimo_ok": "2026-08-23T23:57:56+00:00",
+  "correcciones_aplicadas": []
 }
