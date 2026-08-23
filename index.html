@@ -14,12 +14,8 @@
 <title>Simulá los dos ascensos · Primera Nacional 2026</title>
 <meta name="description" content="Elegí quién gana cada llave del Reducido y el cuadro se rearma solo, con el reglamento de AFA y la tabla al día.">
 
-<!-- ===================================================================
-     VISTA PREVIA AL COMPARTIR
-     Cambiá las dos lineas de abajo por tu direccion definitiva.
-     Tienen que ser direcciones completas, con https:// adelante:
-     las redes no resuelven rutas relativas.
-     =================================================================== -->
+<!-- Vista previa al compartir. Si cambia el dominio, hay que actualizar
+     las tres direcciones completas de abajo (og:url, og:image, twitter:image). -->
 <meta property="og:url" content="https://llave-reducido.netlify.app/">
 <meta property="og:image" content="https://llave-reducido.netlify.app/preview.jpg">
 
@@ -63,6 +59,7 @@ h1{font-family:'Bebas Neue',var(--sans);font-weight:400;
   font-size:clamp(38px,11vw,66px);line-height:.92;letter-spacing:.01em}
 h1 em{font-style:normal;color:var(--rojo)}
 .lead{margin-top:12px;font-size:15px;color:var(--txt2);max-width:62ch}
+.lead b{color:var(--txt);font-weight:700}
 
 .fuente{display:flex;align-items:center;gap:9px;flex-wrap:wrap;
   background:var(--sup);border:1px solid var(--borde);border-radius:var(--radio);
@@ -131,6 +128,12 @@ details.info p{padding:0 14px 14px;font-size:14px;color:#E2D4AE;line-height:1.65
 .llaves{display:flex;flex-direction:column;gap:10px}
 .m{background:var(--sup);border:1px solid var(--borde);
   border-radius:var(--radio);overflow:hidden}
+.m.activa{border-color:var(--oro);box-shadow:0 0 0 3px rgba(255,197,51,.10)}
+.m.activa .pick{border-color:var(--oro);animation:latir 1.6s ease-in-out infinite}
+@keyframes latir{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.14);opacity:.65}}
+.m.activa .aviso-tocar{color:var(--oro)}
+.aviso-tocar{float:right;font-weight:700;letter-spacing:.06em}
+@media(prefers-reduced-motion:reduce){.m.activa .pick{animation:none}}
 .m.colon{border-color:#6B5722;background:#191509}
 .m.premio-final{border-color:#6E2130}
 .m .tag{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
@@ -149,9 +152,21 @@ details.info p{padding:0 14px 14px;font-size:14px;color:#E2D4AE;line-height:1.65
 .eq .nombre{font-size:16.5px;font-weight:600;letter-spacing:-.01em;flex:1;min-width:0;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .eq.colon .nombre{color:var(--oro)}
-.eq .vent{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
-  color:var(--oro);border:1px solid #4A3C1C;border-radius:6px;padding:3px 6px;flex:none}
-.eq .mark{font-size:15px;flex:none;line-height:1}
+.eq .vent{font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--oro);border:1px solid #4A3C1C;border-radius:6px;padding:3px 5px;flex:none}
+@media(max-width:420px){
+  .eq{gap:8px;padding:13px 12px}
+  .eq .pos{min-width:36px;font-size:11.5px}
+  .eq .escudo{width:26px;height:26px}
+  .eq .nombre{font-size:15.5px}
+  .eq .vent{font-size:9px;padding:3px 4px}
+}
+.eq .pick{width:23px;height:23px;border-radius:50%;flex:none;
+  border:2px solid var(--borde2);position:relative;transition:.15s}
+.eq.gana .pick{background:var(--oro);border-color:var(--oro)}
+.eq.gana .pick::after{content:"✓";position:absolute;inset:0;display:flex;
+  align-items:center;justify-content:center;color:#171104;font-size:13px;font-weight:700}
+.eq.pierde .pick{border-color:var(--borde);opacity:.5}
 .eq.gana{background:#161206;box-shadow:inset 3px 0 0 var(--oro)}
 .eq.gana .nombre{color:var(--oro)}
 .eq.pierde{opacity:.4}
@@ -179,20 +194,25 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
   .campeon{flex-direction:column;align-items:flex-start;gap:7px}
   .premio .val{font-size:28px}
 }
-@media(min-width:1180px){
-  .wrap{padding:0 24px}
+@media(min-width:1400px){
+  .wrap{padding:0 24px;max-width:1400px}
   header{padding:44px 0 26px}
   .bracket{display:grid;grid-template-columns:.95fr 1.15fr 1fr 1fr 1fr;gap:0 20px;align-items:start}
   .ronda{border-right:1px solid var(--borde);padding-right:20px}
   .ronda:last-child{border-right:0;padding-right:0}
   .ronda-cab{min-height:192px}
-  .eq .nombre{font-size:15px}
+  .eq .nombre{font-size:14.5px}
   .m .tag{font-size:10.5px}
   /* con 5 columnas el chip le roba ancho al nombre.
      La cabecera de cada ronda ya dice quien tiene la ventaja, asi que aca sobra. */
   .eq .vent{display:none}
-  .eq .pos{min-width:36px;font-size:11.5px}
-  .eq .escudo{width:24px;height:24px}
+  .eq .pos{min-width:34px;font-size:11.5px}
+  .eq .escudo{width:22px;height:22px}
+  /* en escritorio el cursor y el hover ya avisan que se puede clickear,
+     y con 5 columnas ese espacio lo necesita el nombre */
+  .eq .pick{display:none}
+  .eq.gana{box-shadow:inset 3px 0 0 var(--oro)}
+  .eq{gap:8px;padding:11px 10px}
   .eq{gap:9px;padding:12px}
 }
 </style>
@@ -203,7 +223,7 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
 <header>
   <div class="kicker">Primera Nacional 2026</div>
   <h1>Simulá los<br>dos <em>ascensos</em></h1>
-  <p class="lead">Tocá el equipo que gana cada llave. El cuadro se rearma solo con las reglas de AFA.</p>
+  <p class="lead"><b>Tocá al equipo que gana</b> en cada llave y el cuadro se rearma solo, aplicando el reglamento de AFA.</p>
 </header>
 
 <div class="fuente" id="fuente"><i class="pip"></i><span>Cargando la tabla…</span></div>
@@ -335,15 +355,15 @@ function fila(id, o){
   if(id==='colon') cls.push('colon');
   if(o.estado) cls.push(o.estado);
   const vent = (o.ventaja && o.estado!=='pierde') ? '<span class="vent">Ventaja</span>' : '';
-  const mark = o.estado==='gana' ? '<span class="mark">✓</span>'
-             : o.estado==='pierde' ? '<span class="mark">·</span>' : '';
+  const pick = '<span class="pick"></span>';
   const chk = t.verificado ? '<span class="chequeo" title="'+(t.notas||[]).join(' · ')+'">*</span>' : '';
   // si el archivo no esta, la imagen se oculta sola y la fila no se rompe
   const escudo = '<img class="escudo" src="logos/'+id+'.png" alt="" loading="lazy" '
                + 'onerror="this.style.visibility=\'hidden\'">';
-  return '<button type="button" class="'+cls.join(' ')+'" data-act="'+o.act+'">'
+  return '<button type="button" class="'+cls.join(' ')+'" data-act="'+o.act+'"'
+       + ' aria-pressed="'+(o.estado==='gana')+'">'
        + escudo + '<span class="pos">'+o.pos+'</span>'
-       + '<span class="nombre">'+t.n+chk+'</span>'+vent+mark+'</button>';
+       + '<span class="nombre">'+t.n+chk+'</span>'+vent+pick+'</button>';
 }
 
 const espera = (titulo,texto) => '<div class="espera"><span class="t">'+titulo+'</span>'+texto+'</div>';
@@ -365,11 +385,25 @@ function pintarCampeon(idTexto, idEscudo, equipo){
   }
 }
 
+// cual es la proxima decision pendiente, en orden de juego
+function proximaPendiente(){
+  if(!S.finalAsc) return 'fa';
+  for(const l of FASE1){ if(!S.f1[l.id]) return 'f1:'+l.id; }
+  if(sembrados8()) for(let i=0;i<4;i++){ if(!S.cuartos[i]) return 'cu:'+i; }
+  if(sembrados4()) for(let i=0;i<2;i++){ if(!S.semis[i]) return 'se:'+i; }
+  if(semisListas() && !S.finalRed) return 'fr';
+  return null;
+}
+const PROX = () => proximaPendiente();
+
 function render(){
   const s8 = sembrados8(), s4 = sembrados4();
+  const prox = proximaPendiente();
+  const marca = clave => prox===clave ? ' activa' : '';
+  const tocar = clave => prox===clave ? '<span class="aviso-tocar">Tocá al ganador</span>' : '';
   const g = S.finalAsc, p = perdedorFinal();
 
-  const c0 = '<div class="m"><div class="tag">Los dos punteros de zona</div>'
+  const c0 = '<div class="m'+marca('fa')+'"><div class="tag">Los dos punteros de zona'+tocar('fa')+'</div>'
     + fila(PUNTEROS.A, {pos:'1° ZA', act:'fa:'+PUNTEROS.A, estado: g ? (g===PUNTEROS.A?'gana':'pierde') : null})
     + fila(PUNTEROS.B, {pos:'1° ZB', act:'fa:'+PUNTEROS.B, estado: g ? (g===PUNTEROS.B?'gana':'pierde') : null})
     + '<div class="pie">' + (g
@@ -380,8 +414,8 @@ function render(){
   const c1 = FASE1.length ? FASE1.map(function(l,i){
     const w = S.f1[l.id];
     const conColon = (l.a==='colon' || l.b==='colon');
-    return '<div class="m '+(conColon?'colon':'')+'">'
-      + '<div class="tag">Llave '+(i+1)+' · '+l.rot+'</div>'
+    return '<div class="m '+(conColon?'colon':'')+marca('f1:'+l.id)+'">'
+      + '<div class="tag">Llave '+(i+1)+' · '+l.rot+tocar('f1:'+l.id)+'</div>'
       + fila(l.a, {pos:T[l.a].pos+'° Z'+T[l.a].z, act:'f1:'+l.id+':'+l.a, ventaja:true,
                    estado: w ? (w===l.a?'gana':'pierde') : null})
       + fila(l.b, {pos:T[l.b].pos+'° Z'+T[l.b].z, act:'f1:'+l.id+':'+l.b,
@@ -400,7 +434,7 @@ function render(){
     c2 = cruces(s8,[[0,7],[1,6],[2,5],[3,4]]).map(function(cr,i){
       const w = S.cuartos[i];
       const conColon = (cr.top==='colon'||cr.bot==='colon');
-      return '<div class="m '+(conColon?'colon':'')+'"><div class="tag">'+cr.rot+'</div>'
+      return '<div class="m '+(conColon?'colon':'')+marca('cu:'+i)+'"><div class="tag">'+cr.rot+tocar('cu:'+i)+'</div>'
         + fila(cr.top, {pos:(s8.indexOf(cr.top)+1)+'°', act:'cu:'+i+':'+cr.top, ventaja:true,
                         estado: w ? (w===cr.top?'gana':'pierde') : null})
         + fila(cr.bot, {pos:(s8.indexOf(cr.bot)+1)+'°', act:'cu:'+i+':'+cr.bot,
@@ -416,7 +450,7 @@ function render(){
     c3 = cruces(s4,[[0,3],[1,2]]).map(function(cr,i){
       const w = S.semis[i];
       const conColon = (cr.top==='colon'||cr.bot==='colon');
-      return '<div class="m '+(conColon?'colon':'')+'"><div class="tag">'+cr.rot+'</div>'
+      return '<div class="m '+(conColon?'colon':'')+marca('se:'+i)+'"><div class="tag">'+cr.rot+tocar('se:'+i)+'</div>'
         + fila(cr.top, {pos:(s4.indexOf(cr.top)+1)+'°', act:'se:'+i+':'+cr.top, ventaja:true,
                         estado: w ? (w===cr.top?'gana':'pierde') : null})
         + fila(cr.bot, {pos:(s4.indexOf(cr.bot)+1)+'°', act:'se:'+i+':'+cr.bot,
@@ -432,8 +466,8 @@ function render(){
     const fin = ordenar([S.semis[0], S.semis[1]]);
     const w = S.finalRed;
     const conColon = fin.indexOf('colon') >= 0;
-    c4 = '<div class="m premio-final '+(conColon?'colon':'')+'">'
-      + '<div class="tag">Segundo ascenso a la LPF</div>'
+    c4 = '<div class="m premio-final '+(conColon?'colon':'')+marca('fr')+'">'
+      + '<div class="tag">Segundo ascenso a la LPF'+tocar('fr')+'</div>'
       + fila(fin[0], {pos:'Local vuelta', act:'fr:'+fin[0], estado: w ? (w===fin[0]?'gana':'pierde') : null})
       + fila(fin[1], {pos:'Visitante', act:'fr:'+fin[1], estado: w ? (w===fin[1]?'gana':'pierde') : null})
       + '<div class="pie">' + (w ? '<b>'+T[w].n+'</b> asciende.'
