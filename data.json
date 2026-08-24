@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-24T22:59:45+00:00",
+ "actualizado": "2026-08-24T23:30:20+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -308,6 +308,18 @@
     "dif": 2
    },
    {
+    "id": "rafaela",
+    "nombre": "At. Rafaela",
+    "espn": "Atletico Rafaela",
+    "pj": 26,
+    "pts": 36,
+    "gf": 18,
+    "gc": 19,
+    "rank_espn": 8,
+    "pos": 8,
+    "dif": -1
+   },
+   {
     "id": "sanmartint",
     "nombre": "San Martín (T)",
     "espn": "San Martín (Tucumán)",
@@ -315,21 +327,9 @@
     "pts": 35,
     "gf": 26,
     "gc": 23,
-    "rank_espn": 8,
-    "pos": 8,
-    "dif": 3
-   },
-   {
-    "id": "rafaela",
-    "nombre": "At. Rafaela",
-    "espn": "Atletico Rafaela",
-    "pj": 25,
-    "pts": 35,
-    "gf": 18,
-    "gc": 19,
     "rank_espn": 9,
     "pos": 9,
-    "dif": -1
+    "dif": 3
    },
    {
     "id": "quilmes",
@@ -431,8 +431,8 @@
     "id": "guemes",
     "nombre": "Güemes",
     "espn": "Güemes",
-    "pj": 25,
-    "pts": 21,
+    "pj": 26,
+    "pts": 22,
     "gf": 21,
     "gc": 43,
     "rank_espn": 18,
@@ -587,8 +587,8 @@
    "gc": 24
   },
   "rafaela": {
-   "pj": 25,
-   "pts": 35,
+   "pj": 26,
+   "pts": 36,
    "gf": 18,
    "gc": 19
   },
@@ -653,8 +653,8 @@
    "gc": 23
   },
   "guemes": {
-   "pj": 25,
-   "pts": 21,
+   "pj": 26,
+   "pts": 22,
    "gf": 21,
    "gc": 43
   }
