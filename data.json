@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-25T01:40:55+00:00",
+ "actualizado": "2026-08-25T03:02:14+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -9,13 +9,13 @@
     "id": "ferro",
     "nombre": "Ferro",
     "espn": "Ferro Carril Oeste",
-    "pj": 25,
-    "pts": 49,
-    "gf": 31,
+    "pj": 26,
+    "pts": 52,
+    "gf": 32,
     "gc": 23,
     "rank_espn": 1,
     "pos": 1,
-    "dif": 8
+    "dif": 9
    },
    {
     "id": "moron",
@@ -165,13 +165,13 @@
     "id": "allboys",
     "nombre": "All Boys",
     "espn": "All Boys",
-    "pj": 25,
+    "pj": 26,
     "pts": 27,
     "gf": 15,
-    "gc": 23,
+    "gc": 24,
     "rank_espn": 14,
     "pos": 14,
-    "dif": -8
+    "dif": -9
    },
    {
     "id": "defbelgrano",
@@ -467,16 +467,16 @@
    "gc": 16
   },
   "ferro": {
-   "pj": 25,
-   "pts": 49,
-   "gf": 31,
+   "pj": 26,
+   "pts": 52,
+   "gf": 32,
    "gc": 23
   },
   "allboys": {
-   "pj": 25,
+   "pj": 26,
    "pts": 27,
    "gf": 15,
-   "gc": 23
+   "gc": 24
   },
   "sanmiguel": {
    "pj": 25,
