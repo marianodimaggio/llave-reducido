@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-26T00:44:04+00:00",
+ "actualizado": "2026-08-26T06:32:33+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -42,6 +42,18 @@
     "dif": 14
    },
    {
+    "id": "madryn",
+    "nombre": "Dep. Madryn",
+    "espn": "Deportivo Madryn",
+    "pj": 26,
+    "pts": 43,
+    "gf": 38,
+    "gc": 24,
+    "rank_espn": 4,
+    "pos": 4,
+    "dif": 14
+   },
+   {
     "id": "almirante",
     "nombre": "Almirante Brown",
     "espn": "Almirante Brown",
@@ -49,33 +61,21 @@
     "pts": 41,
     "gf": 22,
     "gc": 16,
-    "rank_espn": 4,
-    "pos": 4,
-    "dif": 6
-   },
-   {
-    "id": "madryn",
-    "nombre": "Dep. Madryn",
-    "espn": "Deportivo Madryn",
-    "pj": 25,
-    "pts": 40,
-    "gf": 36,
-    "gc": 24,
     "rank_espn": 5,
     "pos": 5,
-    "dif": 12
+    "dif": 6
    },
    {
     "id": "godoy",
     "nombre": "Godoy Cruz",
     "espn": "Godoy Cruz Antonio Tomba",
-    "pj": 25,
+    "pj": 26,
     "pts": 40,
     "gf": 29,
-    "gc": 22,
+    "gc": 24,
     "rank_espn": 6,
     "pos": 6,
-    "dif": 7
+    "dif": 5
    },
    {
     "id": "estudiantesc",
@@ -455,10 +455,10 @@
    "gc": 15
   },
   "godoy": {
-   "pj": 25,
+   "pj": 26,
    "pts": 40,
    "gf": 29,
-   "gc": 22
+   "gc": 24
   },
   "almirante": {
    "pj": 26,
@@ -533,9 +533,9 @@
    "gc": 22
   },
   "madryn": {
-   "pj": 25,
-   "pts": 40,
-   "gf": 36,
+   "pj": 26,
+   "pts": 43,
+   "gf": 38,
    "gc": 24
   },
   "racingcba": {
