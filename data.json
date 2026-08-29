@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-28T21:14:54+00:00",
+ "actualizado": "2026-08-29T03:11:58+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -272,6 +272,18 @@
     "dif": 4
    },
    {
+    "id": "gyt",
+    "nombre": "Gimnasia y Tiro",
+    "espn": "Gimnasia y Tiro (Salta)",
+    "pj": 27,
+    "pts": 41,
+    "gf": 28,
+    "gc": 25,
+    "rank_espn": 5,
+    "pos": 5,
+    "dif": 3
+   },
+   {
     "id": "midland",
     "nombre": "Midland",
     "espn": "Midland",
@@ -279,8 +291,8 @@
     "pts": 38,
     "gf": 27,
     "gc": 19,
-    "rank_espn": 5,
-    "pos": 5,
+    "rank_espn": 6,
+    "pos": 6,
     "dif": 8
    },
    {
@@ -291,21 +303,9 @@
     "pts": 38,
     "gf": 34,
     "gc": 27,
-    "rank_espn": 6,
-    "pos": 6,
-    "dif": 7
-   },
-   {
-    "id": "gyt",
-    "nombre": "Gimnasia y Tiro",
-    "espn": "Gimnasia y Tiro (Salta)",
-    "pj": 26,
-    "pts": 38,
-    "gf": 27,
-    "gc": 25,
     "rank_espn": 7,
     "pos": 7,
-    "dif": 2
+    "dif": 7
    },
    {
     "id": "rafaela",
@@ -419,13 +419,13 @@
     "id": "chacarita",
     "nombre": "Chacarita",
     "espn": "Chacarita Juniors",
-    "pj": 26,
+    "pj": 27,
     "pts": 27,
     "gf": 19,
-    "gc": 28,
+    "gc": 29,
     "rank_espn": 17,
     "pos": 17,
-    "dif": -9
+    "dif": -10
    },
    {
     "id": "guemes",
@@ -557,10 +557,10 @@
    "gc": 29
   },
   "chacarita": {
-   "pj": 26,
+   "pj": 27,
    "pts": 27,
    "gf": 19,
-   "gc": 28
+   "gc": 29
   },
   "nuevachicago": {
    "pj": 26,
@@ -629,9 +629,9 @@
    "gc": 29
   },
   "gyt": {
-   "pj": 26,
-   "pts": 38,
-   "gf": 27,
+   "pj": 27,
+   "pts": 41,
+   "gf": 28,
    "gc": 25
   },
   "maipu": {
