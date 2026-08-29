@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-29T21:14:53+00:00",
+ "actualizado": "2026-08-29T23:24:57+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -78,6 +78,18 @@
     "dif": 5
    },
    {
+    "id": "bolivar",
+    "nombre": "Cdad. de Bolívar",
+    "espn": "Ciudad de Bolívar",
+    "pj": 27,
+    "pts": 38,
+    "gf": 23,
+    "gc": 23,
+    "rank_espn": 7,
+    "pos": 7,
+    "dif": 0
+   },
+   {
     "id": "estudiantesc",
     "nombre": "Estudiantes (C)",
     "espn": "Estudiantes (Buenos Aires)",
@@ -85,21 +97,9 @@
     "pts": 35,
     "gf": 23,
     "gc": 22,
-    "rank_espn": 7,
-    "pos": 7,
-    "dif": 1
-   },
-   {
-    "id": "bolivar",
-    "nombre": "Cdad. de Bolívar",
-    "espn": "Ciudad de Bolívar",
-    "pj": 26,
-    "pts": 35,
-    "gf": 22,
-    "gc": 23,
     "rank_espn": 8,
     "pos": 8,
-    "dif": -1
+    "dif": 1
    },
    {
     "id": "losandes",
@@ -201,13 +201,13 @@
     "id": "defbelgrano",
     "nombre": "Def. de Belgrano",
     "espn": "Defensores de Belgrano",
-    "pj": 25,
+    "pj": 26,
     "pts": 26,
     "gf": 16,
-    "gc": 23,
+    "gc": 24,
     "rank_espn": 17,
     "pos": 17,
-    "dif": -7
+    "dif": -8
    },
    {
     "id": "acassuso",
@@ -227,13 +227,13 @@
     "id": "tristan",
     "nombre": "Tristán Suárez",
     "espn": "Tristán Suárez",
-    "pj": 25,
+    "pj": 26,
     "pts": 48,
-    "gf": 28,
-    "gc": 13,
+    "gf": 29,
+    "gc": 15,
     "rank_espn": 1,
     "pos": 1,
-    "dif": 15
+    "dif": 14
    },
    {
     "id": "gimnasiaj",
@@ -272,6 +272,18 @@
     "dif": 4
    },
    {
+    "id": "midland",
+    "nombre": "Midland",
+    "espn": "Midland",
+    "pj": 26,
+    "pts": 41,
+    "gf": 29,
+    "gc": 19,
+    "rank_espn": 5,
+    "pos": 5,
+    "dif": 10
+   },
+   {
     "id": "gyt",
     "nombre": "Gimnasia y Tiro",
     "espn": "Gimnasia y Tiro (Salta)",
@@ -279,45 +291,33 @@
     "pts": 41,
     "gf": 28,
     "gc": 25,
-    "rank_espn": 5,
-    "pos": 5,
-    "dif": 3
-   },
-   {
-    "id": "midland",
-    "nombre": "Midland",
-    "espn": "Midland",
-    "pj": 25,
-    "pts": 38,
-    "gf": 27,
-    "gc": 19,
     "rank_espn": 6,
     "pos": 6,
-    "dif": 8
-   },
-   {
-    "id": "maipu",
-    "nombre": "Dep. Maipú",
-    "espn": "Deportivo Maipú",
-    "pj": 26,
-    "pts": 38,
-    "gf": 34,
-    "gc": 27,
-    "rank_espn": 7,
-    "pos": 7,
-    "dif": 7
+    "dif": 3
    },
    {
     "id": "rafaela",
     "nombre": "At. Rafaela",
     "espn": "Atletico Rafaela",
-    "pj": 26,
-    "pts": 36,
-    "gf": 18,
-    "gc": 19,
+    "pj": 27,
+    "pts": 39,
+    "gf": 20,
+    "gc": 20,
+    "rank_espn": 7,
+    "pos": 7,
+    "dif": 0
+   },
+   {
+    "id": "maipu",
+    "nombre": "Dep. Maipú",
+    "espn": "Deportivo Maipú",
+    "pj": 27,
+    "pts": 38,
+    "gf": 34,
+    "gc": 28,
     "rank_espn": 8,
     "pos": 8,
-    "dif": -1
+    "dif": 6
    },
    {
     "id": "sanmartinsj",
@@ -344,6 +344,18 @@
     "dif": 3
    },
    {
+    "id": "colegiales",
+    "nombre": "Colegiales",
+    "espn": "Colegiales",
+    "pj": 26,
+    "pts": 34,
+    "gf": 24,
+    "gc": 25,
+    "rank_espn": 11,
+    "pos": 11,
+    "dif": -1
+   },
+   {
     "id": "quilmes",
     "nombre": "Quilmes",
     "espn": "Quilmes",
@@ -351,21 +363,9 @@
     "pts": 32,
     "gf": 27,
     "gc": 22,
-    "rank_espn": 11,
-    "pos": 11,
-    "dif": 5
-   },
-   {
-    "id": "colegiales",
-    "nombre": "Colegiales",
-    "espn": "Colegiales",
-    "pj": 25,
-    "pts": 31,
-    "gf": 23,
-    "gc": 25,
     "rank_espn": 12,
     "pos": 12,
-    "dif": -2
+    "dif": 5
    },
    {
     "id": "almagro",
@@ -383,13 +383,13 @@
     "id": "nuevachicago",
     "nombre": "Nueva Chicago",
     "espn": "Nueva Chicago",
-    "pj": 26,
+    "pj": 27,
     "pts": 29,
     "gf": 20,
-    "gc": 25,
+    "gc": 27,
     "rank_espn": 14,
     "pos": 14,
-    "dif": -5
+    "dif": -7
    },
    {
     "id": "agropecuario",
@@ -491,10 +491,10 @@
    "gc": 32
   },
   "defbelgrano": {
-   "pj": 25,
+   "pj": 26,
    "pts": 26,
    "gf": 16,
-   "gc": 23
+   "gc": 24
   },
   "moron": {
    "pj": 26,
@@ -545,9 +545,9 @@
    "gc": 29
   },
   "bolivar": {
-   "pj": 26,
-   "pts": 35,
-   "gf": 22,
+   "pj": 27,
+   "pts": 38,
+   "gf": 23,
    "gc": 23
   },
   "almagro": {
@@ -563,10 +563,10 @@
    "gc": 29
   },
   "nuevachicago": {
-   "pj": 26,
+   "pj": 27,
    "pts": 29,
    "gf": 20,
-   "gc": 25
+   "gc": 27
   },
   "quilmes": {
    "pj": 26,
@@ -587,15 +587,15 @@
    "gc": 24
   },
   "rafaela": {
-   "pj": 26,
-   "pts": 36,
-   "gf": 18,
-   "gc": 19
+   "pj": 27,
+   "pts": 39,
+   "gf": 20,
+   "gc": 20
   },
   "midland": {
-   "pj": 25,
-   "pts": 38,
-   "gf": 27,
+   "pj": 26,
+   "pts": 41,
+   "gf": 29,
    "gc": 19
   },
   "atlanta": {
@@ -605,9 +605,9 @@
    "gc": 27
   },
   "colegiales": {
-   "pj": 25,
-   "pts": 31,
-   "gf": 23,
+   "pj": 26,
+   "pts": 34,
+   "gf": 24,
    "gc": 25
   },
   "temperley": {
@@ -617,10 +617,10 @@
    "gc": 22
   },
   "tristan": {
-   "pj": 25,
+   "pj": 26,
    "pts": 48,
-   "gf": 28,
-   "gc": 13
+   "gf": 29,
+   "gc": 15
   },
   "patronato": {
    "pj": 26,
@@ -635,10 +635,10 @@
    "gc": 25
   },
   "maipu": {
-   "pj": 26,
+   "pj": 27,
    "pts": 38,
    "gf": 34,
-   "gc": 27
+   "gc": 28
   },
   "agropecuario": {
    "pj": 26,
