@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-30T17:37:22+00:00",
+ "actualizado": "2026-08-30T20:01:41+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -129,10 +129,10 @@
     "id": "mitre",
     "nombre": "Mitre (SdE)",
     "espn": "Mitre (Santiago del Estero)",
-    "pj": 26,
-    "pts": 29,
-    "gf": 25,
-    "gc": 33,
+    "pj": 27,
+    "pts": 30,
+    "gf": 27,
+    "gc": 35,
     "rank_espn": 11,
     "pos": 11,
     "dif": -8
@@ -150,6 +150,18 @@
     "dif": -8
    },
    {
+    "id": "centralnorte",
+    "nombre": "Central Norte",
+    "espn": "Central Norte",
+    "pj": 27,
+    "pts": 29,
+    "gf": 19,
+    "gc": 27,
+    "rank_espn": 13,
+    "pos": 13,
+    "dif": -8
+   },
+   {
     "id": "chacoforever",
     "nombre": "Chaco For Ever",
     "espn": "Chaco For Ever",
@@ -157,21 +169,9 @@
     "pts": 28,
     "gf": 25,
     "gc": 29,
-    "rank_espn": 13,
-    "pos": 13,
-    "dif": -4
-   },
-   {
-    "id": "centralnorte",
-    "nombre": "Central Norte",
-    "espn": "Central Norte",
-    "pj": 26,
-    "pts": 28,
-    "gf": 17,
-    "gc": 25,
     "rank_espn": 14,
     "pos": 14,
-    "dif": -8
+    "dif": -4
    },
    {
     "id": "santelmo",
@@ -515,16 +515,16 @@
    "gc": 29
   },
   "mitre": {
-   "pj": 26,
-   "pts": 29,
-   "gf": 25,
-   "gc": 33
+   "pj": 27,
+   "pts": 30,
+   "gf": 27,
+   "gc": 35
   },
   "centralnorte": {
-   "pj": 26,
-   "pts": 28,
-   "gf": 17,
-   "gc": 25
+   "pj": 27,
+   "pts": 29,
+   "gf": 19,
+   "gc": 27
   },
   "estudiantesc": {
    "pj": 26,
