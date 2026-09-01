@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-01T00:27:37+00:00",
+ "actualizado": "2026-09-01T05:39:10+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -117,8 +117,8 @@
     "id": "losandes",
     "nombre": "Los Andes",
     "espn": "Los Andes",
-    "pj": 25,
-    "pts": 33,
+    "pj": 26,
+    "pts": 34,
     "gf": 20,
     "gc": 15,
     "rank_espn": 10,
@@ -213,8 +213,8 @@
     "id": "acassuso",
     "nombre": "Acassuso",
     "espn": "Acassuso",
-    "pj": 26,
-    "pts": 22,
+    "pj": 27,
+    "pts": 23,
     "gf": 19,
     "gc": 32,
     "rank_espn": 18,
@@ -251,10 +251,10 @@
     "id": "gimnasiaj",
     "nombre": "Gimnasia (J)",
     "espn": "Gimnasia y Esgrima (Jujuy)",
-    "pj": 26,
-    "pts": 45,
-    "gf": 39,
-    "gc": 32,
+    "pj": 27,
+    "pts": 46,
+    "gf": 40,
+    "gc": 33,
     "rank_espn": 3,
     "pos": 3,
     "dif": 7
@@ -380,6 +380,18 @@
     "dif": 4
    },
    {
+    "id": "agropecuario",
+    "nombre": "Agropecuario",
+    "espn": "Agropecuario",
+    "pj": 27,
+    "pts": 30,
+    "gf": 23,
+    "gc": 31,
+    "rank_espn": 14,
+    "pos": 14,
+    "dif": -8
+   },
+   {
     "id": "nuevachicago",
     "nombre": "Nueva Chicago",
     "espn": "Nueva Chicago",
@@ -387,21 +399,9 @@
     "pts": 29,
     "gf": 20,
     "gc": 27,
-    "rank_espn": 14,
-    "pos": 14,
-    "dif": -7
-   },
-   {
-    "id": "agropecuario",
-    "nombre": "Agropecuario",
-    "espn": "Agropecuario",
-    "pj": 26,
-    "pts": 29,
-    "gf": 22,
-    "gc": 30,
     "rank_espn": 15,
     "pos": 15,
-    "dif": -8
+    "dif": -7
    },
    {
     "id": "patronato",
@@ -449,8 +449,8 @@
    "gc": 21
   },
   "losandes": {
-   "pj": 25,
-   "pts": 33,
+   "pj": 26,
+   "pts": 34,
    "gf": 20,
    "gc": 15
   },
@@ -485,8 +485,8 @@
    "gc": 30
   },
   "acassuso": {
-   "pj": 26,
-   "pts": 22,
+   "pj": 27,
+   "pts": 23,
    "gf": 19,
    "gc": 32
   },
@@ -575,10 +575,10 @@
    "gc": 23
   },
   "gimnasiaj": {
-   "pj": 26,
-   "pts": 45,
-   "gf": 39,
-   "gc": 32
+   "pj": 27,
+   "pts": 46,
+   "gf": 40,
+   "gc": 33
   },
   "sanmartinsj": {
    "pj": 26,
@@ -641,10 +641,10 @@
    "gc": 28
   },
   "agropecuario": {
-   "pj": 26,
-   "pts": 29,
-   "gf": 22,
-   "gc": 30
+   "pj": 27,
+   "pts": 30,
+   "gf": 23,
+   "gc": 31
   },
   "sanmartint": {
    "pj": 27,
