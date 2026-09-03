@@ -98,6 +98,14 @@ h1 em{font-style:normal;color:var(--rojo)}
 .contador{padding:10px 16px;border-top:1px solid var(--borde);
   font-size:12px;color:var(--txt3);letter-spacing:.02em}
 .contador b{color:var(--txt2);font-weight:600;font-variant-numeric:tabular-nums}
+.zona-compartir{padding:14px 16px;border-top:1px solid var(--borde)}
+.zona-compartir .compartir{width:100%;font:inherit;font-size:15px;font-weight:700;
+  background:var(--oro);color:#171104;border:0;border-radius:10px;
+  padding:14px;min-height:50px;cursor:pointer}
+.zona-compartir .compartir:active{background:#E0AB25}
+.zona-compartir .compartir:disabled{opacity:.6}
+.zona-compartir .ayuda{display:block;margin-top:9px;font-size:12px;
+  color:var(--txt3);line-height:1.5}
 .veredicto.vacio{color:var(--txt3)}
 .barra{display:flex;align-items:center;justify-content:space-between;gap:12px;
   padding:11px 14px;margin-bottom:14px;background:var(--sup2);
@@ -227,6 +235,21 @@ details.info p b{color:var(--oro);font-weight:700}
 .panel .nota{padding:12px 16px;border-top:1px solid var(--borde);background:var(--sup2);
   font-size:12px;color:var(--txt3);line-height:1.65}
 .panel .nota b{color:var(--oro);font-weight:600}
+.metodo{border-top:1px solid var(--borde);background:var(--sup2)}
+.metodo summary{list-style:none;cursor:pointer;padding:12px 16px;font-size:12.5px;
+  font-weight:600;color:var(--oro);display:flex;justify-content:space-between;gap:10px}
+.metodo summary::-webkit-details-marker{display:none}
+.metodo summary::after{content:"+";font-size:17px;line-height:1}
+.metodo[open] summary::after{content:"\2212"}
+.metodo p{padding:0 16px 11px;font-size:12.5px;color:var(--txt3);line-height:1.7}
+.metodo p b{color:var(--txt2);font-weight:600}
+.metodo table{width:calc(100% - 32px);margin:0 16px 12px;border-collapse:collapse;font-size:12px}
+.metodo th{text-align:right;font-weight:600;color:var(--txt3);padding:4px 0 6px;
+  border-bottom:1px solid var(--borde)}
+.metodo th:first-child{text-align:left}
+.metodo td{padding:6px 0;border-bottom:1px solid #232323;color:var(--txt2);text-align:right;
+  font-variant-numeric:tabular-nums}
+.metodo td:first-child{text-align:left;color:var(--txt3)}
 
 .m .pie{padding:11px 14px;border-top:1px solid var(--borde);font-size:13px;
   color:var(--txt3);line-height:1.55}
@@ -295,7 +318,6 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
 </div>
 <div class="barra barra2">
   <span class="prog" id="progreso">Llaves resueltas: <b>0</b> de 15</span>
-  <button class="reset compartir" id="compartir" type="button" hidden>Compartir mi cuadro</button>
 </div>
 
 <details class="info">
@@ -331,6 +353,10 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
     </div>
   </div>
   <div class="veredicto" id="veredicto"></div>
+  <div class="zona-compartir" id="zonaCompartir" hidden>
+    <button class="compartir" id="compartir" type="button">Compartir mi cuadro</button>
+    <span class="ayuda">Se genera una imagen con los dos ascensos y el camino de tu equipo.</span>
+  </div>
   <div class="contador" id="contador" hidden></div>
 </section>
 
@@ -612,7 +638,7 @@ function render(){
     ? 'Escenario completo: <b>15</b> de 15'
     : 'Llaves resueltas: <b>'+hechas+'</b> de 15';
 
-  document.getElementById('compartir').hidden = !S.finalRed;
+  document.getElementById('zonaCompartir').hidden = !S.finalRed;
   panelDatos();
 
   const ver = document.getElementById('veredicto');
@@ -620,8 +646,8 @@ function render(){
     ver.className = 'veredicto';
     const mio = T[MI_CLUB] ? T[MI_CLUB].n : 'Tu equipo';
     ver.innerHTML = (S.finalAsc===MI_CLUB || S.finalRed===MI_CLUB)
-      ? 'En este escenario <b>'+mio+' asciende</b>.'
-      : 'En este escenario '+mio+' <b>se queda en la categoría</b>.';
+      ? '<b>En el cuadro que armaste, '+mio+' asciende.</b> Es tu escenario, no una probabilidad.'
+      : '<b>En el cuadro que armaste, '+mio+' se queda en la categoría.</b> Es tu escenario, no una probabilidad.';
   } else if(hechas === 0){
     ver.className = 'veredicto vacio';
     ver.innerHTML = 'Elegí los ganadores de arriba y los dos ascensos se van completando acá.';
@@ -897,59 +923,89 @@ const factorial = n => { let r=1; for(let i=2;i<=n;i++) r*=i; return r; };
 const poisson = (l,k) => Math.exp(-l)*Math.pow(l,k)/factorial(k);
 
 function esperados(local, visita){
-  const F = MODELO.fuerzas, mL = MODELO.media_local, mV = MODELO.media_visita;
+  const P = MODELO.parametros, F = MODELO.fuerzas;
   if(!F[local] || !F[visita]) return null;
-  return [Math.max(mL*F[local].atkL*F[visita].defV, .15),
-          Math.max(mV*F[visita].atkV*F[local].defL, .15)];
+  const s = P.encoger;
+  const l = Math.exp(P.mu + P.casa + s*(F[local].atk - F[visita].dfn));
+  const m = Math.exp(P.mu           + s*(F[visita].atk - F[local].dfn));
+  return [Math.min(Math.max(l,.05),8), Math.min(Math.max(m,.05),8)];
 }
 
-function vector(l, tope=9){
-  const v=[]; for(let i=0;i<tope;i++) v.push(poisson(l,i));
-  const s=v.reduce((a,b)=>a+b,0);
-  return v.map(x=>x/s);
+// Correccion de Dixon-Coles: los resultados 0-0, 1-0, 0-1 y 1-1 ocurren mas
+// de lo que predice el Poisson independiente. En esta liga rho da -0,11.
+function tau(x, y, l, m, rho){
+  if(x===0 && y===0) return 1 - l*m*rho;
+  if(x===0 && y===1) return 1 + l*rho;
+  if(x===1 && y===0) return 1 + m*rho;
+  if(x===1 && y===1) return 1 - rho;
+  return 1;
+}
+
+function matrizDC(l, m, rho, tope=9){
+  const pl=[], pm=[];
+  for(let i=0;i<tope;i++){ pl.push(poisson(l,i)); pm.push(poisson(m,i)); }
+  const M=[]; let tot=0;
+  for(let x=0;x<tope;x++){
+    M.push([]);
+    for(let y=0;y<tope;y++){
+      let v = pl[x]*pm[y];
+      if(x<2 && y<2) v *= tau(x,y,l,m,rho);
+      M[x].push(v); tot += v;
+    }
+  }
+  for(let x=0;x<tope;x++) for(let y=0;y<tope;y++) M[x][y] /= tot;
+  return M;
+}
+
+function res1x2(l, m){
+  const M = matrizDC(l, m, MODELO.parametros.rho);
+  let gana=0, empata=0, pierde=0;
+  for(let x=0;x<M.length;x++) for(let y=0;y<M.length;y++){
+    if(x>y) gana += M[x][y]; else if(x===y) empata += M[x][y]; else pierde += M[x][y];
+  }
+  return [gana, empata, pierde];
 }
 
 // partido unico: al mejor ubicado le alcanza el empate
 function probUnico(mejor, peor){
   const e = esperados(mejor, peor); if(!e) return null;
-  const A = vector(e[0]), B = vector(e[1]);
-  let p = 0;
-  for(let i=0;i<A.length;i++) for(let j=0;j<B.length;j++) if(i>=j) p += A[i]*B[j];
-  return p;
+  const p = res1x2(e[0], e[1]);
+  return p[0] + p[1];
 }
 
-// partido unico en cancha neutral, con alargue y penales
+// cancha neutral, con alargue y penales: media ventaja de local
 function probNeutral(a, b){
-  const F = MODELO.fuerzas; if(!F[a]||!F[b]) return null;
-  const base = Math.sqrt(MODELO.media_local*MODELO.media_visita);
-  const la = base*(F[a].atkL+F[a].atkV)/2*(F[b].defL+F[b].defV)/2;
-  const lb = base*(F[b].atkL+F[b].atkV)/2*(F[a].defL+F[a].defV)/2;
-  const A = vector(Math.max(la,.15)), B = vector(Math.max(lb,.15));
-  let gana=0, empata=0;
-  for(let i=0;i<A.length;i++) for(let j=0;j<B.length;j++){
-    if(i>j) gana += A[i]*B[j]; else if(i===j) empata += A[i]*B[j];
-  }
-  return gana + empata/2;
+  const P = MODELO.parametros, F = MODELO.fuerzas;
+  if(!F[a] || !F[b]) return null;
+  const base = Math.exp(P.mu + P.casa/2), s = P.encoger;
+  const la = base*Math.exp(s*(F[a].atk - F[b].dfn));
+  const lb = base*Math.exp(s*(F[b].atk - F[a].dfn));
+  const p = res1x2(Math.max(la,.05), Math.max(lb,.05));
+  return p[0] + p[1]/2;
 }
 
 // ida y vuelta: la vuelta la juega de local el mejor ubicado
 function probSerie(mejor, peor, penales){
   const ida = esperados(peor, mejor), vta = esperados(mejor, peor);
   if(!ida || !vta) return null;
-  const iP = vector(ida[0]), iM = vector(ida[1]);   // ida: local el peor
-  const vM = vector(vta[0]), vP = vector(vta[1]);   // vuelta: local el mejor
-  let p = 0;
-  for(let a=0;a<7;a++) for(let b=0;b<7;b++) for(let c=0;c<7;c++) for(let d=0;d<7;d++){
+  const T=7;
+  const iP=[], iM=[], vM=[], vP=[];
+  for(let i=0;i<T;i++){
+    iP.push(poisson(ida[0],i)); iM.push(poisson(ida[1],i));
+    vM.push(poisson(vta[0],i)); vP.push(poisson(vta[1],i));
+  }
+  let p=0;
+  for(let a=0;a<T;a++) for(let b=0;b<T;b++) for(let c=0;c<T;c++) for(let d=0;d<T;d++){
     const pr = iP[a]*iM[b]*vM[c]*vP[d];
-    if(pr < 1e-9) continue;
-    const ptsM = (b>a?3:b===a?1:0) + (c>d?3:c===d?1:0);
-    const ptsP = (a>b?3:b===a?1:0) + (d>c?3:c===d?1:0);
-    if(ptsM > ptsP) { p += pr; continue; }
-    if(ptsM < ptsP) continue;
+    if(pr < 1e-10) continue;
+    const pm = (b>a?3:b===a?1:0) + (c>d?3:c===d?1:0);
+    const pp = (a>b?3:b===a?1:0) + (d>c?3:c===d?1:0);
+    if(pm > pp){ p += pr; continue; }
+    if(pm < pp) continue;
     const dif = (b+c) - (a+d);
-    if(dif > 0) { p += pr; continue; }
+    if(dif > 0){ p += pr; continue; }
     if(dif < 0) continue;
-    p += penales ? pr*0.5 : pr;      // sin penales manda la ventaja deportiva
+    p += penales ? pr*0.5 : pr;
   }
   return p;
 }
@@ -967,7 +1023,7 @@ function barraProb(pMejor){
 function panelDatos(){
   const cont = document.getElementById('panelDatos');
   if(!VER_DATOS || !MODELO || !MODELO.ascensos){ cont.innerHTML=''; return; }
-  const asc = MODELO.ascensos;
+  const asc = MODELO.ascensos, V = MODELO.validacion;
   const orden = Object.keys(asc).filter(x=>T[x]).sort((a,b)=>asc[b].asciende-asc[a].asciende);
   const top = orden.slice(0,8);
   if(top.indexOf(MI_CLUB) < 0 && asc[MI_CLUB]) top.push(MI_CLUB);
@@ -989,12 +1045,32 @@ function panelDatos(){
   const fecha = MODELO.datos_hasta
     ? new Date(MODELO.datos_hasta+'T12:00:00').toLocaleDateString('es-AR',{day:'2-digit',month:'2-digit'})
     : '';
-  cont.innerHTML = '<section class="panel"><h3>Quién asciende, según los datos</h3>'
-    + filas + propio
-    + '<div class="nota">Se simulan ' + MODELO.simulaciones.toLocaleString('es-AR')
-    + ' veces las ' + MODELO.pendientes + ' fechas que faltan y después los playoffs, '
-    + 'usando el xG de cada equipo. <b>No es un pronóstico</b>: es cuántas veces pasa cada cosa. '
-    + 'Datos hasta el ' + fecha + '.</div></section>';
+
+  const metodo = V ? '<details class="metodo"><summary>Cómo se calcula y qué tan bien anda</summary>'
+    + '<p>Modelo <b>Dixon-Coles</b>: se estima el ataque y la defensa de cada equipo, '
+    + 'separando local de visitante, más el nivel general de goles y la ventaja de local. '
+    + 'Incluye la corrección de los resultados bajos (0-0, 1-0, 0-1, 1-1), que el Poisson simple '
+    + 'subestima, y regularización para que con 36 equipos y pocas fechas no se ajuste al ruido. '
+    + 'Sobre eso se simulan ' + MODELO.simulaciones.toLocaleString('es-AR') + ' veces las '
+    + MODELO.pendientes + ' fechas que faltan y después los playoffs completos.</p>'
+    + '<p>Medido en ' + V.partidos_evaluados + ' partidos que el modelo <b>no vio</b>:</p>'
+    + '<table><tr><th></th><th>log-loss</th><th>RPS</th></tr>'
+    + '<tr><td>Este modelo</td><td>' + V.modelo.logloss + '</td><td>' + V.modelo.rps + '</td></tr>'
+    + '<tr><td>No usar datos de equipos</td><td>' + V.sin_datos.logloss + '</td><td>' + V.sin_datos.rps + '</td></tr>'
+    + '<tr><td>Casas de apuestas</td><td>' + V.mercado.logloss + '</td><td>' + V.mercado.rps + '</td></tr>'
+    + '</table>'
+    + '<p><b>Leelo con esto en la cabeza:</b> el modelo no le gana a no usar ningún dato de equipos, '
+    + 'y las casas de apuestas le ganan a los dos por poco. Esta categoría es, partido a partido, '
+    + 'casi impredecible: empatan el 32% de los partidos y se hacen 1,94 goles. '
+    + 'Lo que sí está bien medido es la ventaja de local, que multiplica los goles por '
+    + MODELO.ventaja_local.toLocaleString('es-AR',{maximumFractionDigits:2}) + ', y la estructura del torneo. Eso es lo que más pesa en el reparto de ascensos: '
+    + 'quién tiene más puntos hoy y cuántas fechas quedan.</p>'
+    + '<p>Datos hasta el ' + fecha + ' · ' + MODELO.partidos_usados + ' partidos jugados · '
+    + 'fuente FootyStats. Números menores a 5% son poco distinguibles entre sí.</p>'
+    + '</details>' : '';
+
+  cont.innerHTML = '<section class="panel"><h3>Qué tan probable es cada ascenso</h3>'
+    + filas + propio + metodo + '</section>';
 }
 
 async function cargarModelo(){
