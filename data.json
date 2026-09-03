@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-03T02:10:00+00:00",
+ "actualizado": "2026-09-03T10:25:08+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -275,13 +275,13 @@
     "id": "midland",
     "nombre": "Midland",
     "espn": "Midland",
-    "pj": 26,
+    "pj": 27,
     "pts": 41,
     "gf": 29,
-    "gc": 19,
+    "gc": 22,
     "rank_espn": 5,
     "pos": 5,
-    "dif": 10
+    "dif": 7
    },
    {
     "id": "gyt",
@@ -332,6 +332,18 @@
     "dif": 4
    },
    {
+    "id": "colegiales",
+    "nombre": "Colegiales",
+    "espn": "Colegiales",
+    "pj": 27,
+    "pts": 37,
+    "gf": 27,
+    "gc": 25,
+    "rank_espn": 10,
+    "pos": 10,
+    "dif": 2
+   },
+   {
     "id": "sanmartint",
     "nombre": "San Martín (T)",
     "espn": "San Martín (Tucumán)",
@@ -339,21 +351,9 @@
     "pts": 36,
     "gf": 27,
     "gc": 24,
-    "rank_espn": 10,
-    "pos": 10,
-    "dif": 3
-   },
-   {
-    "id": "colegiales",
-    "nombre": "Colegiales",
-    "espn": "Colegiales",
-    "pj": 26,
-    "pts": 34,
-    "gf": 24,
-    "gc": 25,
     "rank_espn": 11,
     "pos": 11,
-    "dif": -1
+    "dif": 3
    },
    {
     "id": "almagro",
@@ -593,10 +593,10 @@
    "gc": 20
   },
   "midland": {
-   "pj": 26,
+   "pj": 27,
    "pts": 41,
    "gf": 29,
-   "gc": 19
+   "gc": 22
   },
   "atlanta": {
    "pj": 27,
@@ -605,9 +605,9 @@
    "gc": 28
   },
   "colegiales": {
-   "pj": 26,
-   "pts": 34,
-   "gf": 24,
+   "pj": 27,
+   "pts": 37,
+   "gf": 27,
    "gc": 25
   },
   "temperley": {
