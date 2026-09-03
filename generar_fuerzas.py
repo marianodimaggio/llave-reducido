@@ -41,7 +41,7 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
 sys.path.insert(0, os.path.join(AQUI, 'scraper'))
 import actualizar as A
-from modelo_dc import leer, preparar, ajustar, matriz, logloss, rps, resultado, del_mercado
+from modelo_dc import ajustar, matriz, logloss, rps, resultado
 
 N_SIM   = 10000
 RIDGE   = 20.0     # elegidos por validacion fuera de muestra
@@ -82,7 +82,7 @@ def p1x2(mod, h, a, s=ENCOGER):
 def validar(j, equipos, desde=0.45, cada=25):
     """Predice solo partidos que el modelo no vio y compara con dos referencias."""
     ini = int(len(j) * desde)
-    ps_m, ps_b, ps_k, res = [], [], [], []
+    ps_m, ps_b, res = [], [], []
     mod = None
     for i in range(ini, len(j)):
         if mod is None or (i - ini) % cada == 0:
@@ -92,17 +92,16 @@ def validar(j, equipos, desde=0.45, cada=25):
                       (tr['home_team_goal_count'] == tr['away_team_goal_count']).mean(),
                       (tr['home_team_goal_count'] < tr['away_team_goal_count']).mean()])
         ps_m.append(p1x2(mod, r['ih'], r['ia'])); ps_b.append(b / b.sum())
-        ps_k.append(del_mercado(r)); res.append(resultado(r))
+        res.append(resultado(r))
 
-    idx = [i for i, p in enumerate(ps_k) if p is not None]
-    sub = lambda L: [L[i] for i in idx]
-    rk = [res[i] for i in idx]
     return {
         'partidos_evaluados': len(res),
         'modelo':    {'logloss': round(logloss(ps_m, res), 4), 'rps': round(rps(ps_m, res), 4)},
         'sin_datos': {'logloss': round(logloss(ps_b, res), 4), 'rps': round(rps(ps_b, res), 4)},
-        'mercado':   {'logloss': round(logloss(sub(ps_k), rk), 4),
-                      'rps': round(rps(sub(ps_k), rk), 4), 'n': len(idx)},
+        # medicion contra las casas de apuestas, hecha una vez con un CSV que
+        # traia las cuotas. No se recalcula: partidos.json no las tiene.
+        'mercado':   {'logloss': 1.0138, 'rps': 0.2008, 'medido': '2026-09-02',
+                      'nota': 'medido una vez sobre 267 partidos'},
     }
 
 
@@ -199,21 +198,33 @@ def simular(t, mod, pen, n=N_SIM):
                      'top4': round(t4[i] / n * 100, 1)} for i in range(len(ids))}
 
 
-def main():
-    csv = sys.argv[1] if len(sys.argv) > 1 else None
-    if not csv or not os.path.exists(csv):
-        raise SystemExit('uso: python3 generar_fuerzas.py partidos.csv')
+def desde_json():
+    """Lee partidos.json, que mantiene el scraper con los datos de ESPN."""
+    ruta = os.path.join(AQUI, 'partidos.json')
+    if not os.path.exists(ruta):
+        raise SystemExit('falta partidos.json')
+    d = json.load(open(ruta, encoding='utf-8'))
+    filas = []
+    for p in d['partidos']:
+        filas.append({'ih': p['local'], 'ia': p['visita'],
+                      'f': pd.Timestamp(p['fecha']),
+                      'home_team_goal_count': p['gl'], 'away_team_goal_count': p['gv'],
+                      'status': 'complete' if p['gl'] is not None else 'incomplete'})
+    t = pd.DataFrame(filas).sort_values('f').reset_index(drop=True)
+    return t, d.get('actualizado') or d.get('sembrado')
 
-    d = leer(csv)
+
+def main():
+    d, cuando = desde_json()
     jug = d[d['status'] == 'complete'].reset_index(drop=True)
-    jug, k = preparar(jug)
     pen = d[d['status'] != 'complete']
+    k = None
     t = tabla(jug)
     if len(t) != 36:
         raise SystemExit(f'la tabla tiene {len(t)} equipos, deberian ser 36')
     equipos = sorted(t)
 
-    print(f'jugados {len(jug)} · pendientes {len(pen)}')
+    print(f'jugados {len(jug)} · pendientes {len(pen)} · datos al {cuando[:10]}')
     print('validando fuera de muestra...')
     val = validar(jug, equipos)
     for cual in ('modelo', 'sin_datos', 'mercado'):
@@ -234,12 +245,13 @@ def main():
     json.dump({
         'generado': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds'),
         'datos_hasta': jug['f'].max().strftime('%Y-%m-%d'),
+        'fuente': 'ESPN arg.2 (resultados) · fixture sembrado una vez',
         'partidos_usados': int(len(jug)),
         'pendientes': int(len(pen)),
         'simulaciones': N_SIM,
         'ventaja_local': round(float(np.exp(mod['casa'])), 3),
         'rho': round(mod['rho'], 4),
-        'recalibracion_xg': round(float(k), 4),
+        
         'base_liga': {'local': round(float(base[0]), 4), 'empate': round(float(base[1]), 4),
                       'visita': round(float(base[2]), 4)},
         'validacion': val,

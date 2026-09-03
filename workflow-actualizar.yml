@@ -1,0 +1,71 @@
+name: Actualizar tabla
+
+on:
+  schedule:
+    # La Primera Nacional juega de viernes a lunes. En esa ventana miramos
+    # seguido; el resto de la semana alcanza con cuatro veces por dia.
+    # Los dias son UTC: el lunes a la noche argentino cae en martes UTC.
+    - cron: "*/20 * * * 5,6,0,1,2"
+    - cron: "0 */6 * * 3,4"
+  workflow_dispatch:
+
+concurrency:
+  group: actualizar-tabla
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 1. la tabla de posiciones, que es lo que usa la llave
+      - name: Bajar y validar la tabla
+        id: tabla
+        continue-on-error: true
+        run: python scraper/actualizar.py
+
+      # 2. los resultados partido por partido, que alimentan el modelo.
+      #    Si carga alguno nuevo deja el archivo .hay-nuevos.
+      - name: Bajar resultados nuevos
+        continue-on-error: true
+        run: python scraper/partidos.py
+
+      # 3. el modelo se recalcula SOLO si hubo resultados nuevos.
+      #    Instalar numpy/pandas/scipy tarda, no vale hacerlo al vacio.
+      - name: Recalcular el modelo
+        continue-on-error: true
+        run: |
+          if [ -f .hay-nuevos ]; then
+            pip install --quiet numpy pandas scipy
+            python generar_fuerzas.py
+            rm -f .hay-nuevos
+          else
+            echo "sin resultados nuevos, no se recalcula"
+          fi
+
+      - name: Publicar cambios
+        run: |
+          git config user.name "bot-llave"
+          git config user.email "bot@users.noreply.github.com"
+          for f in data.json estado.json partidos.json fuerzas.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --staged --quiet; then
+            echo "sin cambios"
+          else
+            git commit -m "datos actualizados"
+            git pull --rebase --autostash || true
+            git push
+          fi
+
+      - name: Mostrar el motivo si la tabla fallo
+        if: steps.tabla.outcome == 'failure'
+        run: cat estado.json || echo "sin estado.json"

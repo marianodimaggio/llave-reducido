@@ -11,4 +11,4 @@
   # git diff --quiet sale con 0 cuando NO hay diferencias, y para Netlify
   # salir con 0 significa "saltea el despliegue". Entonces: si lo unico que
   # cambio son los archivos de datos, no se despliega.
-  ignore = "git diff --quiet HEAD^ HEAD -- . ':(exclude)data.json' ':(exclude)estado.json'"
+    ignore = "git diff --quiet HEAD^ HEAD -- . ':(exclude)data.json' ':(exclude)estado.json' ':(exclude)partidos.json' ':(exclude)fuerzas.json'"

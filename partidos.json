@@ -1,0 +1,4542 @@
+{
+"sembrado": "2026-09-03T09:19:04+00:00",
+"origen_fixture": "FootyStats (semilla unica; los resultados los actualiza ESPN)",
+"partidos": [
+{
+"fecha": "2026-02-13",
+"local": "sanmiguel",
+"visita": "centralnorte",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-02-14",
+"local": "rafaela",
+"visita": "almagro",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-02-14",
+"local": "godoy",
+"visita": "bolivar",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-02-14",
+"local": "gyt",
+"visita": "colegiales",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-02-14",
+"local": "moron",
+"visita": "defbelgrano",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-02-14",
+"local": "allboys",
+"visita": "mitre",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-02-14",
+"local": "acassuso",
+"visita": "chacoforever",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-02-14",
+"local": "santelmo",
+"visita": "ferro",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-02-14",
+"local": "agropecuario",
+"visita": "maipu",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-02-14",
+"local": "tristan",
+"visita": "temperley",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-02-14",
+"local": "colon",
+"visita": "madryn",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-02-15",
+"local": "guemes",
+"visita": "nuevachicago",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-02-15",
+"local": "chacarita",
+"visita": "sanmartinsj",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-02-15",
+"local": "losandes",
+"visita": "almirante",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-02-15",
+"local": "racingcba",
+"visita": "estudiantesc",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-02-15",
+"local": "sanmartint",
+"visita": "patronato",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-02-16",
+"local": "atlanta",
+"visita": "quilmes",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-02-16",
+"local": "gimnasiaj",
+"visita": "midland",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-02-21",
+"local": "acassuso",
+"visita": "racingcba",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-02-21",
+"local": "almagro",
+"visita": "sanmartint",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-02-21",
+"local": "nuevachicago",
+"visita": "tristan",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-02-21",
+"local": "ferro",
+"visita": "sanmiguel",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-02-21",
+"local": "madryn",
+"visita": "moron",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-02-21",
+"local": "sanmartinsj",
+"visita": "guemes",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-02-21",
+"local": "quilmes",
+"visita": "midland",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-02-21",
+"local": "patronato",
+"visita": "gyt",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-02-21",
+"local": "maipu",
+"visita": "rafaela",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-02-22",
+"local": "chacoforever",
+"visita": "santelmo",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-02-22",
+"local": "bolivar",
+"visita": "losandes",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-02-22",
+"local": "defbelgrano",
+"visita": "godoy",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-02-22",
+"local": "almirante",
+"visita": "allboys",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-02-22",
+"local": "chacarita",
+"visita": "gimnasiaj",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-02-22",
+"local": "centralnorte",
+"visita": "colon",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-02-22",
+"local": "colegiales",
+"visita": "atlanta",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-02-22",
+"local": "temperley",
+"visita": "agropecuario",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-02-23",
+"local": "mitre",
+"visita": "estudiantesc",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-02-28",
+"local": "gyt",
+"visita": "almagro",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-02-28",
+"local": "losandes",
+"visita": "defbelgrano",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-02-28",
+"local": "sanmiguel",
+"visita": "chacoforever",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-02-28",
+"local": "colon",
+"visita": "ferro",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-02-28",
+"local": "agropecuario",
+"visita": "nuevachicago",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-03-01",
+"local": "godoy",
+"visita": "madryn",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-03-01",
+"local": "gimnasiaj",
+"visita": "quilmes",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-03-01",
+"local": "guemes",
+"visita": "chacarita",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-03-01",
+"local": "midland",
+"visita": "colegiales",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-03-01",
+"local": "moron",
+"visita": "centralnorte",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-03-01",
+"local": "allboys",
+"visita": "bolivar",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-03-01",
+"local": "santelmo",
+"visita": "acassuso",
+"gl": 2,
+"gv": 3
+},
+{
+"fecha": "2026-03-01",
+"local": "sanmartint",
+"visita": "maipu",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-03-01",
+"local": "racingcba",
+"visita": "mitre",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-03-01",
+"local": "estudiantesc",
+"visita": "almirante",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-03-01",
+"local": "rafaela",
+"visita": "temperley",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-03-01",
+"local": "tristan",
+"visita": "sanmartinsj",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-03-03",
+"local": "atlanta",
+"visita": "patronato",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-03-14",
+"local": "racingcba",
+"visita": "almirante",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-03-14",
+"local": "rafaela",
+"visita": "sanmartinsj",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-03-14",
+"local": "losandes",
+"visita": "centralnorte",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-03-14",
+"local": "allboys",
+"visita": "madryn",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-03-14",
+"local": "moron",
+"visita": "chacoforever",
+"gl": 3,
+"gv": 2
+},
+{
+"fecha": "2026-03-14",
+"local": "estudiantesc",
+"visita": "defbelgrano",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-03-14",
+"local": "sanmiguel",
+"visita": "santelmo",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-03-14",
+"local": "godoy",
+"visita": "ferro",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-03-14",
+"local": "tristan",
+"visita": "guemes",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-03-14",
+"local": "quilmes",
+"visita": "patronato",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-03-14",
+"local": "colon",
+"visita": "acassuso",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-03-15",
+"local": "midland",
+"visita": "almagro",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-03-15",
+"local": "agropecuario",
+"visita": "chacarita",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-03-15",
+"local": "gyt",
+"visita": "temperley",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-03-15",
+"local": "gimnasiaj",
+"visita": "colegiales",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-03-15",
+"local": "mitre",
+"visita": "bolivar",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-03-15",
+"local": "sanmartint",
+"visita": "nuevachicago",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-03-17",
+"local": "atlanta",
+"visita": "maipu",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-03-21",
+"local": "sanmartinsj",
+"visita": "sanmartint",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-03-21",
+"local": "almagro",
+"visita": "quilmes",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-03-21",
+"local": "defbelgrano",
+"visita": "mitre",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-03-21",
+"local": "acassuso",
+"visita": "moron",
+"gl": 0,
+"gv": 3
+},
+{
+"fecha": "2026-03-21",
+"local": "sanmiguel",
+"visita": "racingcba",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-03-21",
+"local": "bolivar",
+"visita": "almirante",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-03-21",
+"local": "madryn",
+"visita": "estudiantesc",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-03-21",
+"local": "ferro",
+"visita": "losandes",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-03-21",
+"local": "tristan",
+"visita": "gimnasiaj",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-03-22",
+"local": "chacoforever",
+"visita": "godoy",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-03-22",
+"local": "temperley",
+"visita": "atlanta",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-03-22",
+"local": "santelmo",
+"visita": "colon",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-03-22",
+"local": "patronato",
+"visita": "colegiales",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-03-22",
+"local": "chacarita",
+"visita": "rafaela",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-03-22",
+"local": "centralnorte",
+"visita": "allboys",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-03-22",
+"local": "guemes",
+"visita": "agropecuario",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-03-22",
+"local": "maipu",
+"visita": "midland",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-03-23",
+"local": "nuevachicago",
+"visita": "gyt",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-03-27",
+"local": "bolivar",
+"visita": "agropecuario",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-03-28",
+"local": "chacoforever",
+"visita": "gimnasiaj",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-03-28",
+"local": "sanmartinsj",
+"visita": "racingcba",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-03-28",
+"local": "atlanta",
+"visita": "ferro",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-03-28",
+"local": "almagro",
+"visita": "moron",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-03-28",
+"local": "almirante",
+"visita": "tristan",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-03-28",
+"local": "colegiales",
+"visita": "sanmiguel",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-03-29",
+"local": "losandes",
+"visita": "temperley",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-03-29",
+"local": "nuevachicago",
+"visita": "allboys",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-03-29",
+"local": "patronato",
+"visita": "colon",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-03-29",
+"local": "santelmo",
+"visita": "quilmes",
+"gl": 0,
+"gv": 3
+},
+{
+"fecha": "2026-03-29",
+"local": "chacarita",
+"visita": "estudiantesc",
+"gl": 0,
+"gv": 3
+},
+{
+"fecha": "2026-03-29",
+"local": "madryn",
+"visita": "sanmartint",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-03-29",
+"local": "guemes",
+"visita": "mitre",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-03-29",
+"local": "maipu",
+"visita": "godoy",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-03-29",
+"local": "gyt",
+"visita": "centralnorte",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-03-30",
+"local": "defbelgrano",
+"visita": "rafaela",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-04-04",
+"local": "gyt",
+"visita": "sanmartinsj",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-04-04",
+"local": "allboys",
+"visita": "ferro",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-04",
+"local": "colegiales",
+"visita": "almagro",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-04-04",
+"local": "midland",
+"visita": "temperley",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-04",
+"local": "agropecuario",
+"visita": "tristan",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-04-04",
+"local": "estudiantesc",
+"visita": "centralnorte",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-04-04",
+"local": "godoy",
+"visita": "acassuso",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-04-04",
+"local": "sanmartint",
+"visita": "chacarita",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-04-04",
+"local": "colon",
+"visita": "sanmiguel",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-04-05",
+"local": "losandes",
+"visita": "chacoforever",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-04-05",
+"local": "almirante",
+"visita": "defbelgrano",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-04-05",
+"local": "moron",
+"visita": "santelmo",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-04-05",
+"local": "racingcba",
+"visita": "bolivar",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-04-05",
+"local": "quilmes",
+"visita": "maipu",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-04-05",
+"local": "gimnasiaj",
+"visita": "patronato",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-04-05",
+"local": "mitre",
+"visita": "madryn",
+"gl": 1,
+"gv": 3
+},
+{
+"fecha": "2026-04-05",
+"local": "rafaela",
+"visita": "guemes",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-04-08",
+"local": "atlanta",
+"visita": "nuevachicago",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-04-08",
+"local": "midland",
+"visita": "acassuso",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-04-11",
+"local": "sanmiguel",
+"visita": "moron",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-04-11",
+"local": "santelmo",
+"visita": "godoy",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-04-11",
+"local": "almagro",
+"visita": "patronato",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-04-12",
+"local": "chacarita",
+"visita": "gyt",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-04-12",
+"local": "temperley",
+"visita": "quilmes",
+"gl": 3,
+"gv": 3
+},
+{
+"fecha": "2026-04-12",
+"local": "ferro",
+"visita": "estudiantesc",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-04-12",
+"local": "defbelgrano",
+"visita": "bolivar",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-12",
+"local": "acassuso",
+"visita": "losandes",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-04-12",
+"local": "agropecuario",
+"visita": "gimnasiaj",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-04-12",
+"local": "madryn",
+"visita": "almirante",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-04-12",
+"local": "centralnorte",
+"visita": "mitre",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-04-12",
+"local": "chacoforever",
+"visita": "allboys",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-04-12",
+"local": "guemes",
+"visita": "sanmartint",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-04-12",
+"local": "maipu",
+"visita": "colegiales",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-04-12",
+"local": "colon",
+"visita": "racingcba",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-04-13",
+"local": "nuevachicago",
+"visita": "midland",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-04-13",
+"local": "tristan",
+"visita": "rafaela",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-14",
+"local": "sanmartinsj",
+"visita": "atlanta",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-04-18",
+"local": "losandes",
+"visita": "santelmo",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-18",
+"local": "midland",
+"visita": "sanmartinsj",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-04-18",
+"local": "moron",
+"visita": "colon",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-04-18",
+"local": "allboys",
+"visita": "acassuso",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-18",
+"local": "godoy",
+"visita": "sanmiguel",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-18",
+"local": "quilmes",
+"visita": "nuevachicago",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-18",
+"local": "patronato",
+"visita": "maipu",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-18",
+"local": "bolivar",
+"visita": "madryn",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-04-19",
+"local": "colegiales",
+"visita": "temperley",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-04-19",
+"local": "estudiantesc",
+"visita": "chacoforever",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-19",
+"local": "almirante",
+"visita": "centralnorte",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-04-19",
+"local": "mitre",
+"visita": "ferro",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-04-19",
+"local": "gimnasiaj",
+"visita": "almagro",
+"gl": 6,
+"gv": 1
+},
+{
+"fecha": "2026-04-19",
+"local": "sanmartint",
+"visita": "tristan",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-19",
+"local": "racingcba",
+"visita": "defbelgrano",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-04-19",
+"local": "gyt",
+"visita": "guemes",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-04-20",
+"local": "rafaela",
+"visita": "agropecuario",
+"gl": 4,
+"gv": 1
+},
+{
+"fecha": "2026-04-21",
+"local": "atlanta",
+"visita": "chacarita",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-04-25",
+"local": "temperley",
+"visita": "patronato",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-25",
+"local": "santelmo",
+"visita": "allboys",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-04-25",
+"local": "sanmiguel",
+"visita": "losandes",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-04-25",
+"local": "sanmartinsj",
+"visita": "quilmes",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-04-25",
+"local": "rafaela",
+"visita": "gimnasiaj",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-26",
+"local": "nuevachicago",
+"visita": "colegiales",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-26",
+"local": "tristan",
+"visita": "gyt",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-04-26",
+"local": "moron",
+"visita": "racingcba",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-04-26",
+"local": "acassuso",
+"visita": "estudiantesc",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-04-26",
+"local": "chacarita",
+"visita": "midland",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-04-26",
+"local": "agropecuario",
+"visita": "sanmartint",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-04-26",
+"local": "madryn",
+"visita": "defbelgrano",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-04-26",
+"local": "centralnorte",
+"visita": "bolivar",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-04-26",
+"local": "guemes",
+"visita": "atlanta",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-04-26",
+"local": "chacoforever",
+"visita": "mitre",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-04-26",
+"local": "maipu",
+"visita": "almagro",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-04-26",
+"local": "colon",
+"visita": "godoy",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-04-28",
+"local": "ferro",
+"visita": "almirante",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-04-30",
+"local": "allboys",
+"visita": "sanmiguel",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-02",
+"local": "estudiantesc",
+"visita": "santelmo",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-02",
+"local": "losandes",
+"visita": "colon",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-02",
+"local": "defbelgrano",
+"visita": "centralnorte",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-02",
+"local": "sanmartint",
+"visita": "rafaela",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-05-03",
+"local": "atlanta",
+"visita": "tristan",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-05-03",
+"local": "almagro",
+"visita": "temperley",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-03",
+"local": "mitre",
+"visita": "acassuso",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-05-03",
+"local": "colegiales",
+"visita": "sanmartinsj",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-05-03",
+"local": "gimnasiaj",
+"visita": "maipu",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-03",
+"local": "almirante",
+"visita": "chacoforever",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-03",
+"local": "bolivar",
+"visita": "ferro",
+"gl": 2,
+"gv": 4
+},
+{
+"fecha": "2026-05-03",
+"local": "patronato",
+"visita": "nuevachicago",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-05-03",
+"local": "midland",
+"visita": "guemes",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-05-03",
+"local": "godoy",
+"visita": "moron",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-05-03",
+"local": "racingcba",
+"visita": "madryn",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-05-04",
+"local": "quilmes",
+"visita": "chacarita",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-05",
+"local": "gyt",
+"visita": "agropecuario",
+"gl": 2,
+"gv": 3
+},
+{
+"fecha": "2026-05-09",
+"local": "moron",
+"visita": "losandes",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-09",
+"local": "santelmo",
+"visita": "mitre",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-09",
+"local": "tristan",
+"visita": "midland",
+"gl": 1,
+"gv": 3
+},
+{
+"fecha": "2026-05-09",
+"local": "sanmiguel",
+"visita": "estudiantesc",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-09",
+"local": "temperley",
+"visita": "maipu",
+"gl": 0,
+"gv": 5
+},
+{
+"fecha": "2026-05-09",
+"local": "sanmartinsj",
+"visita": "patronato",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-09",
+"local": "rafaela",
+"visita": "gyt",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-10",
+"local": "acassuso",
+"visita": "almirante",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-10",
+"local": "chacarita",
+"visita": "colegiales",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-05-10",
+"local": "agropecuario",
+"visita": "atlanta",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-10",
+"local": "guemes",
+"visita": "quilmes",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-05-10",
+"local": "chacoforever",
+"visita": "bolivar",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-05-10",
+"local": "godoy",
+"visita": "racingcba",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-05-10",
+"local": "centralnorte",
+"visita": "madryn",
+"gl": 2,
+"gv": 3
+},
+{
+"fecha": "2026-05-10",
+"local": "colon",
+"visita": "allboys",
+"gl": 3,
+"gv": 2
+},
+{
+"fecha": "2026-05-11",
+"local": "ferro",
+"visita": "defbelgrano",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-05-11",
+"local": "nuevachicago",
+"visita": "almagro",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-05-13",
+"local": "sanmartint",
+"visita": "gimnasiaj",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-05-16",
+"local": "racingcba",
+"visita": "centralnorte",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-05-16",
+"local": "atlanta",
+"visita": "rafaela",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-05-16",
+"local": "losandes",
+"visita": "godoy",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-16",
+"local": "estudiantesc",
+"visita": "colon",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-16",
+"local": "almirante",
+"visita": "santelmo",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-16",
+"local": "colegiales",
+"visita": "guemes",
+"gl": 4,
+"gv": 1
+},
+{
+"fecha": "2026-05-16",
+"local": "bolivar",
+"visita": "acassuso",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-17",
+"local": "madryn",
+"visita": "ferro",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-05-17",
+"local": "almagro",
+"visita": "sanmartinsj",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-05-17",
+"local": "gimnasiaj",
+"visita": "temperley",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-17",
+"local": "patronato",
+"visita": "chacarita",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-05-17",
+"local": "mitre",
+"visita": "sanmiguel",
+"gl": 4,
+"gv": 0
+},
+{
+"fecha": "2026-05-17",
+"local": "midland",
+"visita": "agropecuario",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-05-17",
+"local": "maipu",
+"visita": "nuevachicago",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-17",
+"local": "quilmes",
+"visita": "tristan",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-05-17",
+"local": "gyt",
+"visita": "sanmartint",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-18",
+"local": "defbelgrano",
+"visita": "chacoforever",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-18",
+"local": "allboys",
+"visita": "moron",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-23",
+"local": "tristan",
+"visita": "colegiales",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-23",
+"local": "losandes",
+"visita": "racingcba",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-05-23",
+"local": "santelmo",
+"visita": "bolivar",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-05-23",
+"local": "sanmiguel",
+"visita": "almirante",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-23",
+"local": "nuevachicago",
+"visita": "temperley",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-23",
+"local": "sanmartinsj",
+"visita": "maipu",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-05-23",
+"local": "rafaela",
+"visita": "midland",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-24",
+"local": "acassuso",
+"visita": "defbelgrano",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-24",
+"local": "moron",
+"visita": "estudiantesc",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-05-24",
+"local": "chacarita",
+"visita": "almagro",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-24",
+"local": "agropecuario",
+"visita": "quilmes",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-24",
+"local": "ferro",
+"visita": "centralnorte",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-24",
+"local": "chacoforever",
+"visita": "madryn",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-05-24",
+"local": "godoy",
+"visita": "allboys",
+"gl": 4,
+"gv": 0
+},
+{
+"fecha": "2026-05-24",
+"local": "colon",
+"visita": "mitre",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-24",
+"local": "gyt",
+"visita": "gimnasiaj",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-24",
+"local": "guemes",
+"visita": "patronato",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-24",
+"local": "sanmartint",
+"visita": "atlanta",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-05-30",
+"local": "racingcba",
+"visita": "ferro",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-30",
+"local": "colegiales",
+"visita": "agropecuario",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-30",
+"local": "estudiantesc",
+"visita": "godoy",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-30",
+"local": "almirante",
+"visita": "colon",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-30",
+"local": "allboys",
+"visita": "losandes",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-30",
+"local": "defbelgrano",
+"visita": "santelmo",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-05-31",
+"local": "atlanta",
+"visita": "gyt",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-31",
+"local": "madryn",
+"visita": "acassuso",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-05-31",
+"local": "almagro",
+"visita": "guemes",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-05-31",
+"local": "midland",
+"visita": "sanmartint",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-05-31",
+"local": "patronato",
+"visita": "tristan",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-31",
+"local": "mitre",
+"visita": "moron",
+"gl": 1,
+"gv": 3
+},
+{
+"fecha": "2026-05-31",
+"local": "bolivar",
+"visita": "sanmiguel",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-31",
+"local": "temperley",
+"visita": "sanmartinsj",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-05-31",
+"local": "centralnorte",
+"visita": "chacoforever",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-05-31",
+"local": "maipu",
+"visita": "chacarita",
+"gl": 3,
+"gv": 2
+},
+{
+"fecha": "2026-05-31",
+"local": "quilmes",
+"visita": "rafaela",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-06-06",
+"local": "gyt",
+"visita": "midland",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-06-06",
+"local": "atlanta",
+"visita": "gimnasiaj",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-06-06",
+"local": "losandes",
+"visita": "estudiantesc",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-06-06",
+"local": "acassuso",
+"visita": "centralnorte",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-06-06",
+"local": "sanmiguel",
+"visita": "defbelgrano",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-06-06",
+"local": "rafaela",
+"visita": "colegiales",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-06-06",
+"local": "tristan",
+"visita": "almagro",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-06-07",
+"local": "santelmo",
+"visita": "madryn",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-06-07",
+"local": "moron",
+"visita": "almirante",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-06-07",
+"local": "chacarita",
+"visita": "temperley",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-06-07",
+"local": "allboys",
+"visita": "racingcba",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-06-07",
+"local": "agropecuario",
+"visita": "patronato",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-06-07",
+"local": "guemes",
+"visita": "maipu",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-06-07",
+"local": "chacoforever",
+"visita": "ferro",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-06-07",
+"local": "godoy",
+"visita": "mitre",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-06-07",
+"local": "colon",
+"visita": "bolivar",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-06-07",
+"local": "sanmartint",
+"visita": "quilmes",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-06-13",
+"local": "midland",
+"visita": "atlanta",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-06-13",
+"local": "colegiales",
+"visita": "sanmartint",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-06-13",
+"local": "almagro",
+"visita": "agropecuario",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-06-13",
+"local": "defbelgrano",
+"visita": "colon",
+"gl": 0,
+"gv": 3
+},
+{
+"fecha": "2026-06-13",
+"local": "nuevachicago",
+"visita": "chacarita",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-06-13",
+"local": "bolivar",
+"visita": "moron",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-06-13",
+"local": "quilmes",
+"visita": "gyt",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-06-13",
+"local": "gimnasiaj",
+"visita": "sanmartinsj",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-06-14",
+"local": "almirante",
+"visita": "godoy",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-06-14",
+"local": "madryn",
+"visita": "sanmiguel",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-06-14",
+"local": "estudiantesc",
+"visita": "allboys",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-06-14",
+"local": "patronato",
+"visita": "rafaela",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-06-14",
+"local": "ferro",
+"visita": "acassuso",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-06-14",
+"local": "mitre",
+"visita": "losandes",
+"gl": 0,
+"gv": 3
+},
+{
+"fecha": "2026-06-14",
+"local": "temperley",
+"visita": "guemes",
+"gl": 4,
+"gv": 1
+},
+{
+"fecha": "2026-06-14",
+"local": "racingcba",
+"visita": "chacoforever",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-06-14",
+"local": "maipu",
+"visita": "tristan",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-06-14",
+"local": "centralnorte",
+"visita": "santelmo",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-06-17",
+"local": "gimnasiaj",
+"visita": "nuevachicago",
+"gl": 4,
+"gv": 0
+},
+{
+"fecha": "2026-06-20",
+"local": "santelmo",
+"visita": "racingcba",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-06-20",
+"local": "bolivar",
+"visita": "estudiantesc",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-06-20",
+"local": "colegiales",
+"visita": "quilmes",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-06-20",
+"local": "almagro",
+"visita": "atlanta",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-06-20",
+"local": "acassuso",
+"visita": "sanmiguel",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-06-20",
+"local": "chacoforever",
+"visita": "colon",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-06-20",
+"local": "temperley",
+"visita": "sanmartint",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-06-20",
+"local": "sanmartinsj",
+"visita": "agropecuario",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-06-21",
+"local": "madryn",
+"visita": "losandes",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-06-21",
+"local": "ferro",
+"visita": "moron",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-06-21",
+"local": "defbelgrano",
+"visita": "allboys",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-06-21",
+"local": "almirante",
+"visita": "mitre",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-06-21",
+"local": "chacarita",
+"visita": "tristan",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-06-21",
+"local": "patronato",
+"visita": "midland",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-06-21",
+"local": "centralnorte",
+"visita": "godoy",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-06-21",
+"local": "maipu",
+"visita": "gyt",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-06-21",
+"local": "guemes",
+"visita": "gimnasiaj",
+"gl": 1,
+"gv": 3
+},
+{
+"fecha": "2026-06-23",
+"local": "nuevachicago",
+"visita": "rafaela",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-07-04",
+"local": "colegiales",
+"visita": "gyt",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-07-04",
+"local": "temperley",
+"visita": "tristan",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-07-04",
+"local": "almagro",
+"visita": "rafaela",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-07-04",
+"local": "defbelgrano",
+"visita": "moron",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-07-04",
+"local": "nuevachicago",
+"visita": "guemes",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-07-04",
+"local": "almirante",
+"visita": "losandes",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-07-04",
+"local": "bolivar",
+"visita": "godoy",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-07-04",
+"local": "quilmes",
+"visita": "atlanta",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-07-05",
+"local": "estudiantesc",
+"visita": "racingcba",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-07-05",
+"local": "madryn",
+"visita": "colon",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-07-05",
+"local": "chacoforever",
+"visita": "acassuso",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-07-05",
+"local": "patronato",
+"visita": "sanmartint",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-07-05",
+"local": "ferro",
+"visita": "santelmo",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-07-05",
+"local": "sanmartinsj",
+"visita": "chacarita",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-07-05",
+"local": "midland",
+"visita": "gimnasiaj",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-07-05",
+"local": "mitre",
+"visita": "allboys",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-07-05",
+"local": "centralnorte",
+"visita": "sanmiguel",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-07-05",
+"local": "maipu",
+"visita": "agropecuario",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-07-11",
+"local": "losandes",
+"visita": "bolivar",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-07-11",
+"local": "moron",
+"visita": "madryn",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-07-11",
+"local": "santelmo",
+"visita": "chacoforever",
+"gl": 1,
+"gv": 3
+},
+{
+"fecha": "2026-07-11",
+"local": "estudiantesc",
+"visita": "mitre",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-07-11",
+"local": "rafaela",
+"visita": "maipu",
+"gl": 1,
+"gv": 3
+},
+{
+"fecha": "2026-07-11",
+"local": "sanmiguel",
+"visita": "ferro",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-07-11",
+"local": "allboys",
+"visita": "almirante",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-07-11",
+"local": "tristan",
+"visita": "nuevachicago",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-07-12",
+"local": "gimnasiaj",
+"visita": "chacarita",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-07-12",
+"local": "colon",
+"visita": "centralnorte",
+"gl": 4,
+"gv": 0
+},
+{
+"fecha": "2026-07-12",
+"local": "racingcba",
+"visita": "acassuso",
+"gl": 3,
+"gv": 2
+},
+{
+"fecha": "2026-07-12",
+"local": "agropecuario",
+"visita": "temperley",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-07-12",
+"local": "guemes",
+"visita": "sanmartinsj",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-07-12",
+"local": "midland",
+"visita": "quilmes",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-07-12",
+"local": "godoy",
+"visita": "defbelgrano",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-07-12",
+"local": "gyt",
+"visita": "patronato",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-07-12",
+"local": "sanmartint",
+"visita": "almagro",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-07-14",
+"local": "atlanta",
+"visita": "colegiales",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-07-17",
+"local": "maipu",
+"visita": "sanmartint",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-07-17",
+"local": "almirante",
+"visita": "estudiantesc",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-07-17",
+"local": "mitre",
+"visita": "racingcba",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-07-17",
+"local": "nuevachicago",
+"visita": "agropecuario",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-07-17",
+"local": "ferro",
+"visita": "colon",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-07-17",
+"local": "bolivar",
+"visita": "allboys",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-07-17",
+"local": "temperley",
+"visita": "rafaela",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-07-25",
+"local": "tristan",
+"visita": "chacarita",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-07-25",
+"local": "estudiantesc",
+"visita": "bolivar",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-07-25",
+"local": "rafaela",
+"visita": "nuevachicago",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-07-25",
+"local": "sanmartint",
+"visita": "temperley",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-07-26",
+"local": "allboys",
+"visita": "defbelgrano",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-07-26",
+"local": "losandes",
+"visita": "madryn",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-07-26",
+"local": "agropecuario",
+"visita": "sanmartinsj",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-07-26",
+"local": "colon",
+"visita": "chacoforever",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-07-26",
+"local": "moron",
+"visita": "ferro",
+"gl": 4,
+"gv": 0
+},
+{
+"fecha": "2026-07-26",
+"local": "sanmiguel",
+"visita": "acassuso",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-07-26",
+"local": "mitre",
+"visita": "almirante",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-07-26",
+"local": "gimnasiaj",
+"visita": "guemes",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-07-26",
+"local": "racingcba",
+"visita": "santelmo",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-07-26",
+"local": "midland",
+"visita": "patronato",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-07-26",
+"local": "godoy",
+"visita": "centralnorte",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-07-26",
+"local": "gyt",
+"visita": "maipu",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-07-26",
+"local": "quilmes",
+"visita": "colegiales",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-07-27",
+"local": "atlanta",
+"visita": "almagro",
+"gl": 1,
+"gv": 3
+},
+{
+"fecha": "2026-08-01",
+"local": "nuevachicago",
+"visita": "sanmartint",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-08-01",
+"local": "acassuso",
+"visita": "colon",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-08-01",
+"local": "colegiales",
+"visita": "gimnasiaj",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-08-01",
+"local": "almagro",
+"visita": "midland",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-08-01",
+"local": "defbelgrano",
+"visita": "estudiantesc",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-08-01",
+"local": "ferro",
+"visita": "godoy",
+"gl": 1,
+"gv": 3
+},
+{
+"fecha": "2026-08-01",
+"local": "patronato",
+"visita": "quilmes",
+"gl": 3,
+"gv": 3
+},
+{
+"fecha": "2026-08-01",
+"local": "sanmartinsj",
+"visita": "rafaela",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-08-02",
+"local": "bolivar",
+"visita": "mitre",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-08-02",
+"local": "santelmo",
+"visita": "sanmiguel",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-02",
+"local": "chacarita",
+"visita": "agropecuario",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-08-02",
+"local": "almirante",
+"visita": "racingcba",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-02",
+"local": "maipu",
+"visita": "atlanta",
+"gl": 4,
+"gv": 2
+},
+{
+"fecha": "2026-08-02",
+"local": "temperley",
+"visita": "gyt",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-08-02",
+"local": "chacoforever",
+"visita": "moron",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-02",
+"local": "madryn",
+"visita": "allboys",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-02",
+"local": "centralnorte",
+"visita": "losandes",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-03",
+"local": "guemes",
+"visita": "tristan",
+"gl": 1,
+"gv": 3
+},
+{
+"fecha": "2026-08-05",
+"local": "almagro",
+"visita": "gyt",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-08-05",
+"local": "quilmes",
+"visita": "gimnasiaj",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-07",
+"local": "midland",
+"visita": "maipu",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-08",
+"local": "agropecuario",
+"visita": "guemes",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-08-08",
+"local": "almirante",
+"visita": "bolivar",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-08",
+"local": "estudiantesc",
+"visita": "madryn",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-08-08",
+"local": "rafaela",
+"visita": "chacarita",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-09",
+"local": "atlanta",
+"visita": "temperley",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-09",
+"local": "losandes",
+"visita": "ferro",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-08-09",
+"local": "colegiales",
+"visita": "patronato",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-08-09",
+"local": "moron",
+"visita": "acassuso",
+"gl": 4,
+"gv": 1
+},
+{
+"fecha": "2026-08-09",
+"local": "colon",
+"visita": "santelmo",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-09",
+"local": "racingcba",
+"visita": "sanmiguel",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-09",
+"local": "mitre",
+"visita": "defbelgrano",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-08-09",
+"local": "godoy",
+"visita": "chacoforever",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-08-09",
+"local": "quilmes",
+"visita": "almagro",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-08-09",
+"local": "gyt",
+"visita": "nuevachicago",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-09",
+"local": "sanmartint",
+"visita": "sanmartinsj",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-08-10",
+"local": "allboys",
+"visita": "centralnorte",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-08-10",
+"local": "gimnasiaj",
+"visita": "tristan",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-08-14",
+"local": "acassuso",
+"visita": "midland",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-08-14",
+"local": "rafaela",
+"visita": "defbelgrano",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-08-15",
+"local": "agropecuario",
+"visita": "bolivar",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-15",
+"local": "ferro",
+"visita": "atlanta",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-08-15",
+"local": "moron",
+"visita": "almagro",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-15",
+"local": "sanmiguel",
+"visita": "colegiales",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-15",
+"local": "mitre",
+"visita": "guemes",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-08-15",
+"local": "colon",
+"visita": "patronato",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-08-15",
+"local": "godoy",
+"visita": "maipu",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-08-15",
+"local": "estudiantesc",
+"visita": "chacarita",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-15",
+"local": "quilmes",
+"visita": "santelmo",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-08-16",
+"local": "tristan",
+"visita": "almirante",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-08-16",
+"local": "gimnasiaj",
+"visita": "chacoforever",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-16",
+"local": "racingcba",
+"visita": "sanmartinsj",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-08-16",
+"local": "sanmartint",
+"visita": "madryn",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-08-16",
+"local": "centralnorte",
+"visita": "gyt",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-08-16",
+"local": "temperley",
+"visita": "losandes",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-08-17",
+"local": "allboys",
+"visita": "nuevachicago",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-19",
+"local": "chacarita",
+"visita": "guemes",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-08-21",
+"local": "acassuso",
+"visita": "godoy",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-08-21",
+"local": "santelmo",
+"visita": "moron",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-08-21",
+"local": "madryn",
+"visita": "mitre",
+"gl": 4,
+"gv": 0
+},
+{
+"fecha": "2026-08-22",
+"local": "tristan",
+"visita": "agropecuario",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-22",
+"local": "sanmartinsj",
+"visita": "gyt",
+"gl": 3,
+"gv": 1
+},
+{
+"fecha": "2026-08-22",
+"local": "sanmiguel",
+"visita": "colon",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-08-22",
+"local": "defbelgrano",
+"visita": "almirante",
+"gl": 0,
+"gv": 2
+},
+{
+"fecha": "2026-08-22",
+"local": "nuevachicago",
+"visita": "atlanta",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-08-22",
+"local": "almagro",
+"visita": "colegiales",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-08-22",
+"local": "patronato",
+"visita": "gimnasiaj",
+"gl": 3,
+"gv": 3
+},
+{
+"fecha": "2026-08-22",
+"local": "chacoforever",
+"visita": "losandes",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-23",
+"local": "centralnorte",
+"visita": "estudiantesc",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-08-23",
+"local": "chacarita",
+"visita": "sanmartint",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-08-23",
+"local": "maipu",
+"visita": "quilmes",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-23",
+"local": "bolivar",
+"visita": "racingcba",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-08-23",
+"local": "temperley",
+"visita": "midland",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-08-24",
+"local": "guemes",
+"visita": "rafaela",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-08-24",
+"local": "ferro",
+"visita": "allboys",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-25",
+"local": "madryn",
+"visita": "godoy",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-26",
+"local": "acassuso",
+"visita": "santelmo",
+"gl": 1,
+"gv": 2
+},
+{
+"fecha": "2026-08-26",
+"local": "chacoforever",
+"visita": "sanmiguel",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-08-26",
+"local": "sanmartinsj",
+"visita": "nuevachicago",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-26",
+"local": "patronato",
+"visita": "atlanta",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-27",
+"local": "centralnorte",
+"visita": "moron",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-08-29",
+"local": "gyt",
+"visita": "chacarita",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-29",
+"local": "colegiales",
+"visita": "maipu",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-29",
+"local": "rafaela",
+"visita": "tristan",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-08-29",
+"local": "bolivar",
+"visita": "defbelgrano",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-29",
+"local": "midland",
+"visita": "nuevachicago",
+"gl": 2,
+"gv": 0
+},
+{
+"fecha": "2026-08-30",
+"local": "almirante",
+"visita": "madryn",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-30",
+"local": "mitre",
+"visita": "centralnorte",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-08-30",
+"local": "moron",
+"visita": "sanmiguel",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-08-30",
+"local": "patronato",
+"visita": "almagro",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-08-30",
+"local": "estudiantesc",
+"visita": "ferro",
+"gl": 2,
+"gv": 2
+},
+{
+"fecha": "2026-08-30",
+"local": "allboys",
+"visita": "chacoforever",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-08-30",
+"local": "atlanta",
+"visita": "sanmartinsj",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-08-30",
+"local": "racingcba",
+"visita": "colon",
+"gl": 1,
+"gv": 0
+},
+{
+"fecha": "2026-08-30",
+"local": "godoy",
+"visita": "santelmo",
+"gl": 3,
+"gv": 0
+},
+{
+"fecha": "2026-08-30",
+"local": "sanmartint",
+"visita": "guemes",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-08-30",
+"local": "quilmes",
+"visita": "temperley",
+"gl": 0,
+"gv": 1
+},
+{
+"fecha": "2026-08-31",
+"local": "losandes",
+"visita": "acassuso",
+"gl": 0,
+"gv": 0
+},
+{
+"fecha": "2026-09-01",
+"local": "gimnasiaj",
+"visita": "agropecuario",
+"gl": 1,
+"gv": 1
+},
+{
+"fecha": "2026-09-02",
+"local": "colegiales",
+"visita": "midland",
+"gl": 2,
+"gv": 1
+},
+{
+"fecha": "2026-09-04",
+"local": "defbelgrano",
+"visita": "racingcba",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-04",
+"local": "ferro",
+"visita": "mitre",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-05",
+"local": "tristan",
+"visita": "sanmartint",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-05",
+"local": "santelmo",
+"visita": "losandes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-05",
+"local": "chacarita",
+"visita": "atlanta",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-05",
+"local": "temperley",
+"visita": "colegiales",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-05",
+"local": "colon",
+"visita": "moron",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-06",
+"local": "sanmiguel",
+"visita": "godoy",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-06",
+"local": "agropecuario",
+"visita": "rafaela",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-06",
+"local": "sanmartinsj",
+"visita": "midland",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-06",
+"local": "almagro",
+"visita": "gimnasiaj",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-06",
+"local": "acassuso",
+"visita": "allboys",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-06",
+"local": "chacoforever",
+"visita": "estudiantesc",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-06",
+"local": "madryn",
+"visita": "bolivar",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-06",
+"local": "maipu",
+"visita": "patronato",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-06",
+"local": "guemes",
+"visita": "gyt",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-06",
+"local": "centralnorte",
+"visita": "almirante",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-07",
+"local": "nuevachicago",
+"visita": "quilmes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-09",
+"local": "defbelgrano",
+"visita": "losandes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "estudiantesc",
+"visita": "acassuso",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "sanmartint",
+"visita": "agropecuario",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "gyt",
+"visita": "tristan",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "godoy",
+"visita": "colon",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "bolivar",
+"visita": "centralnorte",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "gimnasiaj",
+"visita": "rafaela",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "losandes",
+"visita": "sanmiguel",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "colegiales",
+"visita": "nuevachicago",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "atlanta",
+"visita": "guemes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "almagro",
+"visita": "maipu",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "midland",
+"visita": "chacarita",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "almirante",
+"visita": "ferro",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "defbelgrano",
+"visita": "madryn",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "allboys",
+"visita": "santelmo",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "patronato",
+"visita": "temperley",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "quilmes",
+"visita": "sanmartinsj",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "mitre",
+"visita": "chacoforever",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-12",
+"local": "racingcba",
+"visita": "moron",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-16",
+"local": "sanmartinsj",
+"visita": "tristan",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "moron",
+"visita": "godoy",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "agropecuario",
+"visita": "gyt",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "santelmo",
+"visita": "estudiantesc",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "sanmiguel",
+"visita": "allboys",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "colon",
+"visita": "losandes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "nuevachicago",
+"visita": "patronato",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "madryn",
+"visita": "racingcba",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "rafaela",
+"visita": "sanmartint",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "maipu",
+"visita": "gimnasiaj",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "centralnorte",
+"visita": "defbelgrano",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "chacoforever",
+"visita": "almirante",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "temperley",
+"visita": "almagro",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "tristan",
+"visita": "atlanta",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "sanmartinsj",
+"visita": "colegiales",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "ferro",
+"visita": "bolivar",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "chacarita",
+"visita": "quilmes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "acassuso",
+"visita": "mitre",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-19",
+"local": "guemes",
+"visita": "midland",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "maipu",
+"visita": "temperley",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "bolivar",
+"visita": "chacoforever",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "racingcba",
+"visita": "godoy",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "midland",
+"visita": "tristan",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "defbelgrano",
+"visita": "ferro",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "losandes",
+"visita": "moron",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "colegiales",
+"visita": "chacarita",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "estudiantesc",
+"visita": "sanmiguel",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "atlanta",
+"visita": "agropecuario",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "mitre",
+"visita": "santelmo",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "almagro",
+"visita": "nuevachicago",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "patronato",
+"visita": "sanmartinsj",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "allboys",
+"visita": "colon",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "madryn",
+"visita": "centralnorte",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "gimnasiaj",
+"visita": "sanmartint",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "gyt",
+"visita": "rafaela",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "almirante",
+"visita": "acassuso",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-09-26",
+"local": "quilmes",
+"visita": "guemes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "godoy",
+"visita": "losandes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "sanmiguel",
+"visita": "mitre",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "chacoforever",
+"visita": "defbelgrano",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "rafaela",
+"visita": "atlanta",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "guemes",
+"visita": "colegiales",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "nuevachicago",
+"visita": "maipu",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "santelmo",
+"visita": "almirante",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "centralnorte",
+"visita": "racingcba",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "acassuso",
+"visita": "bolivar",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "colon",
+"visita": "estudiantesc",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "ferro",
+"visita": "madryn",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "sanmartinsj",
+"visita": "almagro",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "agropecuario",
+"visita": "midland",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "sanmartint",
+"visita": "gyt",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "temperley",
+"visita": "gimnasiaj",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "chacarita",
+"visita": "patronato",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "tristan",
+"visita": "quilmes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-03",
+"local": "moron",
+"visita": "allboys",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "temperley",
+"visita": "nuevachicago",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "almagro",
+"visita": "chacarita",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "madryn",
+"visita": "chacoforever",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "midland",
+"visita": "rafaela",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "atlanta",
+"visita": "sanmartint",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "maipu",
+"visita": "sanmartinsj",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "allboys",
+"visita": "godoy",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "mitre",
+"visita": "colon",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "almirante",
+"visita": "sanmiguel",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "estudiantesc",
+"visita": "moron",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "patronato",
+"visita": "guemes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "quilmes",
+"visita": "agropecuario",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "colegiales",
+"visita": "tristan",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "racingcba",
+"visita": "losandes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "defbelgrano",
+"visita": "acassuso",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "gimnasiaj",
+"visita": "gyt",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "bolivar",
+"visita": "santelmo",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-10",
+"local": "centralnorte",
+"visita": "ferro",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "tristan",
+"visita": "patronato",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "agropecuario",
+"visita": "colegiales",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "nuevachicago",
+"visita": "gimnasiaj",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "sanmartinsj",
+"visita": "temperley",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "acassuso",
+"visita": "madryn",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "godoy",
+"visita": "estudiantesc",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "moron",
+"visita": "mitre",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "chacoforever",
+"visita": "centralnorte",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "santelmo",
+"visita": "defbelgrano",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "gyt",
+"visita": "atlanta",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "sanmartint",
+"visita": "midland",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "losandes",
+"visita": "allboys",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "ferro",
+"visita": "racingcba",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "sanmiguel",
+"visita": "bolivar",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "guemes",
+"visita": "almagro",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "colon",
+"visita": "almirante",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "rafaela",
+"visita": "quilmes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-17",
+"local": "chacarita",
+"visita": "maipu",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "ferro",
+"visita": "chacoforever",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "colegiales",
+"visita": "rafaela",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "nuevachicago",
+"visita": "sanmartinsj",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "midland",
+"visita": "gyt",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "estudiantesc",
+"visita": "losandes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "mitre",
+"visita": "godoy",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "gimnasiaj",
+"visita": "atlanta",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "maipu",
+"visita": "guemes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "defbelgrano",
+"visita": "sanmiguel",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "bolivar",
+"visita": "colon",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "patronato",
+"visita": "agropecuario",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "centralnorte",
+"visita": "acassuso",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "madryn",
+"visita": "santelmo",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "temperley",
+"visita": "chacarita",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "quilmes",
+"visita": "sanmartint",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "almagro",
+"visita": "tristan",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "almirante",
+"visita": "moron",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-24",
+"local": "racingcba",
+"visita": "allboys",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "godoy",
+"visita": "almirante",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "losandes",
+"visita": "mitre",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "gyt",
+"visita": "quilmes",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "atlanta",
+"visita": "midland",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "chacoforever",
+"visita": "racingcba",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "guemes",
+"visita": "temperley",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "santelmo",
+"visita": "centralnorte",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "acassuso",
+"visita": "ferro",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "agropecuario",
+"visita": "almagro",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "moron",
+"visita": "bolivar",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "allboys",
+"visita": "estudiantesc",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "rafaela",
+"visita": "patronato",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "sanmartint",
+"visita": "colegiales",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "sanmiguel",
+"visita": "madryn",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "tristan",
+"visita": "maipu",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "sanmartinsj",
+"visita": "gimnasiaj",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "colon",
+"visita": "defbelgrano",
+"gl": null,
+"gv": null
+},
+{
+"fecha": "2026-10-31",
+"local": "chacarita",
+"visita": "nuevachicago",
+"gl": null,
+"gv": null
+}
+]
+}
