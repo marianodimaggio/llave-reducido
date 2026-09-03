@@ -103,6 +103,19 @@ h1 em{font-style:normal;color:var(--rojo)}
   padding:11px 14px;margin-bottom:14px;background:var(--sup2);
   border:1px solid var(--borde);border-radius:var(--radio)}
 .barra .prog{font-size:13px;color:var(--txt3);min-width:0}
+.barra2{margin-top:-6px}
+.miclub{display:flex;align-items:center;gap:9px;min-width:0;flex:1}
+.miclub span{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--txt3);flex:none}
+.miclub select{font:inherit;font-size:14px;font-weight:600;color:var(--oro);
+  background:var(--bg);border:1px solid var(--borde2);border-radius:9px;
+  padding:9px 10px;min-height:40px;flex:1;min-width:0;max-width:230px;
+  -webkit-appearance:none;appearance:none;cursor:pointer;
+  background-image:linear-gradient(45deg,transparent 50%,var(--txt3) 50%),
+                   linear-gradient(135deg,var(--txt3) 50%,transparent 50%);
+  background-position:calc(100% - 15px) 18px, calc(100% - 10px) 18px;
+  background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+.reset.compartir{color:var(--oro);border-color:#6B5722}
 .barra .prog b{color:var(--oro);font-weight:600}
 button.reset{font:inherit;font-size:13px;font-weight:600;background:transparent;
   color:var(--txt2);border:1px solid var(--borde2);border-radius:9px;
@@ -185,6 +198,36 @@ details.info p b{color:var(--oro);font-weight:700}
 .eq.pierde .nombre{text-decoration:line-through;text-decoration-color:var(--rojo)}
 .chequeo{color:var(--oro);font-size:15px;margin-left:4px;vertical-align:top;line-height:1}
 
+/* --- capa de probabilidades --- */
+.prob{display:flex;align-items:center;gap:10px;padding:9px 12px;
+  border-top:1px solid var(--borde);background:#131316}
+.prob .medidor{flex:1;height:7px;border-radius:4px;overflow:hidden;display:flex;background:var(--borde)}
+.prob .medidor i{display:block;height:100%}
+.prob .n{font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums;flex:none}
+.prob .n.alto{color:var(--oro)}
+.prob .n.bajo{color:var(--txt3);font-weight:600}
+.datos{width:100%;font:inherit;font-size:14px;font-weight:600;background:transparent;
+  color:var(--oro);border:1px solid #6B5722;border-radius:10px;padding:13px;
+  margin-bottom:16px;cursor:pointer;min-height:46px}
+.datos[aria-pressed="true"]{background:#1C1608}
+.panel{background:var(--sup);border:1px solid var(--borde);border-radius:var(--radio);
+  overflow:hidden;margin:24px 0 4px}
+.panel h3{font-family:'Bebas Neue',var(--sans);font-weight:400;font-size:25px;
+  padding:14px 16px 12px;border-bottom:1px solid var(--borde)}
+.panel .f{display:flex;align-items:center;gap:10px;padding:10px 16px;border-top:1px solid #232323}
+.panel .f:first-of-type{border-top:0}
+.panel .f img{width:24px;height:24px;object-fit:contain;flex:none}
+.panel .f .nb{flex:1;font-size:14.5px;font-weight:600;min-width:0;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.panel .f.mio .nb{color:var(--oro)}
+.panel .f .bar{width:80px;height:8px;background:var(--borde);border-radius:4px;overflow:hidden;flex:none}
+.panel .f .bar i{display:block;height:100%;background:var(--oro)}
+.panel .f .pc{font-size:13.5px;font-weight:700;min-width:48px;text-align:right;
+  font-variant-numeric:tabular-nums;flex:none}
+.panel .nota{padding:12px 16px;border-top:1px solid var(--borde);background:var(--sup2);
+  font-size:12px;color:var(--txt3);line-height:1.65}
+.panel .nota b{color:var(--oro);font-weight:600}
+
 .m .pie{padding:11px 14px;border-top:1px solid var(--borde);font-size:13px;
   color:var(--txt3);line-height:1.55}
 .m .pie b{color:var(--oro);font-weight:600}
@@ -244,8 +287,15 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
 <div class="fuente" id="fuente"><i class="pip"></i><span>Cargando la tabla…</span></div>
 
 <div class="barra">
-  <span class="prog" id="progreso">Llaves resueltas: <b>0</b> de 15</span>
+  <label class="miclub">
+    <span>Tu equipo</span>
+    <select id="selectorClub" aria-label="Elegí tu equipo"></select>
+  </label>
   <button class="reset" id="reset" type="button">Reiniciar</button>
+</div>
+<div class="barra barra2">
+  <span class="prog" id="progreso">Llaves resueltas: <b>0</b> de 15</span>
+  <button class="reset compartir" id="compartir" type="button" hidden>Compartir mi cuadro</button>
 </div>
 
 <details class="info">
@@ -254,7 +304,11 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
   <p><b>No es una tabla de los 36 sumando puntos.</b> Lo primero que pesa es la posición que cada uno tuvo en su zona: un 3° va siempre delante de un 4°, aunque el 4° tenga más puntos. Los puntos, la diferencia de gol y los goles a favor solo desempatan entre equipos que terminaron en la misma posición, como los dos terceros o los dos quintos.</p>
 </details>
 
+<button class="datos" id="btnDatos" type="button" aria-pressed="false" hidden>Ver qué dicen los datos</button>
+
 <div class="bracket" id="bracket"></div>
+
+<div id="panelDatos"></div>
 
 <section class="resultado" id="resultado">
   <h2>Los dos ascensos</h2>
@@ -296,6 +350,12 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid var(--borde);
 // ================= datos =================
 // Todo llega de data.json. No hay nada quemado en este archivo.
 let T = {}, FASE1 = [], PUNTEROS = {};
+let FECHA_TABLA = null;
+
+// Club que se resalta en todo el cuadro. Por defecto Colon, pero cada uno
+// elige el suyo y queda guardado en su navegador.
+let MI_CLUB = 'colon';
+try { MI_CLUB = localStorage.getItem('miClub') || 'colon'; } catch(e) {}
 
 function armarDesdeTabla(zonas){
   T = {};
@@ -333,6 +393,20 @@ function armarDesdeTabla(zonas){
 
 // ================= estado =================
 let S = {};
+function armarSelector(){
+  const sel = document.getElementById('selectorClub');
+  const todos = Object.values(T).sort((a,b)=> a.n.localeCompare(b.n,'es'));
+  if(!todos.some(t => t.id === MI_CLUB)) MI_CLUB = todos[0].id;
+  sel.innerHTML = todos.map(t =>
+    '<option value="'+t.id+'"'+(t.id===MI_CLUB?' selected':'')+'>'+t.n+' ('+t.z+')</option>'
+  ).join('');
+  sel.onchange = () => {
+    MI_CLUB = sel.value;
+    try { localStorage.setItem('miClub', MI_CLUB); } catch(e) {}
+    render();
+  };
+}
+
 function limpiar(){
   yaConto = false;
   S = {finalAsc:null, f1:{}, cuartos:{}, semis:{}, finalRed:null};
@@ -370,7 +444,7 @@ function fila(id, o){
   o = o || {};
   const t = T[id];
   const cls = ['eq'];
-  if(id==='colon') cls.push('colon');
+  if(id===MI_CLUB) cls.push('colon');
   if(o.estado) cls.push(o.estado);
   const vent = (o.ventaja && o.estado!=='pierde') ? '<span class="vent">Ventaja</span>' : '';
   const pick = '<span class="pick"></span>';
@@ -393,7 +467,7 @@ function pintarCampeon(idTexto, idEscudo, equipo){
   const txt = document.getElementById(idTexto);
   const img = document.getElementById(idEscudo);
   txt.textContent = equipo ? T[equipo].n : 'Sin definir';
-  txt.className = 'val' + (equipo ? (equipo==='colon' ? ' ok colon' : ' ok') : '');
+  txt.className = 'val' + (equipo ? (equipo===MI_CLUB ? ' ok colon' : ' ok') : '');
   if(equipo){
     img.src = 'logos/' + equipo + '.png';
     img.hidden = false;
@@ -424,6 +498,7 @@ function render(){
 
   const c0 = '<div class="m'+marca('fa')+'"><div class="tag">Los dos punteros de zona'+tocar('fa')+'</div>'
     + fila(PUNTEROS.A, {pos:'1° ZA', act:'fa:'+PUNTEROS.A, estado: g ? (g===PUNTEROS.A?'gana':'pierde') : null})
+    + (VER_DATOS && MODELO ? barraProb(probNeutral(PUNTEROS.A, PUNTEROS.B)) : '')
     + fila(PUNTEROS.B, {pos:'1° ZB', act:'fa:'+PUNTEROS.B, estado: g ? (g===PUNTEROS.B?'gana':'pierde') : null})
     + '<div class="pie">' + (g
         ? '<b>'+T[g].n+'</b> asciende. '+T[p].n+' entra en cuartos como 1°.'
@@ -432,11 +507,12 @@ function render(){
 
   const c1 = FASE1.length ? FASE1.map(function(l,i){
     const w = S.f1[l.id];
-    const conColon = (l.a==='colon' || l.b==='colon');
+    const conColon = (l.a===MI_CLUB || l.b===MI_CLUB);
     return '<div class="m '+(conColon?'colon':'')+marca('f1:'+l.id)+'">'
       + '<div class="tag">Llave '+(i+1)+' · '+l.rot+tocar('f1:'+l.id)+'</div>'
       + fila(l.a, {pos:T[l.a].pos+'° Z'+T[l.a].z, act:'f1:'+l.id+':'+l.a, ventaja:true,
                    estado: w ? (w===l.a?'gana':'pierde') : null})
+      + (VER_DATOS && MODELO ? barraProb(probUnico(l.a, l.b)) : '')
       + fila(l.b, {pos:T[l.b].pos+'° Z'+T[l.b].z, act:'f1:'+l.id+':'+l.b,
                    estado: w ? (w===l.b?'gana':'pierde') : null})
       + '</div>';
@@ -452,11 +528,12 @@ function render(){
   } else {
     c2 = cruces(s8,[[0,7],[1,6],[2,5],[3,4]]).map(function(cr,i){
       const w = S.cuartos[i];
-      const conColon = (cr.top==='colon'||cr.bot==='colon');
+      const conColon = (cr.top===MI_CLUB||cr.bot===MI_CLUB);
       return '<div class="m '+(conColon?'colon':'')+marca('cu:'+i)+'"><div class="tag">'+cr.rot+' de los 8 clasificados'+tocar('cu:'+i)+'</div>'
         + fila(cr.top, {pos:(s8.indexOf(cr.top)+1)+'°', act:'cu:'+i+':'+cr.top, ventaja:true,
                         origen:T[cr.top].pos+'° de la Zona '+T[cr.top].z,
                         estado: w ? (w===cr.top?'gana':'pierde') : null})
+        + (VER_DATOS && MODELO ? barraProb(probSerie(cr.top, cr.bot, false)) : '')
         + fila(cr.bot, {pos:(s8.indexOf(cr.bot)+1)+'°', act:'cu:'+i+':'+cr.bot,
                         origen:T[cr.bot].pos+'° de la Zona '+T[cr.bot].z,
                         estado: w ? (w===cr.bot?'gana':'pierde') : null})
@@ -470,11 +547,12 @@ function render(){
   } else {
     c3 = cruces(s4,[[0,3],[1,2]]).map(function(cr,i){
       const w = S.semis[i];
-      const conColon = (cr.top==='colon'||cr.bot==='colon');
+      const conColon = (cr.top===MI_CLUB||cr.bot===MI_CLUB);
       return '<div class="m '+(conColon?'colon':'')+marca('se:'+i)+'"><div class="tag">'+cr.rot+' de los 4 que quedan'+tocar('se:'+i)+'</div>'
         + fila(cr.top, {pos:(s4.indexOf(cr.top)+1)+'°', act:'se:'+i+':'+cr.top, ventaja:true,
                         origen:T[cr.top].pos+'° de la Zona '+T[cr.top].z,
                         estado: w ? (w===cr.top?'gana':'pierde') : null})
+        + (VER_DATOS && MODELO ? barraProb(probSerie(cr.top, cr.bot, false)) : '')
         + fila(cr.bot, {pos:(s4.indexOf(cr.bot)+1)+'°', act:'se:'+i+':'+cr.bot,
                         origen:T[cr.bot].pos+'° de la Zona '+T[cr.bot].z,
                         estado: w ? (w===cr.bot?'gana':'pierde') : null})
@@ -488,10 +566,11 @@ function render(){
   } else {
     const fin = ordenar([S.semis[0], S.semis[1]]);
     const w = S.finalRed;
-    const conColon = fin.indexOf('colon') >= 0;
+    const conColon = fin.indexOf(MI_CLUB) >= 0;
     c4 = '<div class="m premio-final '+(conColon?'colon':'')+marca('fr')+'">'
       + '<div class="tag">Segundo ascenso a la LPF'+tocar('fr')+'</div>'
       + fila(fin[0], {pos:'Local vuelta', act:'fr:'+fin[0], estado: w ? (w===fin[0]?'gana':'pierde') : null})
+      + (VER_DATOS && MODELO ? barraProb(probSerie(fin[0], fin[1], true)) : '')
       + fila(fin[1], {pos:'Visitante', act:'fr:'+fin[1], estado: w ? (w===fin[1]?'gana':'pierde') : null})
       + '<div class="pie">' + (w ? '<b>'+T[w].n+'</b> asciende.'
           : 'Sin ventaja deportiva: si la serie queda igualada, penales.') + '</div></div>';
@@ -533,12 +612,16 @@ function render(){
     ? 'Escenario completo: <b>15</b> de 15'
     : 'Llaves resueltas: <b>'+hechas+'</b> de 15';
 
+  document.getElementById('compartir').hidden = !S.finalRed;
+  panelDatos();
+
   const ver = document.getElementById('veredicto');
   if(S.finalRed){
     ver.className = 'veredicto';
-    ver.innerHTML = (S.finalAsc==='colon' || S.finalRed==='colon')
-      ? 'En este escenario <b>Colón asciende</b>.'
-      : 'En este escenario Colón <b>se queda en la categoría</b>.';
+    const mio = T[MI_CLUB] ? T[MI_CLUB].n : 'Tu equipo';
+    ver.innerHTML = (S.finalAsc===MI_CLUB || S.finalRed===MI_CLUB)
+      ? 'En este escenario <b>'+mio+' asciende</b>.'
+      : 'En este escenario '+mio+' <b>se queda en la categoría</b>.';
   } else if(hechas === 0){
     ver.className = 'veredicto vacio';
     ver.innerHTML = 'Elegí los ganadores de arriba y los dos ascensos se van completando acá.';
@@ -563,6 +646,13 @@ document.getElementById('bracket').addEventListener('click', function(e){
   render();
   if(S.finalRed) sumarContador();
 });
+document.getElementById('btnDatos').addEventListener('click', function(){
+  VER_DATOS = !VER_DATOS;
+  this.setAttribute('aria-pressed', VER_DATOS);
+  this.textContent = VER_DATOS ? 'Ocultar las probabilidades' : 'Ver qué dicen los datos';
+  render();
+});
+document.getElementById('compartir').addEventListener('click', compartirCuadro);
 document.getElementById('reset').addEventListener('click', function(){
   limpiar();
   window.scrollTo({top:0, behavior:'smooth'});
@@ -606,6 +696,316 @@ async function sumarContador(){
   }
 }
 
+
+// ================= compartir el cuadro como imagen =================
+// Se dibuja con canvas, sin librerias externas. Los escudos son del mismo
+// dominio, asi que no ensucian el canvas y la imagen se puede exportar.
+
+function caminoDe(id){
+  // Que jugo el club elegido y como le fue, ronda por ronda.
+  const pasos = [];
+  if(id === PUNTEROS.A || id === PUNTEROS.B){
+    const rival = (id === PUNTEROS.A) ? PUNTEROS.B : PUNTEROS.A;
+    pasos.push({ronda:'Final 1er ascenso', rival,
+                gano: S.finalAsc ? S.finalAsc === id : null});
+  }
+  const l = FASE1.find(x => x.a === id || x.b === id);
+  if(l){
+    const rival = (l.a === id) ? l.b : l.a;
+    const w = S.f1[l.id];
+    pasos.push({ronda:'1ª fase', rival, gano: w ? w === id : null});
+  }
+  const s8 = sembrados8();
+  if(s8 && s8.indexOf(id) >= 0){
+    const cr = cruces(s8,[[0,7],[1,6],[2,5],[3,4]]).find(c => c.top===id || c.bot===id);
+    const i = cruces(s8,[[0,7],[1,6],[2,5],[3,4]]).findIndex(c => c.top===id || c.bot===id);
+    if(cr){
+      const rival = cr.top===id ? cr.bot : cr.top;
+      const w = S.cuartos[i];
+      pasos.push({ronda:'Cuartos', rival, gano: w ? w === id : null});
+    }
+  }
+  const s4 = sembrados4();
+  if(s4 && s4.indexOf(id) >= 0){
+    const arr = cruces(s4,[[0,3],[1,2]]);
+    const i = arr.findIndex(c => c.top===id || c.bot===id);
+    if(i >= 0){
+      const cr = arr[i], rival = cr.top===id ? cr.bot : cr.top;
+      const w = S.semis[i];
+      pasos.push({ronda:'Semifinal', rival, gano: w ? w === id : null});
+    }
+  }
+  if(semisListas()){
+    const fin = ordenar([S.semis[0], S.semis[1]]);
+    if(fin.indexOf(id) >= 0){
+      const rival = fin[0]===id ? fin[1] : fin[0];
+      pasos.push({ronda:'Final del Reducido', rival,
+                  gano: S.finalRed ? S.finalRed === id : null});
+    }
+  }
+  return pasos;
+}
+
+function cargarImagen(src){
+  return new Promise((ok, mal) => {
+    const im = new Image();
+    im.onload = () => ok(im);
+    im.onerror = () => ok(null);   // si falta un escudo, seguimos sin el
+    im.src = src;
+  });
+}
+
+async function dibujarCuadro(){
+  // el alto se ajusta al camino del club: sin huecos vacios
+  const pasos = caminoDe(MI_CLUB);
+  const W = 1080;
+  const H = 668 + (pasos.length ? pasos.length * 94 : 70) + 160;
+  const cv = document.createElement('canvas');
+  cv.width = W; cv.height = H;
+  const c = cv.getContext('2d');
+
+  const BG='#0A0A0B', SUP='#18181B', BORDE='#2E2E33';
+  const ORO='#FFC533', ROJO='#E11D3C', TXT='#FAFAFA', TXT3='#9A9AA3';
+  const SANS = 'system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif';
+  // si Bebas no carga, cae a la sans del sistema y no a una serif del navegador
+  const disp = (px) => px + 'px "Bebas Neue", ' + SANS;
+
+  c.fillStyle = BG; c.fillRect(0,0,W,H);
+  c.fillStyle = ROJO; c.fillRect(0,0,W,8);
+
+  const PAD = 60;
+  let y = 78;
+
+  c.fillStyle = ORO; c.font = '600 26px ' + SANS;
+  c.fillText('PRIMERA NACIONAL 2026', PAD, y);
+  y += 58;
+  c.fillStyle = TXT; c.font = disp(96);
+  c.fillText('MI CUADRO', PAD, y + 60); y += 116;
+  c.fillStyle = ROJO; c.fillRect(PAD, y, 96, 5); y += 46;
+
+  // --- los dos ascensos ---
+  const cajas = [
+    {lbl:'PRIMER ASCENSO',  eq:S.finalAsc},
+    {lbl:'SEGUNDO ASCENSO', eq:S.finalRed}
+  ];
+  const ancho = (W - PAD*2 - 24) / 2;
+  for(let i=0;i<2;i++){
+    const x = PAD + i*(ancho+24);
+    const alto = 250;
+    c.fillStyle = SUP; c.fillRect(x, y, ancho, alto);
+    c.strokeStyle = BORDE; c.lineWidth = 2; c.strokeRect(x, y, ancho, alto);
+    c.fillStyle = ORO; c.font = '700 20px ' + SANS;
+    c.fillText(cajas[i].lbl, x+22, y+40);
+    const eq = cajas[i].eq;
+    if(eq){
+      const esc = await cargarImagen('logos/'+eq+'.png');
+      if(esc) c.drawImage(esc, x+22, y+62, 76, 76);
+      c.fillStyle = eq===MI_CLUB ? ORO : TXT;
+      c.font = disp(50);
+      let nom = T[eq].n, tope = ancho - 44;
+      while(c.measureText(nom).width > tope && nom.length > 4) nom = nom.slice(0,-1);
+      c.fillText(nom, x+22, y+196);
+    } else {
+      c.fillStyle = '#3F3F46'; c.font = disp(46);
+      c.fillText('Sin definir', x+22, y+150);
+    }
+  }
+  y += 250 + 44;
+
+  // --- el camino del club elegido ---
+  c.fillStyle = TXT; c.font = disp(46);
+  const nombreMio = T[MI_CLUB] ? T[MI_CLUB].n : '';
+  c.fillText('EL CAMINO DE ' + nombreMio.toUpperCase(), PAD, y + 32);
+  y += 62;
+  c.strokeStyle = BORDE; c.lineWidth = 1;
+  c.beginPath(); c.moveTo(PAD, y); c.lineTo(W-PAD, y); c.stroke();
+  y += 14;
+
+  if(pasos.length === 0){
+    c.fillStyle = TXT3; c.font = '400 26px ' + SANS;
+    c.fillText('No entra al Reducido con la tabla de hoy.', PAD, y + 44);
+    y += 70;
+  } else {
+    for(const p of pasos){
+      const alto = 84;
+      c.fillStyle = SUP; c.fillRect(PAD, y, W-PAD*2, alto);
+      const marca = p.gano === true ? ORO : (p.gano === false ? ROJO : BORDE);
+      c.fillStyle = marca; c.fillRect(PAD, y, 6, alto);
+      c.fillStyle = TXT3; c.font = '600 21px ' + SANS;
+      c.fillText(p.ronda.toUpperCase(), PAD+26, y+34);
+      const esc = await cargarImagen('logos/'+p.rival+'.png');
+      if(esc) c.drawImage(esc, PAD+26, y+40, 30, 30);
+      c.fillStyle = TXT; c.font = '600 25px ' + SANS;
+      c.fillText('vs ' + T[p.rival].n, PAD+64, y+64);
+      c.fillStyle = p.gano === true ? ORO : (p.gano === false ? ROJO : TXT3);
+      c.font = '700 25px ' + SANS;
+      const txt = p.gano === true ? 'PASA' : (p.gano === false ? 'QUEDA AFUERA' : 'sin jugar');
+      c.fillText(txt, W - PAD - 26 - c.measureText(txt).width, y+52);
+      y += alto + 10;
+    }
+  }
+
+  // --- pie ---
+  c.strokeStyle = BORDE; c.lineWidth = 1;
+  c.beginPath(); c.moveTo(PAD, H-124); c.lineTo(W-PAD, H-124); c.stroke();
+  c.fillStyle = ORO; c.font = '700 27px ' + SANS;
+  c.fillText('llave-reducido.netlify.app', PAD, H-80);
+  c.fillStyle = TXT3; c.font = '400 22px ' + SANS;
+  const fecha = FECHA_TABLA
+    ? new Date(FECHA_TABLA).toLocaleDateString('es-AR',{day:'2-digit',month:'2-digit'})
+    : '';
+  c.fillText('Simulá los dos ascensos · Tabla al ' + fecha, PAD, H-44);
+
+  return cv;
+}
+
+async function compartirCuadro(){
+  const btn = document.getElementById('compartir');
+  const original = btn.textContent;
+  btn.disabled = true; btn.textContent = 'Generando…';
+  try{
+    if(document.fonts && document.fonts.ready) await document.fonts.ready;
+    const cv = await dibujarCuadro();
+    const blob = await new Promise(r => cv.toBlob(r, 'image/jpeg', 0.92));
+    const archivo = new File([blob], 'mi-cuadro.jpg', {type:'image/jpeg'});
+    const texto = 'Así me quedó el cuadro de los dos ascensos de la Primera Nacional.';
+
+    if(navigator.canShare && navigator.canShare({files:[archivo]})){
+      await navigator.share({files:[archivo], text: texto});
+    } else {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'mi-cuadro.jpg';
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    }
+  }catch(e){
+    // si el usuario cancela el menu de compartir, no es un error
+  }finally{
+    btn.disabled = false; btn.textContent = original;
+  }
+}
+
+
+// ================= probabilidades =================
+// Las fuerzas salen de fuerzas.json, que se genera aparte con el CSV de
+// FootyStats. Si el archivo no esta, la app funciona igual sin esta capa.
+let MODELO = null;
+let VER_DATOS = false;
+
+const factorial = n => { let r=1; for(let i=2;i<=n;i++) r*=i; return r; };
+const poisson = (l,k) => Math.exp(-l)*Math.pow(l,k)/factorial(k);
+
+function esperados(local, visita){
+  const F = MODELO.fuerzas, mL = MODELO.media_local, mV = MODELO.media_visita;
+  if(!F[local] || !F[visita]) return null;
+  return [Math.max(mL*F[local].atkL*F[visita].defV, .15),
+          Math.max(mV*F[visita].atkV*F[local].defL, .15)];
+}
+
+function vector(l, tope=9){
+  const v=[]; for(let i=0;i<tope;i++) v.push(poisson(l,i));
+  const s=v.reduce((a,b)=>a+b,0);
+  return v.map(x=>x/s);
+}
+
+// partido unico: al mejor ubicado le alcanza el empate
+function probUnico(mejor, peor){
+  const e = esperados(mejor, peor); if(!e) return null;
+  const A = vector(e[0]), B = vector(e[1]);
+  let p = 0;
+  for(let i=0;i<A.length;i++) for(let j=0;j<B.length;j++) if(i>=j) p += A[i]*B[j];
+  return p;
+}
+
+// partido unico en cancha neutral, con alargue y penales
+function probNeutral(a, b){
+  const F = MODELO.fuerzas; if(!F[a]||!F[b]) return null;
+  const base = Math.sqrt(MODELO.media_local*MODELO.media_visita);
+  const la = base*(F[a].atkL+F[a].atkV)/2*(F[b].defL+F[b].defV)/2;
+  const lb = base*(F[b].atkL+F[b].atkV)/2*(F[a].defL+F[a].defV)/2;
+  const A = vector(Math.max(la,.15)), B = vector(Math.max(lb,.15));
+  let gana=0, empata=0;
+  for(let i=0;i<A.length;i++) for(let j=0;j<B.length;j++){
+    if(i>j) gana += A[i]*B[j]; else if(i===j) empata += A[i]*B[j];
+  }
+  return gana + empata/2;
+}
+
+// ida y vuelta: la vuelta la juega de local el mejor ubicado
+function probSerie(mejor, peor, penales){
+  const ida = esperados(peor, mejor), vta = esperados(mejor, peor);
+  if(!ida || !vta) return null;
+  const iP = vector(ida[0]), iM = vector(ida[1]);   // ida: local el peor
+  const vM = vector(vta[0]), vP = vector(vta[1]);   // vuelta: local el mejor
+  let p = 0;
+  for(let a=0;a<7;a++) for(let b=0;b<7;b++) for(let c=0;c<7;c++) for(let d=0;d<7;d++){
+    const pr = iP[a]*iM[b]*vM[c]*vP[d];
+    if(pr < 1e-9) continue;
+    const ptsM = (b>a?3:b===a?1:0) + (c>d?3:c===d?1:0);
+    const ptsP = (a>b?3:b===a?1:0) + (d>c?3:c===d?1:0);
+    if(ptsM > ptsP) { p += pr; continue; }
+    if(ptsM < ptsP) continue;
+    const dif = (b+c) - (a+d);
+    if(dif > 0) { p += pr; continue; }
+    if(dif < 0) continue;
+    p += penales ? pr*0.5 : pr;      // sin penales manda la ventaja deportiva
+  }
+  return p;
+}
+
+function barraProb(pMejor){
+  if(pMejor === null || pMejor === undefined) return '';
+  const a = Math.round(pMejor*100), b = 100-a;
+  return '<div class="prob">'
+    + '<span class="n alto">'+a+'%</span>'
+    + '<span class="medidor"><i style="width:'+a+'%;background:var(--oro)"></i>'
+    + '<i style="width:'+b+'%;background:var(--borde2)"></i></span>'
+    + '<span class="n bajo">'+b+'%</span></div>';
+}
+
+function panelDatos(){
+  const cont = document.getElementById('panelDatos');
+  if(!VER_DATOS || !MODELO || !MODELO.ascensos){ cont.innerHTML=''; return; }
+  const asc = MODELO.ascensos;
+  const orden = Object.keys(asc).filter(x=>T[x]).sort((a,b)=>asc[b].asciende-asc[a].asciende);
+  const top = orden.slice(0,8);
+  if(top.indexOf(MI_CLUB) < 0 && asc[MI_CLUB]) top.push(MI_CLUB);
+  const max = asc[orden[0]].asciende || 1;
+
+  const filas = top.map(x =>
+    '<div class="f'+(x===MI_CLUB?' mio':'')+'">'
+    + '<img src="logos/'+x+'.png" alt="" loading="lazy" onerror="this.style.visibility=\'hidden\'">'
+    + '<span class="nb">'+T[x].n+'</span>'
+    + '<span class="bar"><i style="width:'+Math.round(asc[x].asciende/max*100)+'%"></i></span>'
+    + '<span class="pc">'+asc[x].asciende.toLocaleString('es-AR',{minimumFractionDigits:1})+'%</span>'
+    + '</div>').join('');
+
+  const m = asc[MI_CLUB];
+  const propio = m ? '<div class="nota"><b>'+T[MI_CLUB].n+' asciende en '
+      + Math.round(m.asciende) + ' de cada 100 simulaciones.</b> Termina entre los cuatro primeros de su zona en el '
+      + Math.round(m.top4) + '% y clasifica al Reducido en el ' + Math.round(m.reducido) + '%.</div>' : '';
+
+  const fecha = MODELO.datos_hasta
+    ? new Date(MODELO.datos_hasta+'T12:00:00').toLocaleDateString('es-AR',{day:'2-digit',month:'2-digit'})
+    : '';
+  cont.innerHTML = '<section class="panel"><h3>Quién asciende, según los datos</h3>'
+    + filas + propio
+    + '<div class="nota">Se simulan ' + MODELO.simulaciones.toLocaleString('es-AR')
+    + ' veces las ' + MODELO.pendientes + ' fechas que faltan y después los playoffs, '
+    + 'usando el xG de cada equipo. <b>No es un pronóstico</b>: es cuántas veces pasa cada cosa. '
+    + 'Datos hasta el ' + fecha + '.</div></section>';
+}
+
+async function cargarModelo(){
+  try{
+    const r = await fetch('fuerzas.json?t=' + Date.now());
+    if(!r.ok) throw 0;
+    MODELO = await r.json();
+    document.getElementById('btnDatos').hidden = false;
+  }catch(e){ MODELO = null; }
+}
+
 // ================= arranque =================
 function pintarFuente(html, clase){
   const f = document.getElementById('fuente');
@@ -637,6 +1037,8 @@ async function arrancar(){
   try{
     const d = await bajarTabla();
     armarDesdeTabla(d.zonas);
+    armarSelector();
+    FECHA_TABLA = d.actualizado;
     const horas = (Date.now() - new Date(d.actualizado)) / 36e5;
     const v = d.verificados
       ? ' · <span class="verif">'+d.verificados+' '
@@ -651,6 +1053,8 @@ async function arrancar(){
     pintarFuente('No se pudo cargar la tabla. Revisá que data.json esté publicado.', 'viejo');
   }
   leerContador();
+  await cargarModelo();
+  render();
 }
 arrancar();
 </script>
