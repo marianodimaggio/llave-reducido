@@ -214,6 +214,8 @@ details.info p b{color:var(--oro);font-weight:700}
 .prob .n{font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums;flex:none}
 .prob .n.alto{color:var(--oro)}
 .prob .n.bajo{color:var(--txt3);font-weight:600}
+.prob .mini{width:18px;height:18px;object-fit:contain;flex:none;opacity:.95}
+.prob .mini:last-child{opacity:.8}
 .datos{width:100%;font:inherit;font-size:14px;font-weight:600;background:transparent;
   color:var(--oro);border:1px solid #6B5722;border-radius:10px;padding:13px;
   margin-bottom:16px;cursor:pointer;min-height:46px}
@@ -524,7 +526,7 @@ function render(){
 
   const c0 = '<div class="m'+marca('fa')+'"><div class="tag">Los dos punteros de zona'+tocar('fa')+'</div>'
     + fila(PUNTEROS.A, {pos:'1° ZA', act:'fa:'+PUNTEROS.A, estado: g ? (g===PUNTEROS.A?'gana':'pierde') : null})
-    + (VER_DATOS && MODELO ? barraProb(probNeutral(PUNTEROS.A, PUNTEROS.B)) : '')
+    + (VER_DATOS && MODELO ? barraProb(probNeutral(PUNTEROS.A, PUNTEROS.B), PUNTEROS.A, PUNTEROS.B) : '')
     + fila(PUNTEROS.B, {pos:'1° ZB', act:'fa:'+PUNTEROS.B, estado: g ? (g===PUNTEROS.B?'gana':'pierde') : null})
     + '<div class="pie">' + (g
         ? '<b>'+T[g].n+'</b> asciende. '+T[p].n+' entra en cuartos como 1°.'
@@ -538,7 +540,7 @@ function render(){
       + '<div class="tag">Llave '+(i+1)+' · '+l.rot+tocar('f1:'+l.id)+'</div>'
       + fila(l.a, {pos:T[l.a].pos+'° Z'+T[l.a].z, act:'f1:'+l.id+':'+l.a, ventaja:true,
                    estado: w ? (w===l.a?'gana':'pierde') : null})
-      + (VER_DATOS && MODELO ? barraProb(probUnico(l.a, l.b)) : '')
+      + (VER_DATOS && MODELO ? barraProb(probUnico(l.a, l.b), l.a, l.b) : '')
       + fila(l.b, {pos:T[l.b].pos+'° Z'+T[l.b].z, act:'f1:'+l.id+':'+l.b,
                    estado: w ? (w===l.b?'gana':'pierde') : null})
       + '</div>';
@@ -559,7 +561,7 @@ function render(){
         + fila(cr.top, {pos:(s8.indexOf(cr.top)+1)+'°', act:'cu:'+i+':'+cr.top, ventaja:true,
                         origen:T[cr.top].pos+'° de la Zona '+T[cr.top].z,
                         estado: w ? (w===cr.top?'gana':'pierde') : null})
-        + (VER_DATOS && MODELO ? barraProb(probSerie(cr.top, cr.bot, false)) : '')
+        + (VER_DATOS && MODELO ? barraProb(probSerie(cr.top, cr.bot, false), cr.top, cr.bot) : '')
         + fila(cr.bot, {pos:(s8.indexOf(cr.bot)+1)+'°', act:'cu:'+i+':'+cr.bot,
                         origen:T[cr.bot].pos+'° de la Zona '+T[cr.bot].z,
                         estado: w ? (w===cr.bot?'gana':'pierde') : null})
@@ -578,7 +580,7 @@ function render(){
         + fila(cr.top, {pos:(s4.indexOf(cr.top)+1)+'°', act:'se:'+i+':'+cr.top, ventaja:true,
                         origen:T[cr.top].pos+'° de la Zona '+T[cr.top].z,
                         estado: w ? (w===cr.top?'gana':'pierde') : null})
-        + (VER_DATOS && MODELO ? barraProb(probSerie(cr.top, cr.bot, false)) : '')
+        + (VER_DATOS && MODELO ? barraProb(probSerie(cr.top, cr.bot, false), cr.top, cr.bot) : '')
         + fila(cr.bot, {pos:(s4.indexOf(cr.bot)+1)+'°', act:'se:'+i+':'+cr.bot,
                         origen:T[cr.bot].pos+'° de la Zona '+T[cr.bot].z,
                         estado: w ? (w===cr.bot?'gana':'pierde') : null})
@@ -596,7 +598,7 @@ function render(){
     c4 = '<div class="m premio-final '+(conColon?'colon':'')+marca('fr')+'">'
       + '<div class="tag">Segundo ascenso a la LPF'+tocar('fr')+'</div>'
       + fila(fin[0], {pos:'Local vuelta', act:'fr:'+fin[0], estado: w ? (w===fin[0]?'gana':'pierde') : null})
-      + (VER_DATOS && MODELO ? barraProb(probSerie(fin[0], fin[1], true)) : '')
+      + (VER_DATOS && MODELO ? barraProb(probSerie(fin[0], fin[1], true), fin[0], fin[1]) : '')
       + fila(fin[1], {pos:'Visitante', act:'fr:'+fin[1], estado: w ? (w===fin[1]?'gana':'pierde') : null})
       + '<div class="pie">' + (w ? '<b>'+T[w].n+'</b> asciende.'
           : 'Sin ventaja deportiva: si la serie queda igualada, penales.') + '</div></div>';
@@ -1010,14 +1012,19 @@ function probSerie(mejor, peor, penales){
   return p;
 }
 
-function barraProb(pMejor){
+// El escudo a cada lado del porcentaje: sin eso no queda claro de quien es
+// cada numero, porque la barra vive entre las dos filas de equipo.
+function barraProb(pMejor, idMejor, idPeor){
   if(pMejor === null || pMejor === undefined) return '';
   const a = Math.round(pMejor*100), b = 100-a;
+  const esc = id => '<img class="mini" src="logos/'+id+'.png" alt="" loading="lazy"'
+                  + ' onerror="this.style.visibility=\'hidden\'">';
   return '<div class="prob">'
-    + '<span class="n alto">'+a+'%</span>'
+    + esc(idMejor) + '<span class="n alto">'+a+'%</span>'
     + '<span class="medidor"><i style="width:'+a+'%;background:var(--oro)"></i>'
     + '<i style="width:'+b+'%;background:var(--borde2)"></i></span>'
-    + '<span class="n bajo">'+b+'%</span></div>';
+    + '<span class="n bajo">'+b+'%</span>' + esc(idPeor)
+    + '</div>';
 }
 
 function panelDatos(){
