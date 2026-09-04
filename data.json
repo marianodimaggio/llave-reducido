@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-04T21:48:07+00:00",
+ "actualizado": "2026-09-04T23:49:34+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -105,13 +105,13 @@
     "id": "racingcba",
     "nombre": "Racing (Cba)",
     "espn": "Racing (Córdoba)",
-    "pj": 27,
+    "pj": 28,
     "pts": 35,
     "gf": 25,
-    "gc": 29,
+    "gc": 32,
     "rank_espn": 9,
     "pos": 9,
-    "dif": -4
+    "dif": -7
    },
    {
     "id": "losandes",
@@ -150,6 +150,18 @@
     "dif": -4
    },
    {
+    "id": "defbelgrano",
+    "nombre": "Def. de Belgrano",
+    "espn": "Defensores de Belgrano",
+    "pj": 27,
+    "pts": 29,
+    "gf": 19,
+    "gc": 24,
+    "rank_espn": 13,
+    "pos": 13,
+    "dif": -5
+   },
+   {
     "id": "centralnorte",
     "nombre": "Central Norte",
     "espn": "Central Norte",
@@ -157,8 +169,8 @@
     "pts": 29,
     "gf": 19,
     "gc": 27,
-    "rank_espn": 13,
-    "pos": 13,
+    "rank_espn": 14,
+    "pos": 14,
     "dif": -8
    },
    {
@@ -169,8 +181,8 @@
     "pts": 29,
     "gf": 21,
     "gc": 30,
-    "rank_espn": 14,
-    "pos": 14,
+    "rank_espn": 15,
+    "pos": 15,
     "dif": -9
    },
    {
@@ -181,8 +193,8 @@
     "pts": 28,
     "gf": 15,
     "gc": 24,
-    "rank_espn": 15,
-    "pos": 15,
+    "rank_espn": 16,
+    "pos": 16,
     "dif": -9
    },
    {
@@ -193,21 +205,9 @@
     "pts": 27,
     "gf": 22,
     "gc": 33,
-    "rank_espn": 16,
-    "pos": 16,
-    "dif": -11
-   },
-   {
-    "id": "defbelgrano",
-    "nombre": "Def. de Belgrano",
-    "espn": "Defensores de Belgrano",
-    "pj": 26,
-    "pts": 26,
-    "gf": 16,
-    "gc": 24,
     "rank_espn": 17,
     "pos": 17,
-    "dif": -8
+    "dif": -11
    },
    {
     "id": "acassuso",
@@ -491,9 +491,9 @@
    "gc": 32
   },
   "defbelgrano": {
-   "pj": 26,
-   "pts": 26,
-   "gf": 16,
+   "pj": 27,
+   "pts": 29,
+   "gf": 19,
    "gc": 24
   },
   "moron": {
@@ -539,10 +539,10 @@
    "gc": 25
   },
   "racingcba": {
-   "pj": 27,
+   "pj": 28,
    "pts": 35,
    "gf": 25,
-   "gc": 29
+   "gc": 32
   },
   "bolivar": {
    "pj": 27,
