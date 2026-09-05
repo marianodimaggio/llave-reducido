@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-05T21:20:45+00:00",
+ "actualizado": "2026-09-05T23:16:16+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -102,6 +102,18 @@
     "dif": 1
    },
    {
+    "id": "losandes",
+    "nombre": "Los Andes",
+    "espn": "Los Andes",
+    "pj": 27,
+    "pts": 35,
+    "gf": 20,
+    "gc": 15,
+    "rank_espn": 9,
+    "pos": 9,
+    "dif": 5
+   },
+   {
     "id": "racingcba",
     "nombre": "Racing (Cba)",
     "espn": "Racing (Córdoba)",
@@ -109,21 +121,9 @@
     "pts": 35,
     "gf": 25,
     "gc": 32,
-    "rank_espn": 9,
-    "pos": 9,
-    "dif": -7
-   },
-   {
-    "id": "losandes",
-    "nombre": "Los Andes",
-    "espn": "Los Andes",
-    "pj": 26,
-    "pts": 34,
-    "gf": 20,
-    "gc": 15,
     "rank_espn": 10,
     "pos": 10,
-    "dif": 5
+    "dif": -7
    },
    {
     "id": "mitre",
@@ -138,6 +138,18 @@
     "dif": -8
    },
    {
+    "id": "allboys",
+    "nombre": "All Boys",
+    "espn": "All Boys",
+    "pj": 28,
+    "pts": 31,
+    "gf": 16,
+    "gc": 24,
+    "rank_espn": 12,
+    "pos": 12,
+    "dif": -8
+   },
+   {
     "id": "chacoforever",
     "nombre": "Chaco For Ever",
     "espn": "Chaco For Ever",
@@ -145,8 +157,8 @@
     "pts": 29,
     "gf": 25,
     "gc": 29,
-    "rank_espn": 12,
-    "pos": 12,
+    "rank_espn": 13,
+    "pos": 13,
     "dif": -4
    },
    {
@@ -157,8 +169,8 @@
     "pts": 29,
     "gf": 19,
     "gc": 24,
-    "rank_espn": 13,
-    "pos": 13,
+    "rank_espn": 14,
+    "pos": 14,
     "dif": -5
    },
    {
@@ -169,8 +181,8 @@
     "pts": 29,
     "gf": 19,
     "gc": 27,
-    "rank_espn": 14,
-    "pos": 14,
+    "rank_espn": 15,
+    "pos": 15,
     "dif": -8
    },
    {
@@ -181,18 +193,6 @@
     "pts": 29,
     "gf": 21,
     "gc": 30,
-    "rank_espn": 15,
-    "pos": 15,
-    "dif": -9
-   },
-   {
-    "id": "allboys",
-    "nombre": "All Boys",
-    "espn": "All Boys",
-    "pj": 27,
-    "pts": 28,
-    "gf": 15,
-    "gc": 24,
     "rank_espn": 16,
     "pos": 16,
     "dif": -9
@@ -201,8 +201,8 @@
     "id": "santelmo",
     "nombre": "San Telmo",
     "espn": "San Telmo",
-    "pj": 27,
-    "pts": 27,
+    "pj": 28,
+    "pts": 28,
     "gf": 22,
     "gc": 33,
     "rank_espn": 17,
@@ -213,13 +213,13 @@
     "id": "acassuso",
     "nombre": "Acassuso",
     "espn": "Acassuso",
-    "pj": 27,
+    "pj": 28,
     "pts": 23,
     "gf": 19,
-    "gc": 32,
+    "gc": 33,
     "rank_espn": 18,
     "pos": 18,
-    "dif": -13
+    "dif": -14
    }
   ],
   "B": [
@@ -227,13 +227,13 @@
     "id": "tristan",
     "nombre": "Tristán Suárez",
     "espn": "Tristán Suárez",
-    "pj": 26,
-    "pts": 48,
-    "gf": 29,
+    "pj": 27,
+    "pts": 51,
+    "gf": 31,
     "gc": 15,
     "rank_espn": 1,
     "pos": 1,
-    "dif": 14
+    "dif": 16
    },
    {
     "id": "temperley",
@@ -263,13 +263,13 @@
     "id": "atlanta",
     "nombre": "Atlanta",
     "espn": "Atlanta",
-    "pj": 27,
-    "pts": 42,
-    "gf": 31,
+    "pj": 28,
+    "pts": 45,
+    "gf": 32,
     "gc": 28,
     "rank_espn": 4,
     "pos": 4,
-    "dif": 3
+    "dif": 4
    },
    {
     "id": "midland",
@@ -347,13 +347,13 @@
     "id": "sanmartint",
     "nombre": "San Martín (T)",
     "espn": "San Martín (Tucumán)",
-    "pj": 27,
+    "pj": 28,
     "pts": 36,
     "gf": 27,
-    "gc": 24,
+    "gc": 26,
     "rank_espn": 11,
     "pos": 11,
-    "dif": 3
+    "dif": 1
    },
    {
     "id": "almagro",
@@ -419,13 +419,13 @@
     "id": "chacarita",
     "nombre": "Chacarita",
     "espn": "Chacarita Juniors",
-    "pj": 27,
+    "pj": 28,
     "pts": 27,
     "gf": 19,
-    "gc": 29,
+    "gc": 30,
     "rank_espn": 17,
     "pos": 17,
-    "dif": -10
+    "dif": -11
    },
    {
     "id": "guemes",
@@ -449,8 +449,8 @@
    "gc": 21
   },
   "losandes": {
-   "pj": 26,
-   "pts": 34,
+   "pj": 27,
+   "pts": 35,
    "gf": 20,
    "gc": 15
   },
@@ -473,9 +473,9 @@
    "gc": 25
   },
   "allboys": {
-   "pj": 27,
-   "pts": 28,
-   "gf": 15,
+   "pj": 28,
+   "pts": 31,
+   "gf": 16,
    "gc": 24
   },
   "sanmiguel": {
@@ -485,10 +485,10 @@
    "gc": 30
   },
   "acassuso": {
-   "pj": 27,
+   "pj": 28,
    "pts": 23,
    "gf": 19,
-   "gc": 32
+   "gc": 33
   },
   "defbelgrano": {
    "pj": 27,
@@ -503,8 +503,8 @@
    "gc": 25
   },
   "santelmo": {
-   "pj": 27,
-   "pts": 27,
+   "pj": 28,
+   "pts": 28,
    "gf": 22,
    "gc": 33
   },
@@ -557,10 +557,10 @@
    "gc": 29
   },
   "chacarita": {
-   "pj": 27,
+   "pj": 28,
    "pts": 27,
    "gf": 19,
-   "gc": 29
+   "gc": 30
   },
   "nuevachicago": {
    "pj": 27,
@@ -599,9 +599,9 @@
    "gc": 22
   },
   "atlanta": {
-   "pj": 27,
-   "pts": 42,
-   "gf": 31,
+   "pj": 28,
+   "pts": 45,
+   "gf": 32,
    "gc": 28
   },
   "colegiales": {
@@ -617,9 +617,9 @@
    "gc": 22
   },
   "tristan": {
-   "pj": 26,
-   "pts": 48,
-   "gf": 29,
+   "pj": 27,
+   "pts": 51,
+   "gf": 31,
    "gc": 15
   },
   "patronato": {
@@ -647,10 +647,10 @@
    "gc": 31
   },
   "sanmartint": {
-   "pj": 27,
+   "pj": 28,
    "pts": 36,
    "gf": 27,
-   "gc": 24
+   "gc": 26
   },
   "guemes": {
    "pj": 27,
