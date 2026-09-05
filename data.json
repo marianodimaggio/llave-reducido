@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-05T03:43:03+00:00",
+ "actualizado": "2026-09-05T08:12:08+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -9,8 +9,8 @@
     "id": "ferro",
     "nombre": "Ferro",
     "espn": "Ferro Carril Oeste",
-    "pj": 27,
-    "pts": 53,
+    "pj": 28,
+    "pts": 54,
     "gf": 34,
     "gc": 25,
     "rank_espn": 1,
@@ -129,8 +129,8 @@
     "id": "mitre",
     "nombre": "Mitre (SdE)",
     "espn": "Mitre (Santiago del Estero)",
-    "pj": 27,
-    "pts": 30,
+    "pj": 28,
+    "pts": 31,
     "gf": 27,
     "gc": 35,
     "rank_espn": 11,
@@ -467,8 +467,8 @@
    "gc": 16
   },
   "ferro": {
-   "pj": 27,
-   "pts": 53,
+   "pj": 28,
+   "pts": 54,
    "gf": 34,
    "gc": 25
   },
@@ -515,8 +515,8 @@
    "gc": 29
   },
   "mitre": {
-   "pj": 27,
-   "pts": 30,
+   "pj": 28,
+   "pts": 31,
    "gf": 27,
    "gc": 35
   },
