@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-06T01:05:08+00:00",
+ "actualizado": "2026-09-06T06:02:45+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -21,25 +21,25 @@
     "id": "moron",
     "nombre": "Dep. Morón",
     "espn": "Deportivo Morón",
-    "pj": 27,
-    "pts": 49,
-    "gf": 43,
-    "gc": 25,
+    "pj": 28,
+    "pts": 52,
+    "gf": 45,
+    "gc": 26,
     "rank_espn": 2,
     "pos": 2,
-    "dif": 18
+    "dif": 19
    },
    {
     "id": "colon",
     "nombre": "Colón",
     "espn": "Colón (Santa Fe)",
-    "pj": 27,
+    "pj": 28,
     "pts": 45,
-    "gf": 34,
-    "gc": 21,
+    "gf": 35,
+    "gc": 23,
     "rank_espn": 3,
     "pos": 3,
-    "dif": 13
+    "dif": 12
    },
    {
     "id": "almirante",
@@ -443,10 +443,10 @@
  },
  "crudo": {
   "colon": {
-   "pj": 27,
+   "pj": 28,
    "pts": 45,
-   "gf": 34,
-   "gc": 21
+   "gf": 35,
+   "gc": 23
   },
   "losandes": {
    "pj": 27,
@@ -497,10 +497,10 @@
    "gc": 24
   },
   "moron": {
-   "pj": 27,
-   "pts": 49,
-   "gf": 43,
-   "gc": 25
+   "pj": 28,
+   "pts": 52,
+   "gf": 45,
+   "gc": 26
   },
   "santelmo": {
    "pj": 28,
