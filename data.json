@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-07T21:35:44+00:00",
+ "actualizado": "2026-09-07T23:45:14+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -383,13 +383,25 @@
     "id": "quilmes",
     "nombre": "Quilmes",
     "espn": "Quilmes",
-    "pj": 27,
+    "pj": 28,
     "pts": 32,
     "gf": 27,
-    "gc": 23,
+    "gc": 24,
     "rank_espn": 14,
     "pos": 14,
-    "dif": 4
+    "dif": 3
+   },
+   {
+    "id": "nuevachicago",
+    "nombre": "Nueva Chicago",
+    "espn": "Nueva Chicago",
+    "pj": 28,
+    "pts": 32,
+    "gf": 21,
+    "gc": 27,
+    "rank_espn": 15,
+    "pos": 15,
+    "dif": -6
    },
    {
     "id": "patronato",
@@ -399,18 +411,6 @@
     "pts": 29,
     "gf": 23,
     "gc": 30,
-    "rank_espn": 15,
-    "pos": 15,
-    "dif": -7
-   },
-   {
-    "id": "nuevachicago",
-    "nombre": "Nueva Chicago",
-    "espn": "Nueva Chicago",
-    "pj": 27,
-    "pts": 29,
-    "gf": 20,
-    "gc": 27,
     "rank_espn": 16,
     "pos": 16,
     "dif": -7
@@ -563,16 +563,16 @@
    "gc": 30
   },
   "nuevachicago": {
-   "pj": 27,
-   "pts": 29,
-   "gf": 20,
+   "pj": 28,
+   "pts": 32,
+   "gf": 21,
    "gc": 27
   },
   "quilmes": {
-   "pj": 27,
+   "pj": 28,
    "pts": 32,
    "gf": 27,
-   "gc": 23
+   "gc": 24
   },
   "gimnasiaj": {
    "pj": 28,
