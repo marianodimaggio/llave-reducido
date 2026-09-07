@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-07T01:06:27+00:00",
+ "actualizado": "2026-09-07T06:11:18+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -69,8 +69,8 @@
     "id": "almirante",
     "nombre": "Almirante Brown",
     "espn": "Almirante Brown",
-    "pj": 27,
-    "pts": 44,
+    "pj": 28,
+    "pts": 45,
     "gf": 23,
     "gc": 16,
     "rank_espn": 6,
@@ -162,6 +162,18 @@
     "dif": -8
    },
    {
+    "id": "centralnorte",
+    "nombre": "Central Norte",
+    "espn": "Central Norte",
+    "pj": 28,
+    "pts": 30,
+    "gf": 19,
+    "gc": 27,
+    "rank_espn": 14,
+    "pos": 14,
+    "dif": -8
+   },
+   {
     "id": "defbelgrano",
     "nombre": "Def. de Belgrano",
     "espn": "Defensores de Belgrano",
@@ -169,21 +181,9 @@
     "pts": 29,
     "gf": 19,
     "gc": 24,
-    "rank_espn": 14,
-    "pos": 14,
-    "dif": -5
-   },
-   {
-    "id": "centralnorte",
-    "nombre": "Central Norte",
-    "espn": "Central Norte",
-    "pj": 27,
-    "pts": 29,
-    "gf": 19,
-    "gc": 27,
     "rank_espn": 15,
     "pos": 15,
-    "dif": -8
+    "dif": -5
    },
    {
     "id": "sanmiguel",
@@ -272,6 +272,18 @@
     "dif": 4
    },
    {
+    "id": "gyt",
+    "nombre": "Gimnasia y Tiro",
+    "espn": "Gimnasia y Tiro (Salta)",
+    "pj": 28,
+    "pts": 44,
+    "gf": 31,
+    "gc": 26,
+    "rank_espn": 5,
+    "pos": 5,
+    "dif": 5
+   },
+   {
     "id": "midland",
     "nombre": "Midland",
     "espn": "Midland",
@@ -279,8 +291,8 @@
     "pts": 41,
     "gf": 31,
     "gc": 25,
-    "rank_espn": 5,
-    "pos": 5,
+    "rank_espn": 6,
+    "pos": 6,
     "dif": 6
    },
    {
@@ -291,21 +303,9 @@
     "pts": 41,
     "gf": 31,
     "gc": 26,
-    "rank_espn": 6,
-    "pos": 6,
-    "dif": 5
-   },
-   {
-    "id": "gyt",
-    "nombre": "Gimnasia y Tiro",
-    "espn": "Gimnasia y Tiro (Salta)",
-    "pj": 27,
-    "pts": 41,
-    "gf": 28,
-    "gc": 25,
     "rank_espn": 7,
     "pos": 7,
-    "dif": 3
+    "dif": 5
    },
    {
     "id": "maipu",
@@ -431,13 +431,13 @@
     "id": "guemes",
     "nombre": "Güemes",
     "espn": "Güemes",
-    "pj": 27,
+    "pj": 28,
     "pts": 23,
-    "gf": 22,
-    "gc": 44,
+    "gf": 23,
+    "gc": 47,
     "rank_espn": 18,
     "pos": 18,
-    "dif": -22
+    "dif": -24
    }
   ]
  },
@@ -461,8 +461,8 @@
    "gc": 25
   },
   "almirante": {
-   "pj": 27,
-   "pts": 44,
+   "pj": 28,
+   "pts": 45,
    "gf": 23,
    "gc": 16
   },
@@ -521,8 +521,8 @@
    "gc": 35
   },
   "centralnorte": {
-   "pj": 27,
-   "pts": 29,
+   "pj": 28,
+   "pts": 30,
    "gf": 19,
    "gc": 27
   },
@@ -629,10 +629,10 @@
    "gc": 30
   },
   "gyt": {
-   "pj": 27,
-   "pts": 41,
-   "gf": 28,
-   "gc": 25
+   "pj": 28,
+   "pts": 44,
+   "gf": 31,
+   "gc": 26
   },
   "maipu": {
    "pj": 28,
@@ -653,10 +653,10 @@
    "gc": 26
   },
   "guemes": {
-   "pj": 27,
+   "pj": 28,
    "pts": 23,
-   "gf": 22,
-   "gc": 44
+   "gf": 23,
+   "gc": 47
   }
  }
 }
