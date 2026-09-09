@@ -91,9 +91,14 @@ def ajustar(tr, equipos, mezcla, xi, ridge, rho_fijo=None):
     ult = tr['f'].max()
     w = np.exp(-xi * (ult - tr['f']).dt.days.values)
 
-    # la senal sobre la que se ajusta
-    sL = mezcla * tr['xgL'].values + (1 - mezcla) * tr['home_team_goal_count'].values
-    sV = mezcla * tr['xgV'].values + (1 - mezcla) * tr['away_team_goal_count'].values
+    # La senal sobre la que se ajusta. Si el DataFrame no trae columnas de xG
+    # (el caso del pipeline automatico, que solo tiene goles), se usan goles.
+    if mezcla > 0 and 'xgL' in tr.columns:
+        sL = mezcla * tr['xgL'].values + (1 - mezcla) * tr['home_team_goal_count'].values
+        sV = mezcla * tr['xgV'].values + (1 - mezcla) * tr['away_team_goal_count'].values
+    else:
+        sL = tr['home_team_goal_count'].values.astype(float)
+        sV = tr['away_team_goal_count'].values.astype(float)
     ih = np.array([ind[x] for x in tr['ih']])
     ia = np.array([ind[x] for x in tr['ia']])
     gh = tr['home_team_goal_count'].values.astype(int)
