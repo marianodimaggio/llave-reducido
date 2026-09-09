@@ -43,7 +43,7 @@ jobs:
       - name: Recalcular el modelo
         continue-on-error: true
         run: |
-          if true; then
+          if [ -f .hay-nuevos ]; then
             pip install --quiet numpy pandas scipy
             python generar_fuerzas.py
             rm -f .hay-nuevos
