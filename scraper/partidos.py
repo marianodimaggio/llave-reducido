@@ -25,18 +25,57 @@ import actualizar as A
 
 ARCHIVO = os.path.join(AQUI, 'partidos.json')
 SENAL = os.path.join(AQUI, '.hay-nuevos')
-BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/arg.2/scoreboard?dates="
+# ESPN devuelve 403 en algunas de sus direcciones segun de donde salga el
+# pedido. Con la tabla de posiciones paso lo mismo: la unica que respondio fue
+# la de site.web.api con region e idioma. Se prueban en ese orden.
+PATRONES = [
+    "https://site.web.api.espn.com/apis/site/v2/sports/soccer/arg.2/scoreboard?region=ar&lang=es&dates={d}",
+    "https://site.api.espn.com/apis/site/v2/sports/soccer/arg.2/scoreboard?region=ar&lang=es&dates={d}",
+    "https://site.web.api.espn.com/apis/site/v2/sports/soccer/arg.2/scoreboard?dates={d}",
+    "https://site.api.espn.com/apis/site/v2/sports/soccer/arg.2/scoreboard?dates={d}",
+]
+
+# Las mismas cabeceras que usa el scraper de la tabla, pero apuntando a la
+# pagina de resultados: ESPN mira el Referer.
+CABECERAS = dict(A.CABECERAS)
+CABECERAS["Referer"] = "https://www.espn.com.ar/futbol/resultados/_/liga/arg.2"
+
+PATRON_OK = None      # la primera direccion que responde se reusa para el resto
 MARGEN_HS = 3          # no pedir un dia hasta 3 horas despues de terminado
 MAX_DIAS = 20          # tope de consultas por corrida
 
 
-def bajar(dia):
-    """dia en formato YYYYMMDD. Devuelve la lista de eventos de ESPN."""
-    req = urllib.request.Request(BASE + dia, headers=A.CABECERAS)
+def pedir(url):
+    req = urllib.request.Request(url, headers=CABECERAS)
     with urllib.request.urlopen(req, timeout=25) as r:
         if r.status != 200:
             raise RuntimeError(f"HTTP {r.status}")
-        return json.loads(r.read().decode()).get('events') or []
+        return json.loads(r.read().decode())
+
+
+def bajar(dia):
+    """dia en formato YYYYMMDD. Devuelve la lista de eventos de ESPN.
+
+    La primera vez prueba todas las direcciones; despues reusa la que anduvo.
+    """
+    global PATRON_OK
+    if PATRON_OK:
+        return pedir(PATRON_OK.format(d=dia)).get('events') or []
+
+    fallos = []
+    for pat in PATRONES:
+        try:
+            datos = pedir(pat.format(d=dia))
+        except urllib.error.HTTPError as ex:
+            fallos.append(f"{pat.split('?')[0]} → HTTP {ex.code}")
+            continue
+        except Exception as ex:
+            fallos.append(f"{pat.split('?')[0]} → {type(ex).__name__}")
+            continue
+        PATRON_OK = pat
+        print(f"  responde: {pat.split('?')[0]}")
+        return datos.get('events') or []
+    raise RuntimeError("ninguna direccion respondio: " + " · ".join(fallos))
 
 
 def marcador(ev):
@@ -96,6 +135,12 @@ def main():
             eventos = bajar(clave)
         except Exception as ex:
             problemas.append(f'{dia}: {type(ex).__name__} {ex}')
+            # Si ninguna direccion responde, el problema no es ese dia: es el
+            # acceso. No tiene sentido repetir el mismo error catorce veces.
+            if PATRON_OK is None:
+                print('ABORTA: ESPN no responde en ninguna direccion.')
+                print('  ' + str(ex))
+                return 1
             continue
         time.sleep(1)   # no apurar a ESPN
 
