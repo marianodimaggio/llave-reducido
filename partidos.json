@@ -3394,36 +3394,36 @@
 "fecha": "2026-09-04",
 "local": "defbelgrano",
 "visita": "racingcba",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 0
 },
 {
 "fecha": "2026-09-04",
 "local": "ferro",
 "visita": "mitre",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-09-05",
 "local": "tristan",
 "visita": "sanmartint",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 },
 {
 "fecha": "2026-09-05",
 "local": "santelmo",
 "visita": "losandes",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-09-05",
 "local": "chacarita",
 "visita": "atlanta",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
 "fecha": "2026-09-05",
@@ -3436,36 +3436,36 @@
 "fecha": "2026-09-05",
 "local": "colon",
 "visita": "moron",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 2
 },
 {
 "fecha": "2026-09-06",
 "local": "sanmiguel",
 "visita": "godoy",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 2
 },
 {
 "fecha": "2026-09-06",
 "local": "agropecuario",
 "visita": "rafaela",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 },
 {
 "fecha": "2026-09-06",
 "local": "sanmartinsj",
 "visita": "midland",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 2
 },
 {
 "fecha": "2026-09-06",
 "local": "almagro",
 "visita": "gimnasiaj",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 2
 },
 {
 "fecha": "2026-09-06",
@@ -3478,43 +3478,43 @@
 "fecha": "2026-09-06",
 "local": "chacoforever",
 "visita": "estudiantesc",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-09-06",
 "local": "madryn",
 "visita": "bolivar",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 1
 },
 {
 "fecha": "2026-09-06",
 "local": "maipu",
 "visita": "patronato",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-09-06",
 "local": "guemes",
 "visita": "gyt",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 3
 },
 {
 "fecha": "2026-09-06",
 "local": "centralnorte",
 "visita": "almirante",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-09-07",
 "local": "nuevachicago",
 "visita": "quilmes",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-09-09",
@@ -4538,5 +4538,8 @@
 "gl": null,
 "gv": null
 }
-]
+],
+"actualizado": "2026-09-09T11:52:17+00:00",
+"jugados": 500,
+"pendientes": 148
 }
