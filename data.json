@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-09T20:12:48+00:00",
+ "actualizado": "2026-09-10T02:12:46+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -90,6 +90,18 @@
     "dif": -2
    },
    {
+    "id": "losandes",
+    "nombre": "Los Andes",
+    "espn": "Los Andes",
+    "pj": 28,
+    "pts": 36,
+    "gf": 21,
+    "gc": 16,
+    "rank_espn": 8,
+    "pos": 8,
+    "dif": 5
+   },
+   {
     "id": "estudiantesc",
     "nombre": "Estudiantes (C)",
     "espn": "Estudiantes (Buenos Aires)",
@@ -97,21 +109,9 @@
     "pts": 36,
     "gf": 25,
     "gc": 25,
-    "rank_espn": 8,
-    "pos": 8,
-    "dif": 0
-   },
-   {
-    "id": "losandes",
-    "nombre": "Los Andes",
-    "espn": "Los Andes",
-    "pj": 27,
-    "pts": 35,
-    "gf": 20,
-    "gc": 15,
     "rank_espn": 9,
     "pos": 9,
-    "dif": 5
+    "dif": 0
    },
    {
     "id": "racingcba",
@@ -162,6 +162,18 @@
     "dif": -8
    },
    {
+    "id": "defbelgrano",
+    "nombre": "Def. de Belgrano",
+    "espn": "Defensores de Belgrano",
+    "pj": 28,
+    "pts": 30,
+    "gf": 20,
+    "gc": 25,
+    "rank_espn": 14,
+    "pos": 14,
+    "dif": -5
+   },
+   {
     "id": "centralnorte",
     "nombre": "Central Norte",
     "espn": "Central Norte",
@@ -169,21 +181,9 @@
     "pts": 30,
     "gf": 19,
     "gc": 27,
-    "rank_espn": 14,
-    "pos": 14,
-    "dif": -8
-   },
-   {
-    "id": "defbelgrano",
-    "nombre": "Def. de Belgrano",
-    "espn": "Defensores de Belgrano",
-    "pj": 27,
-    "pts": 29,
-    "gf": 19,
-    "gc": 24,
     "rank_espn": 15,
     "pos": 15,
-    "dif": -5
+    "dif": -8
    },
    {
     "id": "sanmiguel",
@@ -449,10 +449,10 @@
    "gc": 23
   },
   "losandes": {
-   "pj": 27,
-   "pts": 35,
-   "gf": 20,
-   "gc": 15
+   "pj": 28,
+   "pts": 36,
+   "gf": 21,
+   "gc": 16
   },
   "godoy": {
    "pj": 28,
@@ -491,10 +491,10 @@
    "gc": 33
   },
   "defbelgrano": {
-   "pj": 27,
-   "pts": 29,
-   "gf": 19,
-   "gc": 24
+   "pj": 28,
+   "pts": 30,
+   "gf": 20,
+   "gc": 25
   },
   "moron": {
    "pj": 28,

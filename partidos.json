@@ -3520,8 +3520,8 @@
 "fecha": "2026-09-09",
 "local": "defbelgrano",
 "visita": "losandes",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
 "fecha": "2026-09-12",
@@ -4539,7 +4539,7 @@
 "gv": null
 }
 ],
-"actualizado": "2026-09-09T11:52:17+00:00",
-"jugados": 500,
-"pendientes": 148
+"actualizado": "2026-09-10T02:12:47+00:00",
+"jugados": 501,
+"pendientes": 147
 }
