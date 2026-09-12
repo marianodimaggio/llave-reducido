@@ -3555,8 +3555,8 @@
 "fecha": "2026-09-12",
 "local": "bolivar",
 "visita": "centralnorte",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-09-12",
@@ -3576,22 +3576,22 @@
 "fecha": "2026-09-12",
 "local": "colegiales",
 "visita": "nuevachicago",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-09-12",
 "local": "atlanta",
 "visita": "guemes",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 },
 {
 "fecha": "2026-09-12",
 "local": "almagro",
 "visita": "maipu",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 2
 },
 {
 "fecha": "2026-09-12",
@@ -3618,8 +3618,8 @@
 "fecha": "2026-09-12",
 "local": "allboys",
 "visita": "santelmo",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
 "fecha": "2026-09-12",
@@ -3632,8 +3632,8 @@
 "fecha": "2026-09-12",
 "local": "quilmes",
 "visita": "sanmartinsj",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-09-12",
@@ -4539,7 +4539,7 @@
 "gv": null
 }
 ],
-"actualizado": "2026-09-10T02:12:47+00:00",
-"jugados": 501,
-"pendientes": 147
+"actualizado": "2026-09-12T23:05:54+00:00",
+"jugados": 507,
+"pendientes": 141
 }
