@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-12T00:36:47+00:00",
+ "actualizado": "2026-09-12T05:02:57+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -227,8 +227,8 @@
     "id": "tristan",
     "nombre": "Tristán Suárez",
     "espn": "Tristán Suárez",
-    "pj": 27,
-    "pts": 51,
+    "pj": 28,
+    "pts": 52,
     "gf": 31,
     "gc": 15,
     "rank_espn": 1,
@@ -260,6 +260,18 @@
     "dif": 8
    },
    {
+    "id": "gyt",
+    "nombre": "Gimnasia y Tiro",
+    "espn": "Gimnasia y Tiro (Salta)",
+    "pj": 29,
+    "pts": 45,
+    "gf": 31,
+    "gc": 26,
+    "rank_espn": 4,
+    "pos": 4,
+    "dif": 5
+   },
+   {
     "id": "atlanta",
     "nombre": "Atlanta",
     "espn": "Atlanta",
@@ -267,21 +279,9 @@
     "pts": 45,
     "gf": 32,
     "gc": 28,
-    "rank_espn": 4,
-    "pos": 4,
-    "dif": 4
-   },
-   {
-    "id": "gyt",
-    "nombre": "Gimnasia y Tiro",
-    "espn": "Gimnasia y Tiro (Salta)",
-    "pj": 28,
-    "pts": 44,
-    "gf": 31,
-    "gc": 26,
     "rank_espn": 5,
     "pos": 5,
-    "dif": 5
+    "dif": 4
    },
    {
     "id": "midland",
@@ -617,8 +617,8 @@
    "gc": 23
   },
   "tristan": {
-   "pj": 27,
-   "pts": 51,
+   "pj": 28,
+   "pts": 52,
    "gf": 31,
    "gc": 15
   },
@@ -629,8 +629,8 @@
    "gc": 30
   },
   "gyt": {
-   "pj": 28,
-   "pts": 44,
+   "pj": 29,
+   "pts": 45,
    "gf": 31,
    "gc": 26
   },
