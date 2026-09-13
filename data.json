@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-13T01:08:21+00:00",
+ "actualizado": "2026-09-13T06:18:39+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -299,13 +299,13 @@
     "id": "sanmartinsj",
     "nombre": "San Martín (SJ)",
     "espn": "San Martín (San Juan)",
-    "pj": 27,
+    "pj": 28,
     "pts": 41,
     "gf": 31,
-    "gc": 26,
+    "gc": 27,
     "rank_espn": 7,
     "pos": 7,
-    "dif": 5
+    "dif": 4
    },
    {
     "id": "maipu",
@@ -356,6 +356,18 @@
     "dif": 1
    },
    {
+    "id": "quilmes",
+    "nombre": "Quilmes",
+    "espn": "Quilmes",
+    "pj": 29,
+    "pts": 35,
+    "gf": 28,
+    "gc": 24,
+    "rank_espn": 12,
+    "pos": 12,
+    "dif": 4
+   },
+   {
     "id": "almagro",
     "nombre": "Almagro",
     "espn": "Almagro",
@@ -363,8 +375,8 @@
     "pts": 35,
     "gf": 25,
     "gc": 33,
-    "rank_espn": 12,
-    "pos": 12,
+    "rank_espn": 13,
+    "pos": 13,
     "dif": -8
    },
    {
@@ -375,21 +387,9 @@
     "pts": 33,
     "gf": 25,
     "gc": 31,
-    "rank_espn": 13,
-    "pos": 13,
-    "dif": -6
-   },
-   {
-    "id": "quilmes",
-    "nombre": "Quilmes",
-    "espn": "Quilmes",
-    "pj": 28,
-    "pts": 32,
-    "gf": 27,
-    "gc": 24,
     "rank_espn": 14,
     "pos": 14,
-    "dif": 3
+    "dif": -6
    },
    {
     "id": "nuevachicago",
@@ -569,9 +569,9 @@
    "gc": 28
   },
   "quilmes": {
-   "pj": 28,
-   "pts": 32,
-   "gf": 27,
+   "pj": 29,
+   "pts": 35,
+   "gf": 28,
    "gc": 24
   },
   "gimnasiaj": {
@@ -581,10 +581,10 @@
    "gc": 34
   },
   "sanmartinsj": {
-   "pj": 27,
+   "pj": 28,
    "pts": 41,
    "gf": 31,
-   "gc": 26
+   "gc": 27
   },
   "rafaela": {
    "pj": 28,
