@@ -1,33 +1,45 @@
 {
- "actualizado": "2026-09-13T23:29:34+00:00",
+ "actualizado": "2026-09-14T01:38:11+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
  "zonas": {
   "A": [
    {
-    "id": "ferro",
-    "nombre": "Ferro",
-    "espn": "Ferro Carril Oeste",
-    "pj": 28,
-    "pts": 54,
-    "gf": 34,
-    "gc": 25,
-    "rank_espn": 1,
-    "pos": 1,
-    "dif": 9
-   },
-   {
     "id": "moron",
     "nombre": "Dep. Morón",
     "espn": "Deportivo Morón",
-    "pj": 28,
-    "pts": 52,
-    "gf": 45,
-    "gc": 26,
+    "pj": 29,
+    "pts": 55,
+    "gf": 47,
+    "gc": 27,
+    "rank_espn": 1,
+    "pos": 1,
+    "dif": 20
+   },
+   {
+    "id": "ferro",
+    "nombre": "Ferro",
+    "espn": "Ferro Carril Oeste",
+    "pj": 29,
+    "pts": 55,
+    "gf": 34,
+    "gc": 25,
     "rank_espn": 2,
     "pos": 2,
-    "dif": 19
+    "dif": 9
+   },
+   {
+    "id": "godoy",
+    "nombre": "Godoy Cruz",
+    "espn": "Godoy Cruz Antonio Tomba",
+    "pj": 29,
+    "pts": 49,
+    "gf": 36,
+    "gc": 25,
+    "rank_espn": 3,
+    "pos": 3,
+    "dif": 11
    },
    {
     "id": "madryn",
@@ -37,45 +49,45 @@
     "pts": 46,
     "gf": 41,
     "gc": 26,
-    "rank_espn": 3,
-    "pos": 3,
-    "dif": 15
-   },
-   {
-    "id": "godoy",
-    "nombre": "Godoy Cruz",
-    "espn": "Godoy Cruz Antonio Tomba",
-    "pj": 28,
-    "pts": 46,
-    "gf": 34,
-    "gc": 25,
     "rank_espn": 4,
     "pos": 4,
-    "dif": 9
-   },
-   {
-    "id": "colon",
-    "nombre": "Colón",
-    "espn": "Colón (Santa Fe)",
-    "pj": 28,
-    "pts": 45,
-    "gf": 35,
-    "gc": 23,
-    "rank_espn": 5,
-    "pos": 5,
-    "dif": 12
+    "dif": 15
    },
    {
     "id": "almirante",
     "nombre": "Almirante Brown",
     "espn": "Almirante Brown",
-    "pj": 28,
-    "pts": 45,
+    "pj": 29,
+    "pts": 46,
     "gf": 23,
     "gc": 16,
+    "rank_espn": 5,
+    "pos": 5,
+    "dif": 7
+   },
+   {
+    "id": "colon",
+    "nombre": "Colón",
+    "espn": "Colón (Santa Fe)",
+    "pj": 29,
+    "pts": 45,
+    "gf": 35,
+    "gc": 25,
     "rank_espn": 6,
     "pos": 6,
-    "dif": 7
+    "dif": 10
+   },
+   {
+    "id": "estudiantesc",
+    "nombre": "Estudiantes (C)",
+    "espn": "Estudiantes (Buenos Aires)",
+    "pj": 29,
+    "pts": 39,
+    "gf": 26,
+    "gc": 25,
+    "rank_espn": 7,
+    "pos": 7,
+    "dif": 1
    },
    {
     "id": "bolivar",
@@ -85,52 +97,40 @@
     "pts": 39,
     "gf": 24,
     "gc": 26,
-    "rank_espn": 7,
-    "pos": 7,
+    "rank_espn": 8,
+    "pos": 8,
     "dif": -2
    },
    {
     "id": "losandes",
     "nombre": "Los Andes",
     "espn": "Los Andes",
-    "pj": 28,
-    "pts": 36,
-    "gf": 21,
-    "gc": 16,
-    "rank_espn": 8,
-    "pos": 8,
-    "dif": 5
-   },
-   {
-    "id": "estudiantesc",
-    "nombre": "Estudiantes (C)",
-    "espn": "Estudiantes (Buenos Aires)",
-    "pj": 28,
-    "pts": 36,
-    "gf": 25,
-    "gc": 25,
+    "pj": 29,
+    "pts": 37,
+    "gf": 22,
+    "gc": 17,
     "rank_espn": 9,
     "pos": 9,
-    "dif": 0
+    "dif": 5
    },
    {
     "id": "racingcba",
     "nombre": "Racing (Cba)",
     "espn": "Racing (Córdoba)",
-    "pj": 28,
+    "pj": 29,
     "pts": 35,
-    "gf": 25,
-    "gc": 32,
+    "gf": 26,
+    "gc": 34,
     "rank_espn": 10,
     "pos": 10,
-    "dif": -7
+    "dif": -8
    },
    {
     "id": "chacoforever",
     "nombre": "Chaco For Ever",
     "espn": "Chaco For Ever",
-    "pj": 28,
-    "pts": 32,
+    "pj": 29,
+    "pts": 33,
     "gf": 26,
     "gc": 29,
     "rank_espn": 11,
@@ -141,8 +141,8 @@
     "id": "mitre",
     "nombre": "Mitre (SdE)",
     "espn": "Mitre (Santiago del Estero)",
-    "pj": 28,
-    "pts": 31,
+    "pj": 29,
+    "pts": 32,
     "gf": 27,
     "gc": 35,
     "rank_espn": 12,
@@ -201,10 +201,10 @@
     "id": "sanmiguel",
     "nombre": "San Miguel",
     "espn": "San Miguel",
-    "pj": 28,
-    "pts": 29,
-    "gf": 22,
-    "gc": 32,
+    "pj": 29,
+    "pts": 30,
+    "gf": 23,
+    "gc": 33,
     "rank_espn": 17,
     "pos": 17,
     "dif": -10
@@ -213,13 +213,13 @@
     "id": "acassuso",
     "nombre": "Acassuso",
     "espn": "Acassuso",
-    "pj": 28,
+    "pj": 29,
     "pts": 23,
     "gf": 19,
-    "gc": 33,
+    "gc": 34,
     "rank_espn": 18,
     "pos": 18,
-    "dif": -14
+    "dif": -15
    }
   ],
   "B": [
@@ -236,28 +236,28 @@
     "dif": 16
    },
    {
-    "id": "temperley",
-    "nombre": "Temperley",
-    "espn": "Temperley",
-    "pj": 28,
-    "pts": 49,
-    "gf": 33,
-    "gc": 23,
-    "rank_espn": 2,
-    "pos": 2,
-    "dif": 10
-   },
-   {
     "id": "gimnasiaj",
     "nombre": "Gimnasia (J)",
     "espn": "Gimnasia y Esgrima (Jujuy)",
-    "pj": 28,
-    "pts": 49,
-    "gf": 42,
-    "gc": 34,
+    "pj": 29,
+    "pts": 52,
+    "gf": 44,
+    "gc": 35,
+    "rank_espn": 2,
+    "pos": 2,
+    "dif": 9
+   },
+   {
+    "id": "temperley",
+    "nombre": "Temperley",
+    "espn": "Temperley",
+    "pj": 29,
+    "pts": 50,
+    "gf": 33,
+    "gc": 23,
     "rank_espn": 3,
     "pos": 3,
-    "dif": 8
+    "dif": 10
    },
    {
     "id": "atlanta",
@@ -287,13 +287,13 @@
     "id": "midland",
     "nombre": "Midland",
     "espn": "Midland",
-    "pj": 28,
-    "pts": 41,
-    "gf": 31,
+    "pj": 29,
+    "pts": 44,
+    "gf": 32,
     "gc": 25,
     "rank_espn": 6,
     "pos": 6,
-    "dif": 6
+    "dif": 7
    },
    {
     "id": "sanmartinsj",
@@ -332,28 +332,28 @@
     "dif": 1
    },
    {
-    "id": "rafaela",
-    "nombre": "At. Rafaela",
-    "espn": "Atletico Rafaela",
-    "pj": 28,
-    "pts": 39,
-    "gf": 20,
-    "gc": 22,
-    "rank_espn": 10,
-    "pos": 10,
-    "dif": -2
-   },
-   {
     "id": "sanmartint",
     "nombre": "San Martín (T)",
     "espn": "San Martín (Tucumán)",
-    "pj": 28,
-    "pts": 36,
-    "gf": 27,
+    "pj": 29,
+    "pts": 39,
+    "gf": 30,
     "gc": 26,
+    "rank_espn": 10,
+    "pos": 10,
+    "dif": 4
+   },
+   {
+    "id": "rafaela",
+    "nombre": "At. Rafaela",
+    "espn": "Atletico Rafaela",
+    "pj": 29,
+    "pts": 39,
+    "gf": 21,
+    "gc": 24,
     "rank_espn": 11,
     "pos": 11,
-    "dif": 1
+    "dif": -3
    },
    {
     "id": "quilmes",
@@ -383,13 +383,13 @@
     "id": "agropecuario",
     "nombre": "Agropecuario",
     "espn": "Agropecuario",
-    "pj": 28,
+    "pj": 29,
     "pts": 33,
     "gf": 25,
-    "gc": 31,
+    "gc": 34,
     "rank_espn": 14,
     "pos": 14,
-    "dif": -6
+    "dif": -9
    },
    {
     "id": "nuevachicago",
@@ -407,8 +407,8 @@
     "id": "patronato",
     "nombre": "Patronato",
     "espn": "Patronato",
-    "pj": 28,
-    "pts": 29,
+    "pj": 29,
+    "pts": 30,
     "gf": 23,
     "gc": 30,
     "rank_espn": 16,
@@ -419,13 +419,13 @@
     "id": "chacarita",
     "nombre": "Chacarita",
     "espn": "Chacarita Juniors",
-    "pj": 28,
+    "pj": 29,
     "pts": 27,
     "gf": 19,
-    "gc": 30,
+    "gc": 31,
     "rank_espn": 17,
     "pos": 17,
-    "dif": -11
+    "dif": -12
    },
    {
     "id": "guemes",
@@ -443,32 +443,32 @@
  },
  "crudo": {
   "colon": {
-   "pj": 28,
+   "pj": 29,
    "pts": 45,
    "gf": 35,
-   "gc": 23
+   "gc": 25
   },
   "losandes": {
-   "pj": 28,
-   "pts": 36,
-   "gf": 21,
-   "gc": 16
+   "pj": 29,
+   "pts": 37,
+   "gf": 22,
+   "gc": 17
   },
   "godoy": {
-   "pj": 28,
-   "pts": 46,
-   "gf": 34,
+   "pj": 29,
+   "pts": 49,
+   "gf": 36,
    "gc": 25
   },
   "almirante": {
-   "pj": 28,
-   "pts": 45,
+   "pj": 29,
+   "pts": 46,
    "gf": 23,
    "gc": 16
   },
   "ferro": {
-   "pj": 28,
-   "pts": 54,
+   "pj": 29,
+   "pts": 55,
    "gf": 34,
    "gc": 25
   },
@@ -479,16 +479,16 @@
    "gc": 25
   },
   "sanmiguel": {
-   "pj": 28,
-   "pts": 29,
-   "gf": 22,
-   "gc": 32
+   "pj": 29,
+   "pts": 30,
+   "gf": 23,
+   "gc": 33
   },
   "acassuso": {
-   "pj": 28,
+   "pj": 29,
    "pts": 23,
    "gf": 19,
-   "gc": 33
+   "gc": 34
   },
   "defbelgrano": {
    "pj": 28,
@@ -497,10 +497,10 @@
    "gc": 25
   },
   "moron": {
-   "pj": 28,
-   "pts": 52,
-   "gf": 45,
-   "gc": 26
+   "pj": 29,
+   "pts": 55,
+   "gf": 47,
+   "gc": 27
   },
   "santelmo": {
    "pj": 29,
@@ -509,14 +509,14 @@
    "gc": 33
   },
   "chacoforever": {
-   "pj": 28,
-   "pts": 32,
+   "pj": 29,
+   "pts": 33,
    "gf": 26,
    "gc": 29
   },
   "mitre": {
-   "pj": 28,
-   "pts": 31,
+   "pj": 29,
+   "pts": 32,
    "gf": 27,
    "gc": 35
   },
@@ -527,9 +527,9 @@
    "gc": 27
   },
   "estudiantesc": {
-   "pj": 28,
-   "pts": 36,
-   "gf": 25,
+   "pj": 29,
+   "pts": 39,
+   "gf": 26,
    "gc": 25
   },
   "madryn": {
@@ -539,10 +539,10 @@
    "gc": 26
   },
   "racingcba": {
-   "pj": 28,
+   "pj": 29,
    "pts": 35,
-   "gf": 25,
-   "gc": 32
+   "gf": 26,
+   "gc": 34
   },
   "bolivar": {
    "pj": 29,
@@ -557,10 +557,10 @@
    "gc": 33
   },
   "chacarita": {
-   "pj": 28,
+   "pj": 29,
    "pts": 27,
    "gf": 19,
-   "gc": 30
+   "gc": 31
   },
   "nuevachicago": {
    "pj": 29,
@@ -575,10 +575,10 @@
    "gc": 24
   },
   "gimnasiaj": {
-   "pj": 28,
-   "pts": 49,
-   "gf": 42,
-   "gc": 34
+   "pj": 29,
+   "pts": 52,
+   "gf": 44,
+   "gc": 35
   },
   "sanmartinsj": {
    "pj": 28,
@@ -587,15 +587,15 @@
    "gc": 27
   },
   "rafaela": {
-   "pj": 28,
+   "pj": 29,
    "pts": 39,
-   "gf": 20,
-   "gc": 22
+   "gf": 21,
+   "gc": 24
   },
   "midland": {
-   "pj": 28,
-   "pts": 41,
-   "gf": 31,
+   "pj": 29,
+   "pts": 44,
+   "gf": 32,
    "gc": 25
   },
   "atlanta": {
@@ -611,8 +611,8 @@
    "gc": 28
   },
   "temperley": {
-   "pj": 28,
-   "pts": 49,
+   "pj": 29,
+   "pts": 50,
    "gf": 33,
    "gc": 23
   },
@@ -623,8 +623,8 @@
    "gc": 15
   },
   "patronato": {
-   "pj": 28,
-   "pts": 29,
+   "pj": 29,
+   "pts": 30,
    "gf": 23,
    "gc": 30
   },
@@ -641,15 +641,15 @@
    "gc": 30
   },
   "agropecuario": {
-   "pj": 28,
+   "pj": 29,
    "pts": 33,
    "gf": 25,
-   "gc": 31
+   "gc": 34
   },
   "sanmartint": {
-   "pj": 28,
-   "pts": 36,
-   "gf": 27,
+   "pj": 29,
+   "pts": 39,
+   "gf": 30,
    "gc": 26
   },
   "guemes": {
