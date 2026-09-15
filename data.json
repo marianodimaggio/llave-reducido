@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-15T01:16:32+00:00",
+ "actualizado": "2026-09-15T06:12:54+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -45,13 +45,13 @@
     "id": "madryn",
     "nombre": "Dep. Madryn",
     "espn": "Deportivo Madryn",
-    "pj": 28,
+    "pj": 29,
     "pts": 46,
-    "gf": 41,
-    "gc": 26,
+    "gf": 42,
+    "gc": 28,
     "rank_espn": 4,
     "pos": 4,
-    "dif": 15
+    "dif": 14
    },
    {
     "id": "almirante",
@@ -138,6 +138,18 @@
     "dif": -3
    },
    {
+    "id": "defbelgrano",
+    "nombre": "Def. de Belgrano",
+    "espn": "Defensores de Belgrano",
+    "pj": 29,
+    "pts": 33,
+    "gf": 22,
+    "gc": 26,
+    "rank_espn": 12,
+    "pos": 12,
+    "dif": -4
+   },
+   {
     "id": "mitre",
     "nombre": "Mitre (SdE)",
     "espn": "Mitre (Santiago del Estero)",
@@ -145,8 +157,8 @@
     "pts": 32,
     "gf": 27,
     "gc": 35,
-    "rank_espn": 12,
-    "pos": 12,
+    "rank_espn": 13,
+    "pos": 13,
     "dif": -8
    },
    {
@@ -157,8 +169,8 @@
     "pts": 31,
     "gf": 19,
     "gc": 27,
-    "rank_espn": 13,
-    "pos": 13,
+    "rank_espn": 14,
+    "pos": 14,
     "dif": -8
    },
    {
@@ -169,8 +181,8 @@
     "pts": 31,
     "gf": 16,
     "gc": 25,
-    "rank_espn": 14,
-    "pos": 14,
+    "rank_espn": 15,
+    "pos": 15,
     "dif": -9
    },
    {
@@ -181,21 +193,9 @@
     "pts": 31,
     "gf": 23,
     "gc": 33,
-    "rank_espn": 15,
-    "pos": 15,
-    "dif": -10
-   },
-   {
-    "id": "defbelgrano",
-    "nombre": "Def. de Belgrano",
-    "espn": "Defensores de Belgrano",
-    "pj": 28,
-    "pts": 30,
-    "gf": 20,
-    "gc": 25,
     "rank_espn": 16,
     "pos": 16,
-    "dif": -5
+    "dif": -10
    },
    {
     "id": "sanmiguel",
@@ -491,10 +491,10 @@
    "gc": 34
   },
   "defbelgrano": {
-   "pj": 28,
-   "pts": 30,
-   "gf": 20,
-   "gc": 25
+   "pj": 29,
+   "pts": 33,
+   "gf": 22,
+   "gc": 26
   },
   "moron": {
    "pj": 29,
@@ -533,10 +533,10 @@
    "gc": 25
   },
   "madryn": {
-   "pj": 28,
+   "pj": 29,
    "pts": 46,
-   "gf": 41,
-   "gc": 26
+   "gf": 42,
+   "gc": 28
   },
   "racingcba": {
    "pj": 29,
