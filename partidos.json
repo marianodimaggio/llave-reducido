@@ -3674,15 +3674,15 @@
 "fecha": "2026-09-19",
 "local": "santelmo",
 "visita": "estudiantesc",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
 "fecha": "2026-09-19",
 "local": "sanmiguel",
 "visita": "allboys",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
 "fecha": "2026-09-19",
@@ -3709,8 +3709,8 @@
 "fecha": "2026-09-19",
 "local": "rafaela",
 "visita": "sanmartint",
-"gl": null,
-"gv": null
+"gl": 4,
+"gv": 2
 },
 {
 "fecha": "2026-09-19",
@@ -3737,8 +3737,8 @@
 "fecha": "2026-09-19",
 "local": "temperley",
 "visita": "almagro",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 1
 },
 {
 "fecha": "2026-09-19",
@@ -3758,8 +3758,8 @@
 "fecha": "2026-09-19",
 "local": "ferro",
 "visita": "bolivar",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-09-19",
@@ -3772,8 +3772,8 @@
 "fecha": "2026-09-19",
 "local": "acassuso",
 "visita": "mitre",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 },
 {
 "fecha": "2026-09-19",
@@ -4539,7 +4539,7 @@
 "gv": null
 }
 ],
-"actualizado": "2026-09-16T20:40:09+00:00",
-"jugados": 508,
-"pendientes": 140
+"actualizado": "2026-09-19T23:31:41+00:00",
+"jugados": 514,
+"pendientes": 134
 }

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-19T21:29:45+00:00",
+ "actualizado": "2026-09-19T23:31:40+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -236,6 +236,18 @@
     "dif": 16
    },
    {
+    "id": "temperley",
+    "nombre": "Temperley",
+    "espn": "Temperley",
+    "pj": 30,
+    "pts": 53,
+    "gf": 36,
+    "gc": 24,
+    "rank_espn": 2,
+    "pos": 2,
+    "dif": 12
+   },
+   {
     "id": "gimnasiaj",
     "nombre": "Gimnasia (J)",
     "espn": "Gimnasia y Esgrima (Jujuy)",
@@ -243,21 +255,9 @@
     "pts": 52,
     "gf": 44,
     "gc": 35,
-    "rank_espn": 2,
-    "pos": 2,
-    "dif": 9
-   },
-   {
-    "id": "temperley",
-    "nombre": "Temperley",
-    "espn": "Temperley",
-    "pj": 29,
-    "pts": 50,
-    "gf": 33,
-    "gc": 23,
     "rank_espn": 3,
     "pos": 3,
-    "dif": 10
+    "dif": 9
    },
    {
     "id": "atlanta",
@@ -308,6 +308,18 @@
     "dif": 4
    },
    {
+    "id": "rafaela",
+    "nombre": "At. Rafaela",
+    "espn": "Atletico Rafaela",
+    "pj": 30,
+    "pts": 42,
+    "gf": 25,
+    "gc": 26,
+    "rank_espn": 8,
+    "pos": 8,
+    "dif": -1
+   },
+   {
     "id": "maipu",
     "nombre": "Dep. Maipú",
     "espn": "Deportivo Maipú",
@@ -315,8 +327,8 @@
     "pts": 40,
     "gf": 36,
     "gc": 30,
-    "rank_espn": 8,
-    "pos": 8,
+    "rank_espn": 9,
+    "pos": 9,
     "dif": 6
    },
    {
@@ -327,33 +339,21 @@
     "pts": 40,
     "gf": 29,
     "gc": 28,
-    "rank_espn": 9,
-    "pos": 9,
+    "rank_espn": 10,
+    "pos": 10,
     "dif": 1
    },
    {
     "id": "sanmartint",
     "nombre": "San Martín (T)",
     "espn": "San Martín (Tucumán)",
-    "pj": 29,
+    "pj": 30,
     "pts": 39,
-    "gf": 30,
-    "gc": 26,
-    "rank_espn": 10,
-    "pos": 10,
-    "dif": 4
-   },
-   {
-    "id": "rafaela",
-    "nombre": "At. Rafaela",
-    "espn": "Atletico Rafaela",
-    "pj": 29,
-    "pts": 39,
-    "gf": 21,
-    "gc": 24,
+    "gf": 32,
+    "gc": 30,
     "rank_espn": 11,
     "pos": 11,
-    "dif": -3
+    "dif": 2
    },
    {
     "id": "quilmes",
@@ -371,13 +371,13 @@
     "id": "almagro",
     "nombre": "Almagro",
     "espn": "Almagro",
-    "pj": 29,
+    "pj": 30,
     "pts": 35,
-    "gf": 25,
-    "gc": 33,
+    "gf": 26,
+    "gc": 36,
     "rank_espn": 13,
     "pos": 13,
-    "dif": -8
+    "dif": -10
    },
    {
     "id": "agropecuario",
@@ -551,10 +551,10 @@
    "gc": 27
   },
   "almagro": {
-   "pj": 29,
+   "pj": 30,
    "pts": 35,
-   "gf": 25,
-   "gc": 33
+   "gf": 26,
+   "gc": 36
   },
   "chacarita": {
    "pj": 29,
@@ -587,10 +587,10 @@
    "gc": 27
   },
   "rafaela": {
-   "pj": 29,
-   "pts": 39,
-   "gf": 21,
-   "gc": 24
+   "pj": 30,
+   "pts": 42,
+   "gf": 25,
+   "gc": 26
   },
   "midland": {
    "pj": 29,
@@ -611,10 +611,10 @@
    "gc": 28
   },
   "temperley": {
-   "pj": 29,
-   "pts": 50,
-   "gf": 33,
-   "gc": 23
+   "pj": 30,
+   "pts": 53,
+   "gf": 36,
+   "gc": 24
   },
   "tristan": {
    "pj": 29,
@@ -647,10 +647,10 @@
    "gc": 34
   },
   "sanmartint": {
-   "pj": 29,
+   "pj": 30,
    "pts": 39,
-   "gf": 30,
-   "gc": 26
+   "gf": 32,
+   "gc": 30
   },
   "guemes": {
    "pj": 29,
