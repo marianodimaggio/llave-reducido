@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-20T19:02:29+00:00",
+ "actualizado": "2026-09-20T21:38:08+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -21,25 +21,25 @@
     "id": "moron",
     "nombre": "Dep. Morón",
     "espn": "Deportivo Morón",
-    "pj": 29,
+    "pj": 30,
     "pts": 55,
-    "gf": 47,
-    "gc": 27,
+    "gf": 48,
+    "gc": 29,
     "rank_espn": 2,
     "pos": 2,
-    "dif": 20
+    "dif": 19
    },
    {
     "id": "godoy",
     "nombre": "Godoy Cruz",
     "espn": "Godoy Cruz Antonio Tomba",
-    "pj": 29,
-    "pts": 49,
-    "gf": 36,
-    "gc": 25,
+    "pj": 30,
+    "pts": 52,
+    "gf": 38,
+    "gc": 26,
     "rank_espn": 3,
     "pos": 3,
-    "dif": 11
+    "dif": 12
    },
    {
     "id": "madryn",
@@ -275,13 +275,13 @@
     "id": "gyt",
     "nombre": "Gimnasia y Tiro",
     "espn": "Gimnasia y Tiro (Salta)",
-    "pj": 29,
+    "pj": 30,
     "pts": 45,
     "gf": 31,
-    "gc": 26,
+    "gc": 27,
     "rank_espn": 5,
     "pos": 5,
-    "dif": 5
+    "dif": 4
    },
    {
     "id": "midland",
@@ -356,16 +356,28 @@
     "dif": 2
    },
    {
+    "id": "agropecuario",
+    "nombre": "Agropecuario",
+    "espn": "Agropecuario",
+    "pj": 30,
+    "pts": 36,
+    "gf": 26,
+    "gc": 34,
+    "rank_espn": 12,
+    "pos": 12,
+    "dif": -8
+   },
+   {
     "id": "quilmes",
     "nombre": "Quilmes",
     "espn": "Quilmes",
-    "pj": 29,
+    "pj": 30,
     "pts": 35,
     "gf": 28,
-    "gc": 24,
-    "rank_espn": 12,
-    "pos": 12,
-    "dif": 4
+    "gc": 27,
+    "rank_espn": 13,
+    "pos": 13,
+    "dif": 1
    },
    {
     "id": "almagro",
@@ -375,21 +387,9 @@
     "pts": 35,
     "gf": 26,
     "gc": 36,
-    "rank_espn": 13,
-    "pos": 13,
-    "dif": -10
-   },
-   {
-    "id": "agropecuario",
-    "nombre": "Agropecuario",
-    "espn": "Agropecuario",
-    "pj": 29,
-    "pts": 33,
-    "gf": 25,
-    "gc": 34,
     "rank_espn": 14,
     "pos": 14,
-    "dif": -9
+    "dif": -10
    },
    {
     "id": "nuevachicago",
@@ -419,13 +419,13 @@
     "id": "chacarita",
     "nombre": "Chacarita",
     "espn": "Chacarita Juniors",
-    "pj": 29,
-    "pts": 27,
-    "gf": 19,
+    "pj": 30,
+    "pts": 30,
+    "gf": 22,
     "gc": 31,
     "rank_espn": 17,
     "pos": 17,
-    "dif": -12
+    "dif": -9
    },
    {
     "id": "guemes",
@@ -455,10 +455,10 @@
    "gc": 17
   },
   "godoy": {
-   "pj": 29,
-   "pts": 49,
-   "gf": 36,
-   "gc": 25
+   "pj": 30,
+   "pts": 52,
+   "gf": 38,
+   "gc": 26
   },
   "almirante": {
    "pj": 29,
@@ -497,10 +497,10 @@
    "gc": 26
   },
   "moron": {
-   "pj": 29,
+   "pj": 30,
    "pts": 55,
-   "gf": 47,
-   "gc": 27
+   "gf": 48,
+   "gc": 29
   },
   "santelmo": {
    "pj": 30,
@@ -557,9 +557,9 @@
    "gc": 36
   },
   "chacarita": {
-   "pj": 29,
-   "pts": 27,
-   "gf": 19,
+   "pj": 30,
+   "pts": 30,
+   "gf": 22,
    "gc": 31
   },
   "nuevachicago": {
@@ -569,10 +569,10 @@
    "gc": 28
   },
   "quilmes": {
-   "pj": 29,
+   "pj": 30,
    "pts": 35,
    "gf": 28,
-   "gc": 24
+   "gc": 27
   },
   "gimnasiaj": {
    "pj": 29,
@@ -629,10 +629,10 @@
    "gc": 30
   },
   "gyt": {
-   "pj": 29,
+   "pj": 30,
    "pts": 45,
    "gf": 31,
-   "gc": 26
+   "gc": 27
   },
   "maipu": {
    "pj": 29,
@@ -641,9 +641,9 @@
    "gc": 30
   },
   "agropecuario": {
-   "pj": 29,
-   "pts": 33,
-   "gf": 25,
+   "pj": 30,
+   "pts": 36,
+   "gf": 26,
    "gc": 34
   },
   "sanmartint": {
