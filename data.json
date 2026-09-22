@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-21T22:49:22+00:00",
+ "actualizado": "2026-09-22T01:30:29+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -227,8 +227,8 @@
     "id": "tristan",
     "nombre": "Tristán Suárez",
     "espn": "Tristán Suárez",
-    "pj": 29,
-    "pts": 53,
+    "pj": 30,
+    "pts": 54,
     "gf": 31,
     "gc": 15,
     "rank_espn": 1,
@@ -263,8 +263,8 @@
     "id": "atlanta",
     "nombre": "Atlanta",
     "espn": "Atlanta",
-    "pj": 29,
-    "pts": 48,
+    "pj": 30,
+    "pts": 49,
     "gf": 34,
     "gc": 28,
     "rank_espn": 4,
@@ -395,10 +395,10 @@
     "id": "nuevachicago",
     "nombre": "Nueva Chicago",
     "espn": "Nueva Chicago",
-    "pj": 29,
-    "pts": 32,
-    "gf": 21,
-    "gc": 28,
+    "pj": 30,
+    "pts": 33,
+    "gf": 22,
+    "gc": 29,
     "rank_espn": 15,
     "pos": 15,
     "dif": -7
@@ -407,10 +407,10 @@
     "id": "patronato",
     "nombre": "Patronato",
     "espn": "Patronato",
-    "pj": 29,
-    "pts": 30,
-    "gf": 23,
-    "gc": 30,
+    "pj": 30,
+    "pts": 31,
+    "gf": 24,
+    "gc": 31,
     "rank_espn": 16,
     "pos": 16,
     "dif": -7
@@ -563,10 +563,10 @@
    "gc": 31
   },
   "nuevachicago": {
-   "pj": 29,
-   "pts": 32,
-   "gf": 21,
-   "gc": 28
+   "pj": 30,
+   "pts": 33,
+   "gf": 22,
+   "gc": 29
   },
   "quilmes": {
    "pj": 30,
@@ -599,8 +599,8 @@
    "gc": 25
   },
   "atlanta": {
-   "pj": 29,
-   "pts": 48,
+   "pj": 30,
+   "pts": 49,
    "gf": 34,
    "gc": 28
   },
@@ -617,16 +617,16 @@
    "gc": 24
   },
   "tristan": {
-   "pj": 29,
-   "pts": 53,
+   "pj": 30,
+   "pts": 54,
    "gf": 31,
    "gc": 15
   },
   "patronato": {
-   "pj": 29,
-   "pts": 30,
-   "gf": 23,
-   "gc": 30
+   "pj": 30,
+   "pts": 31,
+   "gf": 24,
+   "gc": 31
   },
   "gyt": {
    "pj": 30,
