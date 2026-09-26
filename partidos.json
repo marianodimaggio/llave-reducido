@@ -3793,8 +3793,8 @@
 "fecha": "2026-09-26",
 "local": "bolivar",
 "visita": "chacoforever",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-09-26",
@@ -3835,8 +3835,8 @@
 "fecha": "2026-09-26",
 "local": "estudiantesc",
 "visita": "sanmiguel",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-09-26",
@@ -3870,8 +3870,8 @@
 "fecha": "2026-09-26",
 "local": "allboys",
 "visita": "colon",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-09-26",
@@ -3898,15 +3898,15 @@
 "fecha": "2026-09-26",
 "local": "almirante",
 "visita": "acassuso",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
 "fecha": "2026-09-26",
 "local": "quilmes",
 "visita": "guemes",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 },
 {
 "fecha": "2026-10-03",
@@ -4539,7 +4539,7 @@
 "gv": null
 }
 ],
-"actualizado": "2026-09-19T23:31:41+00:00",
-"jugados": 514,
-"pendientes": 134
+"actualizado": "2026-09-26T23:53:25+00:00",
+"jugados": 519,
+"pendientes": 129
 }
