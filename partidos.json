@@ -3828,8 +3828,8 @@
 "fecha": "2026-09-26",
 "local": "colegiales",
 "visita": "chacarita",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-09-26",
@@ -3877,8 +3877,8 @@
 "fecha": "2026-09-26",
 "local": "madryn",
 "visita": "centralnorte",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-09-26",
@@ -4539,7 +4539,7 @@
 "gv": null
 }
 ],
-"actualizado": "2026-09-26T23:53:25+00:00",
-"jugados": 519,
-"pendientes": 129
+"actualizado": "2026-09-27T04:31:55+00:00",
+"jugados": 521,
+"pendientes": 127
 }
