@@ -3426,11 +3426,11 @@
 "gv": 1
 },
 {
-"fecha": "2026-09-05",
+"fecha": "2026-09-06",
 "local": "temperley",
 "visita": "colegiales",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 1
 },
 {
 "fecha": "2026-09-05",
@@ -3468,11 +3468,11 @@
 "gv": 2
 },
 {
-"fecha": "2026-09-06",
+"fecha": "2026-09-05",
 "local": "acassuso",
 "visita": "allboys",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
 "fecha": "2026-09-06",
@@ -3524,32 +3524,32 @@
 "gv": 1
 },
 {
-"fecha": "2026-09-12",
+"fecha": "2026-09-13",
 "local": "estudiantesc",
 "visita": "acassuso",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
-"fecha": "2026-09-12",
+"fecha": "2026-09-13",
 "local": "sanmartint",
 "visita": "agropecuario",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 0
 },
 {
-"fecha": "2026-09-12",
+"fecha": "2026-09-11",
 "local": "gyt",
 "visita": "tristan",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
-"fecha": "2026-09-12",
+"fecha": "2026-09-13",
 "local": "godoy",
 "visita": "colon",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 },
 {
 "fecha": "2026-09-12",
@@ -3559,18 +3559,18 @@
 "gv": 0
 },
 {
-"fecha": "2026-09-12",
+"fecha": "2026-09-13",
 "local": "gimnasiaj",
 "visita": "rafaela",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
-"fecha": "2026-09-12",
+"fecha": "2026-09-13",
 "local": "losandes",
 "visita": "sanmiguel",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
 "fecha": "2026-09-12",
@@ -3594,25 +3594,25 @@
 "gv": 2
 },
 {
-"fecha": "2026-09-12",
+"fecha": "2026-09-13",
 "local": "midland",
 "visita": "chacarita",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
-"fecha": "2026-09-12",
+"fecha": "2026-09-13",
 "local": "almirante",
 "visita": "ferro",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
-"fecha": "2026-09-12",
+"fecha": "2026-09-14",
 "local": "defbelgrano",
 "visita": "madryn",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-09-12",
@@ -3622,11 +3622,11 @@
 "gv": 1
 },
 {
-"fecha": "2026-09-12",
+"fecha": "2026-09-13",
 "local": "patronato",
 "visita": "temperley",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-09-12",
@@ -3636,18 +3636,18 @@
 "gv": 0
 },
 {
-"fecha": "2026-09-12",
+"fecha": "2026-09-13",
 "local": "mitre",
 "visita": "chacoforever",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
-"fecha": "2026-09-12",
+"fecha": "2026-09-13",
 "local": "racingcba",
 "visita": "moron",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 2
 },
 {
 "fecha": "2026-09-16",
@@ -3657,18 +3657,18 @@
 "gv": 0
 },
 {
-"fecha": "2026-09-19",
+"fecha": "2026-09-20",
 "local": "moron",
 "visita": "godoy",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 2
 },
 {
-"fecha": "2026-09-19",
+"fecha": "2026-09-20",
 "local": "agropecuario",
 "visita": "gyt",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-09-19",
@@ -3685,25 +3685,25 @@
 "gv": 1
 },
 {
-"fecha": "2026-09-19",
+"fecha": "2026-09-20",
 "local": "colon",
 "visita": "losandes",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 0
 },
 {
-"fecha": "2026-09-19",
+"fecha": "2026-09-21",
 "local": "nuevachicago",
 "visita": "patronato",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
-"fecha": "2026-09-19",
+"fecha": "2026-09-20",
 "local": "madryn",
 "visita": "racingcba",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 },
 {
 "fecha": "2026-09-19",
@@ -3713,25 +3713,25 @@
 "gv": 2
 },
 {
-"fecha": "2026-09-19",
+"fecha": "2026-09-20",
 "local": "maipu",
 "visita": "gimnasiaj",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
-"fecha": "2026-09-19",
+"fecha": "2026-09-20",
 "local": "centralnorte",
 "visita": "defbelgrano",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
-"fecha": "2026-09-19",
+"fecha": "2026-09-20",
 "local": "chacoforever",
 "visita": "almirante",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-09-19",
@@ -3741,18 +3741,18 @@
 "gv": 1
 },
 {
-"fecha": "2026-09-19",
+"fecha": "2026-09-21",
 "local": "tristan",
 "visita": "atlanta",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
-"fecha": "2026-09-19",
+"fecha": "2026-09-20",
 "local": "sanmartinsj",
 "visita": "colegiales",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 },
 {
 "fecha": "2026-09-19",
@@ -3762,11 +3762,11 @@
 "gv": 0
 },
 {
-"fecha": "2026-09-19",
+"fecha": "2026-09-20",
 "local": "chacarita",
 "visita": "quilmes",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 0
 },
 {
 "fecha": "2026-09-19",
@@ -3776,18 +3776,18 @@
 "gv": 0
 },
 {
-"fecha": "2026-09-19",
+"fecha": "2026-09-20",
 "local": "guemes",
 "visita": "midland",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 2
 },
 {
-"fecha": "2026-09-26",
+"fecha": "2026-09-27",
 "local": "maipu",
 "visita": "temperley",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-09-26",
@@ -3797,32 +3797,32 @@
 "gv": 1
 },
 {
-"fecha": "2026-09-26",
+"fecha": "2026-09-27",
 "local": "racingcba",
 "visita": "godoy",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 2
 },
 {
-"fecha": "2026-09-26",
+"fecha": "2026-09-27",
 "local": "midland",
 "visita": "tristan",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
-"fecha": "2026-09-26",
+"fecha": "2026-09-27",
 "local": "defbelgrano",
 "visita": "ferro",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
-"fecha": "2026-09-26",
+"fecha": "2026-09-27",
 "local": "losandes",
 "visita": "moron",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-09-26",
@@ -3839,32 +3839,32 @@
 "gv": 1
 },
 {
-"fecha": "2026-09-26",
+"fecha": "2026-09-27",
 "local": "atlanta",
 "visita": "agropecuario",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
-"fecha": "2026-09-26",
+"fecha": "2026-09-27",
 "local": "mitre",
 "visita": "santelmo",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 2
 },
 {
-"fecha": "2026-09-26",
+"fecha": "2026-09-27",
 "local": "almagro",
 "visita": "nuevachicago",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
-"fecha": "2026-09-26",
+"fecha": "2026-09-27",
 "local": "patronato",
 "visita": "sanmartinsj",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 0
 },
 {
 "fecha": "2026-09-26",
@@ -3888,11 +3888,11 @@
 "gv": null
 },
 {
-"fecha": "2026-09-26",
+"fecha": "2026-09-27",
 "local": "gyt",
 "visita": "rafaela",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-09-26",
@@ -4539,7 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-09-27T04:31:55+00:00",
-"jugados": 521,
-"pendientes": 127
+"actualizado": "2026-09-28T00:26:50+00:00",
+"jugados": 557,
+"pendientes": 91,
+"escaneado_hasta": "2026-09-27"
 }
