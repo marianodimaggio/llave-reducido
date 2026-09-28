@@ -3881,11 +3881,11 @@
 "gv": 0
 },
 {
-"fecha": "2026-09-26",
+"fecha": "2026-09-27",
 "local": "gimnasiaj",
 "visita": "sanmartint",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 2
 },
 {
 "fecha": "2026-09-27",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-09-28T00:26:50+00:00",
-"jugados": 557,
-"pendientes": 91,
-"escaneado_hasta": "2026-09-27"
+"actualizado": "2026-09-28T07:03:00+00:00",
+"jugados": 558,
+"pendientes": 90,
+"escaneado_hasta": "2026-09-28"
 }

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-28T01:10:06+00:00",
+ "actualizado": "2026-09-28T07:02:59+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -236,6 +236,18 @@
     "dif": 17
    },
    {
+    "id": "gimnasiaj",
+    "nombre": "Gimnasia (J)",
+    "espn": "Gimnasia y Esgrima (Jujuy)",
+    "pj": 31,
+    "pts": 54,
+    "gf": 47,
+    "gc": 38,
+    "rank_espn": 2,
+    "pos": 2,
+    "dif": 9
+   },
+   {
     "id": "temperley",
     "nombre": "Temperley",
     "espn": "Temperley",
@@ -243,21 +255,9 @@
     "pts": 53,
     "gf": 36,
     "gc": 25,
-    "rank_espn": 2,
-    "pos": 2,
-    "dif": 11
-   },
-   {
-    "id": "gimnasiaj",
-    "nombre": "Gimnasia (J)",
-    "espn": "Gimnasia y Esgrima (Jujuy)",
-    "pj": 30,
-    "pts": 53,
-    "gf": 45,
-    "gc": 36,
     "rank_espn": 3,
     "pos": 3,
-    "dif": 9
+    "dif": 11
    },
    {
     "id": "atlanta",
@@ -347,10 +347,10 @@
     "id": "sanmartint",
     "nombre": "San Martín (T)",
     "espn": "San Martín (Tucumán)",
-    "pj": 30,
-    "pts": 39,
-    "gf": 32,
-    "gc": 30,
+    "pj": 31,
+    "pts": 40,
+    "gf": 34,
+    "gc": 32,
     "rank_espn": 11,
     "pos": 11,
     "dif": 2
@@ -575,10 +575,10 @@
    "gc": 27
   },
   "gimnasiaj": {
-   "pj": 30,
-   "pts": 53,
-   "gf": 45,
-   "gc": 36
+   "pj": 31,
+   "pts": 54,
+   "gf": 47,
+   "gc": 38
   },
   "sanmartinsj": {
    "pj": 31,
@@ -647,10 +647,10 @@
    "gc": 35
   },
   "sanmartint": {
-   "pj": 30,
-   "pts": 39,
-   "gf": 32,
-   "gc": 30
+   "pj": 31,
+   "pts": 40,
+   "gf": 34,
+   "gc": 32
   },
   "guemes": {
    "pj": 31,
