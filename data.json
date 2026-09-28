@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-28T00:26:50+00:00",
+ "actualizado": "2026-09-28T01:10:06+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -33,10 +33,10 @@
     "id": "godoy",
     "nombre": "Godoy Cruz",
     "espn": "Godoy Cruz Antonio Tomba",
-    "pj": 30,
-    "pts": 52,
-    "gf": 38,
-    "gc": 26,
+    "pj": 31,
+    "pts": 53,
+    "gf": 40,
+    "gc": 28,
     "rank_espn": 3,
     "pos": 3,
     "dif": 12
@@ -141,10 +141,10 @@
     "id": "racingcba",
     "nombre": "Racing (Cba)",
     "espn": "Racing (Córdoba)",
-    "pj": 30,
-    "pts": 35,
-    "gf": 26,
-    "gc": 36,
+    "pj": 31,
+    "pts": 36,
+    "gf": 28,
+    "gc": 38,
     "rank_espn": 12,
     "pos": 12,
     "dif": -10
@@ -272,6 +272,18 @@
     "dif": 7
    },
    {
+    "id": "gyt",
+    "nombre": "Gimnasia y Tiro",
+    "espn": "Gimnasia y Tiro (Salta)",
+    "pj": 31,
+    "pts": 48,
+    "gf": 32,
+    "gc": 27,
+    "rank_espn": 5,
+    "pos": 5,
+    "dif": 5
+   },
+   {
     "id": "midland",
     "nombre": "Midland",
     "espn": "Midland",
@@ -279,21 +291,9 @@
     "pts": 47,
     "gf": 34,
     "gc": 26,
-    "rank_espn": 5,
-    "pos": 5,
-    "dif": 8
-   },
-   {
-    "id": "gyt",
-    "nombre": "Gimnasia y Tiro",
-    "espn": "Gimnasia y Tiro (Salta)",
-    "pj": 30,
-    "pts": 45,
-    "gf": 31,
-    "gc": 27,
     "rank_espn": 6,
     "pos": 6,
-    "dif": 4
+    "dif": 8
    },
    {
     "id": "sanmartinsj",
@@ -335,13 +335,13 @@
     "id": "rafaela",
     "nombre": "At. Rafaela",
     "espn": "Atletico Rafaela",
-    "pj": 30,
+    "pj": 31,
     "pts": 42,
     "gf": 25,
-    "gc": 26,
+    "gc": 27,
     "rank_espn": 10,
     "pos": 10,
-    "dif": -1
+    "dif": -2
    },
    {
     "id": "sanmartint",
@@ -455,10 +455,10 @@
    "gc": 21
   },
   "godoy": {
-   "pj": 30,
-   "pts": 52,
-   "gf": 38,
-   "gc": 26
+   "pj": 31,
+   "pts": 53,
+   "gf": 40,
+   "gc": 28
   },
   "almirante": {
    "pj": 31,
@@ -539,10 +539,10 @@
    "gc": 28
   },
   "racingcba": {
-   "pj": 30,
-   "pts": 35,
-   "gf": 26,
-   "gc": 36
+   "pj": 31,
+   "pts": 36,
+   "gf": 28,
+   "gc": 38
   },
   "bolivar": {
    "pj": 31,
@@ -587,10 +587,10 @@
    "gc": 30
   },
   "rafaela": {
-   "pj": 30,
+   "pj": 31,
    "pts": 42,
    "gf": 25,
-   "gc": 26
+   "gc": 27
   },
   "midland": {
    "pj": 31,
@@ -629,9 +629,9 @@
    "gc": 31
   },
   "gyt": {
-   "pj": 30,
-   "pts": 45,
-   "gf": 31,
+   "pj": 31,
+   "pts": 48,
+   "gf": 32,
    "gc": 27
   },
   "maipu": {
