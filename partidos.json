@@ -3979,11 +3979,11 @@
 "gv": null
 },
 {
-"fecha": "2026-10-03",
+"fecha": "2026-10-02",
 "local": "ferro",
 "visita": "madryn",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 2
 },
 {
 "fecha": "2026-10-03",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-09-28T07:03:00+00:00",
-"jugados": 558,
-"pendientes": 90,
+"actualizado": "2026-10-03T00:22:45+00:00",
+"jugados": 559,
+"pendientes": 89,
 "escaneado_hasta": "2026-10-02"
 }

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-02T20:57:34+00:00",
+ "actualizado": "2026-10-03T00:22:45+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -9,13 +9,13 @@
     "id": "ferro",
     "nombre": "Ferro",
     "espn": "Ferro Carril Oeste",
-    "pj": 31,
+    "pj": 32,
     "pts": 61,
     "gf": 36,
-    "gc": 25,
+    "gc": 27,
     "rank_espn": 1,
     "pos": 1,
-    "dif": 11
+    "dif": 9
    },
    {
     "id": "moron",
@@ -30,6 +30,18 @@
     "dif": 18
    },
    {
+    "id": "madryn",
+    "nombre": "Dep. Madryn",
+    "espn": "Deportivo Madryn",
+    "pj": 32,
+    "pts": 53,
+    "gf": 46,
+    "gc": 28,
+    "rank_espn": 3,
+    "pos": 3,
+    "dif": 18
+   },
+   {
     "id": "godoy",
     "nombre": "Godoy Cruz",
     "espn": "Godoy Cruz Antonio Tomba",
@@ -37,21 +49,9 @@
     "pts": 53,
     "gf": 40,
     "gc": 28,
-    "rank_espn": 3,
-    "pos": 3,
-    "dif": 12
-   },
-   {
-    "id": "madryn",
-    "nombre": "Dep. Madryn",
-    "espn": "Deportivo Madryn",
-    "pj": 31,
-    "pts": 50,
-    "gf": 44,
-    "gc": 28,
     "rank_espn": 4,
     "pos": 4,
-    "dif": 16
+    "dif": 12
    },
    {
     "id": "colon",
@@ -467,10 +467,10 @@
    "gc": 18
   },
   "ferro": {
-   "pj": 31,
+   "pj": 32,
    "pts": 61,
    "gf": 36,
-   "gc": 25
+   "gc": 27
   },
   "allboys": {
    "pj": 31,
@@ -533,9 +533,9 @@
    "gc": 26
   },
   "madryn": {
-   "pj": 31,
-   "pts": 50,
-   "gf": 44,
+   "pj": 32,
+   "pts": 53,
+   "gf": 46,
    "gc": 28
   },
   "racingcba": {
