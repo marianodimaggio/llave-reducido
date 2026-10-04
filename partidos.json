@@ -3909,11 +3909,11 @@
 "gv": 0
 },
 {
-"fecha": "2026-10-03",
+"fecha": "2026-10-04",
 "local": "godoy",
 "visita": "losandes",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-10-03",
@@ -3923,25 +3923,25 @@
 "gv": 2
 },
 {
-"fecha": "2026-10-03",
+"fecha": "2026-10-04",
 "local": "chacoforever",
 "visita": "defbelgrano",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 2
 },
 {
-"fecha": "2026-10-03",
+"fecha": "2026-10-04",
 "local": "rafaela",
 "visita": "atlanta",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 3
 },
 {
-"fecha": "2026-10-03",
+"fecha": "2026-10-04",
 "local": "guemes",
 "visita": "colegiales",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
 "fecha": "2026-10-03",
@@ -3951,18 +3951,18 @@
 "gv": null
 },
 {
-"fecha": "2026-10-03",
+"fecha": "2026-10-04",
 "local": "santelmo",
 "visita": "almirante",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 2
 },
 {
-"fecha": "2026-10-03",
+"fecha": "2026-10-04",
 "local": "centralnorte",
 "visita": "racingcba",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
 "fecha": "2026-10-03",
@@ -3986,18 +3986,18 @@
 "gv": 2
 },
 {
-"fecha": "2026-10-03",
+"fecha": "2026-10-04",
 "local": "sanmartinsj",
 "visita": "almagro",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 2
 },
 {
-"fecha": "2026-10-03",
+"fecha": "2026-10-04",
 "local": "agropecuario",
 "visita": "midland",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-10-03",
@@ -4014,11 +4014,11 @@
 "gv": null
 },
 {
-"fecha": "2026-10-03",
+"fecha": "2026-10-04",
 "local": "chacarita",
 "visita": "patronato",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-10-03",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-04T00:45:32+00:00",
-"jugados": 564,
-"pendientes": 84,
+"actualizado": "2026-10-04T23:35:26+00:00",
+"jugados": 573,
+"pendientes": 75,
 "escaneado_hasta": "2026-10-04"
 }
