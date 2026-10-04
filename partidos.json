@@ -3919,8 +3919,8 @@
 "fecha": "2026-10-03",
 "local": "sanmiguel",
 "visita": "mitre",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 2
 },
 {
 "fecha": "2026-10-03",
@@ -3968,15 +3968,15 @@
 "fecha": "2026-10-03",
 "local": "acassuso",
 "visita": "bolivar",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
 "fecha": "2026-10-03",
 "local": "colon",
 "visita": "estudiantesc",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-10-02",
@@ -4024,15 +4024,15 @@
 "fecha": "2026-10-03",
 "local": "tristan",
 "visita": "quilmes",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-10-03",
 "local": "moron",
 "visita": "allboys",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-10-10",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-03T00:22:45+00:00",
-"jugados": 559,
-"pendientes": 89,
+"actualizado": "2026-10-04T00:45:32+00:00",
+"jugados": 564,
+"pendientes": 84,
 "escaneado_hasta": "2026-10-03"
 }
