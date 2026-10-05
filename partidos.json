@@ -4000,11 +4000,11 @@
 "gv": 0
 },
 {
-"fecha": "2026-10-03",
+"fecha": "2026-10-04",
 "local": "sanmartint",
 "visita": "gyt",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-10-03",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-04T23:35:26+00:00",
-"jugados": 573,
-"pendientes": 75,
-"escaneado_hasta": "2026-10-04"
+"actualizado": "2026-10-05T09:35:47+00:00",
+"jugados": 574,
+"pendientes": 74,
+"escaneado_hasta": "2026-10-05"
 }
