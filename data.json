@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-04T23:35:26+00:00",
+ "actualizado": "2026-10-05T02:23:29+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -287,13 +287,13 @@
     "id": "gyt",
     "nombre": "Gimnasia y Tiro",
     "espn": "Gimnasia y Tiro (Salta)",
-    "pj": 31,
+    "pj": 32,
     "pts": 48,
     "gf": 32,
-    "gc": 27,
+    "gc": 28,
     "rank_espn": 6,
     "pos": 6,
-    "dif": 5
+    "dif": 4
    },
    {
     "id": "colegiales",
@@ -332,6 +332,18 @@
     "dif": 7
    },
    {
+    "id": "sanmartint",
+    "nombre": "San Martín (T)",
+    "espn": "San Martín (Tucumán)",
+    "pj": 32,
+    "pts": 43,
+    "gf": 35,
+    "gc": 32,
+    "rank_espn": 10,
+    "pos": 10,
+    "dif": 3
+   },
+   {
     "id": "rafaela",
     "nombre": "At. Rafaela",
     "espn": "Atletico Rafaela",
@@ -339,21 +351,9 @@
     "pts": 42,
     "gf": 27,
     "gc": 30,
-    "rank_espn": 10,
-    "pos": 10,
-    "dif": -3
-   },
-   {
-    "id": "sanmartint",
-    "nombre": "San Martín (T)",
-    "espn": "San Martín (Tucumán)",
-    "pj": 31,
-    "pts": 40,
-    "gf": 34,
-    "gc": 32,
     "rank_espn": 11,
     "pos": 11,
-    "dif": 2
+    "dif": -3
    },
    {
     "id": "quilmes",
@@ -629,10 +629,10 @@
    "gc": 32
   },
   "gyt": {
-   "pj": 31,
+   "pj": 32,
    "pts": 48,
    "gf": 32,
-   "gc": 27
+   "gc": 28
   },
   "maipu": {
    "pj": 31,
@@ -647,9 +647,9 @@
    "gc": 35
   },
   "sanmartint": {
-   "pj": 31,
-   "pts": 40,
-   "gf": 34,
+   "pj": 32,
+   "pts": 43,
+   "gf": 35,
    "gc": 32
   },
   "guemes": {
