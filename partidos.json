@@ -4010,8 +4010,8 @@
 "fecha": "2026-10-03",
 "local": "temperley",
 "visita": "gimnasiaj",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-10-04",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-05T09:35:47+00:00",
-"jugados": 574,
-"pendientes": 74,
+"actualizado": "2026-10-05T18:49:29+00:00",
+"jugados": 575,
+"pendientes": 73,
 "escaneado_hasta": "2026-10-05"
 }
