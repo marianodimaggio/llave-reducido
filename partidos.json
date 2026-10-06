@@ -3944,11 +3944,11 @@
 "gv": 1
 },
 {
-"fecha": "2026-10-03",
+"fecha": "2026-10-05",
 "local": "nuevachicago",
 "visita": "maipu",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
 "fecha": "2026-10-04",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-05T18:49:29+00:00",
-"jugados": 575,
-"pendientes": 73,
+"actualizado": "2026-10-06T00:40:53+00:00",
+"jugados": 576,
+"pendientes": 72,
 "escaneado_hasta": "2026-10-05"
 }

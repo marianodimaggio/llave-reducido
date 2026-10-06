@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-05T18:49:29+00:00",
+ "actualizado": "2026-10-06T00:40:53+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -296,6 +296,18 @@
     "dif": 4
    },
    {
+    "id": "maipu",
+    "nombre": "Dep. Maipú",
+    "espn": "Deportivo Maipú",
+    "pj": 32,
+    "pts": 47,
+    "gf": 39,
+    "gc": 31,
+    "rank_espn": 7,
+    "pos": 7,
+    "dif": 8
+   },
+   {
     "id": "colegiales",
     "nombre": "Colegiales",
     "espn": "Colegiales",
@@ -303,8 +315,8 @@
     "pts": 46,
     "gf": 32,
     "gc": 31,
-    "rank_espn": 7,
-    "pos": 7,
+    "rank_espn": 8,
+    "pos": 8,
     "dif": 1
    },
    {
@@ -315,21 +327,9 @@
     "pts": 45,
     "gf": 34,
     "gc": 32,
-    "rank_espn": 8,
-    "pos": 8,
-    "dif": 2
-   },
-   {
-    "id": "maipu",
-    "nombre": "Dep. Maipú",
-    "espn": "Deportivo Maipú",
-    "pj": 31,
-    "pts": 44,
-    "gf": 38,
-    "gc": 31,
     "rank_espn": 9,
     "pos": 9,
-    "dif": 7
+    "dif": 2
    },
    {
     "id": "sanmartint",
@@ -395,13 +395,13 @@
     "id": "nuevachicago",
     "nombre": "Nueva Chicago",
     "espn": "Nueva Chicago",
-    "pj": 31,
+    "pj": 32,
     "pts": 36,
     "gf": 23,
-    "gc": 29,
+    "gc": 30,
     "rank_espn": 15,
     "pos": 15,
-    "dif": -6
+    "dif": -7
    },
    {
     "id": "patronato",
@@ -563,10 +563,10 @@
    "gc": 33
   },
   "nuevachicago": {
-   "pj": 31,
+   "pj": 32,
    "pts": 36,
    "gf": 23,
-   "gc": 29
+   "gc": 30
   },
   "quilmes": {
    "pj": 32,
@@ -635,9 +635,9 @@
    "gc": 28
   },
   "maipu": {
-   "pj": 31,
-   "pts": 44,
-   "gf": 38,
+   "pj": 32,
+   "pts": 47,
+   "gf": 39,
    "gc": 31
   },
   "agropecuario": {
