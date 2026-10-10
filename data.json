@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-10T19:10:37+00:00",
+ "actualizado": "2026-10-10T22:40:11+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -227,8 +227,8 @@
     "id": "tristan",
     "nombre": "Tristán Suárez",
     "espn": "Tristán Suárez",
-    "pj": 32,
-    "pts": 58,
+    "pj": 33,
+    "pts": 59,
     "gf": 32,
     "gc": 15,
     "rank_espn": 1,
@@ -275,13 +275,13 @@
     "id": "midland",
     "nombre": "Midland",
     "espn": "Midland",
-    "pj": 32,
-    "pts": 48,
-    "gf": 34,
+    "pj": 33,
+    "pts": 51,
+    "gf": 38,
     "gc": 26,
     "rank_espn": 5,
     "pos": 5,
-    "dif": 8
+    "dif": 12
    },
    {
     "id": "gyt",
@@ -311,8 +311,8 @@
     "id": "colegiales",
     "nombre": "Colegiales",
     "espn": "Colegiales",
-    "pj": 32,
-    "pts": 46,
+    "pj": 33,
+    "pts": 47,
     "gf": 32,
     "gc": 31,
     "rank_espn": 8,
@@ -347,49 +347,49 @@
     "id": "rafaela",
     "nombre": "At. Rafaela",
     "espn": "Atletico Rafaela",
-    "pj": 32,
+    "pj": 33,
     "pts": 42,
     "gf": 27,
-    "gc": 30,
+    "gc": 34,
     "rank_espn": 11,
     "pos": 11,
-    "dif": -3
-   },
-   {
-    "id": "quilmes",
-    "nombre": "Quilmes",
-    "espn": "Quilmes",
-    "pj": 32,
-    "pts": 39,
-    "gf": 30,
-    "gc": 27,
-    "rank_espn": 12,
-    "pos": 12,
-    "dif": 3
+    "dif": -7
    },
    {
     "id": "almagro",
     "nombre": "Almagro",
     "espn": "Almagro",
-    "pj": 32,
-    "pts": 38,
-    "gf": 28,
-    "gc": 38,
-    "rank_espn": 13,
-    "pos": 13,
-    "dif": -10
+    "pj": 33,
+    "pts": 41,
+    "gf": 30,
+    "gc": 39,
+    "rank_espn": 12,
+    "pos": 12,
+    "dif": -9
    },
    {
     "id": "agropecuario",
     "nombre": "Agropecuario",
     "espn": "Agropecuario",
-    "pj": 32,
-    "pts": 37,
-    "gf": 26,
+    "pj": 33,
+    "pts": 40,
+    "gf": 27,
     "gc": 35,
+    "rank_espn": 13,
+    "pos": 13,
+    "dif": -8
+   },
+   {
+    "id": "quilmes",
+    "nombre": "Quilmes",
+    "espn": "Quilmes",
+    "pj": 33,
+    "pts": 39,
+    "gf": 30,
+    "gc": 28,
     "rank_espn": 14,
     "pos": 14,
-    "dif": -9
+    "dif": 2
    },
    {
     "id": "nuevachicago",
@@ -419,13 +419,13 @@
     "id": "chacarita",
     "nombre": "Chacarita",
     "espn": "Chacarita Juniors",
-    "pj": 32,
+    "pj": 33,
     "pts": 33,
-    "gf": 24,
-    "gc": 33,
+    "gf": 25,
+    "gc": 35,
     "rank_espn": 17,
     "pos": 17,
-    "dif": -9
+    "dif": -10
    },
    {
     "id": "guemes",
@@ -551,16 +551,16 @@
    "gc": 28
   },
   "almagro": {
-   "pj": 32,
-   "pts": 38,
-   "gf": 28,
-   "gc": 38
+   "pj": 33,
+   "pts": 41,
+   "gf": 30,
+   "gc": 39
   },
   "chacarita": {
-   "pj": 32,
+   "pj": 33,
    "pts": 33,
-   "gf": 24,
-   "gc": 33
+   "gf": 25,
+   "gc": 35
   },
   "nuevachicago": {
    "pj": 32,
@@ -569,10 +569,10 @@
    "gc": 30
   },
   "quilmes": {
-   "pj": 32,
+   "pj": 33,
    "pts": 39,
    "gf": 30,
-   "gc": 27
+   "gc": 28
   },
   "gimnasiaj": {
    "pj": 32,
@@ -587,15 +587,15 @@
    "gc": 32
   },
   "rafaela": {
-   "pj": 32,
+   "pj": 33,
    "pts": 42,
    "gf": 27,
-   "gc": 30
+   "gc": 34
   },
   "midland": {
-   "pj": 32,
-   "pts": 48,
-   "gf": 34,
+   "pj": 33,
+   "pts": 51,
+   "gf": 38,
    "gc": 26
   },
   "atlanta": {
@@ -605,8 +605,8 @@
    "gc": 30
   },
   "colegiales": {
-   "pj": 32,
-   "pts": 46,
+   "pj": 33,
+   "pts": 47,
    "gf": 32,
    "gc": 31
   },
@@ -617,8 +617,8 @@
    "gc": 26
   },
   "tristan": {
-   "pj": 32,
-   "pts": 58,
+   "pj": 33,
+   "pts": 59,
    "gf": 32,
    "gc": 15
   },
@@ -641,9 +641,9 @@
    "gc": 31
   },
   "agropecuario": {
-   "pj": 32,
-   "pts": 37,
-   "gf": 26,
+   "pj": 33,
+   "pts": 40,
+   "gf": 27,
    "gc": 35
   },
   "sanmartint": {
