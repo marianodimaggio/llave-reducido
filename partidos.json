@@ -4045,8 +4045,8 @@
 "fecha": "2026-10-10",
 "local": "almagro",
 "visita": "chacarita",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-10-10",
@@ -4059,8 +4059,8 @@
 "fecha": "2026-10-10",
 "local": "midland",
 "visita": "rafaela",
-"gl": null,
-"gv": null
+"gl": 4,
+"gv": 0
 },
 {
 "fecha": "2026-10-10",
@@ -4115,15 +4115,15 @@
 "fecha": "2026-10-10",
 "local": "quilmes",
 "visita": "agropecuario",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
 "fecha": "2026-10-10",
 "local": "colegiales",
 "visita": "tristan",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-10-10",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-06T00:40:53+00:00",
-"jugados": 576,
-"pendientes": 72,
+"actualizado": "2026-10-11T01:40:54+00:00",
+"jugados": 580,
+"pendientes": 68,
 "escaneado_hasta": "2026-10-10"
 }
