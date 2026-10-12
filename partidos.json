@@ -4035,11 +4035,11 @@
 "gv": 1
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-11",
 "local": "temperley",
 "visita": "nuevachicago",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-10-10",
@@ -4049,11 +4049,11 @@
 "gv": 1
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-11",
 "local": "madryn",
 "visita": "chacoforever",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 2
 },
 {
 "fecha": "2026-10-10",
@@ -4063,18 +4063,18 @@
 "gv": 0
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-11",
 "local": "atlanta",
 "visita": "sanmartint",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-11",
 "local": "maipu",
 "visita": "sanmartinsj",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
 "fecha": "2026-10-10",
@@ -4084,32 +4084,32 @@
 "gv": null
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-11",
 "local": "mitre",
 "visita": "colon",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-11",
 "local": "almirante",
 "visita": "sanmiguel",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-11",
 "local": "estudiantesc",
 "visita": "moron",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-11",
 "local": "patronato",
 "visita": "guemes",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 },
 {
 "fecha": "2026-10-10",
@@ -4133,32 +4133,32 @@
 "gv": null
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-11",
 "local": "defbelgrano",
 "visita": "acassuso",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 3
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-11",
 "local": "gimnasiaj",
 "visita": "gyt",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 2
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-11",
 "local": "bolivar",
 "visita": "santelmo",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-11",
 "local": "centralnorte",
 "visita": "ferro",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
 "fecha": "2026-10-17",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-11T01:40:54+00:00",
-"jugados": 580,
-"pendientes": 68,
+"actualizado": "2026-10-12T02:29:25+00:00",
+"jugados": 592,
+"pendientes": 56,
 "escaneado_hasta": "2026-10-11"
 }

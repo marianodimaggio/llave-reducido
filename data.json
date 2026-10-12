@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-11T23:09:12+00:00",
+ "actualizado": "2026-10-12T02:29:24+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -78,6 +78,18 @@
     "dif": 4
    },
    {
+    "id": "bolivar",
+    "nombre": "Cdad. de Bolívar",
+    "espn": "Ciudad de Bolívar",
+    "pj": 33,
+    "pts": 48,
+    "gf": 28,
+    "gc": 28,
+    "rank_espn": 7,
+    "pos": 7,
+    "dif": 0
+   },
+   {
     "id": "almirante",
     "nombre": "Almirante Brown",
     "espn": "Almirante Brown",
@@ -85,21 +97,9 @@
     "pts": 47,
     "gf": 26,
     "gc": 22,
-    "rank_espn": 7,
-    "pos": 7,
-    "dif": 4
-   },
-   {
-    "id": "bolivar",
-    "nombre": "Cdad. de Bolívar",
-    "espn": "Ciudad de Bolívar",
-    "pj": 32,
-    "pts": 45,
-    "gf": 27,
-    "gc": 28,
     "rank_espn": 8,
     "pos": 8,
-    "dif": -1
+    "dif": 4
    },
    {
     "id": "losandes",
@@ -141,13 +141,13 @@
     "id": "santelmo",
     "nombre": "San Telmo",
     "espn": "San Telmo",
-    "pj": 32,
+    "pj": 33,
     "pts": 37,
     "gf": 28,
-    "gc": 36,
+    "gc": 37,
     "rank_espn": 12,
     "pos": 12,
-    "dif": -8
+    "dif": -9
    },
    {
     "id": "racingcba",
@@ -503,10 +503,10 @@
    "gc": 34
   },
   "santelmo": {
-   "pj": 32,
+   "pj": 33,
    "pts": 37,
    "gf": 28,
-   "gc": 36
+   "gc": 37
   },
   "chacoforever": {
    "pj": 33,
@@ -545,9 +545,9 @@
    "gc": 39
   },
   "bolivar": {
-   "pj": 32,
-   "pts": 45,
-   "gf": 27,
+   "pj": 33,
+   "pts": 48,
+   "gf": 28,
    "gc": 28
   },
   "almagro": {
