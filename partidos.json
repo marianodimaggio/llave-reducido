@@ -4077,11 +4077,11 @@
 "gv": 1
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-12",
 "local": "allboys",
 "visita": "godoy",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-10-11",
@@ -4126,11 +4126,11 @@
 "gv": 0
 },
 {
-"fecha": "2026-10-10",
+"fecha": "2026-10-12",
 "local": "racingcba",
 "visita": "losandes",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-10-11",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-12T02:29:25+00:00",
-"jugados": 592,
-"pendientes": 56,
+"actualizado": "2026-10-13T01:54:17+00:00",
+"jugados": 594,
+"pendientes": 54,
 "escaneado_hasta": "2026-10-12"
 }

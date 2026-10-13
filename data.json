@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-12T19:41:27+00:00",
+ "actualizado": "2026-10-13T01:54:17+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -33,8 +33,8 @@
     "id": "godoy",
     "nombre": "Godoy Cruz",
     "espn": "Godoy Cruz Antonio Tomba",
-    "pj": 32,
-    "pts": 56,
+    "pj": 33,
+    "pts": 57,
     "gf": 42,
     "gc": 29,
     "rank_espn": 3,
@@ -105,13 +105,13 @@
     "id": "losandes",
     "nombre": "Los Andes",
     "espn": "Los Andes",
-    "pj": 32,
+    "pj": 33,
     "pts": 40,
     "gf": 25,
-    "gc": 23,
+    "gc": 24,
     "rank_espn": 9,
     "pos": 9,
-    "dif": 2
+    "dif": 1
    },
    {
     "id": "chacoforever",
@@ -126,6 +126,18 @@
     "dif": -2
    },
    {
+    "id": "racingcba",
+    "nombre": "Racing (Cba)",
+    "espn": "Racing (Córdoba)",
+    "pj": 33,
+    "pts": 40,
+    "gf": 30,
+    "gc": 39,
+    "rank_espn": 11,
+    "pos": 11,
+    "dif": -9
+   },
+   {
     "id": "defbelgrano",
     "nombre": "Def. de Belgrano",
     "espn": "Defensores de Belgrano",
@@ -133,8 +145,8 @@
     "pts": 37,
     "gf": 25,
     "gc": 32,
-    "rank_espn": 11,
-    "pos": 11,
+    "rank_espn": 12,
+    "pos": 12,
     "dif": -7
    },
    {
@@ -145,21 +157,9 @@
     "pts": 37,
     "gf": 28,
     "gc": 37,
-    "rank_espn": 12,
-    "pos": 12,
-    "dif": -9
-   },
-   {
-    "id": "racingcba",
-    "nombre": "Racing (Cba)",
-    "espn": "Racing (Córdoba)",
-    "pj": 32,
-    "pts": 37,
-    "gf": 29,
-    "gc": 39,
     "rank_espn": 13,
     "pos": 13,
-    "dif": -10
+    "dif": -9
    },
    {
     "id": "mitre",
@@ -189,8 +189,8 @@
     "id": "allboys",
     "nombre": "All Boys",
     "espn": "All Boys",
-    "pj": 32,
-    "pts": 33,
+    "pj": 33,
+    "pts": 34,
     "gf": 18,
     "gc": 28,
     "rank_espn": 16,
@@ -449,14 +449,14 @@
    "gc": 25
   },
   "losandes": {
-   "pj": 32,
+   "pj": 33,
    "pts": 40,
    "gf": 25,
-   "gc": 23
+   "gc": 24
   },
   "godoy": {
-   "pj": 32,
-   "pts": 56,
+   "pj": 33,
+   "pts": 57,
    "gf": 42,
    "gc": 29
   },
@@ -473,8 +473,8 @@
    "gc": 28
   },
   "allboys": {
-   "pj": 32,
-   "pts": 33,
+   "pj": 33,
+   "pts": 34,
    "gf": 18,
    "gc": 28
   },
@@ -539,9 +539,9 @@
    "gc": 30
   },
   "racingcba": {
-   "pj": 32,
-   "pts": 37,
-   "gf": 29,
+   "pj": 33,
+   "pts": 40,
+   "gf": 30,
    "gc": 39
   },
   "bolivar": {
