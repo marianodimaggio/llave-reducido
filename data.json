@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-17T21:43:15+00:00",
+ "actualizado": "2026-10-17T23:52:05+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -57,10 +57,10 @@
     "id": "colon",
     "nombre": "Colón",
     "espn": "Colón (Santa Fe)",
-    "pj": 33,
-    "pts": 53,
-    "gf": 39,
-    "gc": 25,
+    "pj": 34,
+    "pts": 54,
+    "gf": 41,
+    "gc": 27,
     "rank_espn": 5,
     "pos": 5,
     "dif": 14
@@ -93,10 +93,10 @@
     "id": "almirante",
     "nombre": "Almirante Brown",
     "espn": "Almirante Brown",
-    "pj": 33,
-    "pts": 47,
-    "gf": 26,
-    "gc": 22,
+    "pj": 34,
+    "pts": 48,
+    "gf": 28,
+    "gc": 24,
     "rank_espn": 8,
     "pos": 8,
     "dif": 4
@@ -443,10 +443,10 @@
  },
  "crudo": {
   "colon": {
-   "pj": 33,
-   "pts": 53,
-   "gf": 39,
-   "gc": 25
+   "pj": 34,
+   "pts": 54,
+   "gf": 41,
+   "gc": 27
   },
   "losandes": {
    "pj": 33,
@@ -461,10 +461,10 @@
    "gc": 29
   },
   "almirante": {
-   "pj": 33,
-   "pts": 47,
-   "gf": 26,
-   "gc": 22
+   "pj": 34,
+   "pts": 48,
+   "gf": 28,
+   "gc": 24
   },
   "ferro": {
    "pj": 33,
