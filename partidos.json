@@ -4164,15 +4164,15 @@
 "fecha": "2026-10-17",
 "local": "tristan",
 "visita": "patronato",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-10-17",
 "local": "agropecuario",
 "visita": "colegiales",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 3
 },
 {
 "fecha": "2026-10-17",
@@ -4192,8 +4192,8 @@
 "fecha": "2026-10-17",
 "local": "acassuso",
 "visita": "madryn",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-10-17",
@@ -4255,8 +4255,8 @@
 "fecha": "2026-10-17",
 "local": "sanmiguel",
 "visita": "bolivar",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 2
 },
 {
 "fecha": "2026-10-17",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-17T19:31:45+00:00",
-"jugados": 597,
-"pendientes": 51,
+"actualizado": "2026-10-17T21:43:16+00:00",
+"jugados": 601,
+"pendientes": 47,
 "escaneado_hasta": "2026-10-17"
 }

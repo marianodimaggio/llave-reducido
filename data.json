@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-17T19:31:44+00:00",
+ "actualizado": "2026-10-17T21:43:15+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -45,8 +45,8 @@
     "id": "madryn",
     "nombre": "Dep. Madryn",
     "espn": "Deportivo Madryn",
-    "pj": 33,
-    "pts": 53,
+    "pj": 34,
+    "pts": 54,
     "gf": 47,
     "gc": 30,
     "rank_espn": 4,
@@ -66,6 +66,18 @@
     "dif": 14
    },
    {
+    "id": "bolivar",
+    "nombre": "Cdad. de Bolívar",
+    "espn": "Ciudad de Bolívar",
+    "pj": 34,
+    "pts": 51,
+    "gf": 30,
+    "gc": 29,
+    "rank_espn": 6,
+    "pos": 6,
+    "dif": 1
+   },
+   {
     "id": "estudiantesc",
     "nombre": "Estudiantes (C)",
     "espn": "Estudiantes (Buenos Aires)",
@@ -73,21 +85,9 @@
     "pts": 48,
     "gf": 31,
     "gc": 27,
-    "rank_espn": 6,
-    "pos": 6,
-    "dif": 4
-   },
-   {
-    "id": "bolivar",
-    "nombre": "Cdad. de Bolívar",
-    "espn": "Ciudad de Bolívar",
-    "pj": 33,
-    "pts": 48,
-    "gf": 28,
-    "gc": 28,
     "rank_espn": 7,
     "pos": 7,
-    "dif": 0
+    "dif": 4
    },
    {
     "id": "almirante",
@@ -201,8 +201,8 @@
     "id": "acassuso",
     "nombre": "Acassuso",
     "espn": "Acassuso",
-    "pj": 33,
-    "pts": 32,
+    "pj": 34,
+    "pts": 33,
     "gf": 25,
     "gc": 35,
     "rank_espn": 17,
@@ -213,13 +213,13 @@
     "id": "sanmiguel",
     "nombre": "San Miguel",
     "espn": "San Miguel",
-    "pj": 33,
+    "pj": 34,
     "pts": 32,
-    "gf": 26,
-    "gc": 39,
+    "gf": 27,
+    "gc": 41,
     "rank_espn": 18,
     "pos": 18,
-    "dif": -13
+    "dif": -14
    }
   ],
   "B": [
@@ -227,13 +227,13 @@
     "id": "tristan",
     "nombre": "Tristán Suárez",
     "espn": "Tristán Suárez",
-    "pj": 33,
-    "pts": 59,
-    "gf": 32,
+    "pj": 34,
+    "pts": 62,
+    "gf": 33,
     "gc": 15,
     "rank_espn": 1,
     "pos": 1,
-    "dif": 17
+    "dif": 18
    },
    {
     "id": "temperley",
@@ -296,6 +296,18 @@
     "dif": 12
    },
    {
+    "id": "colegiales",
+    "nombre": "Colegiales",
+    "espn": "Colegiales",
+    "pj": 34,
+    "pts": 50,
+    "gf": 35,
+    "gc": 31,
+    "rank_espn": 7,
+    "pos": 7,
+    "dif": 4
+   },
+   {
     "id": "maipu",
     "nombre": "Dep. Maipú",
     "espn": "Deportivo Maipú",
@@ -303,21 +315,9 @@
     "pts": 48,
     "gf": 40,
     "gc": 33,
-    "rank_espn": 7,
-    "pos": 7,
-    "dif": 7
-   },
-   {
-    "id": "colegiales",
-    "nombre": "Colegiales",
-    "espn": "Colegiales",
-    "pj": 33,
-    "pts": 47,
-    "gf": 32,
-    "gc": 31,
     "rank_espn": 8,
     "pos": 8,
-    "dif": 1
+    "dif": 7
    },
    {
     "id": "sanmartinsj",
@@ -371,13 +371,13 @@
     "id": "agropecuario",
     "nombre": "Agropecuario",
     "espn": "Agropecuario",
-    "pj": 33,
+    "pj": 34,
     "pts": 40,
     "gf": 27,
-    "gc": 35,
+    "gc": 38,
     "rank_espn": 13,
     "pos": 13,
-    "dif": -8
+    "dif": -11
    },
    {
     "id": "quilmes",
@@ -395,13 +395,13 @@
     "id": "patronato",
     "nombre": "Patronato",
     "espn": "Patronato",
-    "pj": 33,
+    "pj": 34,
     "pts": 37,
     "gf": 29,
-    "gc": 32,
+    "gc": 33,
     "rank_espn": 15,
     "pos": 15,
-    "dif": -3
+    "dif": -4
    },
    {
     "id": "nuevachicago",
@@ -479,14 +479,14 @@
    "gc": 28
   },
   "sanmiguel": {
-   "pj": 33,
+   "pj": 34,
    "pts": 32,
-   "gf": 26,
-   "gc": 39
+   "gf": 27,
+   "gc": 41
   },
   "acassuso": {
-   "pj": 33,
-   "pts": 32,
+   "pj": 34,
+   "pts": 33,
    "gf": 25,
    "gc": 35
   },
@@ -533,8 +533,8 @@
    "gc": 27
   },
   "madryn": {
-   "pj": 33,
-   "pts": 53,
+   "pj": 34,
+   "pts": 54,
    "gf": 47,
    "gc": 30
   },
@@ -545,10 +545,10 @@
    "gc": 39
   },
   "bolivar": {
-   "pj": 33,
-   "pts": 48,
-   "gf": 28,
-   "gc": 28
+   "pj": 34,
+   "pts": 51,
+   "gf": 30,
+   "gc": 29
   },
   "almagro": {
    "pj": 33,
@@ -605,9 +605,9 @@
    "gc": 33
   },
   "colegiales": {
-   "pj": 33,
-   "pts": 47,
-   "gf": 32,
+   "pj": 34,
+   "pts": 50,
+   "gf": 35,
    "gc": 31
   },
   "temperley": {
@@ -617,16 +617,16 @@
    "gc": 27
   },
   "tristan": {
-   "pj": 33,
-   "pts": 59,
-   "gf": 32,
+   "pj": 34,
+   "pts": 62,
+   "gf": 33,
    "gc": 15
   },
   "patronato": {
-   "pj": 33,
+   "pj": 34,
    "pts": 37,
    "gf": 29,
-   "gc": 32
+   "gc": 33
   },
   "gyt": {
    "pj": 34,
@@ -641,10 +641,10 @@
    "gc": 33
   },
   "agropecuario": {
-   "pj": 33,
+   "pj": 34,
    "pts": 40,
    "gf": 27,
-   "gc": 35
+   "gc": 38
   },
   "sanmartint": {
    "pj": 33,
