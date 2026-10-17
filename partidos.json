@@ -4224,11 +4224,11 @@
 "gv": null
 },
 {
-"fecha": "2026-10-17",
+"fecha": "2026-10-16",
 "local": "gyt",
 "visita": "atlanta",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 1
 },
 {
 "fecha": "2026-10-17",
@@ -4273,11 +4273,11 @@
 "gv": null
 },
 {
-"fecha": "2026-10-17",
+"fecha": "2026-10-16",
 "local": "rafaela",
 "visita": "quilmes",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-10-17",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-13T01:54:17+00:00",
-"jugados": 594,
-"pendientes": 54,
-"escaneado_hasta": "2026-10-16"
+"actualizado": "2026-10-17T06:09:47+00:00",
+"jugados": 596,
+"pendientes": 52,
+"escaneado_hasta": "2026-10-17"
 }
