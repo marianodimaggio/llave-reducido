@@ -4175,18 +4175,18 @@
 "gv": 3
 },
 {
-"fecha": "2026-10-17",
+"fecha": "2026-10-18",
 "local": "nuevachicago",
 "visita": "gimnasiaj",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
-"fecha": "2026-10-17",
+"fecha": "2026-10-18",
 "local": "sanmartinsj",
 "visita": "temperley",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
 "fecha": "2026-10-17",
@@ -4196,25 +4196,25 @@
 "gv": 0
 },
 {
-"fecha": "2026-10-17",
+"fecha": "2026-10-18",
 "local": "godoy",
 "visita": "estudiantesc",
-"gl": null,
-"gv": null
+"gl": 6,
+"gv": 3
 },
 {
-"fecha": "2026-10-17",
+"fecha": "2026-10-18",
 "local": "moron",
 "visita": "mitre",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 2
 },
 {
-"fecha": "2026-10-17",
+"fecha": "2026-10-18",
 "local": "chacoforever",
 "visita": "centralnorte",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 2
 },
 {
 "fecha": "2026-10-17",
@@ -4231,25 +4231,25 @@
 "gv": 1
 },
 {
-"fecha": "2026-10-17",
+"fecha": "2026-10-18",
 "local": "sanmartint",
 "visita": "midland",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 2
 },
 {
-"fecha": "2026-10-17",
+"fecha": "2026-10-18",
 "local": "losandes",
 "visita": "allboys",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
-"fecha": "2026-10-17",
+"fecha": "2026-10-18",
 "local": "ferro",
 "visita": "racingcba",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-10-17",
@@ -4259,11 +4259,11 @@
 "gv": 2
 },
 {
-"fecha": "2026-10-17",
+"fecha": "2026-10-18",
 "local": "guemes",
 "visita": "almagro",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-10-17",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-18T03:47:10+00:00",
-"jugados": 602,
-"pendientes": 46,
+"actualizado": "2026-10-18T23:38:45+00:00",
+"jugados": 611,
+"pendientes": 37,
 "escaneado_hasta": "2026-10-18"
 }
