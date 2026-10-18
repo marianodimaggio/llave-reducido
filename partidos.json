@@ -4269,8 +4269,8 @@
 "fecha": "2026-10-17",
 "local": "colon",
 "visita": "almirante",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 2
 },
 {
 "fecha": "2026-10-16",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-17T21:43:16+00:00",
-"jugados": 601,
-"pendientes": 47,
-"escaneado_hasta": "2026-10-17"
+"actualizado": "2026-10-18T03:47:10+00:00",
+"jugados": 602,
+"pendientes": 46,
+"escaneado_hasta": "2026-10-18"
 }
