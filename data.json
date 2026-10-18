@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-18T18:56:10+00:00",
+ "actualizado": "2026-10-18T21:21:33+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -9,25 +9,25 @@
     "id": "ferro",
     "nombre": "Ferro",
     "espn": "Ferro Carril Oeste",
-    "pj": 33,
-    "pts": 62,
-    "gf": 37,
+    "pj": 34,
+    "pts": 65,
+    "gf": 38,
     "gc": 28,
     "rank_espn": 1,
     "pos": 1,
-    "dif": 9
+    "dif": 10
    },
    {
     "id": "moron",
     "nombre": "Dep. Morón",
     "espn": "Deportivo Morón",
-    "pj": 33,
+    "pj": 34,
     "pts": 58,
     "gf": 51,
-    "gc": 34,
+    "gc": 36,
     "rank_espn": 2,
     "pos": 2,
-    "dif": 17
+    "dif": 15
    },
    {
     "id": "godoy",
@@ -105,10 +105,10 @@
     "id": "losandes",
     "nombre": "Los Andes",
     "espn": "Los Andes",
-    "pj": 33,
-    "pts": 40,
-    "gf": 25,
-    "gc": 24,
+    "pj": 34,
+    "pts": 41,
+    "gf": 26,
+    "gc": 25,
     "rank_espn": 9,
     "pos": 9,
     "dif": 1
@@ -129,13 +129,25 @@
     "id": "racingcba",
     "nombre": "Racing (Cba)",
     "espn": "Racing (Córdoba)",
-    "pj": 33,
+    "pj": 34,
     "pts": 40,
     "gf": 30,
-    "gc": 39,
+    "gc": 40,
     "rank_espn": 11,
     "pos": 11,
-    "dif": -9
+    "dif": -10
+   },
+   {
+    "id": "mitre",
+    "nombre": "Mitre (SdE)",
+    "espn": "Mitre (Santiago del Estero)",
+    "pj": 34,
+    "pts": 39,
+    "gf": 31,
+    "gc": 39,
+    "rank_espn": 12,
+    "pos": 12,
+    "dif": -8
    },
    {
     "id": "defbelgrano",
@@ -145,8 +157,8 @@
     "pts": 37,
     "gf": 25,
     "gc": 32,
-    "rank_espn": 12,
-    "pos": 12,
+    "rank_espn": 13,
+    "pos": 13,
     "dif": -7
    },
    {
@@ -157,20 +169,20 @@
     "pts": 37,
     "gf": 28,
     "gc": 37,
-    "rank_espn": 13,
-    "pos": 13,
+    "rank_espn": 14,
+    "pos": 14,
     "dif": -9
    },
    {
-    "id": "mitre",
-    "nombre": "Mitre (SdE)",
-    "espn": "Mitre (Santiago del Estero)",
-    "pj": 33,
-    "pts": 36,
-    "gf": 29,
-    "gc": 39,
-    "rank_espn": 14,
-    "pos": 14,
+    "id": "allboys",
+    "nombre": "All Boys",
+    "espn": "All Boys",
+    "pj": 34,
+    "pts": 35,
+    "gf": 19,
+    "gc": 29,
+    "rank_espn": 15,
+    "pos": 15,
     "dif": -10
    },
    {
@@ -181,21 +193,9 @@
     "pts": 34,
     "gf": 21,
     "gc": 30,
-    "rank_espn": 15,
-    "pos": 15,
-    "dif": -9
-   },
-   {
-    "id": "allboys",
-    "nombre": "All Boys",
-    "espn": "All Boys",
-    "pj": 33,
-    "pts": 34,
-    "gf": 18,
-    "gc": 28,
     "rank_espn": 16,
     "pos": 16,
-    "dif": -10
+    "dif": -9
    },
    {
     "id": "acassuso",
@@ -248,6 +248,18 @@
     "dif": 13
    },
    {
+    "id": "gimnasiaj",
+    "nombre": "Gimnasia (J)",
+    "espn": "Gimnasia y Esgrima (Jujuy)",
+    "pj": 34,
+    "pts": 58,
+    "gf": 51,
+    "gc": 42,
+    "rank_espn": 3,
+    "pos": 3,
+    "dif": 9
+   },
+   {
     "id": "atlanta",
     "nombre": "Atlanta",
     "espn": "Atlanta",
@@ -255,21 +267,9 @@
     "pts": 58,
     "gf": 40,
     "gc": 33,
-    "rank_espn": 3,
-    "pos": 3,
-    "dif": 7
-   },
-   {
-    "id": "gimnasiaj",
-    "nombre": "Gimnasia (J)",
-    "espn": "Gimnasia y Esgrima (Jujuy)",
-    "pj": 33,
-    "pts": 55,
-    "gf": 50,
-    "gc": 42,
     "rank_espn": 4,
     "pos": 4,
-    "dif": 8
+    "dif": 7
    },
    {
     "id": "gyt",
@@ -404,18 +404,6 @@
     "dif": -4
    },
    {
-    "id": "nuevachicago",
-    "nombre": "Nueva Chicago",
-    "espn": "Nueva Chicago",
-    "pj": 33,
-    "pts": 36,
-    "gf": 24,
-    "gc": 32,
-    "rank_espn": 16,
-    "pos": 16,
-    "dif": -8
-   },
-   {
     "id": "chacarita",
     "nombre": "Chacarita",
     "espn": "Chacarita Juniors",
@@ -423,6 +411,18 @@
     "pts": 36,
     "gf": 26,
     "gc": 35,
+    "rank_espn": 16,
+    "pos": 16,
+    "dif": -9
+   },
+   {
+    "id": "nuevachicago",
+    "nombre": "Nueva Chicago",
+    "espn": "Nueva Chicago",
+    "pj": 34,
+    "pts": 36,
+    "gf": 24,
+    "gc": 33,
     "rank_espn": 17,
     "pos": 17,
     "dif": -9
@@ -449,10 +449,10 @@
    "gc": 27
   },
   "losandes": {
-   "pj": 33,
-   "pts": 40,
-   "gf": 25,
-   "gc": 24
+   "pj": 34,
+   "pts": 41,
+   "gf": 26,
+   "gc": 25
   },
   "godoy": {
    "pj": 33,
@@ -467,16 +467,16 @@
    "gc": 24
   },
   "ferro": {
-   "pj": 33,
-   "pts": 62,
-   "gf": 37,
+   "pj": 34,
+   "pts": 65,
+   "gf": 38,
    "gc": 28
   },
   "allboys": {
-   "pj": 33,
-   "pts": 34,
-   "gf": 18,
-   "gc": 28
+   "pj": 34,
+   "pts": 35,
+   "gf": 19,
+   "gc": 29
   },
   "sanmiguel": {
    "pj": 34,
@@ -497,10 +497,10 @@
    "gc": 32
   },
   "moron": {
-   "pj": 33,
+   "pj": 34,
    "pts": 58,
    "gf": 51,
-   "gc": 34
+   "gc": 36
   },
   "santelmo": {
    "pj": 33,
@@ -515,9 +515,9 @@
    "gc": 34
   },
   "mitre": {
-   "pj": 33,
-   "pts": 36,
-   "gf": 29,
+   "pj": 34,
+   "pts": 39,
+   "gf": 31,
    "gc": 39
   },
   "centralnorte": {
@@ -539,10 +539,10 @@
    "gc": 30
   },
   "racingcba": {
-   "pj": 33,
+   "pj": 34,
    "pts": 40,
    "gf": 30,
-   "gc": 39
+   "gc": 40
   },
   "bolivar": {
    "pj": 34,
@@ -563,10 +563,10 @@
    "gc": 35
   },
   "nuevachicago": {
-   "pj": 33,
+   "pj": 34,
    "pts": 36,
    "gf": 24,
-   "gc": 32
+   "gc": 33
   },
   "quilmes": {
    "pj": 34,
@@ -575,9 +575,9 @@
    "gc": 29
   },
   "gimnasiaj": {
-   "pj": 33,
-   "pts": 55,
-   "gf": 50,
+   "pj": 34,
+   "pts": 58,
+   "gf": 51,
    "gc": 42
   },
   "sanmartinsj": {
