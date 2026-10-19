@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-19T14:57:45+00:00",
+ "actualizado": "2026-10-19T20:30:59+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -153,13 +153,25 @@
     "id": "defbelgrano",
     "nombre": "Def. de Belgrano",
     "espn": "Defensores de Belgrano",
-    "pj": 33,
-    "pts": 37,
+    "pj": 34,
+    "pts": 38,
     "gf": 25,
     "gc": 32,
     "rank_espn": 13,
     "pos": 13,
     "dif": -7
+   },
+   {
+    "id": "santelmo",
+    "nombre": "San Telmo",
+    "espn": "San Telmo",
+    "pj": 34,
+    "pts": 38,
+    "gf": 28,
+    "gc": 37,
+    "rank_espn": 14,
+    "pos": 14,
+    "dif": -9
    },
    {
     "id": "centralnorte",
@@ -169,21 +181,9 @@
     "pts": 37,
     "gf": 23,
     "gc": 31,
-    "rank_espn": 14,
-    "pos": 14,
-    "dif": -8
-   },
-   {
-    "id": "santelmo",
-    "nombre": "San Telmo",
-    "espn": "San Telmo",
-    "pj": 33,
-    "pts": 37,
-    "gf": 28,
-    "gc": 37,
     "rank_espn": 15,
     "pos": 15,
-    "dif": -9
+    "dif": -8
    },
    {
     "id": "allboys",
@@ -491,8 +491,8 @@
    "gc": 35
   },
   "defbelgrano": {
-   "pj": 33,
-   "pts": 37,
+   "pj": 34,
+   "pts": 38,
    "gf": 25,
    "gc": 32
   },
@@ -503,8 +503,8 @@
    "gc": 36
   },
   "santelmo": {
-   "pj": 33,
-   "pts": 37,
+   "pj": 34,
+   "pts": 38,
    "gf": 28,
    "gc": 37
   },
