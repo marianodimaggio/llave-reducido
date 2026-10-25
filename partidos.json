@@ -4290,8 +4290,8 @@
 "fecha": "2026-10-24",
 "local": "ferro",
 "visita": "chacoforever",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 3
 },
 {
 "fecha": "2026-10-24",
@@ -4388,15 +4388,15 @@
 "fecha": "2026-10-24",
 "local": "quilmes",
 "visita": "sanmartint",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-10-24",
 "local": "almagro",
 "visita": "tristan",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
 "fecha": "2026-10-24",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-19T23:55:32+00:00",
-"jugados": 612,
-"pendientes": 36,
+"actualizado": "2026-10-25T00:06:13+00:00",
+"jugados": 615,
+"pendientes": 33,
 "escaneado_hasta": "2026-10-24"
 }

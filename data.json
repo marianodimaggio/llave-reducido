@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T21:52:04+00:00",
+ "actualizado": "2026-10-25T00:06:12+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -45,13 +45,13 @@
     "id": "madryn",
     "nombre": "Dep. Madryn",
     "espn": "Deportivo Madryn",
-    "pj": 34,
-    "pts": 54,
-    "gf": 47,
-    "gc": 30,
+    "pj": 35,
+    "pts": 57,
+    "gf": 51,
+    "gc": 31,
     "rank_espn": 4,
     "pos": 4,
-    "dif": 17
+    "dif": 20
    },
    {
     "id": "colon",
@@ -165,13 +165,13 @@
     "id": "santelmo",
     "nombre": "San Telmo",
     "espn": "San Telmo",
-    "pj": 34,
+    "pj": 35,
     "pts": 38,
-    "gf": 28,
-    "gc": 37,
+    "gf": 29,
+    "gc": 41,
     "rank_espn": 14,
     "pos": 14,
-    "dif": -9
+    "dif": -12
    },
    {
     "id": "centralnorte",
@@ -335,13 +335,13 @@
     "id": "sanmartint",
     "nombre": "San Martín (T)",
     "espn": "San Martín (Tucumán)",
-    "pj": 34,
+    "pj": 35,
     "pts": 46,
-    "gf": 38,
-    "gc": 35,
+    "gf": 39,
+    "gc": 37,
     "rank_espn": 10,
     "pos": 10,
-    "dif": 3
+    "dif": 2
    },
    {
     "id": "rafaela",
@@ -356,6 +356,18 @@
     "dif": -6
    },
    {
+    "id": "quilmes",
+    "nombre": "Quilmes",
+    "espn": "Quilmes",
+    "pj": 35,
+    "pts": 42,
+    "gf": 32,
+    "gc": 30,
+    "rank_espn": 12,
+    "pos": 12,
+    "dif": 2
+   },
+   {
     "id": "almagro",
     "nombre": "Almagro",
     "espn": "Almagro",
@@ -363,8 +375,8 @@
     "pts": 42,
     "gf": 32,
     "gc": 42,
-    "rank_espn": 12,
-    "pos": 12,
+    "rank_espn": 13,
+    "pos": 13,
     "dif": -10
    },
    {
@@ -375,21 +387,9 @@
     "pts": 40,
     "gf": 27,
     "gc": 38,
-    "rank_espn": 13,
-    "pos": 13,
-    "dif": -11
-   },
-   {
-    "id": "quilmes",
-    "nombre": "Quilmes",
-    "espn": "Quilmes",
-    "pj": 34,
-    "pts": 39,
-    "gf": 30,
-    "gc": 29,
     "rank_espn": 14,
     "pos": 14,
-    "dif": 1
+    "dif": -11
    },
    {
     "id": "patronato",
@@ -503,10 +503,10 @@
    "gc": 36
   },
   "santelmo": {
-   "pj": 34,
+   "pj": 35,
    "pts": 38,
-   "gf": 28,
-   "gc": 37
+   "gf": 29,
+   "gc": 41
   },
   "chacoforever": {
    "pj": 35,
@@ -533,10 +533,10 @@
    "gc": 33
   },
   "madryn": {
-   "pj": 34,
-   "pts": 54,
-   "gf": 47,
-   "gc": 30
+   "pj": 35,
+   "pts": 57,
+   "gf": 51,
+   "gc": 31
   },
   "racingcba": {
    "pj": 34,
@@ -569,10 +569,10 @@
    "gc": 33
   },
   "quilmes": {
-   "pj": 34,
-   "pts": 39,
-   "gf": 30,
-   "gc": 29
+   "pj": 35,
+   "pts": 42,
+   "gf": 32,
+   "gc": 30
   },
   "gimnasiaj": {
    "pj": 34,
@@ -647,10 +647,10 @@
    "gc": 38
   },
   "sanmartint": {
-   "pj": 34,
+   "pj": 35,
    "pts": 46,
-   "gf": 38,
-   "gc": 35
+   "gf": 39,
+   "gc": 37
   },
   "guemes": {
    "pj": 34,
