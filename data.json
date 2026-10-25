@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-25T00:06:12+00:00",
+ "actualizado": "2026-10-25T04:55:28+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -57,25 +57,25 @@
     "id": "colon",
     "nombre": "Colón",
     "espn": "Colón (Santa Fe)",
-    "pj": 34,
-    "pts": 54,
-    "gf": 41,
+    "pj": 35,
+    "pts": 57,
+    "gf": 43,
     "gc": 27,
     "rank_espn": 5,
     "pos": 5,
-    "dif": 14
+    "dif": 16
    },
    {
     "id": "bolivar",
     "nombre": "Cdad. de Bolívar",
     "espn": "Ciudad de Bolívar",
-    "pj": 34,
+    "pj": 35,
     "pts": 51,
     "gf": 30,
-    "gc": 29,
+    "gc": 31,
     "rank_espn": 6,
     "pos": 6,
-    "dif": 1
+    "dif": -1
    },
    {
     "id": "almirante",
@@ -299,10 +299,10 @@
     "id": "colegiales",
     "nombre": "Colegiales",
     "espn": "Colegiales",
-    "pj": 34,
-    "pts": 50,
-    "gf": 35,
-    "gc": 31,
+    "pj": 35,
+    "pts": 51,
+    "gf": 36,
+    "gc": 32,
     "rank_espn": 7,
     "pos": 7,
     "dif": 4
@@ -347,10 +347,10 @@
     "id": "rafaela",
     "nombre": "At. Rafaela",
     "espn": "Atletico Rafaela",
-    "pj": 34,
-    "pts": 45,
-    "gf": 28,
-    "gc": 34,
+    "pj": 35,
+    "pts": 46,
+    "gf": 29,
+    "gc": 35,
     "rank_espn": 11,
     "pos": 11,
     "dif": -6
@@ -443,9 +443,9 @@
  },
  "crudo": {
   "colon": {
-   "pj": 34,
-   "pts": 54,
-   "gf": 41,
+   "pj": 35,
+   "pts": 57,
+   "gf": 43,
    "gc": 27
   },
   "losandes": {
@@ -545,10 +545,10 @@
    "gc": 40
   },
   "bolivar": {
-   "pj": 34,
+   "pj": 35,
    "pts": 51,
    "gf": 30,
-   "gc": 29
+   "gc": 31
   },
   "almagro": {
    "pj": 35,
@@ -587,10 +587,10 @@
    "gc": 34
   },
   "rafaela": {
-   "pj": 34,
-   "pts": 45,
-   "gf": 28,
-   "gc": 34
+   "pj": 35,
+   "pts": 46,
+   "gf": 29,
+   "gc": 35
   },
   "midland": {
    "pj": 34,
@@ -605,10 +605,10 @@
    "gc": 33
   },
   "colegiales": {
-   "pj": 34,
-   "pts": 50,
-   "gf": 35,
-   "gc": 31
+   "pj": 35,
+   "pts": 51,
+   "gf": 36,
+   "gc": 32
   },
   "temperley": {
    "pj": 34,

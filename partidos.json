@@ -4297,8 +4297,8 @@
 "fecha": "2026-10-24",
 "local": "colegiales",
 "visita": "rafaela",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
 "fecha": "2026-10-24",
@@ -4353,8 +4353,8 @@
 "fecha": "2026-10-24",
 "local": "bolivar",
 "visita": "colon",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 2
 },
 {
 "fecha": "2026-10-24",
@@ -4374,8 +4374,8 @@
 "fecha": "2026-10-24",
 "local": "madryn",
 "visita": "santelmo",
-"gl": null,
-"gv": null
+"gl": 4,
+"gv": 1
 },
 {
 "fecha": "2026-10-24",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-25T00:06:13+00:00",
-"jugados": 615,
-"pendientes": 33,
-"escaneado_hasta": "2026-10-24"
+"actualizado": "2026-10-25T04:55:29+00:00",
+"jugados": 618,
+"pendientes": 30,
+"escaneado_hasta": "2026-10-25"
 }
