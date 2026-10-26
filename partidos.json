@@ -4308,39 +4308,39 @@
 "gv": null
 },
 {
-"fecha": "2026-10-24",
+"fecha": "2026-10-25",
 "local": "midland",
 "visita": "gyt",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 0
 },
 {
-"fecha": "2026-10-24",
+"fecha": "2026-10-25",
 "local": "estudiantesc",
 "visita": "losandes",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
-"fecha": "2026-10-24",
+"fecha": "2026-10-25",
 "local": "mitre",
 "visita": "godoy",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 3
 },
 {
-"fecha": "2026-10-24",
+"fecha": "2026-10-25",
 "local": "gimnasiaj",
 "visita": "atlanta",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 2
 },
 {
-"fecha": "2026-10-24",
+"fecha": "2026-10-25",
 "local": "maipu",
 "visita": "guemes",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 1
 },
 {
 "fecha": "2026-10-24",
@@ -4357,18 +4357,18 @@
 "gv": 2
 },
 {
-"fecha": "2026-10-24",
+"fecha": "2026-10-25",
 "local": "patronato",
 "visita": "agropecuario",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 2
 },
 {
-"fecha": "2026-10-24",
+"fecha": "2026-10-25",
 "local": "centralnorte",
 "visita": "acassuso",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-10-24",
@@ -4378,11 +4378,11 @@
 "gv": 1
 },
 {
-"fecha": "2026-10-24",
+"fecha": "2026-10-25",
 "local": "temperley",
 "visita": "chacarita",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
 "fecha": "2026-10-24",
@@ -4399,18 +4399,18 @@
 "gv": 1
 },
 {
-"fecha": "2026-10-24",
+"fecha": "2026-10-25",
 "local": "almirante",
 "visita": "moron",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
-"fecha": "2026-10-24",
+"fecha": "2026-10-25",
 "local": "racingcba",
 "visita": "allboys",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 2
 },
 {
 "fecha": "2026-10-31",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-25T04:55:29+00:00",
-"jugados": 618,
-"pendientes": 30,
+"actualizado": "2026-10-26T00:42:33+00:00",
+"jugados": 628,
+"pendientes": 20,
 "escaneado_hasta": "2026-10-25"
 }

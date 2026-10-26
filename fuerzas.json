@@ -1,26 +1,26 @@
 {
- "generado": "2026-10-25T04:56:14+00:00",
- "datos_hasta": "2026-10-24",
+ "generado": "2026-10-26T00:43:02+00:00",
+ "datos_hasta": "2026-10-25",
  "fuente": "ESPN arg.2 (resultados) · fixture sembrado una vez",
- "partidos_usados": 618,
- "pendientes": 30,
+ "partidos_usados": 628,
+ "pendientes": 20,
  "simulaciones": 10000,
- "ventaja_local": 1.553,
- "rho": -0.0774,
+ "ventaja_local": 1.534,
+ "rho": -0.074,
  "base_liga": {
-  "local": 0.4693,
-  "empate": 0.3139,
-  "visita": 0.2168
+  "local": 0.4666,
+  "empate": 0.3121,
+  "visita": 0.2213
  },
  "validacion": {
-  "partidos_evaluados": 340,
+  "partidos_evaluados": 346,
   "modelo": {
-   "logloss": 1.0372,
-   "rps": 0.2093
+   "logloss": 1.0407,
+   "rps": 0.2113
   },
   "sin_datos": {
-   "logloss": 1.0485,
-   "rps": 0.2128
+   "logloss": 1.0526,
+   "rps": 0.2149
   },
   "mercado": {
    "logloss": 1.0138,
@@ -30,155 +30,155 @@
   }
  },
  "parametros": {
-  "mu": -0.27435,
-  "casa": 0.44002,
-  "rho": -0.07742,
+  "mu": -0.26575,
+  "casa": 0.42779,
+  "rho": -0.07403,
   "encoger": 1.0
  },
  "fuerzas": {
   "acassuso": {
-   "atk": -0.1131,
-   "dfn": -0.0236
+   "atk": -0.1223,
+   "dfn": -0.0088
   },
   "agropecuario": {
-   "atk": -0.0808,
-   "dfn": -0.062
+   "atk": -0.0642,
+   "dfn": -0.0461
   },
   "allboys": {
-   "atk": -0.1951,
-   "dfn": 0.0557
+   "atk": -0.1762,
+   "dfn": 0.0564
   },
   "almagro": {
-   "atk": -0.0369,
-   "dfn": -0.0935
+   "atk": -0.0377,
+   "dfn": -0.0931
   },
   "almirante": {
-   "atk": -0.0632,
-   "dfn": 0.1238
+   "atk": -0.0662,
+   "dfn": 0.1368
   },
   "atlanta": {
-   "atk": 0.0883,
-   "dfn": 0.0052
+   "atk": 0.1006,
+   "dfn": 0.0116
   },
   "bolivar": {
    "atk": -0.0542,
-   "dfn": 0.0518
-  },
-  "centralnorte": {
-   "atk": -0.1372,
-   "dfn": 0.032
-  },
-  "chacarita": {
-   "atk": -0.1083,
-   "dfn": -0.0169
-  },
-  "chacoforever": {
-   "atk": 0.0312,
-   "dfn": -0.0163
-  },
-  "colegiales": {
-   "atk": 0.0057,
-   "dfn": 0.0132
-  },
-  "colon": {
-   "atk": 0.122,
-   "dfn": 0.0941
-  },
-  "defbelgrano": {
-   "atk": -0.1091,
-   "dfn": 0.0114
-  },
-  "estudiantesc": {
-   "atk": 0.0092,
-   "dfn": 0.0051
-  },
-  "ferro": {
-   "atk": 0.0527,
-   "dfn": 0.048
-  },
-  "gimnasiaj": {
-   "atk": 0.2315,
-   "dfn": -0.1195
-  },
-  "godoy": {
-   "atk": 0.1837,
-   "dfn": 0.0113
-  },
-  "guemes": {
-   "atk": -0.1127,
-   "dfn": -0.2997
-  },
-  "gyt": {
-   "atk": 0.0455,
-   "dfn": 0.0278
-  },
-  "losandes": {
-   "atk": -0.0945,
-   "dfn": 0.113
-  },
-  "madryn": {
-   "atk": 0.2184,
-   "dfn": 0.0298
-  },
-  "maipu": {
-   "atk": 0.0874,
-   "dfn": 0.0098
-  },
-  "midland": {
-   "atk": 0.0954,
-   "dfn": 0.0691
-  },
-  "mitre": {
-   "atk": -0.0283,
-   "dfn": -0.0878
-  },
-  "moron": {
-   "atk": 0.2317,
-   "dfn": -0.0473
-  },
-  "nuevachicago": {
-   "atk": -0.1351,
-   "dfn": 0.005
-  },
-  "patronato": {
-   "atk": -0.0575,
-   "dfn": 0.007
-  },
-  "quilmes": {
-   "atk": -0.0458,
    "dfn": 0.0525
   },
+  "centralnorte": {
+   "atk": -0.1528,
+   "dfn": 0.0409
+  },
+  "chacarita": {
+   "atk": -0.1047,
+   "dfn": 0.0028
+  },
+  "chacoforever": {
+   "atk": 0.0307,
+   "dfn": -0.0164
+  },
+  "colegiales": {
+   "atk": 0.0046,
+   "dfn": 0.0142
+  },
+  "colon": {
+   "atk": 0.1211,
+   "dfn": 0.0939
+  },
+  "defbelgrano": {
+   "atk": -0.1094,
+   "dfn": 0.0117
+  },
+  "estudiantesc": {
+   "atk": 0.0088,
+   "dfn": 0.0008
+  },
+  "ferro": {
+   "atk": 0.0524,
+   "dfn": 0.0484
+  },
+  "gimnasiaj": {
+   "atk": 0.225,
+   "dfn": -0.1319
+  },
+  "godoy": {
+   "atk": 0.2072,
+   "dfn": 0.0266
+  },
+  "guemes": {
+   "atk": -0.1091,
+   "dfn": -0.3135
+  },
+  "gyt": {
+   "atk": 0.0355,
+   "dfn": 0.005
+  },
+  "losandes": {
+   "atk": -0.0902,
+   "dfn": 0.1138
+  },
+  "madryn": {
+   "atk": 0.218,
+   "dfn": 0.0303
+  },
+  "maipu": {
+   "atk": 0.1032,
+   "dfn": 0.0065
+  },
+  "midland": {
+   "atk": 0.1166,
+   "dfn": 0.0792
+  },
+  "mitre": {
+   "atk": -0.0439,
+   "dfn": -0.1128
+  },
+  "moron": {
+   "atk": 0.22,
+   "dfn": -0.0446
+  },
+  "nuevachicago": {
+   "atk": -0.136,
+   "dfn": 0.0062
+  },
+  "patronato": {
+   "atk": -0.0743,
+   "dfn": -0.0089
+  },
+  "quilmes": {
+   "atk": -0.0462,
+   "dfn": 0.0537
+  },
   "racingcba": {
-   "atk": -0.0365,
-   "dfn": -0.0904
+   "atk": -0.0373,
+   "dfn": -0.107
   },
   "rafaela": {
-   "atk": -0.066,
-   "dfn": -0.0043
+   "atk": -0.067,
+   "dfn": -0.0034
   },
   "sanmartinsj": {
-   "atk": 0.0344,
-   "dfn": -0.0091
+   "atk": 0.0331,
+   "dfn": -0.0082
   },
   "sanmartint": {
-   "atk": 0.0659,
-   "dfn": -0.0279
+   "atk": 0.0648,
+   "dfn": -0.0271
   },
   "sanmiguel": {
-   "atk": -0.0784,
-   "dfn": -0.1072
+   "atk": -0.0787,
+   "dfn": -0.1069
   },
   "santelmo": {
-   "atk": -0.06,
-   "dfn": -0.091
+   "atk": -0.0605,
+   "dfn": -0.0905
   },
   "temperley": {
-   "atk": 0.1075,
-   "dfn": 0.0718
+   "atk": 0.0883,
+   "dfn": 0.0682
   },
   "tristan": {
-   "atk": 0.0022,
-   "dfn": 0.2589
+   "atk": 0.0011,
+   "dfn": 0.2595
   }
  },
  "ascensos": {
@@ -212,22 +212,22 @@
   },
   "almirante": {
    "primero": 0.0,
-   "segundo": 1.3,
-   "asciende": 1.3,
+   "segundo": 1.2,
+   "asciende": 1.2,
    "reducido": 100.0,
    "top4": 0.0
   },
   "atlanta": {
-   "primero": 0.6,
-   "segundo": 7.2,
-   "asciende": 7.7,
-   "reducido": 98.9,
-   "top4": 98.8
+   "primero": 4.4,
+   "segundo": 10.3,
+   "asciende": 14.6,
+   "reducido": 90.9,
+   "top4": 100.0
   },
   "bolivar": {
    "primero": 0.0,
-   "segundo": 1.2,
-   "asciende": 1.2,
+   "segundo": 0.9,
+   "asciende": 0.9,
    "reducido": 100.0,
    "top4": 0.0
   },
@@ -254,17 +254,17 @@
   },
   "colegiales": {
    "primero": 0.0,
-   "segundo": 1.1,
-   "asciende": 1.1,
-   "reducido": 87.9,
+   "segundo": 1.0,
+   "asciende": 1.0,
+   "reducido": 81.8,
    "top4": 0.0
   },
   "colon": {
    "primero": 0.0,
-   "segundo": 8.4,
-   "asciende": 8.4,
+   "segundo": 8.5,
+   "asciende": 8.5,
    "reducido": 100.0,
-   "top4": 56.4
+   "top4": 57.1
   },
   "defbelgrano": {
    "primero": 0.0,
@@ -275,31 +275,31 @@
   },
   "estudiantesc": {
    "primero": 0.0,
-   "segundo": 1.0,
-   "asciende": 1.0,
+   "segundo": 1.1,
+   "asciende": 1.1,
    "reducido": 100.0,
    "top4": 0.0
   },
   "ferro": {
-   "primero": 43.0,
-   "segundo": 8.7,
-   "asciende": 51.7,
-   "reducido": 5.9,
+   "primero": 38.4,
+   "segundo": 9.3,
+   "asciende": 47.7,
+   "reducido": 19.0,
    "top4": 100.0
   },
   "gimnasiaj": {
-   "primero": 0.7,
-   "segundo": 8.2,
-   "asciende": 8.9,
-   "reducido": 98.6,
-   "top4": 98.9
+   "primero": 0.0,
+   "segundo": 5.8,
+   "asciende": 5.8,
+   "reducido": 100.0,
+   "top4": 100.0
   },
   "godoy": {
-   "primero": 3.1,
-   "segundo": 12.9,
-   "asciende": 16.0,
-   "reducido": 94.1,
-   "top4": 96.5
+   "primero": 9.3,
+   "segundo": 15.6,
+   "asciende": 24.8,
+   "reducido": 81.0,
+   "top4": 100.0
   },
   "guemes": {
    "primero": 0.0,
@@ -310,10 +310,10 @@
   },
   "gyt": {
    "primero": 0.0,
-   "segundo": 1.6,
-   "asciende": 1.6,
-   "reducido": 99.9,
-   "top4": 2.4
+   "segundo": 1.1,
+   "asciende": 1.1,
+   "reducido": 99.3,
+   "top4": 0.0
   },
   "losandes": {
    "primero": 0.0,
@@ -324,23 +324,23 @@
   },
   "madryn": {
    "primero": 0.0,
-   "segundo": 10.0,
-   "asciende": 10.0,
+   "segundo": 9.2,
+   "asciende": 9.2,
    "reducido": 100.0,
-   "top4": 56.1
+   "top4": 58.6
   },
   "maipu": {
    "primero": 0.0,
-   "segundo": 1.2,
-   "asciende": 1.2,
-   "reducido": 77.8,
+   "segundo": 1.6,
+   "asciende": 1.6,
+   "reducido": 95.7,
    "top4": 0.0
   },
   "midland": {
    "primero": 0.0,
-   "segundo": 1.9,
-   "asciende": 1.9,
-   "reducido": 99.7,
+   "segundo": 2.4,
+   "asciende": 2.4,
+   "reducido": 100.0,
    "top4": 0.0
   },
   "mitre": {
@@ -352,10 +352,10 @@
   },
   "moron": {
    "primero": 0.0,
-   "segundo": 11.0,
-   "asciende": 11.0,
+   "segundo": 9.6,
+   "asciende": 9.6,
    "reducido": 100.0,
-   "top4": 91.0
+   "top4": 84.3
   },
   "nuevachicago": {
    "primero": 0.0,
@@ -389,21 +389,21 @@
    "primero": 0.0,
    "segundo": 0.0,
    "asciende": 0.0,
-   "reducido": 0.5,
+   "reducido": 0.0,
    "top4": 0.0
   },
   "sanmartinsj": {
    "primero": 0.0,
    "segundo": 0.3,
    "asciende": 0.3,
-   "reducido": 32.7,
+   "reducido": 23.2,
    "top4": 0.0
   },
   "sanmartint": {
    "primero": 0.0,
    "segundo": 0.0,
    "asciende": 0.0,
-   "reducido": 1.6,
+   "reducido": 0.0,
    "top4": 0.0
   },
   "sanmiguel": {
@@ -421,17 +421,17 @@
    "top4": 0.0
   },
   "temperley": {
-   "primero": 8.8,
-   "segundo": 12.2,
-   "asciende": 21.0,
-   "reducido": 83.2,
+   "primero": 0.0,
+   "segundo": 10.4,
+   "asciende": 10.4,
+   "reducido": 99.9,
    "top4": 100.0
   },
   "tristan": {
-   "primero": 43.8,
-   "segundo": 11.9,
-   "asciende": 55.8,
-   "reducido": 19.3,
+   "primero": 47.9,
+   "segundo": 11.8,
+   "asciende": 59.7,
+   "reducido": 9.2,
    "top4": 100.0
   }
  }
