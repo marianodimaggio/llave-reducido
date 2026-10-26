@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-26T12:32:05+00:00",
+ "actualizado": "2026-10-26T18:51:02+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -323,10 +323,10 @@
     "id": "sanmartinsj",
     "nombre": "San Martín (SJ)",
     "espn": "San Martín (San Juan)",
-    "pj": 34,
-    "pts": 47,
-    "gf": 36,
-    "gc": 34,
+    "pj": 35,
+    "pts": 48,
+    "gf": 37,
+    "gc": 35,
     "rank_espn": 9,
     "pos": 9,
     "dif": 2
@@ -419,10 +419,10 @@
     "id": "nuevachicago",
     "nombre": "Nueva Chicago",
     "espn": "Nueva Chicago",
-    "pj": 34,
-    "pts": 36,
-    "gf": 24,
-    "gc": 33,
+    "pj": 35,
+    "pts": 37,
+    "gf": 25,
+    "gc": 34,
     "rank_espn": 17,
     "pos": 17,
     "dif": -9
@@ -563,10 +563,10 @@
    "gc": 35
   },
   "nuevachicago": {
-   "pj": 34,
-   "pts": 36,
-   "gf": 24,
-   "gc": 33
+   "pj": 35,
+   "pts": 37,
+   "gf": 25,
+   "gc": 34
   },
   "quilmes": {
    "pj": 35,
@@ -581,10 +581,10 @@
    "gc": 44
   },
   "sanmartinsj": {
-   "pj": 34,
-   "pts": 47,
-   "gf": 36,
-   "gc": 34
+   "pj": 35,
+   "pts": 48,
+   "gf": 37,
+   "gc": 35
   },
   "rafaela": {
    "pj": 35,
