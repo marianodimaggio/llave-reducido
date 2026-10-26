@@ -4301,11 +4301,11 @@
 "gv": 1
 },
 {
-"fecha": "2026-10-24",
+"fecha": "2026-10-26",
 "local": "nuevachicago",
 "visita": "sanmartinsj",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 1
 },
 {
 "fecha": "2026-10-25",
@@ -4343,11 +4343,11 @@
 "gv": 1
 },
 {
-"fecha": "2026-10-24",
+"fecha": "2026-10-26",
 "local": "defbelgrano",
 "visita": "sanmiguel",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-10-24",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-26T00:42:33+00:00",
-"jugados": 628,
-"pendientes": 20,
+"actualizado": "2026-10-26T23:03:53+00:00",
+"jugados": 630,
+"pendientes": 18,
 "escaneado_hasta": "2026-10-26"
 }

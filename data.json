@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-26T18:51:02+00:00",
+ "actualizado": "2026-10-26T23:03:52+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -138,6 +138,18 @@
     "dif": -11
    },
    {
+    "id": "defbelgrano",
+    "nombre": "Def. de Belgrano",
+    "espn": "Defensores de Belgrano",
+    "pj": 35,
+    "pts": 39,
+    "gf": 25,
+    "gc": 32,
+    "rank_espn": 12,
+    "pos": 12,
+    "dif": -7
+   },
+   {
     "id": "mitre",
     "nombre": "Mitre (SdE)",
     "espn": "Mitre (Santiago del Estero)",
@@ -145,21 +157,9 @@
     "pts": 39,
     "gf": 31,
     "gc": 42,
-    "rank_espn": 12,
-    "pos": 12,
-    "dif": -11
-   },
-   {
-    "id": "defbelgrano",
-    "nombre": "Def. de Belgrano",
-    "espn": "Defensores de Belgrano",
-    "pj": 34,
-    "pts": 38,
-    "gf": 25,
-    "gc": 32,
     "rank_espn": 13,
     "pos": 13,
-    "dif": -7
+    "dif": -11
    },
    {
     "id": "centralnorte",
@@ -213,8 +213,8 @@
     "id": "sanmiguel",
     "nombre": "San Miguel",
     "espn": "San Miguel",
-    "pj": 34,
-    "pts": 32,
+    "pj": 35,
+    "pts": 33,
     "gf": 27,
     "gc": 41,
     "rank_espn": 18,
@@ -479,8 +479,8 @@
    "gc": 30
   },
   "sanmiguel": {
-   "pj": 34,
-   "pts": 32,
+   "pj": 35,
+   "pts": 33,
    "gf": 27,
    "gc": 41
   },
@@ -491,8 +491,8 @@
    "gc": 35
   },
   "defbelgrano": {
-   "pj": 34,
-   "pts": 38,
+   "pj": 35,
+   "pts": 39,
    "gf": 25,
    "gc": 32
   },
