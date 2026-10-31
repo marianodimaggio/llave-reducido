@@ -4416,15 +4416,15 @@
 "fecha": "2026-10-31",
 "local": "godoy",
 "visita": "almirante",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-10-31",
 "local": "losandes",
 "visita": "mitre",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-10-31",
@@ -4437,8 +4437,8 @@
 "fecha": "2026-10-31",
 "local": "atlanta",
 "visita": "midland",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-10-31",
@@ -4451,29 +4451,29 @@
 "fecha": "2026-10-31",
 "local": "guemes",
 "visita": "temperley",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 2
 },
 {
 "fecha": "2026-10-31",
 "local": "santelmo",
 "visita": "centralnorte",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-10-31",
 "local": "acassuso",
 "visita": "ferro",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-10-31",
 "local": "agropecuario",
 "visita": "almagro",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 1
 },
 {
 "fecha": "2026-10-31",
@@ -4507,22 +4507,22 @@
 "fecha": "2026-10-31",
 "local": "sanmiguel",
 "visita": "madryn",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
 "fecha": "2026-10-31",
 "local": "tristan",
 "visita": "maipu",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-10-31",
 "local": "sanmartinsj",
 "visita": "gimnasiaj",
-"gl": null,
-"gv": null
+"gl": 5,
+"gv": 1
 },
 {
 "fecha": "2026-10-31",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-26T23:03:53+00:00",
-"jugados": 630,
-"pendientes": 18,
+"actualizado": "2026-10-31T21:50:51+00:00",
+"jugados": 640,
+"pendientes": 8,
 "escaneado_hasta": "2026-10-31"
 }
