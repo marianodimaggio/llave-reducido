@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-31T21:50:50+00:00",
+ "actualizado": "2026-11-01T00:48:25+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -57,13 +57,13 @@
     "id": "colon",
     "nombre": "Colón",
     "espn": "Colón (Santa Fe)",
-    "pj": 35,
-    "pts": 57,
-    "gf": 43,
+    "pj": 36,
+    "pts": 60,
+    "gf": 45,
     "gc": 27,
     "rank_espn": 5,
     "pos": 5,
-    "dif": 16
+    "dif": 18
    },
    {
     "id": "almirante",
@@ -102,6 +102,18 @@
     "dif": 1
    },
    {
+    "id": "chacoforever",
+    "nombre": "Chaco For Ever",
+    "espn": "Chaco For Ever",
+    "pj": 36,
+    "pts": 46,
+    "gf": 39,
+    "gc": 37,
+    "rank_espn": 9,
+    "pos": 9,
+    "dif": 2
+   },
+   {
     "id": "losandes",
     "nombre": "Los Andes",
     "espn": "Los Andes",
@@ -109,21 +121,9 @@
     "pts": 43,
     "gf": 27,
     "gc": 26,
-    "rank_espn": 9,
-    "pos": 9,
-    "dif": 1
-   },
-   {
-    "id": "chacoforever",
-    "nombre": "Chaco For Ever",
-    "espn": "Chaco For Ever",
-    "pj": 35,
-    "pts": 43,
-    "gf": 36,
-    "gc": 36,
     "rank_espn": 10,
     "pos": 10,
-    "dif": 0
+    "dif": 1
    },
    {
     "id": "santelmo",
@@ -153,25 +153,25 @@
     "id": "racingcba",
     "nombre": "Racing (Cba)",
     "espn": "Racing (Córdoba)",
-    "pj": 35,
+    "pj": 36,
     "pts": 40,
-    "gf": 31,
-    "gc": 42,
+    "gf": 32,
+    "gc": 45,
     "rank_espn": 13,
     "pos": 13,
-    "dif": -11
+    "dif": -13
    },
    {
     "id": "defbelgrano",
     "nombre": "Def. de Belgrano",
     "espn": "Defensores de Belgrano",
-    "pj": 35,
+    "pj": 36,
     "pts": 39,
     "gf": 25,
-    "gc": 32,
+    "gc": 34,
     "rank_espn": 14,
     "pos": 14,
-    "dif": -7
+    "dif": -9
    },
    {
     "id": "centralnorte",
@@ -443,9 +443,9 @@
  },
  "crudo": {
   "colon": {
-   "pj": 35,
-   "pts": 57,
-   "gf": 43,
+   "pj": 36,
+   "pts": 60,
+   "gf": 45,
    "gc": 27
   },
   "losandes": {
@@ -491,10 +491,10 @@
    "gc": 35
   },
   "defbelgrano": {
-   "pj": 35,
+   "pj": 36,
    "pts": 39,
    "gf": 25,
-   "gc": 32
+   "gc": 34
   },
   "moron": {
    "pj": 36,
@@ -509,10 +509,10 @@
    "gc": 41
   },
   "chacoforever": {
-   "pj": 35,
-   "pts": 43,
-   "gf": 36,
-   "gc": 36
+   "pj": 36,
+   "pts": 46,
+   "gf": 39,
+   "gc": 37
   },
   "mitre": {
    "pj": 36,
@@ -539,10 +539,10 @@
    "gc": 31
   },
   "racingcba": {
-   "pj": 35,
+   "pj": 36,
    "pts": 40,
-   "gf": 31,
-   "gc": 42
+   "gf": 32,
+   "gc": 45
   },
   "bolivar": {
    "pj": 36,

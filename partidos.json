@@ -4444,8 +4444,8 @@
 "fecha": "2026-10-31",
 "local": "chacoforever",
 "visita": "racingcba",
-"gl": null,
-"gv": null
+"gl": 3,
+"gv": 1
 },
 {
 "fecha": "2026-10-31",
@@ -4479,8 +4479,8 @@
 "fecha": "2026-10-31",
 "local": "moron",
 "visita": "bolivar",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 },
 {
 "fecha": "2026-10-31",
@@ -4528,8 +4528,8 @@
 "fecha": "2026-10-31",
 "local": "colon",
 "visita": "defbelgrano",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 },
 {
 "fecha": "2026-10-31",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-10-31T21:50:51+00:00",
-"jugados": 640,
-"pendientes": 8,
+"actualizado": "2026-11-01T00:48:25+00:00",
+"jugados": 643,
+"pendientes": 5,
 "escaneado_hasta": "2026-10-31"
 }
