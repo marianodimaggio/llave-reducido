@@ -1073,7 +1073,7 @@ function panelDatos(){
     + MODELO.ventaja_local.toLocaleString('es-AR',{maximumFractionDigits:2}) + ', y la estructura del torneo. Eso es lo que más pesa en el reparto de ascensos: '
     + 'quién tiene más puntos hoy y cuántas fechas quedan.</p>'
     + '<p>Datos hasta el ' + fecha + ' · ' + MODELO.partidos_usados + ' partidos jugados · '
-    + 'fuente FootyStats. Números menores a 5% son poco distinguibles entre sí.</p>'
+    + 'fuente ESPN. Números menores a 5% son poco distinguibles entre sí.</p>'
     + '</details>' : '';
 
   cont.innerHTML = '<section class="panel"><h3>Qué tan probable es cada ascenso</h3>'
@@ -1082,7 +1082,16 @@ function panelDatos(){
 
 async function cargarModelo(){
   try{
-    const r = await fetch('fuerzas.json?t=' + Date.now());
+    // Igual que la tabla: se lee de GitHub, no del sitio. Netlify no republica
+    // cuando solo cambian los archivos de datos, asi que servia una copia vieja.
+    const base = 'https://raw.githubusercontent.com/marianodimaggio/llave-reducido/main/';
+    let r;
+    try{
+      r = await fetch(base + 'fuerzas.json?t=' + Date.now(), {cache:'no-store'});
+      if(!r.ok) throw 0;
+    }catch(e){
+      r = await fetch('fuerzas.json?t=' + Date.now(), {cache:'no-store'});   // respaldo local
+    }
     if(!r.ok) throw 0;
     MODELO = await r.json();
     document.getElementById('btnDatos').hidden = false;
