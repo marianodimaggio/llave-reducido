@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-01T22:55:07+00:00",
+ "actualizado": "2026-11-02T02:10:58+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -296,16 +296,28 @@
     "dif": 9
    },
    {
+    "id": "colegiales",
+    "nombre": "Colegiales",
+    "espn": "Colegiales",
+    "pj": 36,
+    "pts": 52,
+    "gf": 36,
+    "gc": 32,
+    "rank_espn": 7,
+    "pos": 7,
+    "dif": 4
+   },
+   {
     "id": "gyt",
     "nombre": "Gimnasia y Tiro",
     "espn": "Gimnasia y Tiro (Salta)",
-    "pj": 35,
+    "pj": 36,
     "pts": 52,
     "gf": 37,
-    "gc": 34,
-    "rank_espn": 7,
-    "pos": 7,
-    "dif": 3
+    "gc": 35,
+    "rank_espn": 8,
+    "pos": 8,
+    "dif": 2
    },
    {
     "id": "sanmartinsj",
@@ -315,28 +327,16 @@
     "pts": 51,
     "gf": 42,
     "gc": 36,
-    "rank_espn": 8,
-    "pos": 8,
-    "dif": 6
-   },
-   {
-    "id": "colegiales",
-    "nombre": "Colegiales",
-    "espn": "Colegiales",
-    "pj": 35,
-    "pts": 51,
-    "gf": 36,
-    "gc": 32,
     "rank_espn": 9,
     "pos": 9,
-    "dif": 4
+    "dif": 6
    },
    {
     "id": "sanmartint",
     "nombre": "San Martín (T)",
     "espn": "San Martín (Tucumán)",
-    "pj": 35,
-    "pts": 46,
+    "pj": 36,
+    "pts": 47,
     "gf": 39,
     "gc": 37,
     "rank_espn": 10,
@@ -371,13 +371,13 @@
     "id": "quilmes",
     "nombre": "Quilmes",
     "espn": "Quilmes",
-    "pj": 35,
-    "pts": 42,
-    "gf": 32,
+    "pj": 36,
+    "pts": 45,
+    "gf": 33,
     "gc": 30,
     "rank_espn": 13,
     "pos": 13,
-    "dif": 2
+    "dif": 3
    },
    {
     "id": "almagro",
@@ -569,9 +569,9 @@
    "gc": 34
   },
   "quilmes": {
-   "pj": 35,
-   "pts": 42,
-   "gf": 32,
+   "pj": 36,
+   "pts": 45,
+   "gf": 33,
    "gc": 30
   },
   "gimnasiaj": {
@@ -605,8 +605,8 @@
    "gc": 34
   },
   "colegiales": {
-   "pj": 35,
-   "pts": 51,
+   "pj": 36,
+   "pts": 52,
    "gf": 36,
    "gc": 32
   },
@@ -629,10 +629,10 @@
    "gc": 35
   },
   "gyt": {
-   "pj": 35,
+   "pj": 36,
    "pts": 52,
    "gf": 37,
-   "gc": 34
+   "gc": 35
   },
   "maipu": {
    "pj": 36,
@@ -647,8 +647,8 @@
    "gc": 39
   },
   "sanmartint": {
-   "pj": 35,
-   "pts": 46,
+   "pj": 36,
+   "pts": 47,
    "gf": 39,
    "gc": 37
   },

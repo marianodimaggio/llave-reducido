@@ -4427,11 +4427,11 @@
 "gv": 0
 },
 {
-"fecha": "2026-10-31",
+"fecha": "2026-11-01",
 "local": "gyt",
 "visita": "quilmes",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 1
 },
 {
 "fecha": "2026-10-31",
@@ -4497,11 +4497,11 @@
 "gv": null
 },
 {
-"fecha": "2026-10-31",
+"fecha": "2026-11-01",
 "local": "sanmartint",
 "visita": "colegiales",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-10-31",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-11-01T00:48:25+00:00",
-"jugados": 643,
-"pendientes": 5,
+"actualizado": "2026-11-02T02:10:59+00:00",
+"jugados": 645,
+"pendientes": 3,
 "escaneado_hasta": "2026-11-01"
 }
