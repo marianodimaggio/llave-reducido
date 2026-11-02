@@ -4483,11 +4483,11 @@
 "gv": 0
 },
 {
-"fecha": "2026-10-31",
+"fecha": "2026-11-02",
 "local": "allboys",
 "visita": "estudiantesc",
-"gl": null,
-"gv": null
+"gl": 1,
+"gv": 0
 },
 {
 "fecha": "2026-10-31",
@@ -4539,8 +4539,8 @@
 "gv": null
 }
 ],
-"actualizado": "2026-11-02T02:10:59+00:00",
-"jugados": 645,
-"pendientes": 3,
+"actualizado": "2026-11-02T19:48:03+00:00",
+"jugados": 646,
+"pendientes": 2,
 "escaneado_hasta": "2026-11-02"
 }

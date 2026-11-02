@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02T09:38:26+00:00",
+ "actualizado": "2026-11-02T19:48:02+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -93,13 +93,13 @@
     "id": "estudiantesc",
     "nombre": "Estudiantes (C)",
     "espn": "Estudiantes (Buenos Aires)",
-    "pj": 35,
+    "pj": 36,
     "pts": 49,
     "gf": 35,
-    "gc": 34,
+    "gc": 35,
     "rank_espn": 8,
     "pos": 8,
-    "dif": 1
+    "dif": 0
    },
    {
     "id": "chacoforever",
@@ -126,6 +126,18 @@
     "dif": 1
    },
    {
+    "id": "allboys",
+    "nombre": "All Boys",
+    "espn": "All Boys",
+    "pj": 36,
+    "pts": 41,
+    "gf": 22,
+    "gc": 30,
+    "rank_espn": 11,
+    "pos": 11,
+    "dif": -8
+   },
+   {
     "id": "santelmo",
     "nombre": "San Telmo",
     "espn": "San Telmo",
@@ -133,8 +145,8 @@
     "pts": 41,
     "gf": 30,
     "gc": 41,
-    "rank_espn": 11,
-    "pos": 11,
+    "rank_espn": 12,
+    "pos": 12,
     "dif": -11
    },
    {
@@ -145,8 +157,8 @@
     "pts": 40,
     "gf": 31,
     "gc": 42,
-    "rank_espn": 12,
-    "pos": 12,
+    "rank_espn": 13,
+    "pos": 13,
     "dif": -11
    },
    {
@@ -157,8 +169,8 @@
     "pts": 40,
     "gf": 32,
     "gc": 45,
-    "rank_espn": 13,
-    "pos": 13,
+    "rank_espn": 14,
+    "pos": 14,
     "dif": -13
    },
    {
@@ -169,8 +181,8 @@
     "pts": 39,
     "gf": 25,
     "gc": 34,
-    "rank_espn": 14,
-    "pos": 14,
+    "rank_espn": 15,
+    "pos": 15,
     "dif": -9
    },
    {
@@ -181,18 +193,6 @@
     "pts": 38,
     "gf": 23,
     "gc": 32,
-    "rank_espn": 15,
-    "pos": 15,
-    "dif": -9
-   },
-   {
-    "id": "allboys",
-    "nombre": "All Boys",
-    "espn": "All Boys",
-    "pj": 35,
-    "pts": 38,
-    "gf": 21,
-    "gc": 30,
     "rank_espn": 16,
     "pos": 16,
     "dif": -9
@@ -473,9 +473,9 @@
    "gc": 31
   },
   "allboys": {
-   "pj": 35,
-   "pts": 38,
-   "gf": 21,
+   "pj": 36,
+   "pts": 41,
+   "gf": 22,
    "gc": 30
   },
   "sanmiguel": {
@@ -527,10 +527,10 @@
    "gc": 32
   },
   "estudiantesc": {
-   "pj": 35,
+   "pj": 36,
    "pts": 49,
    "gf": 35,
-   "gc": 34
+   "gc": 35
   },
   "madryn": {
    "pj": 36,
