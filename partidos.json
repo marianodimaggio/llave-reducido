@@ -4490,11 +4490,11 @@
 "gv": 0
 },
 {
-"fecha": "2026-10-31",
+"fecha": "2026-11-02",
 "local": "rafaela",
 "visita": "patronato",
-"gl": null,
-"gv": null
+"gl": 0,
+"gv": 0
 },
 {
 "fecha": "2026-11-01",
@@ -4532,15 +4532,15 @@
 "gv": 0
 },
 {
-"fecha": "2026-10-31",
+"fecha": "2026-11-02",
 "local": "chacarita",
 "visita": "nuevachicago",
-"gl": null,
-"gv": null
+"gl": 2,
+"gv": 0
 }
 ],
-"actualizado": "2026-11-02T19:48:03+00:00",
-"jugados": 646,
-"pendientes": 2,
+"actualizado": "2026-11-03T02:04:33+00:00",
+"jugados": 648,
+"pendientes": 0,
 "escaneado_hasta": "2026-11-02"
 }

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-02T19:48:02+00:00",
+ "actualizado": "2026-11-03T02:04:32+00:00",
  "fuente": "ESPN arg.2",
  "version": 2,
  "verificados": 0,
@@ -347,8 +347,8 @@
     "id": "rafaela",
     "nombre": "At. Rafaela",
     "espn": "Atletico Rafaela",
-    "pj": 35,
-    "pts": 46,
+    "pj": 36,
+    "pts": 47,
     "gf": 29,
     "gc": 35,
     "rank_espn": 11,
@@ -380,6 +380,18 @@
     "dif": 3
    },
    {
+    "id": "chacarita",
+    "nombre": "Chacarita",
+    "espn": "Chacarita Juniors",
+    "pj": 36,
+    "pts": 42,
+    "gf": 29,
+    "gc": 35,
+    "rank_espn": 14,
+    "pos": 14,
+    "dif": -6
+   },
+   {
     "id": "almagro",
     "nombre": "Almagro",
     "espn": "Almagro",
@@ -387,28 +399,16 @@
     "pts": 42,
     "gf": 33,
     "gc": 44,
-    "rank_espn": 14,
-    "pos": 14,
-    "dif": -11
-   },
-   {
-    "id": "chacarita",
-    "nombre": "Chacarita",
-    "espn": "Chacarita Juniors",
-    "pj": 35,
-    "pts": 39,
-    "gf": 27,
-    "gc": 35,
     "rank_espn": 15,
     "pos": 15,
-    "dif": -8
+    "dif": -11
    },
    {
     "id": "patronato",
     "nombre": "Patronato",
     "espn": "Patronato",
-    "pj": 35,
-    "pts": 37,
+    "pj": 36,
+    "pts": 38,
     "gf": 29,
     "gc": 35,
     "rank_espn": 16,
@@ -419,13 +419,13 @@
     "id": "nuevachicago",
     "nombre": "Nueva Chicago",
     "espn": "Nueva Chicago",
-    "pj": 35,
+    "pj": 36,
     "pts": 37,
     "gf": 25,
-    "gc": 34,
+    "gc": 36,
     "rank_espn": 17,
     "pos": 17,
-    "dif": -9
+    "dif": -11
    },
    {
     "id": "guemes",
@@ -557,16 +557,16 @@
    "gc": 44
   },
   "chacarita": {
-   "pj": 35,
-   "pts": 39,
-   "gf": 27,
+   "pj": 36,
+   "pts": 42,
+   "gf": 29,
    "gc": 35
   },
   "nuevachicago": {
-   "pj": 35,
+   "pj": 36,
    "pts": 37,
    "gf": 25,
-   "gc": 34
+   "gc": 36
   },
   "quilmes": {
    "pj": 36,
@@ -587,8 +587,8 @@
    "gc": 36
   },
   "rafaela": {
-   "pj": 35,
-   "pts": 46,
+   "pj": 36,
+   "pts": 47,
    "gf": 29,
    "gc": 35
   },
@@ -623,8 +623,8 @@
    "gc": 16
   },
   "patronato": {
-   "pj": 35,
-   "pts": 37,
+   "pj": 36,
+   "pts": 38,
    "gf": 29,
    "gc": 35
   },
