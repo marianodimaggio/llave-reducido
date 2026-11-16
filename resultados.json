@@ -1,0 +1,66 @@
+{
+ "actualizado": "2026-11-16",
+ "nota": "Resultados del Reducido. Se indexan por los dos equipos del cruce, no por numero de llave, porque el numero depende del orden de la tabla. Un cruce con \"gana\" queda fijo y no se puede cambiar; uno con estado \"parcial\" muestra el marcador pero deja elegir, porque todavia no esta resuelto.",
+ "final_ascenso": {
+  "a": "godoy",
+  "b": "tristan",
+  "gl": 3,
+  "gv": 1,
+  "gana": "godoy"
+ },
+ "fase1": [
+  {
+   "a": "ferro",
+   "b": "gyt",
+   "gl": 0,
+   "gv": 1,
+   "gana": "gyt"
+  },
+  {
+   "a": "atlanta",
+   "b": "estudiantesc",
+   "gl": 1,
+   "gv": 1,
+   "gana": "atlanta"
+  },
+  {
+   "a": "moron",
+   "b": "colegiales",
+   "gl": 1,
+   "gv": 1,
+   "gana": "moron"
+  },
+  {
+   "a": "temperley",
+   "b": "bolivar",
+   "gl": 1,
+   "gv": 2,
+   "gana": "bolivar"
+  },
+  {
+   "a": "madryn",
+   "b": "maipu",
+   "gl": 3,
+   "gv": 1,
+   "estado": "parcial",
+   "nota": "Suspendido a los 36 del segundo tiempo. Quedan 12 minutos. Lo define el Tribunal de Disciplina de AFA."
+  },
+  {
+   "a": "gimnasiaj",
+   "b": "almirante",
+   "gl": 2,
+   "gv": 0,
+   "gana": "gimnasiaj"
+  },
+  {
+   "a": "colon",
+   "b": "midland",
+   "gl": 1,
+   "gv": 0,
+   "gana": "colon"
+  }
+ ],
+ "cuartos": [],
+ "semis": [],
+ "final_reducido": []
+}

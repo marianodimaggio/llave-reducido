@@ -200,6 +200,22 @@ details.info p b{color:var(--oro);font-weight:700}
 .eq.gana .pick::after{content:"✓";position:absolute;inset:0;display:flex;
   align-items:center;justify-content:center;color:#171104;font-size:13px;font-weight:700}
 .eq.pierde .pick{border-color:var(--borde);opacity:.5}
+
+/* --- llaves ya jugadas: no se tocan --- */
+.eq.fijo{cursor:default}
+.eq .gol{font-size:18px;font-weight:700;color:var(--txt);min-width:22px;
+  text-align:right;font-variant-numeric:tabular-nums;flex:none}
+.eq.fijo.gana .gol{color:var(--oro)}
+.eq.fijo.pierde .gol{color:var(--txt3)}
+.m.resuelto{border-color:#3A3A40}
+.jugado{float:right;font-size:10px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:#7A7A82;border:1px solid var(--borde);
+  border-radius:5px;padding:2px 6px}
+.jugado.abierto{color:var(--rojo);border-color:#5A1A24}
+.m.suspendido{border-color:#5A1A24}
+.eq .gol.parcial{color:var(--txt3);font-weight:600}
+.nota-llave{padding:10px 14px;border-top:1px solid var(--borde);background:#170E10;
+  font-size:11.5px;color:var(--txt3);line-height:1.55}
 .eq.gana{background:#161206;box-shadow:inset 3px 0 0 var(--oro)}
 .eq.gana .nombre{color:var(--oro)}
 .eq.pierde{opacity:.4}
@@ -439,7 +455,39 @@ function limpiar(){
   yaConto = false;
   S = {finalAsc:null, f1:{}, cuartos:{}, semis:{}, finalRed:null};
   FASE1.forEach(l => S.f1[l.id] = null);
+  aplicarJugados();
   render();
+}
+
+// Deja fijos los resultados que ya ocurrieron. Reiniciar no los borra:
+// vuelve al estado real, que es lo unico que tiene sentido.
+function aplicarJugados(){
+  if(!JUGADOS) return;
+  if(JUGADOS.final_ascenso && JUGADOS.final_ascenso.gana)
+    S.finalAsc = JUGADOS.final_ascenso.gana;
+  FASE1.forEach(function(l){
+    const r = resultadoDe(JUGADOS.fase1, l.a, l.b);
+    if(r && r.gana) S.f1[l.id] = r.gana;
+  });
+  const s8 = sembrados8();
+  if(s8){
+    cruces(s8,[[0,7],[1,6],[2,5],[3,4]]).forEach(function(cr,i){
+      const r = resultadoDe(JUGADOS.cuartos, cr.top, cr.bot);
+      if(r && r.gana) S.cuartos[i] = r.gana;
+    });
+  }
+  const s4 = sembrados4();
+  if(s4){
+    cruces(s4,[[0,3],[1,2]]).forEach(function(cr,i){
+      const r = resultadoDe(JUGADOS.semis, cr.top, cr.bot);
+      if(r && r.gana) S.semis[i] = r.gana;
+    });
+  }
+  if(semisListas()){
+    const fin = ordenar([S.semis[0], S.semis[1]]);
+    const r = resultadoDe(JUGADOS.final_reducido, fin[0], fin[1]);
+    if(r && r.gana) S.finalRed = r.gana;
+  }
 }
 
 function ordenar(ids){
@@ -481,10 +529,20 @@ function fila(id, o){
   // si el archivo no esta, la imagen se oculta sola y la fila no se rompe
   const escudo = '<img class="escudo" src="logos/'+id+'.png" alt="" loading="lazy" '
                + 'onerror="this.style.visibility=\'hidden\'">';
+  const gol = (o.goles===null || o.goles===undefined) ? ''
+            : '<span class="gol'+(o.parcial?' parcial':'')+'">'+o.goles+'</span>';
+  if(o.fijo){
+    // ya se jugo y esta resuelto: no se puede tocar
+    cls.push('fijo');
+    return '<div class="'+cls.join(' ')+'">'
+         + escudo + '<span class="pos">'+o.pos+'</span>'
+         + '<span class="nombre">'+t.n+chk+orig+'</span>'+gol+'</div>';
+  }
+  // si el partido quedo a medias, se muestra el marcador pero se puede elegir
   return '<button type="button" class="'+cls.join(' ')+'" data-act="'+o.act+'"'
        + ' aria-pressed="'+(o.estado==='gana')+'">'
        + escudo + '<span class="pos">'+o.pos+'</span>'
-       + '<span class="nombre">'+t.n+chk+orig+'</span>'+vent+pick+'</button>';
+       + '<span class="nombre">'+t.n+chk+orig+'</span>'+gol+vent+pick+'</button>';
 }
 
 const espera = (titulo,texto) => '<div class="espera"><span class="t">'+titulo+'</span>'+texto+'</div>';
@@ -524,10 +582,17 @@ function render(){
   const tocar = clave => prox===clave ? '<span class="aviso-tocar">Tocá al ganador</span>' : '';
   const g = S.finalAsc, p = perdedorFinal();
 
-  const c0 = '<div class="m'+marca('fa')+'"><div class="tag">Los dos punteros de zona'+tocar('fa')+'</div>'
-    + fila(PUNTEROS.A, {pos:'1° ZA', act:'fa:'+PUNTEROS.A, estado: g ? (g===PUNTEROS.A?'gana':'pierde') : null})
+  const jfa = JUGADOS && JUGADOS.final_ascenso && JUGADOS.final_ascenso.gana
+            ? JUGADOS.final_ascenso : null;
+  const c0 = '<div class="m'+(jfa?' resuelto':'')+marca('fa')+'"><div class="tag">Los dos punteros de zona'
+    + (jfa ? '<span class="jugado">Jugado</span>' : '') + tocar('fa')+'</div>'
+    + fila(PUNTEROS.A, {pos:'1° ZA', act:'fa:'+PUNTEROS.A, fijo: !!jfa,
+                        goles: jfa ? (jfa.a===PUNTEROS.A ? jfa.gl : jfa.gv) : null,
+                        estado: g ? (g===PUNTEROS.A?'gana':'pierde') : null})
     + (VER_DATOS && MODELO ? barraProb(probNeutral(PUNTEROS.A, PUNTEROS.B), PUNTEROS.A, PUNTEROS.B) : '')
-    + fila(PUNTEROS.B, {pos:'1° ZB', act:'fa:'+PUNTEROS.B, estado: g ? (g===PUNTEROS.B?'gana':'pierde') : null})
+    + fila(PUNTEROS.B, {pos:'1° ZB', act:'fa:'+PUNTEROS.B, fijo: !!jfa,
+                        goles: jfa ? (jfa.a===PUNTEROS.B ? jfa.gl : jfa.gv) : null,
+                        estado: g ? (g===PUNTEROS.B?'gana':'pierde') : null})
     + '<div class="pie">' + (g
         ? '<b>'+T[g].n+'</b> asciende. '+T[p].n+' entra en cuartos como 1°.'
         : 'El que gana asciende. <b>El que pierde entra en cuartos</b> y saltea la primera fase.')
@@ -536,14 +601,23 @@ function render(){
   const c1 = FASE1.length ? FASE1.map(function(l,i){
     const w = S.f1[l.id];
     const conColon = (l.a===MI_CLUB || l.b===MI_CLUB);
-    return '<div class="m '+(conColon?'colon':'')+marca('f1:'+l.id)+'">'
-      + '<div class="tag">Llave '+(i+1)+' · '+l.rot+tocar('f1:'+l.id)+'</div>'
+    const jr = resultadoDe(JUGADOS && JUGADOS.fase1, l.a, l.b);
+    const cerrado = !!(jr && jr.gana);
+    const sello = cerrado ? '<span class="jugado">Jugado</span>'
+                : (jr ? '<span class="jugado abierto">Suspendido</span>' : '');
+    const aviso = (jr && jr.nota && !cerrado)
+                ? '<div class="nota-llave">'+jr.nota+'</div>' : '';
+    return '<div class="m '+(conColon?'colon':'')+(cerrado?' resuelto':'')+(jr&&!cerrado?' suspendido':'')
+      + marca('f1:'+l.id)+'">'
+      + '<div class="tag">Llave '+(i+1)+' · '+l.rot+sello+tocar('f1:'+l.id)+'</div>'
       + fila(l.a, {pos:T[l.a].pos+'° Z'+T[l.a].z, act:'f1:'+l.id+':'+l.a, ventaja:true,
+                   fijo: cerrado, parcial: !!jr && !cerrado, goles: jr ? jr.gl : null,
                    estado: w ? (w===l.a?'gana':'pierde') : null})
       + (VER_DATOS && MODELO ? barraProb(probUnico(l.a, l.b), l.a, l.b) : '')
       + fila(l.b, {pos:T[l.b].pos+'° Z'+T[l.b].z, act:'f1:'+l.id+':'+l.b,
+                   fijo: cerrado, parcial: !!jr && !cerrado, goles: jr ? jr.gv : null,
                    estado: w ? (w===l.b?'gana':'pierde') : null})
-      + '</div>';
+      + aviso + '</div>';
   }).join('') : espera('Sin datos','No se pudo armar la primera fase.');
 
   let c2;
@@ -557,12 +631,16 @@ function render(){
     c2 = cruces(s8,[[0,7],[1,6],[2,5],[3,4]]).map(function(cr,i){
       const w = S.cuartos[i];
       const conColon = (cr.top===MI_CLUB||cr.bot===MI_CLUB);
-      return '<div class="m '+(conColon?'colon':'')+marca('cu:'+i)+'"><div class="tag">'+cr.rot+' de los 8 clasificados'+tocar('cu:'+i)+'</div>'
+      const jc = resultadoDe(JUGADOS && JUGADOS.cuartos, cr.top, cr.bot);
+      return '<div class="m '+(conColon?'colon':'')+(jc?' resuelto':'')+marca('cu:'+i)+'"><div class="tag">'+cr.rot+' de los 8 clasificados'
+        + (jc ? '<span class="jugado">Jugado</span>' : '') + tocar('cu:'+i)+'</div>'
         + fila(cr.top, {pos:(s8.indexOf(cr.top)+1)+'°', act:'cu:'+i+':'+cr.top, ventaja:true,
+                        fijo: !!jc, goles: jc ? (jc.a===cr.top ? jc.gl : jc.gv) : null,
                         origen:T[cr.top].pos+'° de la Zona '+T[cr.top].z,
                         estado: w ? (w===cr.top?'gana':'pierde') : null})
         + (VER_DATOS && MODELO ? barraProb(probSerie(cr.top, cr.bot, false), cr.top, cr.bot) : '')
         + fila(cr.bot, {pos:(s8.indexOf(cr.bot)+1)+'°', act:'cu:'+i+':'+cr.bot,
+                        fijo: !!jc, goles: jc ? (jc.a===cr.bot ? jc.gl : jc.gv) : null,
                         origen:T[cr.bot].pos+'° de la Zona '+T[cr.bot].z,
                         estado: w ? (w===cr.bot?'gana':'pierde') : null})
         + '</div>';
@@ -921,6 +999,21 @@ async function compartirCuadro(){
 let MODELO = null;
 let VER_DATOS = false;
 
+// Resultados ya jugados del Reducido. Vienen de resultados.json y se cargan
+// fijos: esas llaves no se pueden cambiar porque ya pasaron.
+let JUGADOS = null;
+
+// Busca un cruce por el par de equipos, sin importar el orden.
+// Se indexa por equipos y no por numero de llave porque el numero depende
+// del orden de la tabla y puede moverse.
+function resultadoDe(lista, a, b){
+  if(!lista) return null;
+  for(const r of lista){
+    if((r.a===a && r.b===b) || (r.a===b && r.b===a)) return r;
+  }
+  return null;
+}
+
 const factorial = n => { let r=1; for(let i=2;i<=n;i++) r*=i; return r; };
 const poisson = (l,k) => Math.exp(-l)*Math.pow(l,k)/factorial(k);
 
@@ -1080,6 +1173,21 @@ function panelDatos(){
     + filas + propio + metodo + '</section>';
 }
 
+async function cargarJugados(){
+  const base = 'https://raw.githubusercontent.com/marianodimaggio/llave-reducido/main/';
+  try{
+    let r;
+    try{
+      r = await fetch(base + 'resultados.json?t=' + Date.now(), {cache:'no-store'});
+      if(!r.ok) throw 0;
+    }catch(e){
+      r = await fetch('resultados.json?t=' + Date.now(), {cache:'no-store'});
+    }
+    if(!r.ok) throw 0;
+    JUGADOS = await r.json();
+  }catch(e){ JUGADOS = null; }   // sin el archivo, el simulador queda todo manual
+}
+
 async function cargarModelo(){
   try{
     // Igual que la tabla: se lee de GitHub, no del sitio. Netlify no republica
@@ -1145,6 +1253,8 @@ async function arrancar(){
     pintarFuente('No se pudo cargar la tabla. Revisá que data.json esté publicado.', 'viejo');
   }
   leerContador();
+  await cargarJugados();
+  if(JUGADOS) limpiar();
   await cargarModelo();
   render();
 }
