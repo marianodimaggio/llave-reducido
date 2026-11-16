@@ -602,9 +602,9 @@ function render(){
     const w = S.f1[l.id];
     const conColon = (l.a===MI_CLUB || l.b===MI_CLUB);
     const jr = resultadoDe(JUGADOS && JUGADOS.fase1, l.a, l.b);
-    const cerrado = !!(jr && jr.gana);
+    const cerrado = !!(jr && jr.gana && jr.estado !== 'parcial');
     const sello = cerrado ? '<span class="jugado">Jugado</span>'
-                : (jr ? '<span class="jugado abierto">Suspendido</span>' : '');
+                : (jr ? '<span class="jugado abierto">A confirmar</span>' : '');
     const aviso = (jr && jr.nota && !cerrado)
                 ? '<div class="nota-llave">'+jr.nota+'</div>' : '';
     return '<div class="m '+(conColon?'colon':'')+(cerrado?' resuelto':'')+(jr&&!cerrado?' suspendido':'')
